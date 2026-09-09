@@ -2,7 +2,7 @@
 
 Proyecto independiente del simulador 3D del Departamento Tipo T7. El plan y el estado de ejecución se mantienen en [docs/TODO_T7.md](docs/TODO_T7.md).
 
-Repositorio privado: [BenjaAranda/los-altos-algarrobo-t7](https://github.com/BenjaAranda/los-altos-algarrobo-t7). Creación y conexión verificadas en T04; la carga inicial está prevista en T06. La evidencia y los identificadores persistentes están en [docs/VALIDACION_T04.md](docs/VALIDACION_T04.md).
+Repositorio privado: [BenjaAranda/los-altos-algarrobo-t7](https://github.com/BenjaAranda/los-altos-algarrobo-t7). Estado inicial subido y comprobado en T06. Las [12 etapas de seguimiento](https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues) conservan los IDs y casillas del plan; GitHub Projects requiere permisos que la conexión actual no tiene. Ver [docs/VALIDACION_T06.md](docs/VALIDACION_T06.md) y [cómo mantener el seguimiento](docs/SEGUIMIENTO_GITHUB.md).
 
 El sitio web quedó registrado en T05, con acceso privado solo para el propietario. Sigue sin publicar; su configuración y evidencia están en [docs/VALIDACION_T05.md](docs/VALIDACION_T05.md). La publicación del simulador validado corresponde a E11.
 

@@ -10,8 +10,271 @@
     "operation": "createProjectV2",
     "error_type": "INSUFFICIENT_SCOPES",
     "required_scope": "project",
-    "available_scopes": ["gist", "repo", "workflow"],
+    "available_scopes": [
+      "gist",
+      "repo",
+      "workflow"
+    ],
     "fallback": "Una issue por etapa, con los mismos IDs y casillas del plan."
   },
-  "stages": {}
+  "stages": {
+    "E00": {
+      "issue_number": 1,
+      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/1",
+      "task_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08"
+      ]
+    },
+    "E01": {
+      "issue_number": 2,
+      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/2",
+      "task_ids": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05",
+        "T06"
+      ]
+    },
+    "E02": {
+      "issue_number": 3,
+      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/3",
+      "task_ids": [
+        "T07",
+        "T08",
+        "T09",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T15"
+      ]
+    },
+    "E03": {
+      "issue_number": 4,
+      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/4",
+      "task_ids": [
+        "T16",
+        "T17",
+        "T18",
+        "T19",
+        "T20"
+      ]
+    },
+    "E04": {
+      "issue_number": 5,
+      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/5",
+      "task_ids": [
+        "T21",
+        "T22",
+        "T23",
+        "T24",
+        "T25",
+        "T26",
+        "T27"
+      ]
+    },
+    "E05": {
+      "issue_number": 6,
+      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/6",
+      "task_ids": [
+        "T28",
+        "T29",
+        "T30",
+        "T31",
+        "T32",
+        "T33"
+      ]
+    },
+    "E06": {
+      "issue_number": 7,
+      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/7",
+      "task_ids": [
+        "T34",
+        "T35",
+        "T36",
+        "T37",
+        "T38",
+        "T39",
+        "T40",
+        "T41",
+        "T42",
+        "T43"
+      ]
+    },
+    "E07": {
+      "issue_number": 8,
+      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/8",
+      "task_ids": [
+        "T44",
+        "T45",
+        "T46",
+        "T47"
+      ]
+    },
+    "E08": {
+      "issue_number": 9,
+      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/9",
+      "task_ids": [
+        "T48",
+        "T49",
+        "T50",
+        "T51",
+        "T52",
+        "T53"
+      ]
+    },
+    "E09": {
+      "issue_number": 10,
+      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/10",
+      "task_ids": [
+        "T54",
+        "T55",
+        "T56",
+        "T57",
+        "T58",
+        "T59"
+      ]
+    },
+    "E10": {
+      "issue_number": 11,
+      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/11",
+      "task_ids": [
+        "T60",
+        "T61",
+        "T62",
+        "T63",
+        "T64"
+      ]
+    },
+    "E11": {
+      "issue_number": 12,
+      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/12",
+      "task_ids": [
+        "T65",
+        "T66",
+        "T67",
+        "T68",
+        "T69",
+        "T70"
+      ]
+    }
+  },
+  "last_sync": {
+    "checked_at": "2026-09-09T02:48:38.134Z",
+    "source_sha256": "e0df316ea27551f65ca697ce1e605f38b7dfe3ed968b3d01ce7e3746e96944a8",
+    "stage_count": 12,
+    "task_count": 78,
+    "completed_tasks": 14,
+    "open_stages": 10,
+    "closed_stages": 2,
+    "all_match": true,
+    "stages": [
+      {
+        "stage": "E00",
+        "issue_number": 1,
+        "state": "closed",
+        "task_count": 8,
+        "completed": 8,
+        "matches": true
+      },
+      {
+        "stage": "E01",
+        "issue_number": 2,
+        "state": "closed",
+        "task_count": 6,
+        "completed": 6,
+        "matches": true
+      },
+      {
+        "stage": "E02",
+        "issue_number": 3,
+        "state": "open",
+        "task_count": 9,
+        "completed": 0,
+        "matches": true
+      },
+      {
+        "stage": "E03",
+        "issue_number": 4,
+        "state": "open",
+        "task_count": 5,
+        "completed": 0,
+        "matches": true
+      },
+      {
+        "stage": "E04",
+        "issue_number": 5,
+        "state": "open",
+        "task_count": 7,
+        "completed": 0,
+        "matches": true
+      },
+      {
+        "stage": "E05",
+        "issue_number": 6,
+        "state": "open",
+        "task_count": 6,
+        "completed": 0,
+        "matches": true
+      },
+      {
+        "stage": "E06",
+        "issue_number": 7,
+        "state": "open",
+        "task_count": 10,
+        "completed": 0,
+        "matches": true
+      },
+      {
+        "stage": "E07",
+        "issue_number": 8,
+        "state": "open",
+        "task_count": 4,
+        "completed": 0,
+        "matches": true
+      },
+      {
+        "stage": "E08",
+        "issue_number": 9,
+        "state": "open",
+        "task_count": 6,
+        "completed": 0,
+        "matches": true
+      },
+      {
+        "stage": "E09",
+        "issue_number": 10,
+        "state": "open",
+        "task_count": 6,
+        "completed": 0,
+        "matches": true
+      },
+      {
+        "stage": "E10",
+        "issue_number": 11,
+        "state": "open",
+        "task_count": 5,
+        "completed": 0,
+        "matches": true
+      },
+      {
+        "stage": "E11",
+        "issue_number": 12,
+        "state": "open",
+        "task_count": 6,
+        "completed": 0,
+        "matches": true
+      }
+    ]
+  }
 }

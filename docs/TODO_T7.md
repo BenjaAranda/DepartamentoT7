@@ -1,12 +1,14 @@
 # Tareas del simulador T7
 
-Actualizado: 8 de septiembre de 2026. T01–T05 completadas; T06 es la siguiente tarea.
+Actualizado: 8 de septiembre de 2026. T01–T06 completadas; T07 es la siguiente tarea.
 
 Esta es la lista de seguimiento principal del nuevo proyecto `simulador-t7`.
 
 Plan y criterios: `PLAN_MAESTRO_T7.md`. Los códigos V01–V15 se refieren a sus pruebas de validación.
 
 Regla de trabajo: tomar el primer pendiente cuyas dependencias estén satisfechas, realizarlo, verificarlo y registrar evidencia antes de marcarlo. No completar una casilla solo porque esté planificada. Si cambia su fuente, reabrir las comprobaciones afectadas. Mantener los mismos IDs en GitHub.
+
+Seguimiento remoto: [12 etapas en GitHub Issues](https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues). Cada etapa contiene las mismas tareas y casillas de esta lista. Después de actualizarla, sincronizar y comprobar con `scripts/sync-github-tasks.mjs`, según `SEGUIMIENTO_GITHUB.md`.
 
 ## E00. Planificación completada
 
@@ -28,7 +30,7 @@ Dependencia: E00. Hito: estructura y destinos nuevos preparados.
 - [x] T03. Preparar estructura de arquitectura, Blender, Unreal, activos y validación; configurar exclusiones y almacenamiento de binarios grandes. Evidencia: carpetas y documentación creadas, `.gitignore`, `.gitattributes`, Git local con LFS y 55 comprobaciones de reglas correctas. Ver `VALIDACION_T03.md`, `VALIDACION_T03.json` y `ALMACENAMIENTO.md`.
 - [x] T04. Verificar autenticación GitHub, disponibilidad de nombre y visibilidad; crear el repositorio nuevo en BenjaAranda y registrar su URL real. Evidencia: [repositorio privado nuevo](https://github.com/BenjaAranda/los-altos-algarrobo-t7), propietario e ID comprobados por API, remoto `origin` vinculado y conexión Git correcta. Ver `VALIDACION_T04.md` y `GITHUB_REPOSITORY.json`. La subida inicial corresponde a T06.
 - [x] T05. Registrar un sitio nuevo, conservando su identificador para todas las actualizaciones; documentar acceso previsto. Evidencia: ID persistido en `web/.openai/hosting.json`, sitio consultado y acceso privado solo para el propietario, sin versiones ni despliegues. Ver `VALIDACION_T05.md` y `SITE_REGISTRATION.json`.
-- [ ] T06. Crear seguimiento de tareas en GitHub Projects si está disponible, conservar IDs y subir el estado inicial al repositorio.
+- [x] T06. Crear seguimiento de tareas en GitHub Projects si está disponible, conservar IDs y subir el estado inicial al repositorio. Evidencia: primera revisión subida y comprobada; 12 issues por etapa con P01–P08 y T01–T70. GitHub Projects rechazó la creación por `INSUFFICIENT_SCOPES`; se usa Issues con la autenticación disponible. Ver `VALIDACION_T06.md`, `GITHUB_TRACKING.json` y `SEGUIMIENTO_GITHUB.md`.
 
 ## E02. Interpretación y medidas
 
@@ -146,4 +148,4 @@ Dependencia: E10. Hito: V15 superada y todos los entregables accesibles.
 
 ## Continuación concreta
 
-La siguiente tarea de implementación es T06: preparar seguimiento en GitHub Projects si está disponible, conservar los IDs de tareas y subir el estado inicial. La raíz Git local es `simulador-t7/`, con LFS configurado y `origin` vinculado al repositorio privado `BenjaAranda/los-altos-algarrobo-t7`; reutilizar ambos. La conexión remota quedó comprobada según `VALIDACION_T04.md`. El sitio de `web/` ya está registrado: reutilizar el `project_id` de `web/.openai/hosting.json`, sin crearlo otra vez. Su acceso inicial es privado y sigue sin publicar; ver `VALIDACION_T05.md`. El PDF original permanece en la carpeta de trabajo superior. Las decisiones dimensionales se cierran en E02 antes de declarar definitiva la arquitectura. Si Unreal sigue instalándose, continuar por tareas independientes y conservar E08 pendiente.
+La siguiente tarea de implementación es T07: extraer y archivar planta e isométrica de la página 20 del PDF original, comprobar resolución y procedencia y conservar la huella del original. Guardar los derivados en `references/derived/`. La raíz Git local es `simulador-t7/`, con LFS configurado, estado inicial subido y `origin` vinculado al repositorio privado `BenjaAranda/los-altos-algarrobo-t7`; reutilizar ambos. El seguimiento de E02 corresponde a la issue #3; actualizar esta lista, sincronizar sus casillas y subir la revisión con su evidencia. El sitio de `web/` ya está registrado: reutilizar el `project_id` de `web/.openai/hosting.json`, sin crearlo otra vez. Su acceso inicial es privado y sigue sin publicar. El PDF original permanece en la carpeta de trabajo superior. Las decisiones dimensionales se cierran en E02 antes de declarar definitiva la arquitectura. Si Unreal sigue instalándose, continuar por tareas independientes y conservar E08 pendiente.

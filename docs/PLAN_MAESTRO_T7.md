@@ -187,6 +187,8 @@ El repositorio incluirá código, documentación, configuración y activos neces
 
 Crear un tablero GitHub Projects vinculado al repositorio si la cuenta ofrece esa capacidad; trasladar allí los mismos IDs de tareas. El archivo TODO seguirá siendo la referencia local verificable. Crear un proyecto nuevo de código y sitio no requiere abrir otra tarea de conversación.
 
+En T06 GitHub rechazó `createProjectV2` porque la conexión disponible no incluye el permiso `project`. Se implementó seguimiento en 12 issues, una por etapa, con los 78 IDs del plan y sus casillas. `GITHUB_TRACKING.json` conserva sus números y URLs; `SEGUIMIENTO_GITHUB.md` define la sincronización desde el TODO. El estado inicial quedó subido al repositorio. La limitación de Projects no bloquea las tareas arquitectónicas ni sustituye sus validaciones.
+
 ## 10. Publicación y continuidad
 
 Al cerrar cada hito, actualizar to-dos, evidencias y cambios de alcance, y subir al repositorio nuevo. Publicar la versión de entrega únicamente después de E10 y de compilar la misma revisión. Las verificaciones intermedias pueden tener vistas previas identificadas como tales.

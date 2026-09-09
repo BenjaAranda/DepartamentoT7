@@ -27,6 +27,12 @@
       "checked_at": "2026-09-09T02:23:43.423Z",
       "authenticated_username": "BenjaAranda",
       "command_scoped_safe_directory": "C:/Users/benja/OneDrive/Documentos/ProyectoDeptAstra/simulador-t7"
+    },
+    "initial_push": {
+      "commit": "229027e610fe38c8e593b2ae9ae9a48ff8df50cd",
+      "remote_commit": "229027e610fe38c8e593b2ae9ae9a48ff8df50cd",
+      "match": true,
+      "checked_at": "2026-09-09T02:44:49.338Z"
     }
   },
   "local": {
@@ -34,6 +40,8 @@
     "remote_name": "origin",
     "remote_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7.git",
     "branch": "main",
-    "initial_commit_pending_task": "T06"
+    "initial_commit": "229027e610fe38c8e593b2ae9ae9a48ff8df50cd",
+    "initial_upload_verified_at": "2026-09-09T02:44:49.338Z",
+    "upstream": "origin/main"
   }
 }
