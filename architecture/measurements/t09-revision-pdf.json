@@ -1,0 +1,25 @@
+{
+  "task": "T09",
+  "method": "Texto extraíble de las 42 páginas e índice visual de todas ellas; ampliación de imágenes embebidas en las páginas técnicas relevantes. Las miniaturas no certifican todos los textos pequeños del documento.",
+  "page_groups": [
+    {"pages":[1,2],"topic":"Portada y ubicación","review":"Texto y vista general","finding":"No son fuentes de medidas interiores del T7."},
+    {"pages":[3],"topic":"Resumen del proyecto","review":"Texto y vista general","finding":"Cantidad de viviendas, superficies del conjunto y edificios de cuatro pisos; no dimensiones de habitaciones."},
+    {"pages":[4,5,6,7,8,9],"topic":"Loteo, áreas verdes y equipamiento","review":"Texto y vista general","finding":"Escala de conjunto. No trasladar dimensiones urbanas a la vivienda."},
+    {"pages":[10,11,12,13,14],"topic":"Vistas generales y condominio","review":"Texto y vista general","finding":"Contexto y vistas referenciales, sin una planta acotada de detalle del T7."},
+    {"pages":[15,16],"topic":"Torre A, primero y pisos 2 a 4","review":"Texto, páginas completas y ampliaciones de plantas nativas de p15, incluyendo un T7 y núcleo común","finding":"Confirman contexto de pisos y posición de tipologías. No se encontró una cadena de dimensiones generales legibles del T7. Hay rótulos, símbolos de maniobra, ejes y números de peldaños; no confundirlos con cotas de recintos."},
+    {"pages":[17,18],"topic":"Torre B, primero y pisos 2 a 4","review":"Texto, páginas completas y ampliaciones de plantas nativas de p17, incluyendo un T7 y núcleo común","finding":"Contexto alternativo de edificio. No se encontró una cadena general legible que resuelva las medidas de la planta p20; no sustituir su orientación o distribución."},
+    {"pages":[19],"topic":"Departamento T6","review":"Texto y vista general de planta/isométrica","finding":"Otra tipología con otra superficie y terraza. Sus medidas y composición no se aplican automáticamente al T7."},
+    {"pages":[20],"topic":"Departamento T7","review":"Texto vectorial, planta nativa ampliada por sectores, composición e isométrica","finding":"Fuente principal del inventario: 14 cotas locales, ocho rótulos M.H.A. 15cm, 28 códigos de paños y cuatro menciones de superficie. Unidades de las cotas locales no impresas junto a las cifras."},
+    {"pages":[21],"topic":"Vista interior referencial","review":"Texto y vista general","finding":"Imagen referencial: no medir mediante muebles, perspectiva o baldosas."},
+    {"pages":[22],"topic":"Tipología Galaxy DS49","review":"Texto, página completa e imagen nativa del despiece","finding":"Descripción de cielo falso, fachada, shaft y sistema de tabiques. No documenta espesores terminados de cada código de p20 ni altura interior T7."},
+    {"pages":[23],"topic":"Proyecto Galaxy DS49, supertabique","review":"Texto, página completa e imagen nativa del detalle","finding":"PERFILES 150 MM y DESCARGA SANITARIA 110 MM, registrados como T09-B01/B02. Son componentes genéricos; no acreditan el espesor terminado del T7."},
+    {"pages":[24],"topic":"BIM y canalizaciones de supertabique","review":"Texto, página completa, mosaico de imágenes embebidas y ampliación del esquema acotado","finding":"El objeto 222 incluye cotas y diámetros de instalaciones; el texto de la imagen nativa está reflejado. Lectura horizontal probable 267,5 y otras cotas parciales, sin unidad general o vinculación T7 confirmadas. No usar como altura ni ancho del departamento."},
+    {"pages":[25,26,27,28],"topic":"Vistas del conjunto, portería y transición a casas","review":"Texto y vista general","finding":"Contexto, equipamiento y portada de casas; no medidas interiores T7."},
+    {"pages":[29,30],"topic":"Casa de dos pisos y casa MR","review":"Texto y vista general de plantas/elevaciones","finding":"Tipologías distintas, con sus propias superficies y cotas. No transferir alturas o medidas al T7."},
+    {"pages":[31,32,33],"topic":"Vistas de casas","review":"Texto y vista general","finding":"Imágenes referenciales de viviendas diferentes."},
+    {"pages":[34,35,36,37,38,39],"topic":"Equipamiento y áreas públicas","review":"Texto y vista general","finding":"No son fuentes de medidas interiores del T7."},
+    {"pages":[40,41,42],"topic":"Encuesta, aprobación y cierre","review":"Texto y vista general","finding":"No incorporan detalle dimensional T7."}
+  ],
+  "conclusion": "Se encontraron medidas locales en p20 y dimensiones de componentes genéricos en p23/p24. No se encontró un cuadro de espesores de los códigos de p20 ni una cadena general de cotas legibles que cierre la geometría exacta del T7.",
+  "limits": "T09 registra lo legible y lo dudoso; no convierte la búsqueda documental en una validación de escala, superficie, altura o topología. Mantener T10-T15 pendientes."
+}

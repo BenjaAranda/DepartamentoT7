@@ -1,0 +1,1749 @@
+{
+  "task": "T09",
+  "revision": 1,
+  "source_pdf_sha256": "ad8e0871ed6afb7117e2dafa80bc28ad90b3c845709dc268ba01fcd12259aeec",
+  "authored_source": "architecture/measurements/t09-inventario.tsv",
+  "authored_source_sha256": "1b2c8537902b339cc1adee6670d5875511631657db445404a92834adc64ac128",
+  "pdf_review_sha256": "f2b2aba0e06c02dc737693fe6fdc72f6568eb2a3f9ded1b9f7d4be29791595fb",
+  "sources": {
+    "p20_planta": {
+      "page": 20,
+      "object": 196,
+      "frame_unit": "px",
+      "frame_size": [
+        1536,
+        813
+      ],
+      "raster_factor": 1,
+      "reference": "references/derived/p20-t7/planta-nativa.png",
+      "decoded_rgb_sha256": "c53b925f8f36402367d90c93a69f3dba1ef2992efdfae36d1f2f0c8a4d6fde8d"
+    },
+    "p20_pagina": {
+      "page": 20,
+      "object": null,
+      "frame_unit": "PDF_pt_top_left",
+      "frame_size": [
+        960,
+        540
+      ],
+      "raster_factor": 3,
+      "reference": "references/derived/p20-t7/pagina-20-contexto.png",
+      "decoded_rgb_sha256": "5ef21a139aecdc8c994757816c95b5088faa15a7bf318879d4587ffacacbde9d"
+    },
+    "p23_obj210": {
+      "page": 23,
+      "object": 210,
+      "frame_unit": "px",
+      "frame_size": [
+        2102,
+        1564
+      ],
+      "raster_factor": 1,
+      "embedded_stream_sha256": "2bf794800c90af3073bd9f85f1210952068478f552e8aedf5e980d048dd7b5c0",
+      "reference": "PDF original, imagen embebida",
+      "decoded_rgb_sha256": "27d6034e6e1a557f3a7ac910aaf51ab16e4c0c2db4ebfaf4efb76f6cd847bb68"
+    },
+    "p24_obj222": {
+      "page": 24,
+      "object": 222,
+      "frame_unit": "px",
+      "frame_size": [
+        407,
+        364
+      ],
+      "raster_factor": 1,
+      "embedded_stream_sha256": "afa0bd4956aeb7c94b860089d496539008f1451b51cbc5b12bb14643d3bd63c0",
+      "reference": "PDF original, imagen embebida",
+      "decoded_rgb_sha256": "04b08d73c0b37a29b8bd91961a1369b32694d203982eaff660bccd510ca14599"
+    }
+  },
+  "policy": {
+    "coordinates_are_reading_locators": true,
+    "metric_transform": null,
+    "model_geometry_allowed": false,
+    "conversion_note": "La conversión numérica es condicional a la unidad y no fija escala ni geometría. Las cotas locales usan cm inferidos; los códigos F no se convierten en longitudes."
+  },
+  "items": [
+    {
+      "id": "T09-D01",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        437.0,
+        87.0,
+        477.0,
+        126.0
+      ],
+      "literal": "ø 150",
+      "value_as_read": 150.0,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 1.5,
+      "reading_confidence": "alta",
+      "location": "Giro junto a dormitorio 3",
+      "t08_ids": [
+        "CL-C02",
+        "CL-L02"
+      ],
+      "use": "control_secundario",
+      "note": "Diámetro de reserva de maniobra; no ancho del dormitorio. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-D02",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        339.0,
+        433.0,
+        375.0,
+        474.0
+      ],
+      "literal": "ø 150",
+      "value_as_read": 150.0,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 1.5,
+      "reading_confidence": "alta",
+      "location": "Giro dormitorio 1",
+      "t08_ids": [
+        "CL-C01",
+        "CL-L03"
+      ],
+      "use": "control_secundario",
+      "note": "Diámetro de reserva de maniobra; no dimensión de la cama. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-D03",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        901.0,
+        342.0,
+        944.0,
+        383.0
+      ],
+      "literal": "ø 150",
+      "value_as_read": 150.0,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 1.5,
+      "reading_confidence": "alta",
+      "location": "Giro baño",
+      "t08_ids": [
+        "CL-C03",
+        "CL-L04"
+      ],
+      "use": "control_secundario",
+      "note": "Diámetro superpuesto al achurado; no límite de recinto. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-D04",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        1296.0,
+        290.0,
+        1342.0,
+        337.0
+      ],
+      "literal": "ø 150",
+      "value_as_read": 150.0,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 1.5,
+      "reading_confidence": "alta",
+      "location": "Giro estar",
+      "t08_ids": [
+        "CL-C04",
+        "CL-L05"
+      ],
+      "use": "control_secundario",
+      "note": "Diámetro de reserva de maniobra junto al sofá. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-D05",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        902.0,
+        237.0,
+        922.0,
+        253.0
+      ],
+      "literal": "90",
+      "value_as_read": 90.0,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 0.9,
+      "reading_confidence": "alta",
+      "location": "Baño, cadena superior izquierda",
+      "t08_ids": [
+        "CL-C05"
+      ],
+      "use": "candidato_T10",
+      "note": "Primer tramo horizontal entre proyecciones; sus extremos se medirán en T10. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-D06",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        979.0,
+        237.0,
+        999.0,
+        253.0
+      ],
+      "literal": "40",
+      "value_as_read": 40.0,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 0.4,
+      "reading_confidence": "alta",
+      "location": "Baño, cadena superior derecha",
+      "t08_ids": [
+        "CL-C05"
+      ],
+      "use": "candidato_T10",
+      "note": "Segundo tramo horizontal junto al equipo; no ancho de puerta. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-D07",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        930.0,
+        323.0,
+        956.0,
+        344.0
+      ],
+      "literal": "120",
+      "value_as_read": 120.0,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 1.2,
+      "reading_confidence": "alta",
+      "location": "Baño, achurado central",
+      "t08_ids": [
+        "CL-C05",
+        "CL-T01"
+      ],
+      "use": "candidato_T10",
+      "note": "Rótulo horizontal de la zona achurada; no espesor ni longitud de tabique. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-D08",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        939.0,
+        353.0,
+        965.0,
+        386.0
+      ],
+      "literal": "80",
+      "value_as_read": 80.0,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 0.8,
+      "reading_confidence": "media",
+      "location": "Baño, achurado central, sentido perpendicular",
+      "t08_ids": [
+        "CL-C05",
+        "CL-T01"
+      ],
+      "use": "lectura_por_confirmar",
+      "note": "Cifra girada sobre trama; lectura probable 80. No usar sola para calibrar. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-D09",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        873.0,
+        464.0,
+        894.0,
+        483.0
+      ],
+      "literal": "80",
+      "value_as_read": 80.0,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 0.8,
+      "reading_confidence": "alta",
+      "location": "Baño, tramo junto al inodoro",
+      "t08_ids": [
+        "CL-C05"
+      ],
+      "use": "candidato_T10",
+      "note": "Dimensión horizontal de la reserva contigua al sanitario, no ancho total del baño. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-D10",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        961.0,
+        464.0,
+        982.0,
+        483.0
+      ],
+      "literal": "70",
+      "value_as_read": 70.0,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 0.7,
+      "reading_confidence": "alta",
+      "location": "Baño, tramo sobre la proyección del inodoro",
+      "t08_ids": [
+        "CL-C05"
+      ],
+      "use": "candidato_T10",
+      "note": "Tramo horizontal contiguo al anterior; no tratar como ancho de puerta. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-D11",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        925.0,
+        603.0,
+        953.0,
+        636.0
+      ],
+      "literal": "90",
+      "value_as_read": 90.0,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 0.9,
+      "reading_confidence": "media",
+      "location": "Baño, achurado previo a ducha",
+      "t08_ids": [
+        "CL-C05",
+        "CL-T02"
+      ],
+      "use": "lectura_por_confirmar",
+      "note": "Cifra girada sobre trama; lectura probable 90. No define un escalón. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-D12",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        1107.0,
+        629.0,
+        1144.0,
+        648.0
+      ],
+      "literal": "137.5",
+      "value_as_read": 137.5,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 1.375,
+      "reading_confidence": "alta",
+      "location": "Logia, cota horizontal superior",
+      "t08_ids": [
+        "CL-C06"
+      ],
+      "use": "candidato_T10",
+      "note": "Conservar el punto decimal literal; no igualar automáticamente al ancho libre de puerta. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-D13",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        1135.0,
+        649.0,
+        1158.0,
+        670.0
+      ],
+      "literal": "90",
+      "value_as_read": 90.0,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 0.9,
+      "reading_confidence": "alta",
+      "location": "Logia, cota horizontal inferior",
+      "t08_ids": [
+        "CL-C06"
+      ],
+      "use": "candidato_T10",
+      "note": "Tramo horizontal superpuesto al acceso; soporte y extremos exactos pendientes. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-D14",
+      "kind": "cota",
+      "source": "p20_planta",
+      "bbox": [
+        1150.0,
+        629.0,
+        1169.0,
+        654.0
+      ],
+      "literal": "50",
+      "value_as_read": 50.0,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 0.5,
+      "reading_confidence": "alta",
+      "location": "Logia, cota vertical",
+      "t08_ids": [
+        "CL-C06"
+      ],
+      "use": "candidato_T10",
+      "note": "Control vertical complementario; distinguirlo del arco de puerta. La unidad cm se propone por contexto; no está impresa junto a esta cifra.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-E01",
+      "kind": "espesor",
+      "source": "p20_planta",
+      "bbox": [
+        211.0,
+        3.0,
+        255.0,
+        19.0
+      ],
+      "literal": "M.H.A. 15cm",
+      "value_as_read": 15.0,
+      "unit_visible": "cm",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": 0.15,
+      "reading_confidence": "alta",
+      "location": "Borde superior izquierdo",
+      "t08_ids": [
+        "CL-M01"
+      ],
+      "use": "espesor_documentado",
+      "note": "El 15 cm está impreso en este paño. No extenderlo a tabiques con otro código ni añadir acabados sin evidencia.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-E02",
+      "kind": "espesor",
+      "source": "p20_planta",
+      "bbox": [
+        1247.0,
+        3.0,
+        1295.0,
+        19.0
+      ],
+      "literal": "M.H.A. 15cm",
+      "value_as_read": 15.0,
+      "unit_visible": "cm",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": 0.15,
+      "reading_confidence": "alta",
+      "location": "Borde superior derecho",
+      "t08_ids": [
+        "CL-M01"
+      ],
+      "use": "espesor_documentado",
+      "note": "El 15 cm está impreso en este paño. No extenderlo a tabiques con otro código ni añadir acabados sin evidencia.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-E03",
+      "kind": "espesor",
+      "source": "p20_planta",
+      "bbox": [
+        4.0,
+        29.0,
+        20.0,
+        75.0
+      ],
+      "literal": "M.H.A. 15cm",
+      "value_as_read": 15.0,
+      "unit_visible": "cm",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": 0.15,
+      "reading_confidence": "alta",
+      "location": "Borde izquierdo, paño superior D3",
+      "t08_ids": [
+        "CL-M02"
+      ],
+      "use": "espesor_documentado",
+      "note": "El 15 cm está impreso en este paño. No extenderlo a tabiques con otro código ni añadir acabados sin evidencia.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-E04",
+      "kind": "espesor",
+      "source": "p20_planta",
+      "bbox": [
+        4.0,
+        324.0,
+        20.0,
+        374.0
+      ],
+      "literal": "M.H.A. 15cm",
+      "value_as_read": 15.0,
+      "unit_visible": "cm",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": 0.15,
+      "reading_confidence": "alta",
+      "location": "Borde izquierdo, paño D1",
+      "t08_ids": [
+        "CL-M03"
+      ],
+      "use": "espesor_documentado",
+      "note": "El 15 cm está impreso en este paño. No extenderlo a tabiques con otro código ni añadir acabados sin evidencia.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-E05",
+      "kind": "espesor",
+      "source": "p20_planta",
+      "bbox": [
+        1515.0,
+        583.0,
+        1533.0,
+        630.0
+      ],
+      "literal": "M.H.A. 15cm",
+      "value_as_read": 15.0,
+      "unit_visible": "cm",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": 0.15,
+      "reading_confidence": "alta",
+      "location": "Borde derecho exterior",
+      "t08_ids": [
+        "CL-M04"
+      ],
+      "use": "espesor_documentado",
+      "note": "El 15 cm está impreso en este paño. No extenderlo a tabiques con otro código ni añadir acabados sin evidencia.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-E06",
+      "kind": "espesor",
+      "source": "p20_planta",
+      "bbox": [
+        482.0,
+        492.0,
+        501.0,
+        540.0
+      ],
+      "literal": "M.H.A. 15cm",
+      "value_as_read": 15.0,
+      "unit_visible": "cm",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": 0.15,
+      "reading_confidence": "alta",
+      "location": "Paño inferior entre D1 y D2",
+      "t08_ids": [
+        "CL-M10"
+      ],
+      "use": "espesor_documentado",
+      "note": "El 15 cm está impreso en este paño. No extenderlo a tabiques con otro código ni añadir acabados sin evidencia.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-E07",
+      "kind": "espesor",
+      "source": "p20_planta",
+      "bbox": [
+        817.0,
+        518.0,
+        834.0,
+        565.0
+      ],
+      "literal": "M.H.A. 15cm",
+      "value_as_read": 15.0,
+      "unit_visible": "cm",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": 0.15,
+      "reading_confidence": "alta",
+      "location": "Retorno exterior izquierdo del baño",
+      "t08_ids": [
+        "CL-M07"
+      ],
+      "use": "espesor_documentado",
+      "note": "El 15 cm está impreso en este paño. No extenderlo a tabiques con otro código ni añadir acabados sin evidencia.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-E08",
+      "kind": "espesor",
+      "source": "p20_planta",
+      "bbox": [
+        1192.0,
+        433.0,
+        1210.0,
+        481.0
+      ],
+      "literal": "M.H.A. 15cm",
+      "value_as_read": 15.0,
+      "unit_visible": "cm",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": 0.15,
+      "reading_confidence": "alta",
+      "location": "Paño corto cocina-estar",
+      "t08_ids": [
+        "CL-M18"
+      ],
+      "use": "espesor_documentado",
+      "note": "El 15 cm está impreso en este paño. No extenderlo a tabiques con otro código ni añadir acabados sin evidencia.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R01",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        752.0,
+        4.0,
+        810.0,
+        19.0
+      ],
+      "literal": "TAB-8A F-90",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Borde superior central",
+      "t08_ids": [
+        "CL-M01"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R02",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        299.0,
+        126.0,
+        342.0,
+        141.0
+      ],
+      "literal": "TAB-1C F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Cabecera nicho D3",
+      "t08_ids": [
+        "CL-M13"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R03",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        349.0,
+        140.0,
+        364.0,
+        187.0
+      ],
+      "literal": "TAB-1C F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Lateral derecho nicho D3",
+      "t08_ids": [
+        "CL-M13"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R04",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        304.0,
+        194.0,
+        349.0,
+        209.0
+      ],
+      "literal": "TAB-1C F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Separación D1-D3 sobre armario",
+      "t08_ids": [
+        "CL-M12"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R05",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        224.0,
+        202.0,
+        241.0,
+        258.0
+      ],
+      "literal": "TAB-1C F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Retorno izquierdo armario D1",
+      "t08_ids": [
+        "CL-M12"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R06",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        93.0,
+        264.0,
+        134.0,
+        279.0
+      ],
+      "literal": "TAB-1C F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Separación D1-D3 hacia fachada",
+      "t08_ids": [
+        "CL-M12"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R07",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        474.0,
+        216.0,
+        489.0,
+        271.0
+      ],
+      "literal": "TAB-1C F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Separación D1-D2, tramo superior",
+      "t08_ids": [
+        "CL-M10"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R08",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        478.0,
+        280.0,
+        493.0,
+        320.0
+      ],
+      "literal": "TAB-1C F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Separación D1-D2 ante armario D2",
+      "t08_ids": [
+        "CL-M10"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R09",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        545.0,
+        149.0,
+        565.0,
+        196.0
+      ],
+      "literal": "TAB-1C F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Retorno en cabecera D2",
+      "t08_ids": [
+        "CL-M14"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R10",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        634.0,
+        144.0,
+        682.0,
+        160.0
+      ],
+      "literal": "TAB-1C F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Paño horizontal de cabecera D2",
+      "t08_ids": [
+        "CL-M14"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R11",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        812.0,
+        257.0,
+        831.0,
+        297.0
+      ],
+      "literal": "TAB-1C F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Separación D2-baño",
+      "t08_ids": [
+        "CL-M11"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R12",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        924.0,
+        144.0,
+        981.0,
+        160.0
+      ],
+      "literal": "TAB-1D F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Cabecera baño",
+      "t08_ids": [
+        "CL-M15"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R13",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        1030.0,
+        144.0,
+        1088.0,
+        160.0
+      ],
+      "literal": "TAB-?A F-120",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "media",
+      "location": "Cabecera nicho cocina",
+      "t08_ids": [
+        "CL-M17"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7. Lectura candidata del tipo: TAB-10A; caracteres centrales ambiguos, conservar transcripción parcial.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R14",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        1036.0,
+        245.0,
+        1086.0,
+        261.0
+      ],
+      "literal": "TAB-1D F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Base nicho cocina",
+      "t08_ids": [
+        "CL-M17"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R15",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        1007.0,
+        317.0,
+        1024.0,
+        361.0
+      ],
+      "literal": "TAB-1D F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Separación baño-cocina a mitad del baño",
+      "t08_ids": [
+        "CL-M16"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R16",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        1022.0,
+        528.0,
+        1075.0,
+        545.0
+      ],
+      "literal": "TAB-1D F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Bajo lavaplatos de cocina",
+      "t08_ids": [
+        "CL-M19"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R17",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        995.0,
+        547.0,
+        1013.0,
+        590.0
+      ],
+      "literal": "TAB-1D F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Retorno baño junto a logia",
+      "t08_ids": [
+        "CL-M16"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R18",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        1192.0,
+        534.0,
+        1210.0,
+        578.0
+      ],
+      "literal": "TAB-1D F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Separación cocina-estar, tramo delgado",
+      "t08_ids": [
+        "CL-M18"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R19",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        1197.0,
+        664.0,
+        1219.0,
+        725.0
+      ],
+      "literal": "TAB-1D F-15",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Separación logia-comedor",
+      "t08_ids": [
+        "CL-M18"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R20",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        1003.0,
+        597.0,
+        1040.0,
+        616.0
+      ],
+      "literal": "TAB-2A F-60",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Cabecera volumen técnico",
+      "t08_ids": [
+        "CL-M20"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R21",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        1049.0,
+        597.0,
+        1090.0,
+        615.0
+      ],
+      "literal": "TAB-5 F-30",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Cabecera lavadero logia",
+      "t08_ids": [
+        "CL-M19"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R22",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        998.0,
+        650.0,
+        1015.0,
+        703.0
+      ],
+      "literal": "TAB-3A F-60",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Lateral baño-volumen técnico",
+      "t08_ids": [
+        "CL-M20"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R23",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        1030.0,
+        660.0,
+        1048.0,
+        710.0
+      ],
+      "literal": "TAB-3A F-60",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Lateral volumen técnico-logia",
+      "t08_ids": [
+        "CL-M20"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 270
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R24",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        218.0,
+        631.0,
+        271.0,
+        647.0
+      ],
+      "literal": "TAB-11A F-120",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Fachada inferior D1",
+      "t08_ids": [
+        "CL-M05"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R25",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        741.0,
+        631.0,
+        793.0,
+        647.0
+      ],
+      "literal": "TAB-11A F-120",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Fachada inferior D2",
+      "t08_ids": [
+        "CL-M06"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R26",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        844.0,
+        779.0,
+        877.0,
+        797.0
+      ],
+      "literal": "TAB-11B",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Paño corto junto a ventana baño",
+      "t08_ids": [
+        "CL-M08"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7. Solo se lee TAB-11B; no añadir un sufijo F ausente.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R27",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        992.0,
+        779.0,
+        1041.0,
+        798.0
+      ],
+      "literal": "TAB-11A F-120",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Fachada inferior baño-logia",
+      "t08_ids": [
+        "CL-M09"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-R28",
+      "kind": "codigo",
+      "source": "p20_planta",
+      "bbox": [
+        1467.0,
+        777.0,
+        1524.0,
+        802.0
+      ],
+      "literal": "TAB-11A F-120",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Fachada inferior comedor",
+      "t08_ids": [
+        "CL-M09"
+      ],
+      "use": "sin_espesor_documentado",
+      "note": "Código de tipo, no medida de espesor. Los números que siguen a F no se convierten en centímetros. Falta cuadro de composición y espesores aplicable al T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-A01",
+      "kind": "superficie",
+      "source": "p20_pagina",
+      "bbox": [
+        17.0,
+        88.0,
+        124.0,
+        103.0
+      ],
+      "literal": "76,66 m2 EDIFICADO",
+      "value_as_read": 76.66,
+      "unit_visible": "m2",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Encabezado: superficie edificada",
+      "t08_ids": [
+        "CL-A04"
+      ],
+      "use": "contraste_T13",
+      "note": "Dato documental, no medición geométrica. La mención de 0,00 m2 no demuestra la inexistencia de la zona exterior dibujada.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-A02",
+      "kind": "superficie",
+      "source": "p20_pagina",
+      "bbox": [
+        132.0,
+        88.0,
+        222.0,
+        103.0
+      ],
+      "literal": "0,00 m2 TERRAZA",
+      "value_as_read": 0.0,
+      "unit_visible": "m2",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Encabezado: superficie de terraza",
+      "t08_ids": [
+        "CL-A04"
+      ],
+      "use": "contraste_T13",
+      "note": "Dato documental, no medición geométrica. La mención de 0,00 m2 no demuestra la inexistencia de la zona exterior dibujada.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-A03",
+      "kind": "superficie",
+      "source": "p20_pagina",
+      "bbox": [
+        17.0,
+        103.0,
+        102.0,
+        118.0
+      ],
+      "literal": "TOTAL 76,66 m2",
+      "value_as_read": 76.66,
+      "unit_visible": "m2",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Encabezado: superficie total",
+      "t08_ids": [
+        "CL-A04"
+      ],
+      "use": "contraste_T13",
+      "note": "Dato documental, no medición geométrica. La mención de 0,00 m2 no demuestra la inexistencia de la zona exterior dibujada.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-A04",
+      "kind": "superficie",
+      "source": "p20_planta",
+      "bbox": [
+        1292.0,
+        78.0,
+        1400.0,
+        103.0
+      ],
+      "literal": "SUP: 76,80 m2",
+      "value_as_read": 76.8,
+      "unit_visible": "m2",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "alta",
+      "location": "Rótulo dentro de la planta",
+      "t08_ids": [
+        "CL-A04"
+      ],
+      "use": "contraste_T13",
+      "note": "Difiere en 0,14 m2 del encabezado; resolver perímetro de cómputo y área útil en T13.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-B01",
+      "kind": "complementaria",
+      "source": "p23_obj210",
+      "bbox": [
+        1535.0,
+        419.0,
+        1780.0,
+        463.0
+      ],
+      "literal": "PERFILES 150 MM",
+      "value_as_read": 150.0,
+      "unit_visible": "mm",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": 0.15,
+      "reading_confidence": "alta",
+      "location": "Página 23, detalle Galaxy DS49, perfiles",
+      "t08_ids": [],
+      "use": "no_atribuir_T7",
+      "note": "Dimensión de perfiles de un sistema ilustrado. No acredita espesor terminado de los tabiques del T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-B02",
+      "kind": "complementaria",
+      "source": "p23_obj210",
+      "bbox": [
+        1095.0,
+        1268.0,
+        1460.0,
+        1325.0
+      ],
+      "literal": "DESCARGA SANITARIA 110 MM",
+      "value_as_read": 110.0,
+      "unit_visible": "mm",
+      "unit_proposed": null,
+      "unit_status": "documentada",
+      "length_m_if_unit_accepted": 0.11,
+      "reading_confidence": "alta",
+      "location": "Página 23, detalle Galaxy DS49, descarga",
+      "t08_ids": [],
+      "use": "no_atribuir_T7",
+      "note": "Dimensión de instalación sanitaria genérica, no medida arquitectónica ni espesor de muro del T7.",
+      "reading_crop_transform": {
+        "mirror_horizontal": false,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-B03",
+      "kind": "complementaria",
+      "source": "p24_obj222",
+      "bbox": [
+        187.0,
+        6.0,
+        244.0,
+        22.0
+      ],
+      "literal": "267,5",
+      "value_as_read": 267.5,
+      "unit_visible": null,
+      "unit_proposed": "cm",
+      "unit_status": "inferida",
+      "length_m_if_unit_accepted": 2.675,
+      "reading_confidence": "media",
+      "location": "Página 24, diagrama de supertabique, cota horizontal",
+      "t08_ids": [],
+      "use": "no_atribuir_T7",
+      "note": "Lectura probable; unidad no explícita y sin identificación T7. La imagen embebida tiene texto reflejado; se refleja solo el recorte de lectura.",
+      "reading_crop_transform": {
+        "mirror_horizontal": true,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "T09-B04",
+      "kind": "complementaria",
+      "source": "p24_obj222",
+      "bbox": [
+        0.0,
+        0.0,
+        407.0,
+        364.0
+      ],
+      "literal": "Diagrama acotado: otras cotas parciales",
+      "value_as_read": null,
+      "unit_visible": null,
+      "unit_proposed": null,
+      "unit_status": "no_aplica_o_no_legible",
+      "length_m_if_unit_accepted": null,
+      "reading_confidence": "baja",
+      "location": "Página 24, diagrama de instalaciones",
+      "t08_ids": [],
+      "use": "no_atribuir_T7",
+      "note": "Hay cotas verticales y parciales y diámetros de tuberías. No se certifican altura, unidades generales ni vinculación al T7; tampoco corresponde medir la losa o el cielo con esta figura.",
+      "reading_crop_transform": {
+        "mirror_horizontal": true,
+        "rotate_ccw_degrees": 0
+      },
+      "model_geometry_allowed": false
+    }
+  ]
+}

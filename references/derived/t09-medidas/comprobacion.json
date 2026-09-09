@@ -1,0 +1,58 @@
+{
+  "task": "T09",
+  "records": 58,
+  "unique_ids": 58,
+  "kinds": {
+    "cota": 14,
+    "espesor": 8,
+    "codigo": 28,
+    "superficie": 4,
+    "complementaria": 4
+  },
+  "reading_confidence": {
+    "alta": 53,
+    "media": 4,
+    "baja": 1
+  },
+  "pdf_pages_reviewed": 42,
+  "source_pdf_unchanged": true,
+  "t07_references_unchanged": true,
+  "all_locators_in_source_bounds": true,
+  "t08_links_valid": true,
+  "all_records_blocked_for_geometry": true,
+  "local_dimension_units": "cm inferidos, no confirmados por rótulo general",
+  "catalogue_sha256": "1ddc8920c7062b38fd8fa18b4a9d7ce805d00c2f8f7bf1a172c07a49baacde07",
+  "evidence_font": {
+    "filename": "arial.ttf",
+    "sha256": "74d696e666f696e93db685a85c94bfbfcc0796dfcf8a2e2e2e2c908a54e82949"
+  },
+  "evidence_sheets": [
+    {
+      "file": "cotas-y-espesores.png",
+      "records": 22,
+      "size_px": [
+        1368,
+        2138
+      ],
+      "sha256": "c4082caccab008040350725a858d99bf294740e3cd83d6a0054213bbe9dccdef"
+    },
+    {
+      "file": "codigos-tabiques.png",
+      "records": 28,
+      "size_px": [
+        1368,
+        2638
+      ],
+      "sha256": "b97c880a9fa3a915a422ca55e65f77bf8e9fc1c45243ce28e0a59b7aa06afd1e"
+    },
+    {
+      "file": "superficies-y-complementos.png",
+      "records": 8,
+      "size_px": [
+        1368,
+        888
+      ],
+      "sha256": "6065e014899bdf2235c3a5a127bacb6ac9c2663a66987dc5e08640192b4d5764"
+    }
+  ]
+}
