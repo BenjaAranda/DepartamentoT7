@@ -1,0 +1,90 @@
+id	familia	nombre	confianza	vista	x0	y0	x1	y1	criterio
+CL-M01	muros	Paños del borde superior	alta	nativa	0	0	1534	24	Banda continua de cerramiento con cambios de tipo rotulado. Los textos interiores no son geometría.
+CL-M02	muros	Borde izquierdo sobre ventana D3	alta	nativa	0	18	24	131	Paño con espesor representado; termina en el vano CL-V07.
+CL-M03	muros	Borde izquierdo bajo ventana D3	alta	nativa	0	242	24	646	Cerramiento lateral continuo; no confundir con el mueble añadido CL-F11.
+CL-M04	muros	Borde derecho exterior	alta	nativa	1515	139	1536	797	Cerramiento bajo el acceso CL-V01; el tramo del acceso no se rellena como muro.
+CL-M05	muros	Fachada inferior D1	alta	nativa	22	630	480	647	Paños a ambos lados de CL-V08. Esta caja de localización incluye el vano y no debe extruirse.
+CL-M06	muros	Fachada inferior D2	alta	nativa	493	630	817	647	Paños a ambos lados de CL-V09; conservar discontinuidad de ventana.
+CL-M07	muros	Retorno exterior junto al baño	alta	nativa	815	395	835	797	Banda vertical del borde escalonado; separa dormitorio/terraza del baño longitudinal.
+CL-M08	muros	Fachada inferior del baño	alta	nativa	832	778	1039	799	Paños interrumpidos por CL-V10. No cerrar la ventana con una caja completa.
+CL-M09	muros	Fachada inferior de logia y comedor	alta	nativa	1040	777	1536	799	Paños y vanos CL-V11/CL-V12; confirmar configuración de logia en T11.
+CL-M10	muros	Separación D1 y D2	alta	nativa	477	202	498	646	Tabique superior y paño inferior de distinto grafismo. No convertir las camas adyacentes en espesor de muro.
+CL-M11	muros	Separación D2 y baño	alta	nativa	814	150	830	405	Doble trazo vertical continuo hasta el paño inferior. Dejar libre el acceso D2 en su extremo superior.
+CL-M12	muros	Separación escalonada D3 y D1	alta	nativa	14	194	375	280	Paños horizontales y retorno junto al nicho; la caja engloba un quiebre y no representa un rectángulo macizo.
+CL-M13	muros	Respaldo y lateral de nicho D3	media	nativa	247	123	369	207	Trazos dobles de contorno del nicho; su hoja y arco CL-H09 son mobiliario móvil. Revisar remates en T11.
+CL-M14	muros	Cabecera escalonada D2	alta	nativa	476	145	717	211	Tabique con retranqueo y rótulos; termina en el acceso CL-V04.
+CL-M15	muros	Cabecera del baño	alta	nativa	927	146	1021	163	Paño después del acceso CL-V05. El equipo cuadrado inferior CL-E01 no prolonga el muro.
+CL-M16	muros	Separación baño y cocina con retranqueo	alta	nativa	995	151	1026	785	Tabique longitudinal que cambia de posición junto a la logia; no hay un paso lateral baño-logia dibujado.
+CL-M17	muros	Paños sobre y bajo nicho de cocina	alta	nativa	1015	145	1101	261	Dos paños horizontales rotulados; el rectángulo interior CL-E06 es equipamiento, no un bloque de pared.
+CL-M18	muros	Separación cocina y estar con continuación a logia	alta	nativa	1190	396	1219	789	Paño grueso corto y continuidad delgada; el paso superior CL-V13 está libre. Despiece de tramos en T11.
+CL-M19	muros	Retornos de cocina y cabecera de logia	alta	nativa	997	529	1102	616	Paños rotulados junto al lavaplatos y lavadero; el acceso CL-V06 interrumpe la cabecera hacia la derecha.
+CL-M20	muros	Bordes de volumen técnico entre baño y logia	media	nativa	996	599	1045	790	Contornos dobles alrededor de un elemento estrecho. Mantener la separación; confirmar función y altura en T12/T14. La X interior no es muro.
+CL-V01	vanos	Acceso principal superior derecho	alta	nativa	1396	17	1536	147	Área del acceso reconocible por hoja/arco y flecha de la lámina. La caja incluye el barrido, no es la medida del hueco.
+CL-V02	vanos	Acceso dormitorio 3	alta	nativa	244	15	370	138	Paso en la cabecera del nicho de D3; distinguir del pequeño arco de mueble CL-H09. Jambas y bisagra en T11.
+CL-V03	vanos	Acceso dormitorio 1	alta	nativa	367	191	488	313	Interrupción entre paños del corredor; hoja y barrido CL-H03.
+CL-V04	vanos	Acceso dormitorio 2	alta	nativa	707	141	828	268	Paso entre cabecera escalonada y tabique del baño; hoja CL-H04.
+CL-V05	vanos	Acceso baño	alta	nativa	821	39	937	163	Acceso por la cabecera del recinto longitudinal; hoja CL-H05.
+CL-V06	vanos	Acceso logia desde cocina	alta	nativa	1090	600	1209	719	Interrupción de cabecera de logia con hoja CL-H06. No es una comunicación con el baño.
+CL-V07	vanos	Ventana lateral dormitorio 3	alta	nativa	0	126	25	251	Líneas paralelas finas y carpintería en interrupción del cerramiento; no puerta de circulación.
+CL-V08	vanos	Ventana inferior dormitorio 1	alta	nativa	316	627	443	650	Carpintería entre paños de fachada; no inventar salida a terraza.
+CL-V09	vanos	Ventana inferior dormitorio 2	alta	nativa	594	627	719	651	Carpintería entre paños; hoja exacta y apertura pendiente de inventario T11.
+CL-V10	vanos	Ventana al fondo del baño	alta	nativa	878	775	952	802	Carpintería frente a la ducha, situada entre paños cortos de fachada.
+CL-V11	vanos	Interrupción de fachada en logia	media	nativa	1095	775	1181	803	Hay cambio a trazos finos paralelos. Confirmar si es ventana, abertura técnica u otra carpintería en T11; no crear una puerta por inferencia.
+CL-V12	vanos	Ventana inferior comedor	alta	nativa	1250	775	1476	803	Carpintería larga en fachada, con subdivisiones; no convertir cada montante en un tabique de habitación.
+CL-V13	vanos	Paso abierto entre cocina y estar	alta	nativa	1177	25	1235	397	Continuidad espacial por encima del paño corto. No existe hoja ni marco que justifique añadir una puerta.
+CL-H01	hojas	Hoja y arco del acceso principal	alta	nativa	1396	17	1536	147	Trazo delgado de hoja y cuarto de círculo de barrido; nunca extruir el arco.
+CL-H02	hojas	Hoja y arco de dormitorio 3	alta	nativa	244	15	370	138	Símbolo de apertura de puerta de recinto; ancho, bisagra y sentido se registrarán en T11.
+CL-H03	hojas	Hoja y arco de dormitorio 1	alta	nativa	367	191	488	313	Hoja móvil del acceso; el arco no es esquina curva ni cerramiento.
+CL-H04	hojas	Hoja y arco de dormitorio 2	alta	nativa	707	141	828	268	Hoja móvil; su barrido no recorta el recinto ni forma otra pared.
+CL-H05	hojas	Hoja y arco del baño	alta	nativa	821	39	937	163	Apertura por cabecera; no confundir la línea discontinua del vano con un tabique cerrado.
+CL-H06	hojas	Hoja y arco de logia	alta	nativa	1090	600	1209	719	Hoja móvil de acceso desde cocina; conservar libre su barrido al amueblar.
+CL-H07	hojas	Hojas de armario del dormitorio 1	alta	nativa	230	265	355	333	Dos trazos de apertura y arcos finos ante el nicho. No son puertas de otra habitación.
+CL-H08	hojas	Hojas de armario del dormitorio 2	alta	nativa	551	203	642	332	Hojas que abren hacia el dormitorio con arcos discontinuos; no añadir pared en su proyección abierta.
+CL-H09	hojas	Hoja del nicho del dormitorio 3	media	nativa	190	137	256	207	Arco pequeño asociado al nicho CL-F08. Confirmar carpintería exacta; el usuario exige dos hojas en el armario final.
+CL-F01	mobiliario	Cama matrimonial de dormitorio 1	alta	nativa	25	380	268	564	Huella de cama y almohadas contra el lado izquierdo. Los rectángulos de almohadas no son veladores ni muros.
+CL-F02	mobiliario	Mueble auxiliar junto a cama D1	media	nativa	24	308	91	384	Rectángulo de mobiliario contiguo a la cama; función y dimensiones finales por resolver al amueblar.
+CL-F03	mobiliario	Cama izquierda de dormitorio 2	alta	nativa	498	395	605	633	La fuente dibuja una cama; sus diagonales son simbología de mobiliario.
+CL-F04	mobiliario	Cama derecha de dormitorio 2	alta	nativa	709	395	817	633	Segunda cama de la referencia. El modelo tendrá una sola por instrucción del usuario; la extracción no se altera.
+CL-F05	mobiliario	Cama de dormitorio 3	alta	nativa	24	28	132	267	Cama individual con almohada; sus bordes interiores no forman una habitación adicional.
+CL-F06	mobiliario	Interior de armario o nicho D1	alta	nativa	233	204	355	275	Divisiones del mueble dentro del contorno construido; no elevar cada línea a tabique.
+CL-F07	mobiliario	Interior de armario o nicho D2	alta	nativa	489	204	559	329	Celdas del mueble adosado al tabique; hojas tratadas en CL-H08.
+CL-F08	mobiliario	Interior del nicho D3	media	nativa	252	139	357	198	Área de mueble tras hoja pequeña; identificación fina y configuración de armario pendientes.
+CL-F09	mobiliario	Sofá del estar	alta	nativa	1403	236	1517	401	Brazos, respaldo y cojines dibujados con líneas finas; no forman cerramientos.
+CL-F10	mobiliario	Mesa y sillas del comedor	alta	nativa	1239	633	1456	784	Huella de muebles y sillas. El dibujo de silla de ruedas superior pertenece a espacio de aproximación, no a un mueble fijo obligatorio.
+CL-F11	mobiliario	Panel añadido en dormitorio 1	media	nativa	35	289	97	460	Dos instancias de Image190 superpuestas por la lámina. Compatible con añadido de armario/panel; no prueba de un muro ni de su espesor. Resolver detalle en T11/T37.
+CL-E01	equipamiento	Elemento rectangular de cabecera del baño	media	nativa	939	155	1016	249	Símbolo de equipamiento junto al tabique, no recinto cerrado. Función específica pendiente de confirmar en T12.
+CL-E02	equipamiento	Símbolo sanitario curvo en baño	media	nativa	958	248	1017	318	Contorno de equipo sanitario; su curva no es muro. Identificación definitiva junto a CL-E01 en T12.
+CL-E03	equipamiento	Inodoro	alta	nativa	924	441	1019	514	Taza y estanque adosados al costado del baño; mantener espacio lateral de transferencia.
+CL-E04	equipamiento	Barras de apoyo junto al inodoro	alta	nativa	916	510	1019	530	Líneas delgadas con extremos redondeados, asociadas al sanitario. No son muros transversales.
+CL-E05	equipamiento	Ducha al fondo del baño	alta	nativa	832	670	999	786	Huella de ducha y líneas interiores de equipamiento/piso. No cerrar el frente con un tabique supuesto.
+CL-E06	equipamiento	Equipo o mueble en nicho de cocina	media	nativa	1025	159	1098	250	Rectángulo alojado entre paños; compatible con equipo de cocina. Confirmar uso y dimensiones en T39.
+CL-E07	equipamiento	Cocina con cuatro quemadores	alta	nativa	1024	268	1099	345	Círculos y cruces de quemadores; no columnas ni divisiones estructurales.
+CL-E08	equipamiento	Lavaplatos de cocina	alta	nativa	1021	438	1081	537	Cubeta y grifería dentro del mueble; sus bordes no prolongan el tabique hacia el estar.
+CL-E09	equipamiento	Frentes y proyecciones de muebles de cocina	alta	nativa	1022	157	1182	602	Líneas continuas y discontinuas del equipamiento; no cerrar la cocina por su contorno punteado.
+CL-E10	equipamiento	Lavadero de logia	alta	nativa	1040	613	1101	678	Cubeta y grifería al lado del volumen técnico; se mantienen dentro de la logia.
+CL-E11	equipamiento	Equipo doméstico dibujado en logia	media	nativa	1040	675	1107	784	Símbolo con curvas junto al lavadero; su identificación fina se confirma en T42. El programa final exige lavadora.
+CL-E12	equipamiento	Símbolo interior del volumen técnico	media	nativa	1004	611	1035	784	X estrecha entre baño y logia, coherente con un espacio técnico. Las diagonales son simbólicas; bordes en CL-M20.
+CL-C01	cotas	Cota de giro en dormitorio 1	alta	nativa	290	399	412	533	Línea diagonal y rótulo Ø150 dentro del círculo. Registrar valor y unidad en T09; no extruir la cota.
+CL-C02	cotas	Cota de giro junto a dormitorio 3	alta	nativa	386	53	506	179	Diámetro rotulado y línea diagonal; no diagonales estructurales.
+CL-C03	cotas	Cota de giro del baño	alta	nativa	856	303	992	444	Rótulo y línea sobre círculo/achurado; no límite físico.
+CL-C04	cotas	Cota de giro del estar	alta	nativa	1259	278	1393	407	Diámetro de zona de maniobra; la cifra no fija automáticamente la escala del raster.
+CL-C05	cotas	Cadenas de cotas del baño	alta	nativa	836	228	1018	525	Líneas auxiliares, números y extremos de medición. Su inventario preciso pertenece a T09.
+CL-C06	cotas	Cadenas de cotas de logia	alta	nativa	1091	601	1205	719	Números y líneas de dimensión se superponen al acceso y su espacio de uso; no son tabiques.
+CL-C07	cotas	Rótulos de tipos y espesores de muro	alta	nativa	476	392	501	630	Ejemplo de rótulo vertical repetido en los paños. Separar texto técnico de las dos caras dibujadas; transcribir en T09.
+CL-T01	tramas	Achurado central del baño	alta	nativa	868	321	1016	421	Relleno diagonal sobre área de uso/maniobra. El círculo y la isométrica permiten descartar un tabique transversal; función precisa en T12.
+CL-T02	tramas	Achurado previo a la ducha	alta	nativa	842	561	999	674	Trama superficial y cotas, no muro ni escalón demostrado. No dividir el baño longitudinal en dos recintos.
+CL-T03	tramas	Retícula tenue de pavimento	alta	nativa	24	277	816	633	Ejemplo de cuadrícula que se repite en toda la vivienda. No representa una retícula de tabiques.
+CL-T04	tramas	Diagonales sobre camas	alta	nativa	498	395	817	633	Convención gráfica dentro del mobiliario, no vigas ni paredes diagonales.
+CL-T05	tramas	Líneas convergentes de ducha	alta	nativa	846	683	989	775	Símbolo interior del área de ducha; no convertirlo en mamparas ni crear desniveles sin evidencia.
+CL-L01	libres	Circulación superior	alta	nativa	370	24	1394	142	Continuidad entre acceso y puertas interiores. La caja localiza la franja, no es un polígono de superficie útil.
+CL-L02	libres	Círculo de maniobra junto a D3	alta	nativa	362	17	546	204	Línea circular discontinua de espacio libre; no cilindro, muro curvo ni barrera.
+CL-L03	libres	Círculo de maniobra D1	alta	nativa	262	359	453	558	Reserva de uso y circulación junto a cama; no sólido de colisión.
+CL-L04	libres	Círculo de maniobra del baño	alta	nativa	828	274	1017	463	Reserva de espacio que se superpone al achurado; no tabique ni objeto fijo.
+CL-L05	libres	Círculo de maniobra del estar	alta	nativa	1235	253	1411	435	Área libre junto al sofá, no mobiliario circular.
+CL-L06	libres	Aproximación y uso en logia	alta	nativa	1101	605	1195	782	Área entre equipos y cerramiento con barrido de puerta. No extruir su rectángulo de uso.
+CL-L07	libres	Área rotulada como terraza	alta	nativa	24	649	812	808	Espacio exterior de referencia; la caja no define su contorno real ni demuestra profundidad. Mantener superficie provisional separada.
+CL-L08	libres	Aproximación al comedor	alta	nativa	1240	499	1454	637	Espacio de aproximación representado junto a la mesa. No ocuparlo automáticamente con otra silla o decoración.
+CL-A01	anotaciones	Nombres de recintos	alta	compuesta	648	395	879	438	Ejemplo de texto superpuesto DORMITORIO 2; la misma regla aplica a todos los rótulos de habitación.
+CL-A02	anotaciones	Flecha y texto de acceso	alta	compuesta	1568	39	1849	150	Anotación roja/azul añadida por la lámina; orienta la entrada, no forma geometría.
+CL-A03	anotaciones	Figura de usuario en comedor	alta	nativa	1280	516	1389	643	Símbolo humano y de aproximación accesible; no figura obligatoria ni obstáculo permanente del modelo.
+CL-A04	anotaciones	Rótulo de superficie dentro del plano	alta	nativa	1295	54	1402	102	Dato documental de 76,80 m²; contrasta con 76,66 m² en el encabezado. No altera líneas ni resuelve el área geométrica.

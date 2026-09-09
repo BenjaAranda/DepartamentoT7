@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>T08 · Clasificación del plano T7</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font:16px/1.5 system-ui,sans-serif;background:#f4f7fb;color:#172535}header,main{max-width:1600px;margin:auto;padding:24px}header{padding-bottom:8px}h1{font-size:26px;margin:0 0 6px}p{margin:0 0 14px}label{display:flex;flex-direction:column;gap:5px}select,button{font:inherit;color:inherit}select{padding:9px;border:1px solid #8d9eaf;border-radius:6px;background:white}button{cursor:pointer}.controls{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:18px}.controls label:first-child{min-width:270px}.workspace{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:22px;align-items:start}.map{background:white;border:1px solid #bac6d2;overflow:auto}svg{display:block;width:100%;height:auto;min-width:620px}.locator{fill:#006aa61a;stroke:#006aa6;stroke-width:2;vector-effect:non-scaling-stroke;cursor:pointer}.locator.selected{fill:#e7780033;stroke:#ac4b00;stroke-width:3}.detail{margin-top:14px;padding:16px;background:white;border-left:4px solid #ac4b00}.detail h2{font-size:19px;margin:0 0 5px}.meta{font-size:14px;color:#43576c}.records{list-style:none;padding:0;margin:0;max-height:640px;overflow:auto;border-top:1px solid #bdcad8}.records button{width:100%;text-align:left;border:0;border-bottom:1px solid #d4dde5;background:transparent;padding:11px 10px}.records button[aria-pressed=true]{background:#dfeefa;color:#063d6b}.records strong{display:block;font-size:14px}.rule{min-height:48px}.notice{color:#42566b;font-size:14px}a{color:#075a95}@media(max-width:960px){.workspace{grid-template-columns:1fr}.records{max-height:260px}.controls{gap:12px}header,main{padding:16px}.rule{min-height:0}}
+</style>
+</head>
+<body>
+<header><h1>T08 · Clasificación del plano T7</h1><p>Rectángulos para localizar trazos. No representan contornos de construcción ni medidas en metros.</p></header>
+<main>
+<div class="controls">
+<label>Familia del trazo<select id="family"></select></label>
+<label>Referencia visible<select id="base"><option value="composite">Lámina con anotaciones</option><option value="native">Imagen nativa del plano</option></select></label>
+</div>
+<p id="rule" class="rule"></p>
+<div class="workspace">
+<section aria-label="Plano y elemento seleccionado">
+<div class="map"><svg id="map" viewBox="0 0 1851 933" role="img" aria-labelledby="map-title"><title id="map-title">Plano con localizadores de la familia elegida. Los mismos elementos se pueden seleccionar en la lista.</title><rect width="1851" height="933" fill="white"/><image id="background"/><g id="locators"></g></svg></div>
+<div class="detail" aria-live="polite"><h2 id="detail-title"></h2><p id="detail-meta" class="meta"></p><p id="detail-criterion"></p></div>
+<p class="notice">La confianza se refiere a la clasificación gráfica. Caras, espesores, bisagras, alturas y escala se resolverán en las tareas posteriores.</p>
+</section>
+<aside aria-label="Elementos localizados"><p id="count"></p><ul id="records" class="records"></ul></aside>
+</div>
+</main>
+<script id="atlas-data" type="application/json">__T08_DATA__</script>
+<script>
+const data=JSON.parse(document.getElementById('atlas-data').textContent);
+const family=document.getElementById('family');
+const base=document.getElementById('base');
+const background=document.getElementById('background');
+const locators=document.getElementById('locators');
+const records=document.getElementById('records');
+const ns='http://www.w3.org/2000/svg';
+let selected=null;
+for(const item of data.families){const option=document.createElement('option');option.value=item.id;option.textContent=item.label;family.append(option);}
+function changeBase(){
+ const native=base.value==='native', t=data.transform;
+ background.setAttribute('href',native?data.native:data.composite);
+ background.setAttribute('x',native?t.offset_x:0);background.setAttribute('y',native?t.offset_y:0);
+ background.setAttribute('width',native?1536*t.scale_x:1851);background.setAttribute('height',native?813*t.scale_y:933);
+ background.setAttribute('preserveAspectRatio','none');
+}
+function select(item){
+ selected=item.id;
+ for(const element of locators.children)element.classList.toggle('selected',element.dataset.id===selected);
+ for(const element of records.querySelectorAll('button'))element.setAttribute('aria-pressed',String(element.dataset.id===selected));
+ document.getElementById('detail-title').textContent=item.id+' · '+item.label;
+ document.getElementById('detail-meta').textContent='Confianza '+item.confidence+' · Localización aproximada';
+ document.getElementById('detail-criterion').textContent=item.criterion;
+}
+function draw(){
+ locators.replaceChildren();records.replaceChildren();
+ const list=data.items.filter(item=>item.family===family.value);
+ document.getElementById('rule').textContent=data.families.find(item=>item.id===family.value).rule;
+ document.getElementById('count').textContent=list.length+' grupos de trazos';
+ for(const item of list){
+  const t=data.transform,b=item.bbox_px,native=item.frame==='nativa';
+  const x=native?b[0]*t.scale_x+t.offset_x:b[0],y=native?b[1]*t.scale_y+t.offset_y:b[1];
+  const width=(b[2]-b[0])*(native?t.scale_x:1),height=(b[3]-b[1])*(native?t.scale_y:1);
+  const rect=document.createElementNS(ns,'rect');rect.setAttribute('x',x);rect.setAttribute('y',y);rect.setAttribute('width',width);rect.setAttribute('height',height);rect.setAttribute('class','locator');rect.dataset.id=item.id;
+  const title=document.createElementNS(ns,'title');title.textContent=item.id+' · '+item.label;rect.append(title);rect.addEventListener('click',()=>select(item));locators.append(rect);
+  const row=document.createElement('li'),button=document.createElement('button'),id=document.createElement('strong');button.type='button';button.dataset.id=item.id;button.setAttribute('aria-pressed','false');id.textContent=item.id;button.append(id,document.createTextNode(item.label));button.addEventListener('click',()=>select(item));row.append(button);records.append(row);
+ }
+ select(list.find(item=>item.id===selected)??list[0]);
+}
+family.addEventListener('change',draw);base.addEventListener('change',changeBase);changeBase();draw();
+</script>
+</body>
+</html>

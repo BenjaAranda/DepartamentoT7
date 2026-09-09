@@ -2,6 +2,8 @@
 * text=auto
 *.md text eol=lf
 *.txt text eol=lf
+*.tsv text eol=lf
+*.html text eol=lf
 *.json text eol=lf
 *.ts text eol=lf
 *.tsx text eol=lf

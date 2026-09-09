@@ -1,0 +1,36 @@
+{
+  "task": "T08",
+  "source_pdf_unchanged": true,
+  "source_images_unchanged": true,
+  "records": 89,
+  "unique_ids": 89,
+  "families": {
+    "muros": 20,
+    "vanos": 13,
+    "hojas": 9,
+    "mobiliario": 11,
+    "equipamiento": 12,
+    "cotas": 7,
+    "tramas": 5,
+    "libres": 8,
+    "anotaciones": 4
+  },
+  "locators_within_source_frames": true,
+  "metric_geometry_export_enabled": false,
+  "medium_confidence_ids": [
+    "CL-M13",
+    "CL-M20",
+    "CL-V11",
+    "CL-H09",
+    "CL-F02",
+    "CL-F08",
+    "CL-F11",
+    "CL-E01",
+    "CL-E02",
+    "CL-E06",
+    "CL-E11",
+    "CL-E12"
+  ],
+  "atlas_sha256": "168467e1b34e00f079408c26577aca8c9b869e52315fc48ddd1ba6e471ec12a9",
+  "catalogue_sha256": "3c305aee45786f10eec2c94b62ac7e236d78b8da375030f53a74458a7420221c"
+}

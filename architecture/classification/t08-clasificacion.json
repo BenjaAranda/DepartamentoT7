@@ -1,0 +1,1413 @@
+{
+  "task": "T08",
+  "revision": 1,
+  "authored_source": "architecture/classification/t08-trazos.tsv",
+  "authored_source_sha256": "3aae05c1001cf3faffcae438f7779d76847e57adb673b813dd5c14139a55dab4",
+  "source_pdf_sha256": "ad8e0871ed6afb7117e2dafa80bc28ad90b3c845709dc268ba01fcd12259aeec",
+  "source_image_sha256": {
+    "planta-nativa.png": "d8311d68abad9da4632d86f7da767c163ed83de0211bb9a811fa1aff8699869e",
+    "isometrica-nativa.jpg": "215dbffef5fc23badf880675e18bfc69274f778d8c7b11541ace1e6756aefe03",
+    "pagina-20-contexto.png": "207c6f0fea2a0c3721144ca961b37a0305d07c27512b6c055fd258ac19b05db2",
+    "planta-compuesta.png": "62486b5b11578cb151d9015d866b2bfe326918be9f6e36bdb9a52e06af998bd3"
+  },
+  "coordinate_policy": {
+    "unit": "px",
+    "origin": "upper_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "purpose": "approximate_locators_not_contours",
+    "metric_scale": null,
+    "bounds_are_wall_faces": false,
+    "model_geometry_allowed": false
+  },
+  "native_to_composite": {
+    "offset_x": 8.919000000000002,
+    "offset_y": 12.239908446000072,
+    "scale_x": 1.1174609375,
+    "scale_y": 1.117269485306273
+  },
+  "families": [
+    {
+      "id": "muros",
+      "label": "Muros y tabiques",
+      "rule": "Candidatos a cerramiento: registrar caras, quiebres y huecos en T11 antes de extruir."
+    },
+    {
+      "id": "vanos",
+      "label": "Vanos y pasos",
+      "rule": "Conservar las discontinuidades; confirmar tipo de carpintería y límites en T11."
+    },
+    {
+      "id": "hojas",
+      "label": "Hojas y barridos",
+      "rule": "La hoja es móvil; el arco solo representa su apertura y nunca forma una pared."
+    },
+    {
+      "id": "mobiliario",
+      "label": "Mobiliario",
+      "rule": "Modelar como muebles independientes según el programa del usuario, no como arquitectura."
+    },
+    {
+      "id": "equipamiento",
+      "label": "Equipamiento",
+      "rule": "Representar equipos y apoyos por separado; confirmar los símbolos provisionales."
+    },
+    {
+      "id": "cotas",
+      "label": "Cotas y rótulos técnicos",
+      "rule": "Son mediciones y notas del dibujo; inventariar en T09, sin convertirlas en sólidos."
+    },
+    {
+      "id": "tramas",
+      "label": "Tramas y líneas simbólicas",
+      "rule": "No asignar altura ni volumen a achurados, retícula o diagonales por su grafismo."
+    },
+    {
+      "id": "libres",
+      "label": "Espacios libres",
+      "rule": "Conservar maniobra, transferencia y circulación; no añadir colliders a las reservas gráficas."
+    },
+    {
+      "id": "anotaciones",
+      "label": "Anotaciones de la lámina",
+      "rule": "Texto, flechas y figuras humanas son evidencia, no órdenes ni geometría del modelo."
+    }
+  ],
+  "items": [
+    {
+      "id": "CL-M01",
+      "family": "muros",
+      "label": "Paños del borde superior",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        0,
+        0,
+        1534,
+        24
+      ],
+      "criterion": "Banda continua de cerramiento con cambios de tipo rotulado. Los textos interiores no son geometría.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M02",
+      "family": "muros",
+      "label": "Borde izquierdo sobre ventana D3",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        0,
+        18,
+        24,
+        131
+      ],
+      "criterion": "Paño con espesor representado; termina en el vano CL-V07.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M03",
+      "family": "muros",
+      "label": "Borde izquierdo bajo ventana D3",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        0,
+        242,
+        24,
+        646
+      ],
+      "criterion": "Cerramiento lateral continuo; no confundir con el mueble añadido CL-F11.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M04",
+      "family": "muros",
+      "label": "Borde derecho exterior",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1515,
+        139,
+        1536,
+        797
+      ],
+      "criterion": "Cerramiento bajo el acceso CL-V01; el tramo del acceso no se rellena como muro.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M05",
+      "family": "muros",
+      "label": "Fachada inferior D1",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        22,
+        630,
+        480,
+        647
+      ],
+      "criterion": "Paños a ambos lados de CL-V08. Esta caja de localización incluye el vano y no debe extruirse.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M06",
+      "family": "muros",
+      "label": "Fachada inferior D2",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        493,
+        630,
+        817,
+        647
+      ],
+      "criterion": "Paños a ambos lados de CL-V09; conservar discontinuidad de ventana.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M07",
+      "family": "muros",
+      "label": "Retorno exterior junto al baño",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        815,
+        395,
+        835,
+        797
+      ],
+      "criterion": "Banda vertical del borde escalonado; separa dormitorio/terraza del baño longitudinal.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M08",
+      "family": "muros",
+      "label": "Fachada inferior del baño",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        832,
+        778,
+        1039,
+        799
+      ],
+      "criterion": "Paños interrumpidos por CL-V10. No cerrar la ventana con una caja completa.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M09",
+      "family": "muros",
+      "label": "Fachada inferior de logia y comedor",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1040,
+        777,
+        1536,
+        799
+      ],
+      "criterion": "Paños y vanos CL-V11/CL-V12; confirmar configuración de logia en T11.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M10",
+      "family": "muros",
+      "label": "Separación D1 y D2",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        477,
+        202,
+        498,
+        646
+      ],
+      "criterion": "Tabique superior y paño inferior de distinto grafismo. No convertir las camas adyacentes en espesor de muro.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M11",
+      "family": "muros",
+      "label": "Separación D2 y baño",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        814,
+        150,
+        830,
+        405
+      ],
+      "criterion": "Doble trazo vertical continuo hasta el paño inferior. Dejar libre el acceso D2 en su extremo superior.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M12",
+      "family": "muros",
+      "label": "Separación escalonada D3 y D1",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        14,
+        194,
+        375,
+        280
+      ],
+      "criterion": "Paños horizontales y retorno junto al nicho; la caja engloba un quiebre y no representa un rectángulo macizo.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M13",
+      "family": "muros",
+      "label": "Respaldo y lateral de nicho D3",
+      "confidence": "media",
+      "frame": "nativa",
+      "bbox_px": [
+        247,
+        123,
+        369,
+        207
+      ],
+      "criterion": "Trazos dobles de contorno del nicho; su hoja y arco CL-H09 son mobiliario móvil. Revisar remates en T11.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M14",
+      "family": "muros",
+      "label": "Cabecera escalonada D2",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        476,
+        145,
+        717,
+        211
+      ],
+      "criterion": "Tabique con retranqueo y rótulos; termina en el acceso CL-V04.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M15",
+      "family": "muros",
+      "label": "Cabecera del baño",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        927,
+        146,
+        1021,
+        163
+      ],
+      "criterion": "Paño después del acceso CL-V05. El equipo cuadrado inferior CL-E01 no prolonga el muro.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M16",
+      "family": "muros",
+      "label": "Separación baño y cocina con retranqueo",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        995,
+        151,
+        1026,
+        785
+      ],
+      "criterion": "Tabique longitudinal que cambia de posición junto a la logia; no hay un paso lateral baño-logia dibujado.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M17",
+      "family": "muros",
+      "label": "Paños sobre y bajo nicho de cocina",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1015,
+        145,
+        1101,
+        261
+      ],
+      "criterion": "Dos paños horizontales rotulados; el rectángulo interior CL-E06 es equipamiento, no un bloque de pared.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M18",
+      "family": "muros",
+      "label": "Separación cocina y estar con continuación a logia",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1190,
+        396,
+        1219,
+        789
+      ],
+      "criterion": "Paño grueso corto y continuidad delgada; el paso superior CL-V13 está libre. Despiece de tramos en T11.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M19",
+      "family": "muros",
+      "label": "Retornos de cocina y cabecera de logia",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        997,
+        529,
+        1102,
+        616
+      ],
+      "criterion": "Paños rotulados junto al lavaplatos y lavadero; el acceso CL-V06 interrumpe la cabecera hacia la derecha.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-M20",
+      "family": "muros",
+      "label": "Bordes de volumen técnico entre baño y logia",
+      "confidence": "media",
+      "frame": "nativa",
+      "bbox_px": [
+        996,
+        599,
+        1045,
+        790
+      ],
+      "criterion": "Contornos dobles alrededor de un elemento estrecho. Mantener la separación; confirmar función y altura en T12/T14. La X interior no es muro.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-V01",
+      "family": "vanos",
+      "label": "Acceso principal superior derecho",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1396,
+        17,
+        1536,
+        147
+      ],
+      "criterion": "Área del acceso reconocible por hoja/arco y flecha de la lámina. La caja incluye el barrido, no es la medida del hueco.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-V02",
+      "family": "vanos",
+      "label": "Acceso dormitorio 3",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        244,
+        15,
+        370,
+        138
+      ],
+      "criterion": "Paso en la cabecera del nicho de D3; distinguir del pequeño arco de mueble CL-H09. Jambas y bisagra en T11.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-V03",
+      "family": "vanos",
+      "label": "Acceso dormitorio 1",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        367,
+        191,
+        488,
+        313
+      ],
+      "criterion": "Interrupción entre paños del corredor; hoja y barrido CL-H03.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-V04",
+      "family": "vanos",
+      "label": "Acceso dormitorio 2",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        707,
+        141,
+        828,
+        268
+      ],
+      "criterion": "Paso entre cabecera escalonada y tabique del baño; hoja CL-H04.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-V05",
+      "family": "vanos",
+      "label": "Acceso baño",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        821,
+        39,
+        937,
+        163
+      ],
+      "criterion": "Acceso por la cabecera del recinto longitudinal; hoja CL-H05.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-V06",
+      "family": "vanos",
+      "label": "Acceso logia desde cocina",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1090,
+        600,
+        1209,
+        719
+      ],
+      "criterion": "Interrupción de cabecera de logia con hoja CL-H06. No es una comunicación con el baño.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-V07",
+      "family": "vanos",
+      "label": "Ventana lateral dormitorio 3",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        0,
+        126,
+        25,
+        251
+      ],
+      "criterion": "Líneas paralelas finas y carpintería en interrupción del cerramiento; no puerta de circulación.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-V08",
+      "family": "vanos",
+      "label": "Ventana inferior dormitorio 1",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        316,
+        627,
+        443,
+        650
+      ],
+      "criterion": "Carpintería entre paños de fachada; no inventar salida a terraza.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-V09",
+      "family": "vanos",
+      "label": "Ventana inferior dormitorio 2",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        594,
+        627,
+        719,
+        651
+      ],
+      "criterion": "Carpintería entre paños; hoja exacta y apertura pendiente de inventario T11.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-V10",
+      "family": "vanos",
+      "label": "Ventana al fondo del baño",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        878,
+        775,
+        952,
+        802
+      ],
+      "criterion": "Carpintería frente a la ducha, situada entre paños cortos de fachada.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-V11",
+      "family": "vanos",
+      "label": "Interrupción de fachada en logia",
+      "confidence": "media",
+      "frame": "nativa",
+      "bbox_px": [
+        1095,
+        775,
+        1181,
+        803
+      ],
+      "criterion": "Hay cambio a trazos finos paralelos. Confirmar si es ventana, abertura técnica u otra carpintería en T11; no crear una puerta por inferencia.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-V12",
+      "family": "vanos",
+      "label": "Ventana inferior comedor",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1250,
+        775,
+        1476,
+        803
+      ],
+      "criterion": "Carpintería larga en fachada, con subdivisiones; no convertir cada montante en un tabique de habitación.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-V13",
+      "family": "vanos",
+      "label": "Paso abierto entre cocina y estar",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1177,
+        25,
+        1235,
+        397
+      ],
+      "criterion": "Continuidad espacial por encima del paño corto. No existe hoja ni marco que justifique añadir una puerta.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-H01",
+      "family": "hojas",
+      "label": "Hoja y arco del acceso principal",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1396,
+        17,
+        1536,
+        147
+      ],
+      "criterion": "Trazo delgado de hoja y cuarto de círculo de barrido; nunca extruir el arco.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-H02",
+      "family": "hojas",
+      "label": "Hoja y arco de dormitorio 3",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        244,
+        15,
+        370,
+        138
+      ],
+      "criterion": "Símbolo de apertura de puerta de recinto; ancho, bisagra y sentido se registrarán en T11.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-H03",
+      "family": "hojas",
+      "label": "Hoja y arco de dormitorio 1",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        367,
+        191,
+        488,
+        313
+      ],
+      "criterion": "Hoja móvil del acceso; el arco no es esquina curva ni cerramiento.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-H04",
+      "family": "hojas",
+      "label": "Hoja y arco de dormitorio 2",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        707,
+        141,
+        828,
+        268
+      ],
+      "criterion": "Hoja móvil; su barrido no recorta el recinto ni forma otra pared.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-H05",
+      "family": "hojas",
+      "label": "Hoja y arco del baño",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        821,
+        39,
+        937,
+        163
+      ],
+      "criterion": "Apertura por cabecera; no confundir la línea discontinua del vano con un tabique cerrado.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-H06",
+      "family": "hojas",
+      "label": "Hoja y arco de logia",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1090,
+        600,
+        1209,
+        719
+      ],
+      "criterion": "Hoja móvil de acceso desde cocina; conservar libre su barrido al amueblar.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-H07",
+      "family": "hojas",
+      "label": "Hojas de armario del dormitorio 1",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        230,
+        265,
+        355,
+        333
+      ],
+      "criterion": "Dos trazos de apertura y arcos finos ante el nicho. No son puertas de otra habitación.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-H08",
+      "family": "hojas",
+      "label": "Hojas de armario del dormitorio 2",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        551,
+        203,
+        642,
+        332
+      ],
+      "criterion": "Hojas que abren hacia el dormitorio con arcos discontinuos; no añadir pared en su proyección abierta.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-H09",
+      "family": "hojas",
+      "label": "Hoja del nicho del dormitorio 3",
+      "confidence": "media",
+      "frame": "nativa",
+      "bbox_px": [
+        190,
+        137,
+        256,
+        207
+      ],
+      "criterion": "Arco pequeño asociado al nicho CL-F08. Confirmar carpintería exacta; el usuario exige dos hojas en el armario final.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-F01",
+      "family": "mobiliario",
+      "label": "Cama matrimonial de dormitorio 1",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        25,
+        380,
+        268,
+        564
+      ],
+      "criterion": "Huella de cama y almohadas contra el lado izquierdo. Los rectángulos de almohadas no son veladores ni muros.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-F02",
+      "family": "mobiliario",
+      "label": "Mueble auxiliar junto a cama D1",
+      "confidence": "media",
+      "frame": "nativa",
+      "bbox_px": [
+        24,
+        308,
+        91,
+        384
+      ],
+      "criterion": "Rectángulo de mobiliario contiguo a la cama; función y dimensiones finales por resolver al amueblar.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-F03",
+      "family": "mobiliario",
+      "label": "Cama izquierda de dormitorio 2",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        498,
+        395,
+        605,
+        633
+      ],
+      "criterion": "La fuente dibuja una cama; sus diagonales son simbología de mobiliario.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-F04",
+      "family": "mobiliario",
+      "label": "Cama derecha de dormitorio 2",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        709,
+        395,
+        817,
+        633
+      ],
+      "criterion": "Segunda cama de la referencia. El modelo tendrá una sola por instrucción del usuario; la extracción no se altera.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-F05",
+      "family": "mobiliario",
+      "label": "Cama de dormitorio 3",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        24,
+        28,
+        132,
+        267
+      ],
+      "criterion": "Cama individual con almohada; sus bordes interiores no forman una habitación adicional.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-F06",
+      "family": "mobiliario",
+      "label": "Interior de armario o nicho D1",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        233,
+        204,
+        355,
+        275
+      ],
+      "criterion": "Divisiones del mueble dentro del contorno construido; no elevar cada línea a tabique.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-F07",
+      "family": "mobiliario",
+      "label": "Interior de armario o nicho D2",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        489,
+        204,
+        559,
+        329
+      ],
+      "criterion": "Celdas del mueble adosado al tabique; hojas tratadas en CL-H08.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-F08",
+      "family": "mobiliario",
+      "label": "Interior del nicho D3",
+      "confidence": "media",
+      "frame": "nativa",
+      "bbox_px": [
+        252,
+        139,
+        357,
+        198
+      ],
+      "criterion": "Área de mueble tras hoja pequeña; identificación fina y configuración de armario pendientes.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-F09",
+      "family": "mobiliario",
+      "label": "Sofá del estar",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1403,
+        236,
+        1517,
+        401
+      ],
+      "criterion": "Brazos, respaldo y cojines dibujados con líneas finas; no forman cerramientos.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-F10",
+      "family": "mobiliario",
+      "label": "Mesa y sillas del comedor",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1239,
+        633,
+        1456,
+        784
+      ],
+      "criterion": "Huella de muebles y sillas. El dibujo de silla de ruedas superior pertenece a espacio de aproximación, no a un mueble fijo obligatorio.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-F11",
+      "family": "mobiliario",
+      "label": "Panel añadido en dormitorio 1",
+      "confidence": "media",
+      "frame": "nativa",
+      "bbox_px": [
+        35,
+        289,
+        97,
+        460
+      ],
+      "criterion": "Dos instancias de Image190 superpuestas por la lámina. Compatible con añadido de armario/panel; no prueba de un muro ni de su espesor. Resolver detalle en T11/T37.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-E01",
+      "family": "equipamiento",
+      "label": "Elemento rectangular de cabecera del baño",
+      "confidence": "media",
+      "frame": "nativa",
+      "bbox_px": [
+        939,
+        155,
+        1016,
+        249
+      ],
+      "criterion": "Símbolo de equipamiento junto al tabique, no recinto cerrado. Función específica pendiente de confirmar en T12.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-E02",
+      "family": "equipamiento",
+      "label": "Símbolo sanitario curvo en baño",
+      "confidence": "media",
+      "frame": "nativa",
+      "bbox_px": [
+        958,
+        248,
+        1017,
+        318
+      ],
+      "criterion": "Contorno de equipo sanitario; su curva no es muro. Identificación definitiva junto a CL-E01 en T12.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-E03",
+      "family": "equipamiento",
+      "label": "Inodoro",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        924,
+        441,
+        1019,
+        514
+      ],
+      "criterion": "Taza y estanque adosados al costado del baño; mantener espacio lateral de transferencia.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-E04",
+      "family": "equipamiento",
+      "label": "Barras de apoyo junto al inodoro",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        916,
+        510,
+        1019,
+        530
+      ],
+      "criterion": "Líneas delgadas con extremos redondeados, asociadas al sanitario. No son muros transversales.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-E05",
+      "family": "equipamiento",
+      "label": "Ducha al fondo del baño",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        832,
+        670,
+        999,
+        786
+      ],
+      "criterion": "Huella de ducha y líneas interiores de equipamiento/piso. No cerrar el frente con un tabique supuesto.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-E06",
+      "family": "equipamiento",
+      "label": "Equipo o mueble en nicho de cocina",
+      "confidence": "media",
+      "frame": "nativa",
+      "bbox_px": [
+        1025,
+        159,
+        1098,
+        250
+      ],
+      "criterion": "Rectángulo alojado entre paños; compatible con equipo de cocina. Confirmar uso y dimensiones en T39.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-E07",
+      "family": "equipamiento",
+      "label": "Cocina con cuatro quemadores",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1024,
+        268,
+        1099,
+        345
+      ],
+      "criterion": "Círculos y cruces de quemadores; no columnas ni divisiones estructurales.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-E08",
+      "family": "equipamiento",
+      "label": "Lavaplatos de cocina",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1021,
+        438,
+        1081,
+        537
+      ],
+      "criterion": "Cubeta y grifería dentro del mueble; sus bordes no prolongan el tabique hacia el estar.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-E09",
+      "family": "equipamiento",
+      "label": "Frentes y proyecciones de muebles de cocina",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1022,
+        157,
+        1182,
+        602
+      ],
+      "criterion": "Líneas continuas y discontinuas del equipamiento; no cerrar la cocina por su contorno punteado.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-E10",
+      "family": "equipamiento",
+      "label": "Lavadero de logia",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1040,
+        613,
+        1101,
+        678
+      ],
+      "criterion": "Cubeta y grifería al lado del volumen técnico; se mantienen dentro de la logia.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-E11",
+      "family": "equipamiento",
+      "label": "Equipo doméstico dibujado en logia",
+      "confidence": "media",
+      "frame": "nativa",
+      "bbox_px": [
+        1040,
+        675,
+        1107,
+        784
+      ],
+      "criterion": "Símbolo con curvas junto al lavadero; su identificación fina se confirma en T42. El programa final exige lavadora.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-E12",
+      "family": "equipamiento",
+      "label": "Símbolo interior del volumen técnico",
+      "confidence": "media",
+      "frame": "nativa",
+      "bbox_px": [
+        1004,
+        611,
+        1035,
+        784
+      ],
+      "criterion": "X estrecha entre baño y logia, coherente con un espacio técnico. Las diagonales son simbólicas; bordes en CL-M20.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-C01",
+      "family": "cotas",
+      "label": "Cota de giro en dormitorio 1",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        290,
+        399,
+        412,
+        533
+      ],
+      "criterion": "Línea diagonal y rótulo Ø150 dentro del círculo. Registrar valor y unidad en T09; no extruir la cota.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-C02",
+      "family": "cotas",
+      "label": "Cota de giro junto a dormitorio 3",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        386,
+        53,
+        506,
+        179
+      ],
+      "criterion": "Diámetro rotulado y línea diagonal; no diagonales estructurales.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-C03",
+      "family": "cotas",
+      "label": "Cota de giro del baño",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        856,
+        303,
+        992,
+        444
+      ],
+      "criterion": "Rótulo y línea sobre círculo/achurado; no límite físico.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-C04",
+      "family": "cotas",
+      "label": "Cota de giro del estar",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1259,
+        278,
+        1393,
+        407
+      ],
+      "criterion": "Diámetro de zona de maniobra; la cifra no fija automáticamente la escala del raster.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-C05",
+      "family": "cotas",
+      "label": "Cadenas de cotas del baño",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        836,
+        228,
+        1018,
+        525
+      ],
+      "criterion": "Líneas auxiliares, números y extremos de medición. Su inventario preciso pertenece a T09.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-C06",
+      "family": "cotas",
+      "label": "Cadenas de cotas de logia",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1091,
+        601,
+        1205,
+        719
+      ],
+      "criterion": "Números y líneas de dimensión se superponen al acceso y su espacio de uso; no son tabiques.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-C07",
+      "family": "cotas",
+      "label": "Rótulos de tipos y espesores de muro",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        476,
+        392,
+        501,
+        630
+      ],
+      "criterion": "Ejemplo de rótulo vertical repetido en los paños. Separar texto técnico de las dos caras dibujadas; transcribir en T09.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-T01",
+      "family": "tramas",
+      "label": "Achurado central del baño",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        868,
+        321,
+        1016,
+        421
+      ],
+      "criterion": "Relleno diagonal sobre área de uso/maniobra. El círculo y la isométrica permiten descartar un tabique transversal; función precisa en T12.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-T02",
+      "family": "tramas",
+      "label": "Achurado previo a la ducha",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        842,
+        561,
+        999,
+        674
+      ],
+      "criterion": "Trama superficial y cotas, no muro ni escalón demostrado. No dividir el baño longitudinal en dos recintos.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-T03",
+      "family": "tramas",
+      "label": "Retícula tenue de pavimento",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        24,
+        277,
+        816,
+        633
+      ],
+      "criterion": "Ejemplo de cuadrícula que se repite en toda la vivienda. No representa una retícula de tabiques.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-T04",
+      "family": "tramas",
+      "label": "Diagonales sobre camas",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        498,
+        395,
+        817,
+        633
+      ],
+      "criterion": "Convención gráfica dentro del mobiliario, no vigas ni paredes diagonales.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-T05",
+      "family": "tramas",
+      "label": "Líneas convergentes de ducha",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        846,
+        683,
+        989,
+        775
+      ],
+      "criterion": "Símbolo interior del área de ducha; no convertirlo en mamparas ni crear desniveles sin evidencia.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-L01",
+      "family": "libres",
+      "label": "Circulación superior",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        370,
+        24,
+        1394,
+        142
+      ],
+      "criterion": "Continuidad entre acceso y puertas interiores. La caja localiza la franja, no es un polígono de superficie útil.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-L02",
+      "family": "libres",
+      "label": "Círculo de maniobra junto a D3",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        362,
+        17,
+        546,
+        204
+      ],
+      "criterion": "Línea circular discontinua de espacio libre; no cilindro, muro curvo ni barrera.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-L03",
+      "family": "libres",
+      "label": "Círculo de maniobra D1",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        262,
+        359,
+        453,
+        558
+      ],
+      "criterion": "Reserva de uso y circulación junto a cama; no sólido de colisión.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-L04",
+      "family": "libres",
+      "label": "Círculo de maniobra del baño",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        828,
+        274,
+        1017,
+        463
+      ],
+      "criterion": "Reserva de espacio que se superpone al achurado; no tabique ni objeto fijo.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-L05",
+      "family": "libres",
+      "label": "Círculo de maniobra del estar",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1235,
+        253,
+        1411,
+        435
+      ],
+      "criterion": "Área libre junto al sofá, no mobiliario circular.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-L06",
+      "family": "libres",
+      "label": "Aproximación y uso en logia",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1101,
+        605,
+        1195,
+        782
+      ],
+      "criterion": "Área entre equipos y cerramiento con barrido de puerta. No extruir su rectángulo de uso.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-L07",
+      "family": "libres",
+      "label": "Área rotulada como terraza",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        24,
+        649,
+        812,
+        808
+      ],
+      "criterion": "Espacio exterior de referencia; la caja no define su contorno real ni demuestra profundidad. Mantener superficie provisional separada.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-L08",
+      "family": "libres",
+      "label": "Aproximación al comedor",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1240,
+        499,
+        1454,
+        637
+      ],
+      "criterion": "Espacio de aproximación representado junto a la mesa. No ocuparlo automáticamente con otra silla o decoración.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-A01",
+      "family": "anotaciones",
+      "label": "Nombres de recintos",
+      "confidence": "alta",
+      "frame": "compuesta",
+      "bbox_px": [
+        648,
+        395,
+        879,
+        438
+      ],
+      "criterion": "Ejemplo de texto superpuesto DORMITORIO 2; la misma regla aplica a todos los rótulos de habitación.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-A02",
+      "family": "anotaciones",
+      "label": "Flecha y texto de acceso",
+      "confidence": "alta",
+      "frame": "compuesta",
+      "bbox_px": [
+        1568,
+        39,
+        1849,
+        150
+      ],
+      "criterion": "Anotación roja/azul añadida por la lámina; orienta la entrada, no forma geometría.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-A03",
+      "family": "anotaciones",
+      "label": "Figura de usuario en comedor",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1280,
+        516,
+        1389,
+        643
+      ],
+      "criterion": "Símbolo humano y de aproximación accesible; no figura obligatoria ni obstáculo permanente del modelo.",
+      "model_geometry_allowed": false
+    },
+    {
+      "id": "CL-A04",
+      "family": "anotaciones",
+      "label": "Rótulo de superficie dentro del plano",
+      "confidence": "alta",
+      "frame": "nativa",
+      "bbox_px": [
+        1295,
+        54,
+        1402,
+        102
+      ],
+      "criterion": "Dato documental de 76,80 m²; contrasta con 76,66 m² en el encabezado. No altera líneas ni resuelve el área geométrica.",
+      "model_geometry_allowed": false
+    }
+  ]
+}
