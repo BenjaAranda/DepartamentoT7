@@ -1,0 +1,39 @@
+{
+  "repository_id": 1362108111,
+  "full_name": "BenjaAranda/los-altos-algarrobo-t7",
+  "owner": "BenjaAranda",
+  "html_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7",
+  "clone_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7.git",
+  "private": true,
+  "default_branch": "main",
+  "created_at": "2026-09-09T02:22:00Z",
+  "created_for_task": "T04",
+  "source": "GitHub REST API",
+  "verification": {
+    "creation_http_status": 201,
+    "authenticated_login": "BenjaAranda",
+    "name_availability_http_status_before_creation": 404,
+    "read_http_status_after_creation": 200,
+    "checked_at": "2026-09-09T02:22:02.643Z",
+    "permissions": {
+      "admin": true,
+      "push": true,
+      "pull": true
+    },
+    "git_remote_read": {
+      "command": "git ls-remote origin",
+      "exit_code": 0,
+      "ref_count": 0,
+      "checked_at": "2026-09-09T02:23:43.423Z",
+      "authenticated_username": "BenjaAranda",
+      "command_scoped_safe_directory": "C:/Users/benja/OneDrive/Documentos/ProyectoDeptAstra/simulador-t7"
+    }
+  },
+  "local": {
+    "git_root": "simulador-t7/",
+    "remote_name": "origin",
+    "remote_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7.git",
+    "branch": "main",
+    "initial_commit_pending_task": "T06"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "repository": "BenjaAranda/los-altos-algarrobo-t7",
+  "source": "docs/TODO_T7.md",
+  "mode": "issues_by_stage",
+  "tracking_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues",
+  "projects": {
+    "status": "unavailable_with_current_authentication",
+    "project_id": null,
+    "checked_at": "2026-09-09T02:41:32.425Z",
+    "operation": "createProjectV2",
+    "error_type": "INSUFFICIENT_SCOPES",
+    "required_scope": "project",
+    "available_scopes": ["gist", "repo", "workflow"],
+    "fallback": "Una issue por etapa, con los mismos IDs y casillas del plan."
+  },
+  "stages": {}
+}

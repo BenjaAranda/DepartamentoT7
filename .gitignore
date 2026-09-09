@@ -1,0 +1,52 @@
+# Package managers and Python environments
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local credentials; example files contain names/placeholders only
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Operating system and local work
+.DS_Store
+Thumbs.db
+Desktop.ini
+/tmp/
+/work/
+/logs/
+/deliverables/
+
+# Blender recovery files; keep the actual .blend source
+*.blend[0-9]*
+*.blend@
+
+# Unreal regenerates these folders, including inside project plugins
+/unreal/**/Binaries/
+/unreal/**/Intermediate/
+/unreal/**/Saved/
+/unreal/**/DerivedDataCache/
+/unreal/**/.vs/
+/unreal/**/*.sln
+/unreal/**/*.suo
+/unreal/**/*.VC.db
+/unreal/**/*.VC.opendb
+
+# Original references and raw recordings stay local by default
+/references/originals/*
+!/references/originals/.gitkeep
+/validation/recordings/*
+!/validation/recordings/.gitkeep
+
+# Web build output, dependencies and local state also covered by web/.gitignore
+/web/dist/
+/web/.next/
+/web/.vinext/
+/web/.wrangler/
+*.tsbuildinfo

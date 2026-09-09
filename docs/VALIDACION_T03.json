@@ -1,0 +1,288 @@
+{
+  "task": "T03",
+  "date": "2026-09-08",
+  "ignoreChecks": [
+    {
+      "path": "web/node_modules/example/index.js",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "web/dist/server/index.js",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "web/.wrangler/state/test.sqlite",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "web/.env.local",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": ".env",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "blender/t7.blend1",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "blender/t7.blend12",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Binaries/Win64/T7.exe",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Intermediate/Build/test.obj",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Saved/Logs/editor.log",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/DerivedDataCache/cache.bin",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Plugins/Custom/Binaries/Win64/plugin.dll",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Plugins/Custom/Intermediate/test.obj",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "references/originals/plano t7.pdf",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "validation/recordings/recorrido.mp4",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "deliverables/T7.zip",
+      "ignored": true,
+      "passed": true
+    },
+    {
+      "path": "web/package-lock.json",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "web/.env.example",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": ".env.example",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "web/.openai/hosting.json",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/T7.uproject",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Config/DefaultEngine.ini",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Content/Apartment.umap",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Content/Meshes/wall.uasset",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Source/T7/T7.cpp",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Plugins/Custom/Custom.uplugin",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Plugins/Custom/Content/Material.uasset",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Plugins/Custom/Source/Module.cpp",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "blender/t7.blend",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "blender/textures/wall.png",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "assets/interchange/t7.glb",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "assets/colliders/colliders.json",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "web/public/models/t7.glb",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "validation/isometric/t7.png",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "references/originals/.gitkeep",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "validation/recordings/.gitkeep",
+      "ignored": false,
+      "passed": true
+    },
+    {
+      "path": "docs/TODO_T7.md",
+      "ignored": false,
+      "passed": true
+    }
+  ],
+  "attributeChecks": [
+    {
+      "path": "blender/t7.blend",
+      "filter": "lfs",
+      "passed": true
+    },
+    {
+      "path": "blender/textures/wall.png",
+      "filter": "lfs",
+      "passed": true
+    },
+    {
+      "path": "blender/textures/wood/wall.png",
+      "filter": "lfs",
+      "passed": true
+    },
+    {
+      "path": "assets/interchange/t7.glb",
+      "filter": "lfs",
+      "passed": true
+    },
+    {
+      "path": "assets/interchange/rev1/t7.glb",
+      "filter": "lfs",
+      "passed": true
+    },
+    {
+      "path": "assets/colliders/proxies.glb",
+      "filter": "lfs",
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Content/Apartment.umap",
+      "filter": "lfs",
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Content/Meshes/wall.uasset",
+      "filter": "lfs",
+      "passed": true
+    },
+    {
+      "path": "unreal/T7/Plugins/Custom/Content/Material.uasset",
+      "filter": "lfs",
+      "passed": true
+    },
+    {
+      "path": "web/public/models/t7.glb",
+      "filter": "unset",
+      "passed": true
+    },
+    {
+      "path": "web/public/models/rev1/t7.glb",
+      "filter": "unset",
+      "passed": true
+    },
+    {
+      "path": "web/public/models/scene.bin",
+      "filter": "unset",
+      "passed": true
+    },
+    {
+      "path": "web/public/models/colliders.json",
+      "filter": "unset",
+      "passed": true
+    },
+    {
+      "path": "web/public/textures/sky.hdr",
+      "filter": "unset",
+      "passed": true
+    },
+    {
+      "path": "web/public/textures/wall.png",
+      "filter": "unset",
+      "passed": true
+    },
+    {
+      "path": "blender/textures/.gitkeep",
+      "filter": "unset",
+      "passed": true
+    },
+    {
+      "path": "architecture/rooms.json",
+      "filter": "unspecified",
+      "passed": true
+    },
+    {
+      "path": "assets/colliders/colliders.json",
+      "filter": "unspecified",
+      "passed": true
+    }
+  ],
+  "localLfsRequired": true,
+  "lfsHookPresent": true,
+  "remoteConfigured": false,
+  "oversizedGitCandidates": [],
+  "validationScope": "Representative path rules and current files; no 3D models have been created."
+}
