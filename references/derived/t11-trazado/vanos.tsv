@@ -1,0 +1,14 @@
+id	nombre	tipo	ancho_trazado_m	soportes	apertura
+O01	Acceso principal	puerta	1.041346	W01C,W04	Ver puerta P01
+O02	Dormitorio 3	puerta	0.889077	W01A,W13B	Ver puerta P02
+O03	Dormitorio 1	puerta	0.884366	W12C,W14A	Ver puerta P03
+O04	Dormitorio 2	puerta	0.880749	W14C,W11	Ver puerta P04
+O05	Baño	puerta	0.895845	W11,W15	Ver puerta P05
+O06	Logia desde cocina	puerta	0.850164	W19C,W18C	Ver puerta P06
+O07	Ventana oeste D3	ventana	1.006662	W02,W03	Trazos paralelos compatibles con corredera; número y recorrido de hojas por confirmar en T22.
+O08	Ventana D1	ventana	0.998203	W05A,W05B	Dos paños superpuestos compatibles con corredera; no prueba salida a terraza.
+O09	Ventana D2	ventana	0.998203	W06A,W06B	Dos paños superpuestos compatibles con corredera; detalle de hojas T22.
+O10	Ventana baño al fondo	ventana	0.596384	W08A,W08B	Sin arco inequívoco; fijación/apertura desconocida. No inventar puerta en ducha.
+O11	Frente de logia	celosia_probable	1.107329	W08B,W09A	La isométrica muestra lamas. En planta parte del frente está tapada por equipos; extremo izquierdo alineado con W20B. Apertura y hoja practicable sin demostrar.
+O12	Ventana comedor	ventana	1.894894	W09A,W09B	Dos paños con montante intermedio; deslizamiento y fracciones fijas pendientes de detalle T22.
+O13	Paso abierto cocina–estar	paso_abierto	3.206939	W01C,W18A	Límite de circulación de referencia, sin marco ni hoja. No crear muro que deba perforarse aquí.

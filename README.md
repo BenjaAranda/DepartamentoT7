@@ -40,4 +40,4 @@ Consultar [ALMACENAMIENTO.md](docs/ALMACENAMIENTO.md) para las reglas, límites 
 
 Desde `web/`, usar `npm ci` y `npm run dev`. La base y sus comprobaciones están descritas en [web/README.md](web/README.md).
 
-Blender, GLB, colliders y Unreal se sincronizarán según [el plan maestro](docs/PLAN_MAESTRO_T7.md). Todavía faltan la calibración arquitectónica y el modelo 3D; el estado comprobado de cada etapa figura en los to-dos.
+Blender, GLB, colliders y Unreal se sincronizarán según [el plan maestro](docs/PLAN_MAESTRO_T7.md). La calibración de trabajo T10 y el [trazado 2D T11](architecture/plan/README.md) están registrados; quedan por cerrar topología, superficies y alturas antes del modelo 3D. El estado comprobado de cada etapa figura en los to-dos.

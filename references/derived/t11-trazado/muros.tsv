@@ -1,0 +1,41 @@
+id	nombre	eje_m	espesor_trazado_m	espesor_nominal_m	t08	t09
+W01A	Superior izquierdo	4.547458	0.147193	0.15	CL-M01	T09-E01
+W01B	Superior central	3.961512	0.147193		CL-M01	T09-R01
+W01C	Superior derecho	4.399459	0.147193	0.15	CL-M01	T09-E02
+W02	Oeste sobre ventana D3	0.922915	0.149379	0.15	CL-M02	T09-E03
+W03	Oeste bajo ventana D3 y lateral D1	3.371050	0.149379	0.15	CL-M03	T09-E04
+W04	Este bajo acceso	5.528184	0.146680	0.15	CL-M04	T09-E05
+W05A	Fachada D1 izquierda de ventana	2.505722	0.119170		CL-M05	T09-R24
+W05B	Fachada D1 derecha de ventana	0.368346	0.119170		CL-M05	T09-R24
+W06A	Fachada D2 izquierda de ventana	0.827191	0.119170		CL-M06	T09-R25
+W06B	Fachada D2 derecha de ventana	0.877365	0.119170		CL-M06	T09-R25
+W07	Retorno exterior al costado del baño	3.362591	0.148148	0.15	CL-M07	T09-E07
+W08A	Fachada baño izquierda de ventana	0.357591	0.125198		CL-M08	T09-R26
+W08B	Fachada baño derecha de ventana y pie de shaft	0.817173	0.125198		CL-M08,CL-M09	T09-R27
+W09A	Machón entre logia y ventana comedor	0.659829	0.125198		CL-M09	—
+W09B	Fachada comedor derecha de ventana	0.306494	0.125198		CL-M09	T09-R28
+W10A	D1–D2 tabique superior	1.634346	0.061389		CL-M10	T09-R07,T09-R08
+W10B	D1–D2 paño de 15 cm	2.093689	0.149500	0.15	CL-M10	T09-E06
+W11	D2–baño tabique superior	2.107223	0.059931		CL-M11	T09-R11
+W12A	D3–D1 paño inferior	1.734230	0.059215		CL-M12	T09-R06
+W12B	D3–D1 retorno del nicho	0.658983	0.059215		CL-M12	T09-R05
+W12C	D3–D1 cabecera hasta jamba D1	1.194460	0.060061		CL-M12	T09-R04
+W13A	Respaldo del nicho D3	0.598922	0.060061		CL-M13	T09-R02
+W13B	Lateral del nicho D3 y remate de jamba	0.623454	0.060907		CL-M13	T09-R03
+W14A	Cabecera D2 tramo bajo	0.601095	0.060061		CL-M14	T09-R10
+W14B	Cabecera D2 retorno	0.472878	0.059215		CL-M14	T09-R09
+W14C	Cabecera D2 hasta jamba	1.311199	0.060907		CL-M14	T09-R10
+W15	Cabecera baño a la derecha de su puerta	0.694512	0.060907		CL-M15	T09-R12
+W16A	Baño–cocina tramo largo	3.263616	0.057524		CL-M16	T09-R15
+W16B	Baño–cocina después del retranqueo	0.499947	0.059215		CL-M16	T09-R17
+W17A	Nicho cocina paño superior	0.653908	0.098974		CL-M17	T09-R13
+W17B	Nicho cocina paño inferior	0.653908	0.058369		CL-M17	T09-R14
+W18A	Cocina–estar paño corto de 15 cm	0.998203	0.145414	0.15	CL-M18	T09-E08
+W18B	Cocina–comedor continuación delgada	0.717353	0.056591		CL-M18	T09-R18
+W18C	Retorno de jamba derecha de logia	0.177646	0.083748		CL-M18	T09-R19
+W18D	Logia–comedor	1.438089	0.060907		CL-M18	T09-R19
+W19A	Retorno bajo lavaplatos	0.669980	0.059215		CL-M19	T09-R16
+W19B	Cabecera del volumen técnico	0.368828	0.083748		CL-M19,CL-M20	T09-R20
+W19C	Cabecera logia sobre lavadero	0.409432	0.083748		CL-M19	T09-R21
+W20A	Baño–volumen técnico	1.438089	0.059215		CL-M16,CL-M20	T09-R22
+W20B	Volumen técnico–logia	1.438089	0.072750		CL-M20	T09-R23

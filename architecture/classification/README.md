@@ -62,6 +62,8 @@ La confianza describe la lectura gráfica, no la exactitud de las dimensiones. V
 
 Estos pendientes no se cierran al clasificar. Si cambia su interpretación, corregir el TSV, regenerar derivados y revisar las tareas geométricas afectadas.
 
+Actualización posterior en **T11**: el [registro de paños y carpinterías](../plan/README.md) precisa CL-M13 como respaldo/lateral del nicho con remate de jamba; CL-V11 como celosía probable, todavía sin funcionamiento confirmado; CL-H09 como una hoja de mueble cuya adaptación a dos sigue en T37; y CL-F11 como panel añadido excluido de muros, con diseño de mobiliario pendiente. Las familias de este catálogo no cambian y se conserva su inventario histórico. Los pendientes actuales y su alcance constan en `architecture/plan/t11-trazado.json`, apartado `resolutions`.
+
 ## Reproducción y verificación
 
 Desde la raíz del repositorio, ejecutar `python scripts/build-t08-atlas.py`. Requiere Python 3 y el PDF original en la carpeta superior; utiliza solo la biblioteca estándar. La comprobación se detiene si cambia una referencia, aparece un ID duplicado o un localizador sale de su imagen.

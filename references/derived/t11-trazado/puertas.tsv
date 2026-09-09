@@ -1,0 +1,7 @@
+id	vano	hoja_grafica_m	bisagra_X_m	bisagra_Y_m	soporte	lado	giro_Blender_grados	abre_hacia
+P01	O01	1.002433	12.669628	5.155233	W01C	superior	-90.0	interior, hacia el muro superior
+P02	O02	0.862853	2.784881	5.155233	W01A	superior	-90.0	D3, hacia el muro superior
+P03	O03	0.867083	3.850759	3.598713	W14A / W10A	derecha	90.0	D1, junto a separación D1–D2
+P04	O04	0.858624	6.701559	4.004762	W11	derecha	90.0	D2, junto a separación con baño
+P05	O05	0.862853	6.811530	4.093585	W11	izquierda	90.0	circulación superior, hacia fuera del baño
+P06	O06	0.858624	9.903422	0.172677	W18C / W18D	derecha	90.0	logia, junto a separación con comedor

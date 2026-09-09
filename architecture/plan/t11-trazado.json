@@ -1,0 +1,1760 @@
+{
+  "task": "T11",
+  "revision": 1,
+  "source": "references/derived/p20-t7/planta-nativa.png",
+  "calibration": "architecture/calibration/t10-calibracion.json",
+  "coordinate_system": "u derecha, v abajo, píxeles nativos; transformación métrica exclusivamente T10",
+  "policy": {
+    "status": "levantamiento 2D de trabajo, no plano ejecutivo",
+    "face_reading_px": 1,
+    "door_graphic_reading_px": 2,
+    "measured_widths_are_nominal": false,
+    "finished_clear_door_width_known": false,
+    "all_vertical_extents_pending": "T14",
+    "nonuniform_scaling": false,
+    "area_used_to_adjust": false,
+    "top_outer_face": "v=1 es el límite visible provisional del trazo recortado; no acredita cara exterior completa. Los 15 cm rotulados se conservan como nominal separado, sin desplazar la cara interior.",
+    "rectangles": "Cada rectángulo es un paño entre caras leídas, cortado en encuentros, cambios de espesor y vanos. No son cajas T08. Los vértices compartidos se reutilizan mediante referencias de coordenadas."
+  },
+  "coordinates": {
+    "LX": 4.634,
+    "LI": 22.292490118577074,
+    "TOP": 1,
+    "TI": 18.4,
+    "TOP_A": 542.2,
+    "TOP_B": 1010.5,
+    "RI": 1513.2314086722085,
+    "RX": 1530.5707762557079,
+    "D3_WTOP": 127.5,
+    "D3_WBOT": 246.5,
+    "ENTRY_B": 141.5,
+    "D1_BI": 630.9126213592233,
+    "D1_BX": 645,
+    "D1_WL": 318.5,
+    "D1_WR": 436.5,
+    "D12_L": 480.04306220095697,
+    "D12_R": 497.7157894736842,
+    "D12_THIN_R": 487.3,
+    "THICK_START": 397.5,
+    "D2_WL": 595.5,
+    "D2_WR": 713.5,
+    "BATH_L": 817.2154471544716,
+    "BATH_LI": 834.7283464566929,
+    "BATH_THIN_R": 824.3,
+    "SOUTH_I": 780.2,
+    "SOUTH_X": 795,
+    "BATH_WL": 877,
+    "BATH_WR": 947.5,
+    "D3_STEP_L": 227.3,
+    "D3_STEP_R": 234.3,
+    "D3_LOW_T": 268.1,
+    "D3_LOW_B": 275.1,
+    "D3_HEAD_T": 197.2,
+    "D3_HEAD_B": 204.3,
+    "D1_JAMB": 375.5,
+    "NICHE_L": 281.5,
+    "NICHE_RI": 352.3,
+    "NICHE_RX": 359.5,
+    "NICHE_T": 131.1,
+    "NICHE_B": 138.2,
+    "D3_JAMB": 123.5,
+    "D2_STEP_L": 551.1,
+    "D2_STEP_R": 558.1,
+    "D2_HEAD_T": 148.4,
+    "D2_HEAD_B": 155.6,
+    "D2_JAMB": 713.1,
+    "BATH_JAMB": 930.2,
+    "BATH_RI": 1012.3,
+    "BATH_RX": 1019.1,
+    "KITCHEN_NICHE_R": 1096.4,
+    "KITCHEN_NICHE_B": 160.1,
+    "KITCHEN_NICHE_LOW_T": 251.2,
+    "KITCHEN_NICHE_LOW_B": 258.1,
+    "SINK_T": 534.2,
+    "SINK_B": 541.2,
+    "SINK_R": 1079.7,
+    "BATH_JOG_L": 1000.5,
+    "BATH_JOG_R": 1007.5,
+    "LOGIA_HEAD_T": 600.3,
+    "LOGIA_HEAD_B": 610.2,
+    "SHAFT_RI": 1035.5,
+    "SHAFT_RX": 1044.1,
+    "LOGIA_JAMB_L": 1092.5,
+    "LOGIA_JAMB_R": 1193,
+    "KITCHEN_WL": 1191,
+    "KITCHEN_WR": 1208.189723320158,
+    "KITCHEN_WB": 515.5,
+    "KITCHEN_THIN_L": 1201.5,
+    "LOGIA_WL": 1206.8,
+    "LOGIA_WR": 1214,
+    "LOGIA_FRONT_R": 1175,
+    "DINING_WL": 1253,
+    "DINING_WR": 1477
+  },
+  "coordinate_provenance": {
+    "T10_reused": [
+      "LI",
+      "D1_BI",
+      "D12_L",
+      "D12_R",
+      "BATH_L",
+      "BATH_LI",
+      "RI",
+      "RX",
+      "KITCHEN_WL",
+      "KITCHEN_WR"
+    ],
+    "top_provisional": [
+      "TOP"
+    ],
+    "other_coordinates": "Lectura visual ampliada de caras y extremos en el raster nativo, apoyada por perfiles de intensidad; compartidas por todos los paños concurrentes. Resolución de anotación 0,1 px no equivale a exactitud de obra."
+  },
+  "walls": [
+    {
+      "id": "W01A",
+      "name": "Superior izquierdo",
+      "rect": [
+        "LX",
+        "TOP",
+        "TOP_A",
+        "TI"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M01"
+      ],
+      "t09": [
+        "T09-E01"
+      ],
+      "nominal_m": 0.15,
+      "note": "Cara exterior provisional por recorte."
+    },
+    {
+      "id": "W01B",
+      "name": "Superior central",
+      "rect": [
+        "TOP_A",
+        "TOP",
+        "TOP_B",
+        "TI"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M01"
+      ],
+      "t09": [
+        "T09-R01"
+      ],
+      "note": "TAB-8A F-90; espesor nominal desconocido y cara exterior provisional."
+    },
+    {
+      "id": "W01C",
+      "name": "Superior derecho",
+      "rect": [
+        "TOP_B",
+        "TOP",
+        "RX",
+        "TI"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M01"
+      ],
+      "t09": [
+        "T09-E02"
+      ],
+      "nominal_m": 0.15,
+      "note": "Cara exterior provisional por recorte; acceso en su extremo derecho."
+    },
+    {
+      "id": "W02",
+      "name": "Oeste sobre ventana D3",
+      "rect": [
+        "LX",
+        "TI",
+        "LI",
+        "D3_WTOP"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M02"
+      ],
+      "t09": [
+        "T09-E03"
+      ],
+      "nominal_m": 0.15
+    },
+    {
+      "id": "W03",
+      "name": "Oeste bajo ventana D3 y lateral D1",
+      "rect": [
+        "LX",
+        "D3_WBOT",
+        "LI",
+        "D1_BX"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M03"
+      ],
+      "t09": [
+        "T09-E04"
+      ],
+      "nominal_m": 0.15
+    },
+    {
+      "id": "W04",
+      "name": "Este bajo acceso",
+      "rect": [
+        "RI",
+        "ENTRY_B",
+        "RX",
+        "SOUTH_X"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M04"
+      ],
+      "t09": [
+        "T09-E05"
+      ],
+      "nominal_m": 0.15
+    },
+    {
+      "id": "W05A",
+      "name": "Fachada D1 izquierda de ventana",
+      "rect": [
+        "LI",
+        "D1_BI",
+        "D1_WL",
+        "D1_BX"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M05"
+      ],
+      "t09": [
+        "T09-R24"
+      ]
+    },
+    {
+      "id": "W05B",
+      "name": "Fachada D1 derecha de ventana",
+      "rect": [
+        "D1_WR",
+        "D1_BI",
+        "D12_L",
+        "D1_BX"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M05"
+      ],
+      "t09": [
+        "T09-R24"
+      ]
+    },
+    {
+      "id": "W06A",
+      "name": "Fachada D2 izquierda de ventana",
+      "rect": [
+        "D12_R",
+        "D1_BI",
+        "D2_WL",
+        "D1_BX"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M06"
+      ],
+      "t09": [
+        "T09-R25"
+      ]
+    },
+    {
+      "id": "W06B",
+      "name": "Fachada D2 derecha de ventana",
+      "rect": [
+        "D2_WR",
+        "D1_BI",
+        "BATH_L",
+        "D1_BX"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M06"
+      ],
+      "t09": [
+        "T09-R25"
+      ]
+    },
+    {
+      "id": "W07",
+      "name": "Retorno exterior al costado del baño",
+      "rect": [
+        "BATH_L",
+        "THICK_START",
+        "BATH_LI",
+        "SOUTH_X"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M07"
+      ],
+      "t09": [
+        "T09-E07"
+      ],
+      "nominal_m": 0.15
+    },
+    {
+      "id": "W08A",
+      "name": "Fachada baño izquierda de ventana",
+      "rect": [
+        "BATH_LI",
+        "SOUTH_I",
+        "BATH_WL",
+        "SOUTH_X"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M08"
+      ],
+      "t09": [
+        "T09-R26"
+      ]
+    },
+    {
+      "id": "W08B",
+      "name": "Fachada baño derecha de ventana y pie de shaft",
+      "rect": [
+        "BATH_WR",
+        "SOUTH_I",
+        "SHAFT_RX",
+        "SOUTH_X"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M08",
+        "CL-M09"
+      ],
+      "t09": [
+        "T09-R27"
+      ]
+    },
+    {
+      "id": "W09A",
+      "name": "Machón entre logia y ventana comedor",
+      "rect": [
+        "LOGIA_FRONT_R",
+        "SOUTH_I",
+        "DINING_WL",
+        "SOUTH_X"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M09"
+      ],
+      "t09": [],
+      "note": "Paño dibujado sin rótulo local; no asignar automáticamente el código de otro paño de fachada."
+    },
+    {
+      "id": "W09B",
+      "name": "Fachada comedor derecha de ventana",
+      "rect": [
+        "DINING_WR",
+        "SOUTH_I",
+        "RI",
+        "SOUTH_X"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M09"
+      ],
+      "t09": [
+        "T09-R28"
+      ]
+    },
+    {
+      "id": "W10A",
+      "name": "D1–D2 tabique superior",
+      "rect": [
+        "D12_L",
+        "D3_HEAD_B",
+        "D12_THIN_R",
+        "THICK_START"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M10"
+      ],
+      "t09": [
+        "T09-R07",
+        "T09-R08"
+      ]
+    },
+    {
+      "id": "W10B",
+      "name": "D1–D2 paño de 15 cm",
+      "rect": [
+        "D12_L",
+        "THICK_START",
+        "D12_R",
+        "D1_BX"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M10"
+      ],
+      "t09": [
+        "T09-E06"
+      ],
+      "nominal_m": 0.15
+    },
+    {
+      "id": "W11",
+      "name": "D2–baño tabique superior",
+      "rect": [
+        "BATH_L",
+        "D2_HEAD_T",
+        "BATH_THIN_R",
+        "THICK_START"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M11"
+      ],
+      "t09": [
+        "T09-R11"
+      ]
+    },
+    {
+      "id": "W12A",
+      "name": "D3–D1 paño inferior",
+      "rect": [
+        "LI",
+        "D3_LOW_T",
+        "D3_STEP_L",
+        "D3_LOW_B"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M12"
+      ],
+      "t09": [
+        "T09-R06"
+      ]
+    },
+    {
+      "id": "W12B",
+      "name": "D3–D1 retorno del nicho",
+      "rect": [
+        "D3_STEP_L",
+        "D3_HEAD_T",
+        "D3_STEP_R",
+        "D3_LOW_B"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M12"
+      ],
+      "t09": [
+        "T09-R05"
+      ]
+    },
+    {
+      "id": "W12C",
+      "name": "D3–D1 cabecera hasta jamba D1",
+      "rect": [
+        "D3_STEP_R",
+        "D3_HEAD_T",
+        "D1_JAMB",
+        "D3_HEAD_B"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M12"
+      ],
+      "t09": [
+        "T09-R04"
+      ]
+    },
+    {
+      "id": "W13A",
+      "name": "Respaldo del nicho D3",
+      "rect": [
+        "NICHE_L",
+        "NICHE_T",
+        "NICHE_RI",
+        "NICHE_B"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M13"
+      ],
+      "t09": [
+        "T09-R02"
+      ]
+    },
+    {
+      "id": "W13B",
+      "name": "Lateral del nicho D3 y remate de jamba",
+      "rect": [
+        "NICHE_RI",
+        "D3_JAMB",
+        "NICHE_RX",
+        "D3_HEAD_T"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M13"
+      ],
+      "t09": [
+        "T09-R03"
+      ],
+      "note": "El saliente superior hasta v=123,5 es soporte de la puerta D3; no añadir muro sobre el arco pequeño del mueble."
+    },
+    {
+      "id": "W14A",
+      "name": "Cabecera D2 tramo bajo",
+      "rect": [
+        "D12_L",
+        "D3_HEAD_T",
+        "D2_STEP_L",
+        "D3_HEAD_B"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M14"
+      ],
+      "t09": [
+        "T09-R10"
+      ],
+      "note": "Tipo de R10 por continuidad gráfica; el rótulo está en W14C, no sobre este tramo."
+    },
+    {
+      "id": "W14B",
+      "name": "Cabecera D2 retorno",
+      "rect": [
+        "D2_STEP_L",
+        "D2_HEAD_T",
+        "D2_STEP_R",
+        "D3_HEAD_B"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M14"
+      ],
+      "t09": [
+        "T09-R09"
+      ]
+    },
+    {
+      "id": "W14C",
+      "name": "Cabecera D2 hasta jamba",
+      "rect": [
+        "D2_STEP_R",
+        "D2_HEAD_T",
+        "D2_JAMB",
+        "D2_HEAD_B"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M14"
+      ],
+      "t09": [
+        "T09-R10"
+      ]
+    },
+    {
+      "id": "W15",
+      "name": "Cabecera baño a la derecha de su puerta",
+      "rect": [
+        "BATH_JAMB",
+        "D2_HEAD_T",
+        "BATH_RI",
+        "D2_HEAD_B"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M15"
+      ],
+      "t09": [
+        "T09-R12"
+      ]
+    },
+    {
+      "id": "W16A",
+      "name": "Baño–cocina tramo largo",
+      "rect": [
+        "BATH_RI",
+        "D2_HEAD_T",
+        "BATH_RX",
+        "SINK_T"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M16"
+      ],
+      "t09": [
+        "T09-R15"
+      ]
+    },
+    {
+      "id": "W16B",
+      "name": "Baño–cocina después del retranqueo",
+      "rect": [
+        "BATH_JOG_L",
+        "SINK_B",
+        "BATH_JOG_R",
+        "LOGIA_HEAD_T"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M16"
+      ],
+      "t09": [
+        "T09-R17"
+      ]
+    },
+    {
+      "id": "W17A",
+      "name": "Nicho cocina paño superior",
+      "rect": [
+        "BATH_RX",
+        "D2_HEAD_T",
+        "KITCHEN_NICHE_R",
+        "KITCHEN_NICHE_B"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M17"
+      ],
+      "t09": [
+        "T09-R13"
+      ],
+      "note": "Lectura del código R13 media; conservar sin convertir F-120 en espesor."
+    },
+    {
+      "id": "W17B",
+      "name": "Nicho cocina paño inferior",
+      "rect": [
+        "BATH_RX",
+        "KITCHEN_NICHE_LOW_T",
+        "KITCHEN_NICHE_R",
+        "KITCHEN_NICHE_LOW_B"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M17"
+      ],
+      "t09": [
+        "T09-R14"
+      ]
+    },
+    {
+      "id": "W18A",
+      "name": "Cocina–estar paño corto de 15 cm",
+      "rect": [
+        "KITCHEN_WL",
+        "THICK_START",
+        "KITCHEN_WR",
+        "KITCHEN_WB"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M18"
+      ],
+      "t09": [
+        "T09-E08"
+      ],
+      "nominal_m": 0.15
+    },
+    {
+      "id": "W18B",
+      "name": "Cocina–comedor continuación delgada",
+      "rect": [
+        "KITCHEN_THIN_L",
+        "KITCHEN_WB",
+        "KITCHEN_WR",
+        "LOGIA_HEAD_T"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M18"
+      ],
+      "t09": [
+        "T09-R18"
+      ]
+    },
+    {
+      "id": "W18C",
+      "name": "Retorno de jamba derecha de logia",
+      "rect": [
+        "LOGIA_JAMB_R",
+        "LOGIA_HEAD_T",
+        "LOGIA_WR",
+        "LOGIA_HEAD_B"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M18"
+      ],
+      "t09": [
+        "T09-R19"
+      ]
+    },
+    {
+      "id": "W18D",
+      "name": "Logia–comedor",
+      "rect": [
+        "LOGIA_WL",
+        "LOGIA_HEAD_B",
+        "LOGIA_WR",
+        "SOUTH_I"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M18"
+      ],
+      "t09": [
+        "T09-R19"
+      ]
+    },
+    {
+      "id": "W19A",
+      "name": "Retorno bajo lavaplatos",
+      "rect": [
+        "BATH_JOG_L",
+        "SINK_T",
+        "SINK_R",
+        "SINK_B"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M19"
+      ],
+      "t09": [
+        "T09-R16"
+      ]
+    },
+    {
+      "id": "W19B",
+      "name": "Cabecera del volumen técnico",
+      "rect": [
+        "BATH_JOG_L",
+        "LOGIA_HEAD_T",
+        "SHAFT_RX",
+        "LOGIA_HEAD_B"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M19",
+        "CL-M20"
+      ],
+      "t09": [
+        "T09-R20"
+      ]
+    },
+    {
+      "id": "W19C",
+      "name": "Cabecera logia sobre lavadero",
+      "rect": [
+        "SHAFT_RX",
+        "LOGIA_HEAD_T",
+        "LOGIA_JAMB_L",
+        "LOGIA_HEAD_B"
+      ],
+      "axis": "h",
+      "t08": [
+        "CL-M19"
+      ],
+      "t09": [
+        "T09-R21"
+      ]
+    },
+    {
+      "id": "W20A",
+      "name": "Baño–volumen técnico",
+      "rect": [
+        "BATH_JOG_L",
+        "LOGIA_HEAD_B",
+        "BATH_JOG_R",
+        "SOUTH_I"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M16",
+        "CL-M20"
+      ],
+      "t09": [
+        "T09-R22"
+      ],
+      "note": "Borde continuo; función del volumen y altura pendientes T12/T14."
+    },
+    {
+      "id": "W20B",
+      "name": "Volumen técnico–logia",
+      "rect": [
+        "SHAFT_RI",
+        "LOGIA_HEAD_B",
+        "SHAFT_RX",
+        "SOUTH_I"
+      ],
+      "axis": "v",
+      "t08": [
+        "CL-M20"
+      ],
+      "t09": [
+        "T09-R23"
+      ],
+      "note": "No extruir la X situada entre este borde y W20A."
+    }
+  ],
+  "openings": [
+    {
+      "id": "O01",
+      "name": "Acceso principal",
+      "kind": "puerta",
+      "rect": [
+        "RI",
+        "TI",
+        "RX",
+        "ENTRY_B"
+      ],
+      "axis": "v",
+      "supports": [
+        "W01C",
+        "W04"
+      ],
+      "t08": "CL-V01",
+      "between": [
+        "pasillo común",
+        "circulación interior"
+      ]
+    },
+    {
+      "id": "O02",
+      "name": "Dormitorio 3",
+      "kind": "puerta",
+      "rect": [
+        "NICHE_RI",
+        "TI",
+        "NICHE_RX",
+        "D3_JAMB"
+      ],
+      "axis": "v",
+      "supports": [
+        "W01A",
+        "W13B"
+      ],
+      "t08": "CL-V02",
+      "between": [
+        "circulación",
+        "D3"
+      ]
+    },
+    {
+      "id": "O03",
+      "name": "Dormitorio 1",
+      "kind": "puerta",
+      "rect": [
+        "D1_JAMB",
+        "D3_HEAD_T",
+        "D12_L",
+        "D3_HEAD_B"
+      ],
+      "axis": "h",
+      "supports": [
+        "W12C",
+        "W14A"
+      ],
+      "t08": "CL-V03",
+      "between": [
+        "circulación",
+        "D1"
+      ]
+    },
+    {
+      "id": "O04",
+      "name": "Dormitorio 2",
+      "kind": "puerta",
+      "rect": [
+        "D2_JAMB",
+        "D2_HEAD_T",
+        "BATH_L",
+        "D2_HEAD_B"
+      ],
+      "axis": "h",
+      "supports": [
+        "W14C",
+        "W11"
+      ],
+      "t08": "CL-V04",
+      "between": [
+        "circulación",
+        "D2"
+      ]
+    },
+    {
+      "id": "O05",
+      "name": "Baño",
+      "kind": "puerta",
+      "rect": [
+        "BATH_THIN_R",
+        "D2_HEAD_T",
+        "BATH_JAMB",
+        "D2_HEAD_B"
+      ],
+      "axis": "h",
+      "supports": [
+        "W11",
+        "W15"
+      ],
+      "t08": "CL-V05",
+      "between": [
+        "circulación",
+        "baño"
+      ]
+    },
+    {
+      "id": "O06",
+      "name": "Logia desde cocina",
+      "kind": "puerta",
+      "rect": [
+        "LOGIA_JAMB_L",
+        "LOGIA_HEAD_T",
+        "LOGIA_JAMB_R",
+        "LOGIA_HEAD_B"
+      ],
+      "axis": "h",
+      "supports": [
+        "W19C",
+        "W18C"
+      ],
+      "t08": "CL-V06",
+      "between": [
+        "cocina",
+        "logia"
+      ]
+    },
+    {
+      "id": "O07",
+      "name": "Ventana oeste D3",
+      "kind": "ventana",
+      "rect": [
+        "LX",
+        "D3_WTOP",
+        "LI",
+        "D3_WBOT"
+      ],
+      "axis": "v",
+      "supports": [
+        "W02",
+        "W03"
+      ],
+      "t08": "CL-V07",
+      "operation": "Trazos paralelos compatibles con corredera; número y recorrido de hojas por confirmar en T22."
+    },
+    {
+      "id": "O08",
+      "name": "Ventana D1",
+      "kind": "ventana",
+      "rect": [
+        "D1_WL",
+        "D1_BI",
+        "D1_WR",
+        "D1_BX"
+      ],
+      "axis": "h",
+      "supports": [
+        "W05A",
+        "W05B"
+      ],
+      "t08": "CL-V08",
+      "operation": "Dos paños superpuestos compatibles con corredera; no prueba salida a terraza."
+    },
+    {
+      "id": "O09",
+      "name": "Ventana D2",
+      "kind": "ventana",
+      "rect": [
+        "D2_WL",
+        "D1_BI",
+        "D2_WR",
+        "D1_BX"
+      ],
+      "axis": "h",
+      "supports": [
+        "W06A",
+        "W06B"
+      ],
+      "t08": "CL-V09",
+      "operation": "Dos paños superpuestos compatibles con corredera; detalle de hojas T22."
+    },
+    {
+      "id": "O10",
+      "name": "Ventana baño al fondo",
+      "kind": "ventana",
+      "rect": [
+        "BATH_WL",
+        "SOUTH_I",
+        "BATH_WR",
+        "SOUTH_X"
+      ],
+      "axis": "h",
+      "supports": [
+        "W08A",
+        "W08B"
+      ],
+      "t08": "CL-V10",
+      "operation": "Sin arco inequívoco; fijación/apertura desconocida. No inventar puerta en ducha."
+    },
+    {
+      "id": "O11",
+      "name": "Frente de logia",
+      "kind": "celosia_probable",
+      "rect": [
+        "SHAFT_RX",
+        "SOUTH_I",
+        "LOGIA_FRONT_R",
+        "SOUTH_X"
+      ],
+      "axis": "h",
+      "supports": [
+        "W08B",
+        "W09A"
+      ],
+      "t08": "CL-V11",
+      "operation": "La isométrica muestra lamas. En planta parte del frente está tapada por equipos; extremo izquierdo alineado con W20B. Apertura y hoja practicable sin demostrar.",
+      "confidence": "media",
+      "left_jamb_uncertainty_px": 2
+    },
+    {
+      "id": "O12",
+      "name": "Ventana comedor",
+      "kind": "ventana",
+      "rect": [
+        "DINING_WL",
+        "SOUTH_I",
+        "DINING_WR",
+        "SOUTH_X"
+      ],
+      "axis": "h",
+      "supports": [
+        "W09A",
+        "W09B"
+      ],
+      "t08": "CL-V12",
+      "operation": "Dos paños con montante intermedio; deslizamiento y fracciones fijas pendientes de detalle T22."
+    },
+    {
+      "id": "O13",
+      "name": "Paso abierto cocina–estar",
+      "kind": "paso_abierto",
+      "line": [
+        [
+          1199.6,
+          "TI"
+        ],
+        [
+          1199.6,
+          "THICK_START"
+        ]
+      ],
+      "axis": "v",
+      "supports": [
+        "W01C",
+        "W18A"
+      ],
+      "t08": "CL-V13",
+      "operation": "Límite de circulación de referencia, sin marco ni hoja. No crear muro que deba perforarse aquí."
+    }
+  ],
+  "doors": [
+    {
+      "id": "P01",
+      "opening": "O01",
+      "t08": "CL-H01",
+      "hinge_px": [
+        1520,
+        21.5
+      ],
+      "leaf_span_px": 118.5,
+      "closed_uv": [
+        0,
+        1
+      ],
+      "open_uv": [
+        -1,
+        0
+      ],
+      "hinge_support": "W01C",
+      "hinge_side": "superior",
+      "opens_to": "interior, hacia el muro superior",
+      "graphic_leaf_open_tip_px": [
+        1401.5,
+        21.5
+      ]
+    },
+    {
+      "id": "P02",
+      "opening": "O02",
+      "t08": "CL-H02",
+      "hinge_px": [
+        351.5,
+        21.5
+      ],
+      "leaf_span_px": 102,
+      "closed_uv": [
+        0,
+        1
+      ],
+      "open_uv": [
+        -1,
+        0
+      ],
+      "hinge_support": "W01A",
+      "hinge_side": "superior",
+      "opens_to": "D3, hacia el muro superior",
+      "graphic_leaf_open_tip_px": [
+        249.5,
+        21.5
+      ]
+    },
+    {
+      "id": "P03",
+      "opening": "O03",
+      "t08": "CL-H03",
+      "hinge_px": [
+        477.5,
+        205.5
+      ],
+      "leaf_span_px": 102.5,
+      "closed_uv": [
+        -1,
+        0
+      ],
+      "open_uv": [
+        0,
+        1
+      ],
+      "hinge_support": "W14A / W10A",
+      "hinge_side": "derecha",
+      "opens_to": "D1, junto a separación D1–D2",
+      "graphic_leaf_open_tip_px": [
+        477.5,
+        308
+      ]
+    },
+    {
+      "id": "P04",
+      "opening": "O04",
+      "t08": "CL-H04",
+      "hinge_px": [
+        814.5,
+        157.5
+      ],
+      "leaf_span_px": 101.5,
+      "closed_uv": [
+        -1,
+        0
+      ],
+      "open_uv": [
+        0,
+        1
+      ],
+      "hinge_support": "W11",
+      "hinge_side": "derecha",
+      "opens_to": "D2, junto a separación con baño",
+      "graphic_leaf_open_tip_px": [
+        814.5,
+        259
+      ]
+    },
+    {
+      "id": "P05",
+      "opening": "O05",
+      "t08": "CL-H05",
+      "hinge_px": [
+        827.5,
+        147
+      ],
+      "leaf_span_px": 102,
+      "closed_uv": [
+        1,
+        0
+      ],
+      "open_uv": [
+        0,
+        -1
+      ],
+      "hinge_support": "W11",
+      "hinge_side": "izquierda",
+      "opens_to": "circulación superior, hacia fuera del baño",
+      "graphic_leaf_open_tip_px": [
+        827.5,
+        45
+      ]
+    },
+    {
+      "id": "P06",
+      "opening": "O06",
+      "t08": "CL-H06",
+      "hinge_px": [
+        1193,
+        610.5
+      ],
+      "leaf_span_px": 101.5,
+      "closed_uv": [
+        -1,
+        0
+      ],
+      "open_uv": [
+        0,
+        1
+      ],
+      "hinge_support": "W18C / W18D",
+      "hinge_side": "derecha",
+      "opens_to": "logia, junto a separación con comedor",
+      "graphic_leaf_open_tip_px": [
+        1193,
+        712
+      ]
+    }
+  ],
+  "furniture_leaves": [
+    {
+      "id": "F-D1-L",
+      "t08": "CL-H07",
+      "owner": "armario D1",
+      "hinge_px": [
+        236,
+        275
+      ],
+      "leaf_span_px": 57,
+      "closed_uv": [
+        1,
+        0
+      ],
+      "open_uv": [
+        0,
+        1
+      ],
+      "support": "jamba propia del mueble junto a W12B",
+      "status": "hoja izquierda de las dos dibujadas"
+    },
+    {
+      "id": "F-D1-R",
+      "t08": "CL-H07",
+      "owner": "armario D1",
+      "hinge_px": [
+        350,
+        275
+      ],
+      "leaf_span_px": 57,
+      "closed_uv": [
+        -1,
+        0
+      ],
+      "open_uv": [
+        0,
+        1
+      ],
+      "support": "jamba derecha propia del mueble",
+      "status": "hoja derecha de las dos dibujadas"
+    },
+    {
+      "id": "F-D2-T",
+      "t08": "CL-H08",
+      "owner": "armario D2",
+      "hinge_px": [
+        557,
+        206
+      ],
+      "leaf_span_px": 58,
+      "closed_uv": [
+        0,
+        1
+      ],
+      "open_uv": [
+        1,
+        0
+      ],
+      "support": "jamba superior propia del mueble junto a W14A/B",
+      "status": "hoja superior de las dos dibujadas"
+    },
+    {
+      "id": "F-D2-B",
+      "t08": "CL-H08",
+      "owner": "armario D2",
+      "hinge_px": [
+        557,
+        322
+      ],
+      "leaf_span_px": 58,
+      "closed_uv": [
+        0,
+        -1
+      ],
+      "open_uv": [
+        1,
+        0
+      ],
+      "support": "jamba inferior propia del mueble",
+      "status": "hoja inferior de las dos dibujadas"
+    },
+    {
+      "id": "F-D3-S",
+      "t08": "CL-H09",
+      "owner": "nicho D3",
+      "hinge_px": [
+        281.5,
+        193.5
+      ],
+      "leaf_span_px": 54,
+      "closed_uv": [
+        0,
+        -1
+      ],
+      "open_uv": [
+        -1,
+        0
+      ],
+      "support": "extremo inferior del frente del mueble, sobre W12C",
+      "status": "una hoja visible en fuente; sustituir por armario de dos hojas en T37 según usuario, sin adoptar este símbolo como diseño final"
+    }
+  ],
+  "jogs": [
+    {
+      "id": "J01",
+      "name": "Escalón D3–D1",
+      "walls": [
+        "W12A",
+        "W12B",
+        "W12C"
+      ]
+    },
+    {
+      "id": "J02",
+      "name": "Nicho D3 y remate superior",
+      "walls": [
+        "W13A",
+        "W13B",
+        "W12C"
+      ]
+    },
+    {
+      "id": "J03",
+      "name": "Cabecera escalonada D2",
+      "walls": [
+        "W14A",
+        "W14B",
+        "W14C"
+      ]
+    },
+    {
+      "id": "J04",
+      "name": "Cambio de espesor D1–D2",
+      "walls": [
+        "W10A",
+        "W10B"
+      ]
+    },
+    {
+      "id": "J05",
+      "name": "Cambio de espesor D2–baño",
+      "walls": [
+        "W11",
+        "W07"
+      ]
+    },
+    {
+      "id": "J06",
+      "name": "Retranqueo baño–cocina",
+      "walls": [
+        "W16A",
+        "W19A",
+        "W16B",
+        "W19B",
+        "W20A"
+      ]
+    },
+    {
+      "id": "J07",
+      "name": "Cocina–estar hasta logia–comedor",
+      "walls": [
+        "W18A",
+        "W18B",
+        "W18C",
+        "W18D"
+      ]
+    },
+    {
+      "id": "J08",
+      "name": "Escalón de fachada junto a terraza",
+      "walls": [
+        "W06B",
+        "W07",
+        "W08A"
+      ]
+    }
+  ],
+  "resolutions": [
+    {
+      "source": "CL-M13",
+      "result": "Respaldo horizontal W13A y lateral W13B con saliente superior para jamba D3 identificados en ampliación; la hoja oeste es mobiliario.",
+      "status": "resuelto para trazado 2D",
+      "next": "Altura y carpintería T14/T37"
+    },
+    {
+      "source": "CL-V11",
+      "result": "Cerramiento de lamas probable por isométrica; ancho levantado hasta shaft a izquierda, aunque parte esté oculta por equipo en planta.",
+      "status": "tipo probable, funcionamiento no resuelto",
+      "next": "T14/T22"
+    },
+    {
+      "source": "CL-H09",
+      "result": "Una hoja pequeña gira hacia D3 desde frente oeste del nicho. La fuente y el requisito de dos hojas se registran por separado.",
+      "status": "simbología localizada, adaptación pendiente",
+      "next": "T37"
+    },
+    {
+      "source": "CL-F11",
+      "result": "Panel Image190 añadido por composición de la lámina, sin doble cara de tabique en planta nativa. Se excluye del catálogo de muros; no acredita otro espesor ni modifica el perímetro.",
+      "status": "exclusión arquitectónica resuelta, diseño de mueble pendiente",
+      "next": "T34/T37"
+    },
+    {
+      "source": "CL-M20 / CL-E12",
+      "result": "Solo bordes W19B/W20A/W20B y fachada; X interior no es geometría. Función y altura por confirmar.",
+      "status": "contorno registrado, uso pendiente",
+      "next": "T12/T14"
+    }
+  ],
+  "excluded_as_walls": [
+    "CL-H01",
+    "CL-H02",
+    "CL-H03",
+    "CL-H04",
+    "CL-H05",
+    "CL-H06",
+    "CL-H07",
+    "CL-H08",
+    "CL-H09",
+    "CL-F01",
+    "CL-F02",
+    "CL-F03",
+    "CL-F04",
+    "CL-F05",
+    "CL-F06",
+    "CL-F07",
+    "CL-F08",
+    "CL-F09",
+    "CL-F10",
+    "CL-F11",
+    "CL-E01",
+    "CL-E02",
+    "CL-E03",
+    "CL-E04",
+    "CL-E05",
+    "CL-E06",
+    "CL-E07",
+    "CL-E08",
+    "CL-E09",
+    "CL-E10",
+    "CL-E11",
+    "CL-E12",
+    "CL-T01",
+    "CL-T02",
+    "CL-T03",
+    "CL-T04",
+    "CL-T05",
+    "CL-C01",
+    "CL-C02",
+    "CL-C03",
+    "CL-C04",
+    "CL-C05",
+    "CL-C06",
+    "CL-C07",
+    "CL-L01",
+    "CL-L02",
+    "CL-L03",
+    "CL-L04",
+    "CL-L05",
+    "CL-L06",
+    "CL-L07",
+    "CL-L08"
+  ],
+  "face_checks": [
+    {
+      "key": "D12_L",
+      "axis": "u",
+      "roi": [
+        477,
+        330,
+        483,
+        380
+      ]
+    },
+    {
+      "key": "D12_THIN_R",
+      "axis": "u",
+      "roi": [
+        484,
+        330,
+        491,
+        380
+      ]
+    },
+    {
+      "key": "BATH_L",
+      "axis": "u",
+      "roi": [
+        814,
+        280,
+        820,
+        315
+      ]
+    },
+    {
+      "key": "BATH_THIN_R",
+      "axis": "u",
+      "roi": [
+        821,
+        280,
+        828,
+        315
+      ]
+    },
+    {
+      "key": "NICHE_RI",
+      "axis": "u",
+      "roi": [
+        349,
+        160,
+        355,
+        183
+      ]
+    },
+    {
+      "key": "NICHE_RX",
+      "axis": "u",
+      "roi": [
+        357,
+        160,
+        363,
+        183
+      ]
+    },
+    {
+      "key": "NICHE_T",
+      "axis": "v",
+      "roi": [
+        300,
+        128,
+        335,
+        134
+      ]
+    },
+    {
+      "key": "NICHE_B",
+      "axis": "v",
+      "roi": [
+        300,
+        136,
+        335,
+        140
+      ]
+    },
+    {
+      "key": "D3_STEP_L",
+      "axis": "u",
+      "roi": [
+        224,
+        215,
+        230,
+        245
+      ]
+    },
+    {
+      "key": "D3_STEP_R",
+      "axis": "u",
+      "roi": [
+        232,
+        215,
+        236,
+        245
+      ]
+    },
+    {
+      "key": "D3_LOW_T",
+      "axis": "v",
+      "roi": [
+        150,
+        265,
+        180,
+        271
+      ]
+    },
+    {
+      "key": "D3_LOW_B",
+      "axis": "v",
+      "roi": [
+        150,
+        272,
+        180,
+        278
+      ]
+    },
+    {
+      "key": "D2_HEAD_T",
+      "axis": "v",
+      "roi": [
+        580,
+        145,
+        630,
+        152
+      ]
+    },
+    {
+      "key": "D2_HEAD_B",
+      "axis": "v",
+      "roi": [
+        580,
+        153,
+        630,
+        159
+      ]
+    },
+    {
+      "key": "D2_STEP_L",
+      "axis": "u",
+      "roi": [
+        548,
+        167,
+        554,
+        183
+      ]
+    },
+    {
+      "key": "D2_STEP_R",
+      "axis": "u",
+      "roi": [
+        555,
+        167,
+        561,
+        183
+      ]
+    },
+    {
+      "key": "D3_HEAD_T",
+      "axis": "v",
+      "roi": [
+        500,
+        194,
+        530,
+        201
+      ]
+    },
+    {
+      "key": "D3_HEAD_B",
+      "axis": "v",
+      "roi": [
+        500,
+        201,
+        530,
+        207
+      ]
+    },
+    {
+      "key": "BATH_RI",
+      "axis": "u",
+      "roi": [
+        1009,
+        350,
+        1016,
+        380
+      ]
+    },
+    {
+      "key": "BATH_RX",
+      "axis": "u",
+      "roi": [
+        1017,
+        350,
+        1022,
+        380
+      ]
+    },
+    {
+      "key": "KITCHEN_NICHE_B",
+      "axis": "v",
+      "roi": [
+        1060,
+        158,
+        1080,
+        163
+      ]
+    },
+    {
+      "key": "SINK_T",
+      "axis": "v",
+      "roi": [
+        1040,
+        532,
+        1060,
+        537
+      ]
+    },
+    {
+      "key": "SINK_B",
+      "axis": "v",
+      "roi": [
+        1040,
+        539,
+        1060,
+        544
+      ]
+    },
+    {
+      "key": "LOGIA_HEAD_T",
+      "axis": "v",
+      "roi": [
+        1060,
+        597,
+        1080,
+        604
+      ]
+    },
+    {
+      "key": "LOGIA_HEAD_B",
+      "axis": "v",
+      "roi": [
+        1060,
+        608,
+        1080,
+        613
+      ]
+    },
+    {
+      "key": "SOUTH_I",
+      "axis": "v",
+      "roi": [
+        981,
+        777,
+        989,
+        783
+      ]
+    },
+    {
+      "key": "SOUTH_X",
+      "axis": "v",
+      "roi": [
+        981,
+        792,
+        989,
+        799
+      ]
+    }
+  ]
+}

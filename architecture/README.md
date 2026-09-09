@@ -6,7 +6,7 @@ El [inventario T09](measurements/README.md) añade 58 lecturas y referencias con
 
 La [calibración T10](calibration/README.md) fija origen, ejes y escala uniforme de trabajo, con controles y sensibilidad de lectura documentados. La transformación común está en `calibration/t10-calibracion.json`; se reutilizará para evitar coordenadas distintas en Blender y web.
 
-T11 es el siguiente paso: registrar muros, esquinas, retranqueos y vanos, además del soporte, ancho, bisagra y sentido de apertura de cada puerta. La calibración no cierra los espesores desconocidos, alturas ni superficie del departamento.
+El [levantamiento T11](plan/README.md) registra 40 paños entre caras, 13 vanos/pasos, seis puertas de recinto y sus bisagras, cinco hojas de mobiliario de la fuente y 106 vértices de borde. Conserva medidas leídas, nominales documentados e incertidumbres por separado. T12 es el siguiente paso: confirmar la topología y lectura funcional del baño y la logia. La calibración y el trazado no cierran los espesores desconocidos, alturas ni superficie del departamento.
 
 Cada medida deberá conservar su unidad en metros, identificador, procedencia y grado de certeza. Distinguir el objetivo oficial de 76,66 m², el área calculada y la superficie útil; excluir la terraza del cómputo interior. La diferencia con el rótulo de 76,80 m² se resolverá según el plan.
 

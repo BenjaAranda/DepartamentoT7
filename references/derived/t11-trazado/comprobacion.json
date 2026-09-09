@@ -1,0 +1,60 @@
+{
+  "task": "T11",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pillow": "12.3.0"
+  },
+  "source_image_sha256": "d8311d68abad9da4632d86f7da767c163ed83de0211bb9a811fa1aff8699869e",
+  "source_pdf_sha256": "ad8e0871ed6afb7117e2dafa80bc28ad90b3c845709dc268ba01fcd12259aeec",
+  "calibration_sha256": "c8a373f353b03cf51775398e48668c1cf3b9d215bf0c48c592bec8ba570a26ad",
+  "author_sha256": "e749e3581852bcc9c53210cf0bc61d6b331f5bc4bddf7385ad796579413ccc77",
+  "register_sha256": "72693862f4e05123c422cea84d369002e34810adb64ac1df4807b6164599b535",
+  "font_sha256": "74d696e666f696e93db685a85c94bfbfcc0796dfcf8a2e2e2e2c908a54e82949",
+  "reference_hashes": {
+    "planta-nativa.png": "d8311d68abad9da4632d86f7da767c163ed83de0211bb9a811fa1aff8699869e",
+    "isometrica-nativa.jpg": "215dbffef5fc23badf880675e18bfc69274f778d8c7b11541ace1e6756aefe03",
+    "pagina-20-contexto.png": "207c6f0fea2a0c3721144ca961b37a0305d07c27512b6c055fd258ac19b05db2",
+    "planta-compuesta.png": "62486b5b11578cb151d9015d866b2bfe326918be9f6e36bdb9a52e06af998bd3",
+    "pagina-20-texto.txt": "5f1a1dc3ba346a2fd569be1a51317998a74106c4e13b91939b30f43b9d9a12a7"
+  },
+  "checks": {
+    "wall_groups_covered": 20,
+    "wall_segments": 40,
+    "openings": 13,
+    "room_doors": 6,
+    "furniture_source_leaves": 5,
+    "jogs_connected": 8,
+    "wall_contacts": 34,
+    "boundary_rings": 8,
+    "boundary_corners": 106,
+    "positive_wall_overlaps": 0,
+    "openings_obstructed_by_wall_footprints": 0,
+    "selected_face_checks": 27,
+    "max_selected_face_residual_px": 0.6333333333333542,
+    "all_door_pivots_located": true,
+    "all_source_leaf_symbols_accounted_for": true,
+    "source_unchanged": true,
+    "uniform_T10_transform": true
+  },
+  "not_tested": [
+    "área del departamento",
+    "alturas",
+    "barrido físico de hojas y marcos",
+    "colisiones 3D",
+    "mobiliario final",
+    "recorrido",
+    "Blender/GLB/Unreal",
+    "sitio publicado"
+  ],
+  "files": {
+    "control-caras.tsv": "3bc08ad0cdb1c4326cbc394c3c3c9dc92f5f189a2e698cde744ff106ba48fe72",
+    "esquinas.tsv": "c38eccdfeab8d5e564d8d1be4d28d4b56fb162aff543c0877264381a564fa2c7",
+    "muros.tsv": "b405a485b71d20721502303945c116f50409522556991f97be920d7a03a84000",
+    "planta-muros-vanos.png": "720126ee822724d73b917b3432d3cc7dfdabfd2f4e5a49691e5003943bdf7954",
+    "puertas-y-bisagras.png": "ab020d818d985430a920409f813db3f2fd17ddb47d4ec3d36a0c3c05d3cbf437",
+    "puertas.tsv": "b2469a262304d2c284f48851d8f87e344b2d1fbf6a415af7e7e20bae08a3cc8a",
+    "remates-y-logia.png": "a4acc544a4cfcb851364694ca11c7b59d6c888607bd36d6538352c720a496edb",
+    "vanos.tsv": "8cfe1d96650d458ac84728fa04d2dfe8840ca9a838b3ae959f47641015e0f24f"
+  }
+}
