@@ -1,0 +1,242 @@
+{
+  "reference_id": "T7-P20",
+  "extracted_at_utc": "2026-09-09T15:32:24.397435+00:00",
+  "source": {
+    "filename": "Presentación Aprobación Proyecto Técnico 2.pdf",
+    "path_from_project_root": "../Presentación Aprobación Proyecto Técnico 2.pdf",
+    "bytes": 18295204,
+    "page_count": 42,
+    "page_number": 20,
+    "page_index": 19,
+    "sha256_before": "ad8e0871ed6afb7117e2dafa80bc28ad90b3c845709dc268ba01fcd12259aeec",
+    "sha256_after": "ad8e0871ed6afb7117e2dafa80bc28ad90b3c845709dc268ba01fcd12259aeec",
+    "unchanged": true
+  },
+  "page": {
+    "media_box_pt": [
+      0,
+      0,
+      960,
+      540
+    ],
+    "crop_box_pt": [
+      0,
+      0,
+      960,
+      540
+    ],
+    "rotation_degrees": 0,
+    "coordinate_system": "PDF points; image and crop bounds use x right, y down from upper-left; 72 pt per inch",
+    "image_placements": [
+      {
+        "resource_name": "Image195",
+        "bbox_pt_top_left": [
+          618.08,
+          6.339999999999918,
+          947.76,
+          303.75
+        ],
+        "source_size_px": [
+          915,
+          826
+        ]
+      },
+      {
+        "resource_name": "Image196",
+        "bbox_pt_top_left": [
+          10.973,
+          178.07996948200002,
+          583.1129999999999,
+          480.86
+        ],
+        "source_size_px": [
+          1536,
+          813
+        ]
+      },
+      {
+        "resource_name": "Image190",
+        "bbox_pt_top_left": [
+          24.332,
+          286.555,
+          46.335,
+          317.68
+        ],
+        "source_size_px": [
+          53,
+          75
+        ]
+      },
+      {
+        "resource_name": "Image190",
+        "bbox_pt_top_left": [
+          24.332,
+          317.675,
+          46.335,
+          348.8
+        ],
+        "source_size_px": [
+          53,
+          75
+        ]
+      },
+      {
+        "resource_name": "Image197",
+        "bbox_pt_top_left": [
+          255.52,
+          12.648000000000025,
+          329.04200000000003,
+          86.17000000000002
+        ],
+        "source_size_px": [
+          204,
+          204
+        ]
+      },
+      {
+        "resource_name": "Image21",
+        "bbox_pt_top_left": [
+          838.47,
+          494.0913,
+          947.76,
+          533.6553
+        ],
+        "source_size_px": [
+          360,
+          130
+        ]
+      }
+    ]
+  },
+  "tools": {
+    "pypdf": "6.10.0",
+    "pdfplumber": "0.11.9",
+    "Pillow": "12.3.0",
+    "poppler": "pdftoppm version 26.07.0"
+  },
+  "artifacts": [
+    {
+      "file": "planta-nativa.png",
+      "role": "native_plan_without_page_overlays",
+      "bytes": 283755,
+      "sha256": "d8311d68abad9da4632d86f7da767c163ed83de0211bb9a811fa1aff8699869e",
+      "format": "PNG",
+      "size_px": [
+        1536,
+        813
+      ],
+      "mode": "RGB",
+      "decoded_rgb_sha256": "c53b925f8f36402367d90c93a69f3dba1ef2992efdfae36d1f2f0c8a4d6fde8d",
+      "pdf_resource": "/Image196",
+      "pdf_object_id": 196,
+      "pdf_generation": 0,
+      "pdf_filter": "/FlateDecode",
+      "pdf_color_space": "/DeviceRGB",
+      "bits_per_component": 8,
+      "resampled": false,
+      "pdf_decoded_pixels_sha256": "c53b925f8f36402367d90c93a69f3dba1ef2992efdfae36d1f2f0c8a4d6fde8d",
+      "native_pixels_match": true,
+      "page_bbox_pt_top_left": [
+        10.973,
+        178.07996948200002,
+        583.1129999999999,
+        480.86
+      ],
+      "effective_pdf_dpi": [
+        193.295347,
+        193.32847
+      ]
+    },
+    {
+      "file": "isometrica-nativa.jpg",
+      "role": "native_isometric",
+      "bytes": 76649,
+      "sha256": "215dbffef5fc23badf880675e18bfc69274f778d8c7b11541ace1e6756aefe03",
+      "format": "JPEG",
+      "size_px": [
+        915,
+        826
+      ],
+      "mode": "RGB",
+      "decoded_rgb_sha256": "3e84bfd377584097c5da1d32e36464ab7601139a3b102c6b5392f543e0488cf8",
+      "pdf_resource": "/Image195",
+      "pdf_object_id": 195,
+      "pdf_generation": 0,
+      "pdf_filter": "/DCTDecode",
+      "pdf_color_space": "/DeviceRGB",
+      "bits_per_component": 8,
+      "resampled": false,
+      "pdf_jpeg_stream_sha256": "215dbffef5fc23badf880675e18bfc69274f778d8c7b11541ace1e6756aefe03",
+      "original_jpeg_bytes_match": true,
+      "page_bbox_pt_top_left": [
+        618.08,
+        6.339999999999918,
+        947.76,
+        303.75
+      ],
+      "effective_pdf_dpi": [
+        199.830138,
+        199.966376
+      ]
+    },
+    {
+      "file": "pagina-20-contexto.png",
+      "role": "full_page_context_with_header_and_annotations",
+      "bytes": 968806,
+      "sha256": "207c6f0fea2a0c3721144ca961b37a0305d07c27512b6c055fd258ac19b05db2",
+      "format": "PNG",
+      "size_px": [
+        2880,
+        1620
+      ],
+      "mode": "RGB",
+      "decoded_rgb_sha256": "5ef21a139aecdc8c994757816c95b5088faa15a7bf318879d4587ffacacbde9d",
+      "render_dpi": 216
+    },
+    {
+      "file": "planta-compuesta.png",
+      "role": "plan_with_original_page_overlays_and_access_label",
+      "bytes": 392677,
+      "sha256": "62486b5b11578cb151d9015d866b2bfe326918be9f6e36bdb9a52e06af998bd3",
+      "format": "PNG",
+      "size_px": [
+        1851,
+        933
+      ],
+      "mode": "RGB",
+      "decoded_rgb_sha256": "0ed4e4270bac287788cb9e065b697a7d0ec272aefce2a65d29ffc7d213929f1a",
+      "render_dpi": 216,
+      "crop_bbox_pt_top_left": [
+        8,
+        174,
+        625,
+        485
+      ],
+      "crop_bbox_render_pixels": [
+        24,
+        522,
+        1875,
+        1455
+      ],
+      "pixels_match_full_page_region": true
+    }
+  ],
+  "text_extraction": {
+    "file": "pagina-20-texto.txt",
+    "bytes": 360,
+    "sha256": "5f1a1dc3ba346a2fd569be1a51317998a74106c4e13b91939b30f43b9d9a12a7",
+    "scope": "PDF text objects only; no OCR of dimensions inside the raster plan"
+  },
+  "calibration": {
+    "status": "not_calibrated",
+    "meters_per_pixel": null,
+    "area_verified": false,
+    "note": "PDF points and render DPI do not establish architectural scale. T09-T13 remain pending."
+  },
+  "provenance_notes": [
+    "Native image extraction does not include separate PDF text or drawing overlays.",
+    "The plan composite retains original page labels, access arrow and two placements of Image190.",
+    "Native images were not resized, rotated, mirrored or retouched. Composite images are PDF renders at 216 DPI.",
+    "Rendering at 216 DPI does not add architectural information to the native raster images."
+  ]
+}

@@ -170,11 +170,11 @@
     }
   },
   "last_sync": {
-    "checked_at": "2026-09-09T02:48:38.134Z",
-    "source_sha256": "e0df316ea27551f65ca697ce1e605f38b7dfe3ed968b3d01ce7e3746e96944a8",
+    "checked_at": "2026-09-09T15:34:56.058Z",
+    "source_sha256": "480981211e34e01a0f0e77d164f3a4734916689c7d3edf26a7001b9a1730753e",
     "stage_count": 12,
     "task_count": 78,
-    "completed_tasks": 14,
+    "completed_tasks": 15,
     "open_stages": 10,
     "closed_stages": 2,
     "all_match": true,
@@ -200,7 +200,7 @@
         "issue_number": 3,
         "state": "open",
         "task_count": 9,
-        "completed": 0,
+        "completed": 1,
         "matches": true
       },
       {

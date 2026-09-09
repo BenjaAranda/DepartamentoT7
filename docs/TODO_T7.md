@@ -1,6 +1,6 @@
 # Tareas del simulador T7
 
-Actualizado: 8 de septiembre de 2026. T01–T06 completadas; T07 es la siguiente tarea.
+Actualizado: 9 de septiembre de 2026. T01–T07 completadas; T08 es la siguiente tarea.
 
 Esta es la lista de seguimiento principal del nuevo proyecto `simulador-t7`.
 
@@ -36,7 +36,7 @@ Dependencia: E00. Hito: estructura y destinos nuevos preparados.
 
 Dependencia: E00. Hito: plano calibrado y cuestiones geométricas resueltas antes de cerrar arquitectura.
 
-- [ ] T07. Extraer y archivar referencias de planta e isométrica sin alterar el original; comprobar su resolución y procedencia.
+- [x] T07. Extraer y archivar referencias de planta e isométrica sin alterar el original; comprobar su resolución y procedencia. Evidencia: `references/derived/p20-t7/`, planta nativa de 1536 × 813 px, isométrica de 915 × 826 px, composición anotada y página completa; píxeles/bytes nativos comprobados y huella del PDF intacta. Ver `VALIDACION_T07.md` y el manifiesto de referencias. La calibración métrica sigue pendiente.
 - [ ] T08. Clasificar trazos: muros, vanos, hojas, mobiliario, equipamiento, cotas, tramas y espacios libres.
 - [ ] T09. Inventariar las cotas y espesores legibles, su posición en el plano y confianza; buscar en el PDF medidas complementarias.
 - [ ] T10. Fijar origen, ejes y escala mediante referencias horizontales y verticales, con puntos independientes de control.
@@ -148,4 +148,4 @@ Dependencia: E10. Hito: V15 superada y todos los entregables accesibles.
 
 ## Continuación concreta
 
-La siguiente tarea de implementación es T07: extraer y archivar planta e isométrica de la página 20 del PDF original, comprobar resolución y procedencia y conservar la huella del original. Guardar los derivados en `references/derived/`. La raíz Git local es `simulador-t7/`, con LFS configurado, estado inicial subido y `origin` vinculado al repositorio privado `BenjaAranda/los-altos-algarrobo-t7`; reutilizar ambos. El seguimiento de E02 corresponde a la issue #3; actualizar esta lista, sincronizar sus casillas y subir la revisión con su evidencia. El sitio de `web/` ya está registrado: reutilizar el `project_id` de `web/.openai/hosting.json`, sin crearlo otra vez. Su acceso inicial es privado y sigue sin publicar. El PDF original permanece en la carpeta de trabajo superior. Las decisiones dimensionales se cierran en E02 antes de declarar definitiva la arquitectura. Si Unreal sigue instalándose, continuar por tareas independientes y conservar E08 pendiente.
+La siguiente tarea de implementación es T08: clasificar los trazos de la planta como muros, vanos, hojas, mobiliario, equipamiento, cotas, tramas o espacios libres. Usar las referencias nativas y compuestas de `references/derived/p20-t7/`; prestar atención a las superposiciones de la lámina registradas en el manifiesto y no convertir equipamiento del baño o mobiliario en paredes. Conservar las imágenes nativas intactas y guardar la clasificación como un derivado nuevo. La raíz Git es `simulador-t7/` y `origin` apunta al repositorio privado `BenjaAranda/los-altos-algarrobo-t7`. El seguimiento de E02 corresponde a la issue #3; actualizar esta lista, sincronizar sus casillas y subir la revisión con su evidencia. Reutilizar el sitio registrado en `web/.openai/hosting.json`, que sigue privado y sin publicar. El PDF original permanece en la carpeta superior. La calibración en metros y las decisiones dimensionales siguen pendientes en E02. Si Unreal sigue instalándose, continuar por tareas independientes y conservar E08 pendiente.

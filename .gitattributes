@@ -1,6 +1,7 @@
 # Normalize authored text across Blender, Unreal and web tooling
 * text=auto
 *.md text eol=lf
+*.txt text eol=lf
 *.json text eol=lf
 *.ts text eol=lf
 *.tsx text eol=lf
