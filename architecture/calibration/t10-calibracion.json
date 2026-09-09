@@ -1,0 +1,1337 @@
+{
+  "task": "T10",
+  "revision": 1,
+  "status": "working_metric_calibration",
+  "source_pdf_sha256": "ad8e0871ed6afb7117e2dafa80bc28ad90b3c845709dc268ba01fcd12259aeec",
+  "source_image_sha256": "d8311d68abad9da4632d86f7da767c163ed83de0211bb9a811fa1aff8699869e",
+  "observations_sha256": "311e68288fcc50c5e54d7645e14e888e171a02ec3340620a43c979e0f32ca6ec",
+  "t09_catalogue_sha256": "1ddc8920c7062b38fd8fa18b4a9d7ce805d00c2f8f7bf1a172c07a49baacde07",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pillow": "12.3.0"
+  },
+  "policy": {
+    "uses_area_to_fit": false,
+    "uses_furniture_dimensions": false,
+    "nonuniform_scaling_applied": false,
+    "architectural_validation_complete": false,
+    "local_units": "cm inferidos; coherentes con seis controles explícitos de 15 cm",
+    "scope": "Transformación de trabajo para levantar T11. No acredita dimensiones ausentes, área, alturas, cámara o modelo 3D."
+  },
+  "scale": {
+    "m_per_px": 0.008459347583241785,
+    "px_per_m": 118.21242597727385,
+    "fit_method": "Least squares through origin: sum(pixel_span * nominal_m) / sum(pixel_span^2)",
+    "fit_ids": [
+      "CAL-FH01",
+      "CAL-FH02",
+      "CAL-FV01"
+    ],
+    "diagnostic_u_m_per_px": 0.00845845633309471,
+    "diagnostic_v_m_per_px": 0.008468999322156633,
+    "diagnostic_axis_difference_percent": 0.12463123140618015,
+    "sensitivity_interval_m_per_px": [
+      0.00836013120406623,
+      0.008568520902896778
+    ],
+    "sensitivity_assumption": "Cada extremo +/-1 px; intervalo de consistencia, no confianza estadística ni tolerancia constructiva.",
+    "metres_per_single_pixel": 0.008459347583241785
+  },
+  "origin": {
+    "pixel_uv": [
+      22.292490118577074,
+      630.9126213592233
+    ],
+    "blender_xyz_m": [
+      0,
+      0,
+      0
+    ],
+    "definition": "Intersección de caras interiores inferior e izquierda de D1, sobre piso terminado",
+    "reading_sensitivity_px": 1
+  },
+  "axes": {
+    "blender_x": "derecha del plano",
+    "blender_y": "arriba del plano",
+    "blender_z": "altura sobre piso terminado",
+    "geographic_north": null,
+    "rotation_applied_degrees": 0,
+    "scale_policy": "uniforme, una sola razón m/px",
+    "horizontal_deviation_deg": 0.0,
+    "vertical_deviation_deg": -2.333884323453943e-05
+  },
+  "transforms": {
+    "pixel_uv_to_blender_xy_homogeneous": [
+      [
+        0.008459347583241785,
+        0.0,
+        -0.18857992240902635
+      ],
+      [
+        0.0,
+        -0.008459347583241785,
+        5.337109158731885
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "blender_xy_to_pixel_uv_homogeneous": [
+      [
+        118.21242597727385,
+        0.0,
+        22.292490118577074
+      ],
+      [
+        -0.0,
+        -118.21242597727385,
+        630.9126213592233
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "formula_blender": "X=(u-u0)*s; Y=(v0-v)*s; Z=altura sobre piso terminado",
+    "formula_gltf": "Desde Blender: (X,Y,Z) -> (X,Z,-Y); una unidad = un metro",
+    "unreal": "Conversión de metros a centímetros y orientación a comprobar en T49; sin importación realizada en T10."
+  },
+  "probes": {
+    "B90L": {
+      "pixel": [
+        858.368025751073,
+        250.5
+      ],
+      "coordinate": 858.368025751073,
+      "roi": [
+        854,
+        246,
+        863,
+        255
+      ],
+      "axis": "u",
+      "description": "Marca izquierda de cota 90, cabecera del baño",
+      "profile_min": 154.55555555555554,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "B9040": {
+      "pixel": [
+        964.9047884187081,
+        250.5
+      ],
+      "coordinate": 964.9047884187081,
+      "roi": [
+        962,
+        244,
+        970,
+        257
+      ],
+      "axis": "u",
+      "description": "Marca compartida de cotas 90 y 40",
+      "profile_min": 95.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "B40R": {
+      "pixel": [
+        1012.244486156734,
+        250.5
+      ],
+      "coordinate": 1012.244486156734,
+      "roi": [
+        1009,
+        244,
+        1018,
+        257
+      ],
+      "axis": "u",
+      "description": "Marca derecha de la cadena superior del baño",
+      "profile_min": 96.15384615384616,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "L137L": {
+      "pixel": [
+        1044.0887533875339,
+        644.5
+      ],
+      "coordinate": 1044.0887533875339,
+      "roi": [
+        1039,
+        638,
+        1048,
+        648
+      ],
+      "axis": "u",
+      "description": "Extremo izquierdo de la cota 137.5 sobre la separación técnica",
+      "profile_min": 85.5,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "L137R": {
+      "pixel": [
+        1206.5598563447725,
+        644.5
+      ],
+      "coordinate": 1206.5598563447725,
+      "roi": [
+        1200,
+        638,
+        1210,
+        648
+      ],
+      "axis": "u",
+      "description": "Extremo derecho de la cota 137.5, línea al lado del marco",
+      "profile_min": 79.7,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "L50T": {
+      "pixel": [
+        1164,
+        613.2594670406731
+      ],
+      "coordinate": 613.2594670406731,
+      "roi": [
+        1159,
+        607,
+        1166,
+        620
+      ],
+      "axis": "v",
+      "description": "Marca superior de la cota vertical 50; línea vertical centrada en u=1164",
+      "profile_min": 144.57142857142858,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "L50B": {
+      "pixel": [
+        1164,
+        672.2983193277312
+      ],
+      "coordinate": 672.2983193277312,
+      "roi": [
+        1159,
+        668,
+        1166,
+        679
+      ],
+      "axis": "v",
+      "description": "Marca inferior de la cota vertical 50; línea vertical centrada en u=1164",
+      "profile_min": 124.57142857142857,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "B80L": {
+      "pixel": [
+        834.6936002860207,
+        478.5
+      ],
+      "coordinate": 834.6936002860207,
+      "roi": [
+        830,
+        470,
+        838,
+        481
+      ],
+      "axis": "u",
+      "description": "Extremo izquierdo de cota 80 junto al inodoro",
+      "profile_min": 43.63636363636363,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "B8070": {
+      "pixel": [
+        929.5508021390375,
+        478.5
+      ],
+      "coordinate": 929.5508021390375,
+      "roi": [
+        925,
+        472,
+        933,
+        483
+      ],
+      "axis": "u",
+      "description": "Marca compartida de cotas 80 y 70",
+      "profile_min": 135.72727272727272,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "B70R": {
+      "pixel": [
+        1012.2447296058663,
+        478.5
+      ],
+      "coordinate": 1012.2447296058663,
+      "roi": [
+        1009,
+        470,
+        1018,
+        484
+      ],
+      "axis": "u",
+      "description": "Extremo derecho de cota 70 junto al inodoro",
+      "profile_min": 102.28571428571429,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "L90L": {
+      "pixel": [
+        1091.1661631419938,
+        664
+      ],
+      "coordinate": 1091.1661631419938,
+      "roi": [
+        1088,
+        658,
+        1095,
+        669
+      ],
+      "axis": "u",
+      "description": "Marca izquierda de cota 90 en logia",
+      "profile_min": 124.54545454545455,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "L90R": {
+      "pixel": [
+        1198.0,
+        664
+      ],
+      "coordinate": 1198.0,
+      "roi": [
+        1196,
+        659,
+        1202,
+        670
+      ],
+      "axis": "u",
+      "description": "Marca derecha de cota 90 sobre línea discontinua; excluir el marco paralelo de u=1193",
+      "profile_min": 183.45454545454547,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "E03L": {
+      "pixel": [
+        4.633587786259542,
+        85
+      ],
+      "coordinate": 4.633587786259542,
+      "roi": [
+        1,
+        70,
+        10,
+        100
+      ],
+      "axis": "u",
+      "description": "Cara exterior del paño izquierdo superior",
+      "profile_min": 62.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "E03R": {
+      "pixel": [
+        22.306772908366533,
+        85
+      ],
+      "coordinate": 22.306772908366533,
+      "roi": [
+        18,
+        70,
+        25,
+        100
+      ],
+      "axis": "u",
+      "description": "Cara interior del paño izquierdo superior",
+      "profile_min": 50.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "E04L": {
+      "pixel": [
+        4.633587786259542,
+        570
+      ],
+      "coordinate": 4.633587786259542,
+      "roi": [
+        1,
+        555,
+        10,
+        585
+      ],
+      "axis": "u",
+      "description": "Cara exterior del paño izquierdo de D1",
+      "profile_min": 62.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "E04R": {
+      "pixel": [
+        22.29332806948283,
+        570
+      ],
+      "coordinate": 22.29332806948283,
+      "roi": [
+        18,
+        555,
+        25,
+        585
+      ],
+      "axis": "u",
+      "description": "Cara interior del paño izquierdo de D1",
+      "profile_min": 49.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "E05L": {
+      "pixel": [
+        1513.2314086722085,
+        548
+      ],
+      "coordinate": 1513.2314086722085,
+      "roi": [
+        1508,
+        538,
+        1519,
+        558
+      ],
+      "axis": "u",
+      "description": "Cara interior del muro derecho exterior",
+      "profile_min": 48.95,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "E05R": {
+      "pixel": [
+        1530.5707762557079,
+        548
+      ],
+      "coordinate": 1530.5707762557079,
+      "roi": [
+        1526,
+        538,
+        1536,
+        558
+      ],
+      "axis": "u",
+      "description": "Cara exterior del muro derecho exterior",
+      "profile_min": 95.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "E06L": {
+      "pixel": [
+        480.04306220095697,
+        475
+      ],
+      "coordinate": 480.04306220095697,
+      "roi": [
+        475,
+        465,
+        486,
+        485
+      ],
+      "axis": "u",
+      "description": "Cara izquierda del paño entre D1 y D2",
+      "profile_min": 26.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "E06R": {
+      "pixel": [
+        497.7157894736842,
+        475
+      ],
+      "coordinate": 497.7157894736842,
+      "roi": [
+        493,
+        465,
+        500,
+        485
+      ],
+      "axis": "u",
+      "description": "Cara derecha del paño entre D1 y D2; excluir el mueble a su derecha",
+      "profile_min": 84.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "E07L": {
+      "pixel": [
+        817.2154471544716,
+        530
+      ],
+      "coordinate": 817.2154471544716,
+      "roi": [
+        815,
+        520,
+        822,
+        540
+      ],
+      "axis": "u",
+      "description": "Cara exterior del retorno del baño; excluir otra línea de fachada en u=814",
+      "profile_min": 27.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "E07R": {
+      "pixel": [
+        834.7283464566929,
+        530
+      ],
+      "coordinate": 834.7283464566929,
+      "roi": [
+        830,
+        520,
+        840,
+        540
+      ],
+      "axis": "u",
+      "description": "Cara interior del retorno del baño",
+      "profile_min": 35.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "E08L": {
+      "pixel": [
+        1191.0,
+        414
+      ],
+      "coordinate": 1191.0,
+      "roi": [
+        1186,
+        405,
+        1197,
+        423
+      ],
+      "axis": "u",
+      "description": "Cara izquierda del paño corto cocina-estar",
+      "profile_min": 26.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "E08R": {
+      "pixel": [
+        1208.189723320158,
+        414
+      ],
+      "coordinate": 1208.189723320158,
+      "roi": [
+        1203,
+        405,
+        1215,
+        423
+      ],
+      "axis": "u",
+      "description": "Cara derecha del paño corto cocina-estar",
+      "profile_min": 41.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "OU_LOW": {
+      "pixel": [
+        22.292490118577074,
+        607
+      ],
+      "coordinate": 22.292490118577074,
+      "roi": [
+        17,
+        590,
+        27,
+        625
+      ],
+      "axis": "u",
+      "description": "Cara interior izquierda de D1 próxima al origen",
+      "profile_min": 49.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "OU_HIGH": {
+      "pixel": [
+        22.292617208550386,
+        295
+      ],
+      "coordinate": 22.292617208550386,
+      "roi": [
+        18,
+        284,
+        26,
+        306
+      ],
+      "axis": "u",
+      "description": "Misma cara en un punto distante, para comprobar verticalidad",
+      "profile_min": 49.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "OV_LEFT": {
+      "pixel": [
+        52.5,
+        630.9126213592233
+      ],
+      "coordinate": 630.9126213592233,
+      "roi": [
+        35,
+        626,
+        70,
+        637
+      ],
+      "axis": "v",
+      "description": "Cara interior inferior de D1 próxima al origen",
+      "profile_min": 32.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    },
+    "OV_RIGHT": {
+      "pixel": [
+        265,
+        630.9126213592233
+      ],
+      "coordinate": 630.9126213592233,
+      "roi": [
+        240,
+        626,
+        290,
+        637
+      ],
+      "axis": "v",
+      "description": "Misma cara en un punto distante, para comprobar horizontalidad",
+      "profile_min": 32.0,
+      "algorithm": "centroid below threshold, within one pixel of darkest profile sample"
+    }
+  },
+  "observations": [
+    {
+      "id": "CAL-FH01",
+      "role": "fit",
+      "axis": "u",
+      "a": "B90L",
+      "b": "B9040",
+      "t09": "T09-D05",
+      "group": "bano_cadena_superior",
+      "label": "Baño 90",
+      "note": "Unidad cm inferida, contrastada después con espesores explícitos.",
+      "expected_m": 0.9,
+      "length_px": 106.53676266763512,
+      "point_a_px": [
+        858.368025751073,
+        250.5
+      ],
+      "point_b_px": [
+        964.9047884187081,
+        250.5
+      ],
+      "unit_status": "inferida",
+      "measured_m": 0.9012315057988628,
+      "error_m": 0.0012315057988627753,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-FH02",
+      "role": "fit",
+      "axis": "u",
+      "a": "L137L",
+      "b": "L137R",
+      "t09": "T09-D12",
+      "group": "logia_cadena_superior",
+      "label": "Logia 137.5",
+      "note": "Extremos de la línea de cota; no ancho libre de puerta.",
+      "expected_m": 1.375,
+      "length_px": 162.4711029572386,
+      "point_a_px": [
+        1044.0887533875339,
+        644.5
+      ],
+      "point_b_px": [
+        1206.5598563447725,
+        644.5
+      ],
+      "unit_status": "inferida",
+      "measured_m": 1.3743995321479436,
+      "error_m": -0.0006004678520563633,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-FV01",
+      "role": "fit",
+      "axis": "v",
+      "a": "L50T",
+      "b": "L50B",
+      "t09": "T09-D14",
+      "group": "logia_cadena_vertical",
+      "label": "Logia 50",
+      "note": "Referencia vertical sin usar círculo de maniobra.",
+      "expected_m": 0.5,
+      "length_px": 59.038852287058035,
+      "point_a_px": [
+        1164,
+        613.2594670406731
+      ],
+      "point_b_px": [
+        1164,
+        672.2983193277312
+      ],
+      "unit_status": "inferida",
+      "measured_m": 0.49943017241189314,
+      "error_m": -0.0005698275881068637,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CH01",
+      "role": "check_shared",
+      "axis": "u",
+      "a": "B9040",
+      "b": "B40R",
+      "t09": "T09-D06",
+      "group": "bano_cadena_superior",
+      "label": "Baño 40",
+      "note": "Comparte una marca con CAL-FH01: control adicional, no plenamente independiente del ajuste.",
+      "expected_m": 0.4,
+      "length_px": 47.33969773802585,
+      "point_a_px": [
+        964.9047884187081,
+        250.5
+      ],
+      "point_b_px": [
+        1012.244486156734,
+        250.5
+      ],
+      "unit_status": "inferida",
+      "measured_m": 0.4004629576515656,
+      "error_m": 0.00046295765156556534,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CH02",
+      "role": "check",
+      "axis": "u",
+      "a": "B80L",
+      "b": "B8070",
+      "t09": "T09-D09",
+      "group": "bano_inodoro",
+      "label": "Baño 80",
+      "note": "Ambos extremos fuera del ajuste; comparte marca con CAL-CH03.",
+      "expected_m": 0.8,
+      "length_px": 94.85720185301682,
+      "point_a_px": [
+        834.6936002860207,
+        478.5
+      ],
+      "point_b_px": [
+        929.5508021390375,
+        478.5
+      ],
+      "unit_status": "inferida",
+      "measured_m": 0.802430041248396,
+      "error_m": 0.0024300412483959644,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CH03",
+      "role": "check",
+      "axis": "u",
+      "a": "B8070",
+      "b": "B70R",
+      "t09": "T09-D10",
+      "group": "bano_inodoro",
+      "label": "Baño 70",
+      "note": "Ambos extremos fuera del ajuste; comparte marca con CAL-CH02.",
+      "expected_m": 0.7,
+      "length_px": 82.69392746682877,
+      "point_a_px": [
+        929.5508021390375,
+        478.5
+      ],
+      "point_b_px": [
+        1012.2447296058663,
+        478.5
+      ],
+      "unit_status": "inferida",
+      "measured_m": 0.6995366754652894,
+      "error_m": -0.0004633245347105408,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CH04",
+      "role": "check",
+      "axis": "u",
+      "a": "L90L",
+      "b": "L90R",
+      "t09": "T09-D13",
+      "group": "logia_cadena_inferior",
+      "label": "Logia 90",
+      "note": "Marcas distintas de CAL-FH02, no usadas para ajustar.",
+      "expected_m": 0.9,
+      "length_px": 106.83383685800618,
+      "point_a_px": [
+        1091.1661631419938,
+        664
+      ],
+      "point_b_px": [
+        1198.0,
+        664
+      ],
+      "unit_status": "inferida",
+      "measured_m": 0.9037445596332218,
+      "error_m": 0.0037445596332217335,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CE03",
+      "role": "check",
+      "axis": "u",
+      "a": "E03L",
+      "b": "E03R",
+      "t09": "T09-E03",
+      "group": "muro_izquierdo",
+      "label": "Muro izquierdo D3, 15 cm",
+      "note": "Mención explícita; el tramo corto tiene mayor incertidumbre relativa.",
+      "expected_m": 0.15,
+      "length_px": 17.67318512210699,
+      "point_a_px": [
+        4.633587786259542,
+        85
+      ],
+      "point_b_px": [
+        22.306772908366533,
+        85
+      ],
+      "unit_status": "documentada",
+      "measured_m": 0.14950361585088043,
+      "error_m": -0.0004963841491195664,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CE04",
+      "role": "check",
+      "axis": "u",
+      "a": "E04L",
+      "b": "E04R",
+      "t09": "T09-E04",
+      "group": "muro_izquierdo",
+      "label": "Muro izquierdo D1, 15 cm",
+      "note": "Misma alineación de fachada que CE03; no contar como fuente documental independiente.",
+      "expected_m": 0.15,
+      "length_px": 17.659740283223286,
+      "point_a_px": [
+        4.633587786259542,
+        570
+      ],
+      "point_b_px": [
+        22.29332806948283,
+        570
+      ],
+      "unit_status": "documentada",
+      "measured_m": 0.14938988128556252,
+      "error_m": -0.0006101187144374742,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CE05",
+      "role": "check",
+      "axis": "u",
+      "a": "E05L",
+      "b": "E05R",
+      "t09": "T09-E05",
+      "group": "muro_derecho",
+      "label": "Muro derecho, 15 cm",
+      "note": "Comparación entre centros de los trazos de las caras.",
+      "expected_m": 0.15,
+      "length_px": 17.339367583499325,
+      "point_a_px": [
+        1513.2314086722085,
+        548
+      ],
+      "point_b_px": [
+        1530.5707762557079,
+        548
+      ],
+      "unit_status": "documentada",
+      "measured_m": 0.14667973726241598,
+      "error_m": -0.003320262737584012,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CE06",
+      "role": "check",
+      "axis": "u",
+      "a": "E06L",
+      "b": "E06R",
+      "t09": "T09-E06",
+      "group": "muro_D1_D2",
+      "label": "Muro D1-D2, 15 cm",
+      "note": "Comparación entre caras sin incluir el mueble contiguo.",
+      "expected_m": 0.15,
+      "length_px": 17.67272727272723,
+      "point_a_px": [
+        480.04306220095697,
+        475
+      ],
+      "point_b_px": [
+        497.7157894736842,
+        475
+      ],
+      "unit_status": "documentada",
+      "measured_m": 0.1494997427438363,
+      "error_m": -0.0005002572561637053,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CE07",
+      "role": "check",
+      "axis": "u",
+      "a": "E07L",
+      "b": "E07R",
+      "t09": "T09-E07",
+      "group": "muro_bano_exterior",
+      "label": "Retorno baño, 15 cm",
+      "note": "Comparación entre las caras del paño rotulado.",
+      "expected_m": 0.15,
+      "length_px": 17.512899302221285,
+      "point_a_px": [
+        817.2154471544716,
+        530
+      ],
+      "point_b_px": [
+        834.7283464566929,
+        530
+      ],
+      "unit_status": "documentada",
+      "measured_m": 0.1481477023878024,
+      "error_m": -0.001852297612197601,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CE08",
+      "role": "check",
+      "axis": "u",
+      "a": "E08L",
+      "b": "E08R",
+      "t09": "T09-E08",
+      "group": "muro_cocina_estar",
+      "label": "Paño cocina-estar, 15 cm",
+      "note": "Comparación entre las caras del paño corto.",
+      "expected_m": 0.15,
+      "length_px": 17.18972332015801,
+      "point_a_px": [
+        1191.0,
+        414
+      ],
+      "point_b_px": [
+        1208.189723320158,
+        414
+      ],
+      "unit_status": "documentada",
+      "measured_m": 0.14541384442497363,
+      "error_m": -0.004586155575026368,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CG01-U",
+      "role": "check_circle",
+      "axis": "u",
+      "t09": "T09-D01",
+      "group": "CAL-CG01",
+      "label": "Giro D3 / u",
+      "expected_m": 1.5,
+      "length_px": 177.21061634016192,
+      "point_a_px": [
+        363.93115693090715,
+        108.37543246264686
+      ],
+      "point_b_px": [
+        541.141773271069,
+        108.37543246264686
+      ],
+      "unit_status": "inferida",
+      "note": "Dos diámetros de un mismo símbolo; comparten píxeles y no son dos fuentes independientes.",
+      "measured_m": 1.499086199061936,
+      "error_m": -0.0009138009380640355,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CG01-V",
+      "role": "check_circle",
+      "axis": "v",
+      "t09": "T09-D01",
+      "group": "CAL-CG01",
+      "label": "Giro D3 / v",
+      "expected_m": 1.5,
+      "length_px": 177.2403207025488,
+      "point_a_px": [
+        452.5364651009881,
+        19.755272111372463
+      ],
+      "point_b_px": [
+        452.5364651009881,
+        196.99559281392123
+      ],
+      "unit_status": "inferida",
+      "note": "Dos diámetros de un mismo símbolo; comparten píxeles y no son dos fuentes independientes.",
+      "measured_m": 1.499337478588105,
+      "error_m": -0.0006625214118949341,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CG02-U",
+      "role": "check_circle",
+      "axis": "u",
+      "t09": "T09-D02",
+      "group": "CAL-CG02",
+      "label": "Giro D1 / u",
+      "expected_m": 1.5,
+      "length_px": 176.89242601167805,
+      "point_a_px": [
+        263.79298868718735,
+        453.27605742218003
+      ],
+      "point_b_px": [
+        440.6854146988654,
+        453.27605742218003
+      ],
+      "unit_status": "inferida",
+      "note": "Dos diámetros de un mismo símbolo; comparten píxeles y no son dos fuentes independientes.",
+      "measured_m": 1.4963945164756651,
+      "error_m": -0.0036054835243348737,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CG02-V",
+      "role": "check_circle",
+      "axis": "v",
+      "t09": "T09-D02",
+      "group": "CAL-CG02",
+      "label": "Giro D1 / v",
+      "expected_m": 1.5,
+      "length_px": 176.90646138302725,
+      "point_a_px": [
+        352.23920169302636,
+        364.8228267306664
+      ],
+      "point_b_px": [
+        352.23920169302636,
+        541.7292881136937
+      ],
+      "unit_status": "inferida",
+      "note": "Dos diámetros de un mismo símbolo; comparten píxeles y no son dos fuentes independientes.",
+      "measured_m": 1.4965132465603679,
+      "error_m": -0.0034867534396321176,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CG03-U",
+      "role": "check_circle",
+      "axis": "u",
+      "t09": "T09-D03",
+      "group": "CAL-CG03",
+      "label": "Giro baño / u",
+      "expected_m": 1.5,
+      "length_px": 177.7799945485804,
+      "point_a_px": [
+        829.66447894891,
+        364.4400944064069
+      ],
+      "point_b_px": [
+        1007.4444734974903,
+        364.4400944064069
+      ],
+      "unit_status": "inferida",
+      "note": "Dos diámetros de un mismo símbolo; comparten píxeles y no son dos fuentes independientes.",
+      "measured_m": 1.5039027672332714,
+      "error_m": 0.0039027672332714314,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CG03-V",
+      "role": "check_circle",
+      "axis": "v",
+      "t09": "T09-D03",
+      "group": "CAL-CG03",
+      "label": "Giro baño / v",
+      "expected_m": 1.5,
+      "length_px": 176.9303080730842,
+      "point_a_px": [
+        918.5544762232001,
+        275.9749403698648
+      ],
+      "point_b_px": [
+        918.5544762232001,
+        452.905248442949
+      ],
+      "unit_status": "inferida",
+      "note": "Dos diámetros de un mismo símbolo; comparten píxeles y no son dos fuentes independientes.",
+      "measured_m": 1.4967149740002694,
+      "error_m": -0.003285025999730573,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CG04-U",
+      "role": "check_circle",
+      "axis": "u",
+      "t09": "T09-D04",
+      "group": "CAL-CG04",
+      "label": "Giro estar / u",
+      "expected_m": 1.5,
+      "length_px": 177.07460781629845,
+      "point_a_px": [
+        1231.8076752693387,
+        315.3973656719191
+      ],
+      "point_b_px": [
+        1408.882283085637,
+        315.3973656719191
+      ],
+      "unit_status": "inferida",
+      "note": "Dos diámetros de un mismo símbolo; comparten píxeles y no son dos fuentes independientes.",
+      "measured_m": 1.4979356556842913,
+      "error_m": -0.002064344315708677,
+      "within_10mm": true
+    },
+    {
+      "id": "CAL-CG04-V",
+      "role": "check_circle",
+      "axis": "v",
+      "t09": "T09-D04",
+      "group": "CAL-CG04",
+      "label": "Giro estar / v",
+      "expected_m": 1.5,
+      "length_px": 177.0269342417938,
+      "point_a_px": [
+        1320.3449791774879,
+        226.88389855102218
+      ],
+      "point_b_px": [
+        1320.3449791774879,
+        403.910832792816
+      ],
+      "unit_status": "inferida",
+      "note": "Dos diámetros de un mismo símbolo; comparten píxeles y no son dos fuentes independientes.",
+      "measured_m": 1.497532368347021,
+      "error_m": -0.00246763165297903,
+      "within_10mm": true
+    }
+  ],
+  "circles": [
+    {
+      "id": "CAL-CG01",
+      "t09": "T09-D01",
+      "label": "Giro D3",
+      "role": "check_circle",
+      "group": "CAL-CG01",
+      "seed_px": [
+        452.2,
+        109,
+        89
+      ],
+      "arcs_degrees": [
+        [
+          0,
+          145
+        ],
+        [
+          195,
+          250
+        ],
+        [
+          290,
+          360
+        ]
+      ],
+      "candidate_pixels": 402,
+      "used_pixels": 382,
+      "circle_center_px": [
+        452.5343577419195,
+        108.37778881174609
+      ],
+      "circle_diameter_px": 177.22455177740594,
+      "circle_fit_rms_px": 0.3698983597852995,
+      "ellipse_center_px": [
+        452.5364651009881,
+        108.37543246264686
+      ],
+      "ellipse_diameters_px": [
+        177.21061634016192,
+        177.2403207025488
+      ],
+      "note": "Dos diámetros de un mismo símbolo; comparten píxeles y no son dos fuentes independientes."
+    },
+    {
+      "id": "CAL-CG02",
+      "t09": "T09-D02",
+      "label": "Giro D1",
+      "role": "check_circle",
+      "group": "CAL-CG02",
+      "seed_px": [
+        353.2,
+        454,
+        89
+      ],
+      "arcs_degrees": [
+        [
+          30,
+          150
+        ],
+        [
+          210,
+          335
+        ]
+      ],
+      "candidate_pixels": 282,
+      "used_pixels": 266,
+      "circle_center_px": [
+        352.2389585520507,
+        453.2761834164401
+      ],
+      "circle_diameter_px": 176.90041558403013,
+      "circle_fit_rms_px": 0.39280320355036036,
+      "ellipse_center_px": [
+        352.23920169302636,
+        453.27605742218003
+      ],
+      "ellipse_diameters_px": [
+        176.89242601167805,
+        176.90646138302725
+      ],
+      "note": "Dos diámetros de un mismo símbolo; comparten píxeles y no son dos fuentes independientes."
+    },
+    {
+      "id": "CAL-CG03",
+      "t09": "T09-D03",
+      "label": "Giro baño",
+      "role": "check_circle",
+      "group": "CAL-CG03",
+      "seed_px": [
+        919,
+        365.5,
+        89
+      ],
+      "arcs_degrees": [
+        [
+          75,
+          170
+        ],
+        [
+          185,
+          240
+        ]
+      ],
+      "candidate_pixels": 257,
+      "used_pixels": 227,
+      "circle_center_px": [
+        918.171937639529,
+        364.4518957047849
+      ],
+      "circle_diameter_px": 176.87358544630655,
+      "circle_fit_rms_px": 0.43210792963772854,
+      "ellipse_center_px": [
+        918.5544762232001,
+        364.4400944064069
+      ],
+      "ellipse_diameters_px": [
+        177.7799945485804,
+        176.9303080730842
+      ],
+      "note": "Dos diámetros de un mismo símbolo; comparten píxeles y no son dos fuentes independientes."
+    },
+    {
+      "id": "CAL-CG04",
+      "t09": "T09-D04",
+      "label": "Giro estar",
+      "role": "check_circle",
+      "group": "CAL-CG04",
+      "seed_px": [
+        1319.5,
+        316.5,
+        89.5
+      ],
+      "arcs_degrees": [
+        [
+          15,
+          75
+        ],
+        [
+          110,
+          165
+        ],
+        [
+          190,
+          255
+        ],
+        [
+          280,
+          335
+        ]
+      ],
+      "candidate_pixels": 340,
+      "used_pixels": 327,
+      "circle_center_px": [
+        1320.3433325486903,
+        315.39810620307935
+      ],
+      "circle_diameter_px": 177.04853277241543,
+      "circle_fit_rms_px": 0.38139188341077,
+      "ellipse_center_px": [
+        1320.3449791774879,
+        315.3973656719191
+      ],
+      "ellipse_diameters_px": [
+        177.07460781629845,
+        177.0269342417938
+      ],
+      "note": "Dos diámetros de un mismo símbolo; comparten píxeles y no son dos fuentes independientes."
+    }
+  ],
+  "not_used": [
+    {
+      "t09": "T09-D07",
+      "reason": "La cifra 120 es legible, pero está asociada al achurado sin una cadena de marcas equivalente a las elegidas. Confirmar límites funcionales en T12; no usar como espesor ni forzar su rectángulo."
+    },
+    {
+      "t09": "T09-D08",
+      "reason": "Lectura media sobre trama y extremos por confirmar; fuera del ajuste y de la aprobación métrica."
+    },
+    {
+      "t09": "T09-D11",
+      "reason": "Lectura media sobre trama y extremos por confirmar; fuera del ajuste y de la aprobación métrica."
+    },
+    {
+      "t09": "T09-E01",
+      "reason": "El borde superior exterior toca el límite del raster; no asegurar una cara completa con este recorte."
+    },
+    {
+      "t09": "T09-E02",
+      "reason": "El borde superior exterior toca el límite del raster; no asegurar una cara completa con este recorte."
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "REF-ACCESO",
+      "pixel": [
+        1475,
+        85
+      ],
+      "label": "Zona de acceso, superior derecha",
+      "blender_xy_m": [
+        12.288957762872608,
+        4.618064614156333
+      ]
+    },
+    {
+      "id": "REF-D3",
+      "pixel": [
+        190,
+        85
+      ],
+      "label": "Zona de dormitorio 3, superior izquierda",
+      "blender_xy_m": [
+        1.418696118406913,
+        4.618064614156333
+      ]
+    },
+    {
+      "id": "REF-LOGIA",
+      "pixel": [
+        1140,
+        740
+      ],
+      "label": "Zona de logia, inferior derecha",
+      "blender_xy_m": [
+        9.45507632248661,
+        -0.9228080528670359
+      ]
+    }
+  ],
+  "specified_eye_height_m": 1.6,
+  "eye_height_verified_in_3d": false,
+  "checks": {
+    "fit_count": 3,
+    "check_segments": 10,
+    "check_circle_symbols": 4,
+    "check_circle_diameters": 8,
+    "max_fit_residual_m": 0.0012315057988627753,
+    "max_check_residual_m": 0.004586155575026368,
+    "max_fit_independent_check_residual_m": 0.004586155575026368,
+    "all_selected_checks_within_10mm": true,
+    "axis_alignment_within_target": true,
+    "orientation_landmarks_pass": true,
+    "roundtrip_max_error_px": 0.0
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "task": "T10",
+  "source_pdf_unchanged": true,
+  "t07_references_unchanged": true,
+  "t09_catalogue_and_readings_unchanged": true,
+  "fit_count": 3,
+  "check_segments": 10,
+  "check_circle_symbols": 4,
+  "check_circle_diameters": 8,
+  "max_fit_residual_m": 0.0012315057988627753,
+  "max_check_residual_m": 0.004586155575026368,
+  "max_fit_independent_check_residual_m": 0.004586155575026368,
+  "all_selected_checks_within_10mm": true,
+  "axis_alignment_within_target": true,
+  "orientation_landmarks_pass": true,
+  "roundtrip_max_error_px": 0.0,
+  "scale_m_per_px": 0.008459347583241785,
+  "scale_px_per_m": 118.21242597727385,
+  "origin_pixel": [
+    22.292490118577074,
+    630.9126213592233
+  ],
+  "scale_axis_difference_percent": 0.12463123140618015,
+  "uses_area_to_fit": false,
+  "architecture_final_validation": false,
+  "catalogue_sha256": "c8a373f353b03cf51775398e48668c1cf3b9d215bf0c48c592bec8ba570a26ad",
+  "evidence": [
+    {
+      "file": "planta-calibrada.png",
+      "sha256": "58b6e9a069b064ce034d083ff728989f15215377aa9789c099befeccb6df43f2"
+    },
+    {
+      "file": "detalle-cadenas.png",
+      "sha256": "33b89c4816b2bdfc4801123d1588390e5b67bacd400a8a7f367577da88032e88"
+    },
+    {
+      "file": "controles-circulos.png",
+      "sha256": "a673fcd6d372abf770f13e8956557295ae85eaa434eca8d781e3b7f5d57528b3"
+    },
+    {
+      "file": "residuos.tsv",
+      "sha256": "3e1715cae72a056d5d161f9cf16ce031973a5cce6e6ce61cb52d226133b3d6bb"
+    }
+  ],
+  "font_sha256": "74d696e666f696e93db685a85c94bfbfcc0796dfcf8a2e2e2e2c908a54e82949"
+}
