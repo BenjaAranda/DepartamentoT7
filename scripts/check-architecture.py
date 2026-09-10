@@ -26,11 +26,12 @@ d.text((50,980),'La coincidencia gráfica no mejora la precisión del raster: co
 canvas.save(R/'validation/e04/superposicion.png')
 assert max(errors)<1e-5
 assert abs(report['area_m2']-76.66)<=.5
-assert report['context_storeys']==4 and len(report['doors'])==6
+room_doors=[d for d in report['doors'] if d.get('category')!='wardrobe']
+assert report['context_storeys']==4 and len(room_doors)==6
 checks=dict(revision=report['revision'],generated_wall_bounds_match=True,maximum_generated_error_m=max(errors),
     area_within_user_tolerance=True,physical_eye_height_m=report['eye_m'],graphical_source_error_limit_m=adjust['max_control_error_m'],
     nominal_10mm_source_goal_met=adjust['checks']['controls_within_10mm'],upper_context_storeys=3,
-    max_hinge_adjustment_m=max(d['hinge_adjustment_m'] for d in report['doors']),
+    max_hinge_adjustment_m=max(d['hinge_adjustment_m'] for d in room_doors),
     scope='40 wall bodies compared; opening geometry detailed in geometry-check.json. Furniture and physical routes follow in E05/E06.')
 (R/'validation/e04/orthographic-check.json').write_text(json.dumps(checks,indent=2)+'\n',encoding='utf-8',newline='\n')
 print(json.dumps(checks,indent=2))

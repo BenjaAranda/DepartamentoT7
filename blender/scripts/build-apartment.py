@@ -5,13 +5,16 @@ import json
 import math
 import hashlib
 import shutil
+import sys
 from mathutils import Vector
 from mathutils.geometry import tessellate_polygon
 
 ROOT=Path(__file__).resolve().parents[2]
 SOURCE=ROOT/'architecture/model/departamento-t7.json'
 data=json.loads(SOURCE.read_text(encoding='utf-8'))
-revision=hashlib.sha256((data['revision']+hashlib.sha256(Path(__file__).read_bytes()).hexdigest()).encode()).hexdigest()
+furniture_path=ROOT/'architecture/furniture/layout.json'
+furniture=json.loads(furniture_path.read_text(encoding='utf-8'))
+revision=hashlib.sha256((data['revision']+''.join(hashlib.sha256(p.read_bytes()).hexdigest() for p in [Path(__file__),Path(__file__).with_name('furnish.py'),furniture_path])).encode()).hexdigest()
 v=data['height_assumptions']
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 for col in list(bpy.data.collections):bpy.data.collections.remove(col)
@@ -139,6 +142,9 @@ for name,rect,z0,z1 in [('CeilingMain',(xmin,ynotch,xmax,ymax),2.4,2.5),('Ceilin
     l,b,r,t=rect;colliders.append(dict(id=name,type='box',center=gltf(((l+r)/2,(b+t)/2,(z0+z1)/2)),size=[r-l,z1-z0,t-b],category='Roofs'))
 for name,rect in [('TerraceSouth',(xmin,ymin-.05,xnotch,ymin)),('TerraceWest',(xmin-.05,ymin,xmin,ynotch))]:
     l,b,r,t=rect;colliders.append(dict(id=name,type='box',center=gltf(((l+r)/2,(b+t)/2,.6)),size=[r-l,1.2,t-b],category='Boundary'))
+sys.path.insert(0,str(Path(__file__).parent))
+from furnish import build as furnish
+inventory=furnish(furniture['items'],box,assign,mats,cols,doors,colliders,revision)
 for c in colliders:
     center=c['center'];size=c['size']
     ob=box('COL_'+c['id'],(center[0],-center[2],center[1]),(size[0],size[2],size[1]),col='Collisions',collision=False)
@@ -151,7 +157,7 @@ for check in wall_checks:
     assert check['max_error_m']<1e-5
 area=lambda ps:abs(sum(p[0]*q[1]-q[0]*p[1] for p,q in zip(ps,ps[1:]+ps[:1])))/2
 assert abs(area(outline)-77.1)<1e-8
-assert len(doors)==6 and len(wall_checks)==40 and len(opening_checks)==12
+assert len(doors)==12 and len(wall_checks)==40 and len(opening_checks)==12
 def camera(name,location,target,ortho=17):
     cd=bpy.data.cameras.new(name);cd.type='ORTHO';cd.ortho_scale=ortho
     ob=bpy.data.objects.new(name,cd);cols['References'].objects.link(ob);ob.location=location;ob.rotation_euler=(Vector(target)-ob.location).to_track_quat('-Z','Y').to_euler();return ob
@@ -173,7 +179,7 @@ bpy.ops.object.select_all(action='DESELECT')
 for name in ['Architecture','Carpentry','Equipment','Decoration','Context','Roofs']:
     for ob in cols[name].objects:ob.select_set(True)
 bpy.ops.export_scene.gltf(filepath=str(glb),export_format='GLB',use_selection=True,export_yup=True,export_extras=True)
-payload=dict(revision=revision,architecture_revision=data['revision'],units='m',colliders=colliders,doors=doors,eye_height_m=1.6,spawn=gltf(tuple(eye.location)),rooms=data['rooms'],area_m2=area(outline),useful_area_m2=data['area']['including_door_thresholds_m2'])
+payload=dict(revision=revision,architecture_revision=data['revision'],units='m',colliders=colliders,doors=doors,inventory=inventory,eye_height_m=1.6,spawn=gltf(tuple(eye.location)),rooms=data['rooms'],area_m2=area(outline),useful_area_m2=data['area']['including_door_thresholds_m2'])
 cf.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 manifest=dict(revision=revision,architecture_revision=data['revision'],units='m',eye_height_m=1.6,model=glb.name,colliders=cf.name,hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [blend,glb,cf]},blender_version=bpy.app.version_string)
 for p in [glb,cf]:shutil.copyfile(p,ROOT/'web/public/models'/p.name)

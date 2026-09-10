@@ -1,6 +1,6 @@
 # Tareas del simulador T7
 
-Actualizado: 10 de septiembre de 2026. T01–T33 implementadas y revisadas; E06 en ejecución. Base dimensional aproximada documentada.
+Actualizado: 10 de septiembre de 2026. T01–T43 implementadas y revisadas; E07 en ejecución. Base dimensional aproximada documentada.
 
 Esta es la lista de seguimiento principal del nuevo proyecto `simulador-t7`.
 
@@ -83,16 +83,16 @@ Dependencia: E04. Hito: todo el departamento recorrible antes de decorar.
 
 Dependencia: E05. Hito: inventario exacto y circulación conservada.
 
-- [ ] T34. Dormitorio 1: cama matrimonial adosada, veladores y TV enfrentada; comprobar volumen y accesos antes de avanzar.
-- [ ] T35. Dormitorio 2: una cama, un velador y ningún escritorio ni cama adicional; comprobar volumen y accesos.
-- [ ] T36. Dormitorio 3: cama individual y velador; comprobar volumen y accesos.
-- [ ] T37. Completar armario de dos puertas de cada dormitorio: hojas, tiradores, zócalo, coronación, jambas y remates del muro; comprobar abiertos/cerrados.
-- [ ] T38. Baño: sanitarios, apoyos y ducha accesible al fondo; conservar giro, transferencias y recorrido longitudinal.
-- [ ] T39. Cocina: muebles y equipos completos; comprobar que ningún equipo invade baño, huecos o paso.
-- [ ] T40. Estar: sofá y TV directamente enfrentados, sin bloquear circulación.
-- [ ] T41. Comedor: mesa y sillas; comprobar aproximación, sillas recogidas y posición de uso.
-- [ ] T42. Logia: lavadero y lavadora; comprobar acceso, puerta y separación del baño.
-- [ ] T43. Ejecutar V06–V08 y V11 con todo el mobiliario; corregir penetraciones, hojas y pasos antes de pasar al acabado.
+- [x] T34. Dormitorio 1: cama matrimonial adosada, veladores y TV enfrentada; comprobar volumen y accesos antes de avanzar.
+- [x] T35. Dormitorio 2: una cama, un velador y ningún escritorio ni cama adicional; comprobar volumen y accesos.
+- [x] T36. Dormitorio 3: cama individual y velador; comprobar volumen y accesos.
+- [x] T37. Completar armario de dos puertas de cada dormitorio: hojas, tiradores, zócalo, coronación, jambas y remates del muro; comprobar abiertos/cerrados.
+- [x] T38. Baño: sanitarios, apoyos y ducha accesible al fondo; conservar giro, transferencias y recorrido longitudinal.
+- [x] T39. Cocina: muebles y equipos completos; comprobar que ningún equipo invade baño, huecos o paso.
+- [x] T40. Estar: sofá y TV directamente enfrentados, sin bloquear circulación.
+- [x] T41. Comedor: mesa y sillas; comprobar aproximación, sillas recogidas y posición de uso.
+- [x] T42. Logia: lavadero y lavadora; comprobar acceso, puerta y separación del baño.
+- [x] T43. Ejecutar V06–V08 y V11 con todo el mobiliario; corregir penetraciones, hojas y pasos antes de pasar al acabado.
 
 ## E07. Materiales, luz y ambientación
 
@@ -148,4 +148,6 @@ Dependencia: E10. Hito: V15 superada y todos los entregables accesibles.
 
 ## Continuación concreta
 
-Continuar E06 T34–T43: mobiliario exacto, armarios completos, baño y logia funcionales; comprobar penetraciones y repetir rutas antes de E07. E05 pasó diez recorridos de ida/vuelta, barridos seguros y casos adversos en arquitectura vacía. Ver VALIDACION_E05.md. Al regenerar, conservar el signo de rotación Blender Z → glTF Y; prueba de pivotes añadida. No dar por comprobadas las rutas con mobiliario antes de ejecutarlas. Mantener el criterio de superficie aproximada comunicado y continuar por etapas hasta entrega.
+E06 cerrada: 28 conjuntos de mobiliario, cero penetraciones contra arquitectura, 12 hojas con apertura/cierre completos y diez recorridos de ida/vuelta en cada estado de los armarios (cerrados y abiertos). Se corrigieron la interferencia del lavadero con P06 y la holgura junto a cama D1. Evidencia y alcance: VALIDACION_E06.md y validation/e06/.
+
+Continuar E07 T44–T47: materiales, iluminación, decoración y nueva validación del amueblado. Después E08 Unreal (5.8.2 instalado), E09 web, E10 validación y E11 publicación. Mantener el criterio de superficie aproximada comunicado y no marcar tareas sin evidencia.

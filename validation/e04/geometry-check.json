@@ -1,5 +1,5 @@
 {
-  "revision": "7e7b3b958db91f97433e026d375b1dcfe41bc7058e68c678377efa6967fb7928",
+  "revision": "3cea97167f9efbfb6594949266b6eeee6cc0ac5e1ff404f381f5e85cab85733f",
   "walls": [
     {
       "id": "W01A",
@@ -926,6 +926,156 @@
         0.1717003434896469
       ],
       "hinge_adjustment_m": 0.0279998779296875
+    },
+    {
+      "id": "D1_Wardrobe_Door1",
+      "pivot_name": "D1_Wardrobe_Door1_Pivot",
+      "leaf_name": "D1_Wardrobe_Door1_Leaf",
+      "pivot": [
+        1.868,
+        0,
+        -3.022
+      ],
+      "size": [
+        0.48000000000000004,
+        2.015,
+        0.022
+      ],
+      "center_local": [
+        0.24000000000000002,
+        1.1575,
+        0
+      ],
+      "base_rotation_y": 0.0,
+      "swing_radians": -1.5707963267948966,
+      "opening": "D1_Wardrobe",
+      "label": "Armario dormitorio 1 \u00b7 hoja 1",
+      "category": "wardrobe"
+    },
+    {
+      "id": "D1_Wardrobe_Door2",
+      "pivot_name": "D1_Wardrobe_Door2_Pivot",
+      "leaf_name": "D1_Wardrobe_Door2_Leaf",
+      "pivot": [
+        2.8320000000000003,
+        0,
+        -3.022
+      ],
+      "size": [
+        0.48000000000000004,
+        2.015,
+        0.022
+      ],
+      "center_local": [
+        0.24000000000000002,
+        1.1575,
+        0
+      ],
+      "base_rotation_y": 3.141592653589793,
+      "swing_radians": 1.5707963267948966,
+      "opening": "D1_Wardrobe",
+      "label": "Armario dormitorio 1 \u00b7 hoja 2",
+      "category": "wardrobe"
+    },
+    {
+      "id": "D2_Wardrobe_Door1",
+      "pivot_name": "D2_Wardrobe_Door1_Pivot",
+      "leaf_name": "D2_Wardrobe_Door1_Leaf",
+      "pivot": [
+        4.468,
+        0,
+        -2.498
+      ],
+      "size": [
+        0.5,
+        2.015,
+        0.022
+      ],
+      "center_local": [
+        0.25,
+        1.1575,
+        0
+      ],
+      "base_rotation_y": 1.5707963267948966,
+      "swing_radians": -1.5707963267948966,
+      "opening": "D2_Wardrobe",
+      "label": "Armario dormitorio 2 \u00b7 hoja 1",
+      "category": "wardrobe"
+    },
+    {
+      "id": "D2_Wardrobe_Door2",
+      "pivot_name": "D2_Wardrobe_Door2_Pivot",
+      "leaf_name": "D2_Wardrobe_Door2_Leaf",
+      "pivot": [
+        4.468,
+        0,
+        -3.502
+      ],
+      "size": [
+        0.5,
+        2.015,
+        0.022
+      ],
+      "center_local": [
+        0.25,
+        1.1575,
+        0
+      ],
+      "base_rotation_y": 4.71238898038469,
+      "swing_radians": 1.5707963267948966,
+      "opening": "D2_Wardrobe",
+      "label": "Armario dormitorio 2 \u00b7 hoja 2",
+      "category": "wardrobe"
+    },
+    {
+      "id": "D3_Wardrobe_Door1",
+      "pivot_name": "D3_Wardrobe_Door1_Pivot",
+      "leaf_name": "D3_Wardrobe_Door1_Leaf",
+      "pivot": [
+        2.242,
+        0,
+        -4.077
+      ],
+      "size": [
+        0.175,
+        2.015,
+        0.022
+      ],
+      "center_local": [
+        0.0875,
+        1.1575,
+        0
+      ],
+      "base_rotation_y": -1.5707963267948966,
+      "swing_radians": -1.5707963267948966,
+      "opening": "D3_Wardrobe",
+      "label": "Armario dormitorio 3 \u00b7 hoja 1",
+      "category": "wardrobe"
+    },
+    {
+      "id": "D3_Wardrobe_Door2",
+      "pivot_name": "D3_Wardrobe_Door2_Pivot",
+      "leaf_name": "D3_Wardrobe_Door2_Leaf",
+      "pivot": [
+        2.242,
+        0,
+        -3.723
+      ],
+      "size": [
+        0.175,
+        2.015,
+        0.022
+      ],
+      "center_local": [
+        0.0875,
+        1.1575,
+        0
+      ],
+      "base_rotation_y": 1.5707963267948966,
+      "swing_radians": 1.5707963267948966,
+      "opening": "D3_Wardrobe",
+      "label": "Armario dormitorio 3 \u00b7 hoja 2",
+      "category": "wardrobe"
     }
   ],
   "area_m2": 77.1,
@@ -933,6 +1083,6 @@
   "eye_m": 1.600000023841858,
   "context_storeys": 4,
   "orthographic_camera_scale_m": 12.920032501220703,
-  "collider_count": 121,
+  "collider_count": 246,
   "metric_source": "architecture/model/departamento-t7.json"
 }

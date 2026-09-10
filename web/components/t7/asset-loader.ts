@@ -1,7 +1,7 @@
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import type { Group } from 'three';
 export type BoxCollider = { id: string; center: [number, number, number]; size: [number, number, number]; type: 'box' };
-export type DoorData = { id: string; pivot_name?: string; leaf_name?: string; pivot: number[]; size: number[]; center_local: number[]; base_rotation_y?: number; swing_radians: number; opening?: string };
+export type DoorData = { id: string; label?: string; category?: string; pivot_name?: string; leaf_name?: string; pivot: number[]; size: number[]; center_local: number[]; base_rotation_y?: number; swing_radians: number; opening?: string };
 export type CollisionData = { revision: string; units: string; colliders: BoxCollider[]; doors: DoorData[]; spawn?: [number, number, number]; area_m2?: number; useful_area_m2?: number; rooms?: {id: string; rings_xy_m: number[][][]; area_m2: number}[] };
 export type AssetBundle = { revision: string; scene: Group; collision: CollisionData; eyeHeight: number };
 type Manifest = { revision: string; units: string; eye_height_m: number; model: string; colliders: string; hashes: Record<string, string> };

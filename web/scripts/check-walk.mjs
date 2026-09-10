@@ -11,12 +11,12 @@ engine.world.step();
 const step=.1,xmin=-.2,xmax=14.5,zmin=-6.8,zmax=1.5;
 const nx=Math.floor((xmax-xmin)/step)+1,nz=Math.floor((zmax-zmin)/step)+1;
 function graphFor(opening){
-for(const door of engine.doors){const f=door.data.opening===opening?1:0;engine.placeDoor(door,f,true);door.target=f;}
+for(const door of engine.doors){const f=door.data.opening===opening||(process.argv.includes('--wardrobes-open')&&door.data.category==='wardrobe')?1:0;engine.placeDoor(door,f,true);door.target=f;}
 engine.world.step();
 const points=new Map();
 for(let i=0;i<nx;i++)for(let j=0;j<nz;j++){
  const x=xmin+i*step,z=zmin+j*step;
- if(engine.isFree(x,z)&&engine.hasFloor(x,z))points.set(i*nz+j,[x,z]);
+ if(engine.isFree(x,z,BODY_REST_Y,.012)&&engine.hasFloor(x,z))points.set(i*nz+j,[x,z]);
 }
 function nearest(x,z,predicate=()=>true){
  let best,dist=Infinity;
@@ -85,7 +85,7 @@ const before={...engine.body.translation()};engine.setDoor(door.data.id,true);
 for(let i=0;i<90;i++)engine.step({x:0,z:0,paused:true});
 assert.ok(door.blocked&&door.fraction<.5,'Door must stop before player');
 assert.ok(Math.hypot(engine.body.translation().x-before.x,engine.body.translation().z-before.z)<1e-5,'Door pushed player');
-const report={revision:data.revision,reachable_grid_cells:reachableCells,route_count:routes.length,round_trips_passed:routes.length,frames,minimum_eye_m:minEye,maximum_eye_m:maxEye,door_blocks_on_player:true,door_fraction_at_block:door.fraction,paths:routes};
-fs.mkdirSync('../validation/e05',{recursive:true});fs.writeFileSync('../validation/e05/walk-check.json',JSON.stringify(report,null,2)+'\n');
+const report={revision:data.revision,wardrobes_open:process.argv.includes('--wardrobes-open'),reachable_grid_cells:reachableCells,route_count:routes.length,round_trips_passed:routes.length,frames,minimum_eye_m:minEye,maximum_eye_m:maxEye,door_blocks_on_player:true,door_fraction_at_block:door.fraction,paths:routes};
+const out=process.argv[2]||'../validation/e05';fs.mkdirSync(out,{recursive:true});fs.writeFileSync(out+'/walk-check.json',JSON.stringify(report,null,2)+'\n');
 console.log({...report,paths:routes.map(r=>({room:r.room,waypoints:r.path.length}))});
 engine.dispose();

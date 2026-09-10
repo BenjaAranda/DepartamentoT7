@@ -1,14 +1,14 @@
 {
-  "revision": "7e7b3b958db91f97433e026d375b1dcfe41bc7058e68c678377efa6967fb7928",
+  "revision": "3cea97167f9efbfb6594949266b6eeee6cc0ac5e1ff404f381f5e85cab85733f",
   "architecture_revision": "0b20e3ec99ad9e64e0314515897c6230f85bc5f35bbfdcc5eb47510da68338e5",
   "units": "m",
   "eye_height_m": 1.6,
   "model": "departamento-t7.glb",
   "colliders": "departamento-t7.json",
   "hashes": {
-    "DepartamentoT7.blend": "4b69c64e5e4df07f6cf8dc9d89bea3e85da74bf31b4573f0708d0166fd435eea",
-    "departamento-t7.glb": "d084a129c53336408e9b59907718197c99dfb4608f1d23cf9113097f047c1004",
-    "departamento-t7.json": "d5f03f002fb263da66d486f5bf5a4acae4b87e023934d2f71c503aa32d84ec69"
+    "DepartamentoT7.blend": "73ddd13fcf8bd91654cae6bb113724ede54cbaf45b6ff73401c6a7f6683c66e8",
+    "departamento-t7.glb": "44db5463cff7b345f57720ff2c6b17d5aa110c1b3b28ba7043a232c93e5dc29a",
+    "departamento-t7.json": "33332957735aa2721870da3b0d8184a803058449482652adc7dc9947cbbf3e0f"
   },
   "blender_version": "5.2.1 LTS"
 }

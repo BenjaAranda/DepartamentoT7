@@ -37,10 +37,10 @@ scene.getObjectByName('T7Floor').traverse(o=>{
 assert.ok(Math.abs(floorArea-77.1)<1e-4);
 for(const name of ['T7Ceiling','T7Slab','NeighbourNorth','NeighbourEast','CommonCorridor','UpperT6Mass2','UpperT6Mass3','UpperT6Mass4'])assert.ok(scene.getObjectByName(name),name);
 for(const d of geometry.doors){
- const pivot=scene.getObjectByName(d.pivot_name);assert.ok(pivot);assert.ok(d.clear_span_m>.7);
+ const pivot=scene.getObjectByName(d.pivot_name);assert.ok(pivot);if(d.category!=='wardrobe')assert.ok(d.clear_span_m>.7);
  const origin=pivot.localToWorld(new Vector3()),tip=pivot.localToWorld(new Vector3(1,0,0));
  const expected=new Vector3(Math.cos(d.base_rotation_y),0,-Math.sin(d.base_rotation_y));
  assert.ok(tip.sub(origin).normalize().distanceTo(expected)<1e-5,'Door basis mismatch: '+d.id);
 }
-const report={revision:manifest.revision,hashes_match:true,wall_glb_max_error_m:maxError,measured_glb_floor_m2:floorArea,area_delta_m2:floorArea-76.66,meshes,context_present:true,door_pivots:6,glb_bytes:raw.length};
+const report={revision:manifest.revision,hashes_match:true,wall_glb_max_error_m:maxError,measured_glb_floor_m2:floorArea,area_delta_m2:floorArea-76.66,meshes,context_present:true,door_pivots:geometry.doors.length,glb_bytes:raw.length};
 fs.writeFileSync(path.join(root,'validation/e04/glb-check.json'),JSON.stringify(report,null,2)+'\n');console.log(report);

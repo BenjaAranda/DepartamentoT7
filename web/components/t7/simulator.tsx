@@ -36,7 +36,7 @@ function Scene({bundle,engine,mode,paused,controls,onStatus}:{bundle:AssetBundle
       const eye=engine.eye;camera.position.set(eye.x,eye.y,eye.z);camera.quaternion.setFromEuler(new Euler(input.pitch,input.yaw,0,'YXZ'));
     }
     timer.current+=delta;
-    if(timer.current>.2){timer.current=0;const door=engine.nearestDoor();onStatus(engine.message||(door?'E · '+doorNames[door.data.opening||'']:'W A S D · Moverse'));}
+    if(timer.current>.2){timer.current=0;const door=engine.nearestDoor();onStatus(engine.message||(door?'E · '+(door.data.label||doorNames[door.data.opening||'']):'W A S D · Moverse'));}
   });
   const roomLights=(bundle.collision.rooms||[]).filter(r=>!['SHAFT','CIRCULATION'].includes(r.id)).map(room=>{
     const ps=room.rings_xy_m.flat();const x=(Math.min(...ps.map(p=>p[0]))+Math.max(...ps.map(p=>p[0])))/2;

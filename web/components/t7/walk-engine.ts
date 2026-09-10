@@ -75,8 +75,8 @@ export class WalkEngine {
     const door = this.nearestDoor();
     if (door) this.setDoor(door.data.id, door.target < .5);
   }
-  isFree(x: number, z: number, y = BODY_REST_Y) {
-    return !this.world.intersectionWithShape({ x, y, z }, IDENTITY, new RAPIER.Capsule(HALF_HEIGHT, RADIUS), undefined, undefined, this.player);
+  isFree(x: number, z: number, y = BODY_REST_Y, horizontalMargin = 0) {
+    return !this.world.intersectionWithShape({ x, y, z }, IDENTITY, new RAPIER.Capsule(HALF_HEIGHT-horizontalMargin, RADIUS+horizontalMargin), undefined, undefined, this.player);
   }
   hasFloor(x: number, z: number) {
     return !!this.world.castRay(new RAPIER.Ray({ x, y: .12, z }, { x: 0, y: -1, z: 0 }), .5, true, undefined, undefined, this.player);

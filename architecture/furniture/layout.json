@@ -1,0 +1,407 @@
+{
+  "units": "m",
+  "source": "Programa del usuario; posiciones y medidas de mobiliario propuestas dentro de los recintos calibrados. No son cotas ejecutivas del PDF.",
+  "axes": "Blender XY; muebles miran hacia -Y local; giro en grados alrededor de +Z",
+  "items": [
+    {
+      "id": "D1_Bed",
+      "room": "D1",
+      "type": "bed",
+      "center": [
+        1.065,
+        1.2
+      ],
+      "size": [
+        1.5,
+        2.06
+      ],
+      "rotation": 90,
+      "double": true
+    },
+    {
+      "id": "D1_NightA",
+      "room": "D1",
+      "type": "nightstand",
+      "center": [
+        0.26,
+        0.215
+      ],
+      "size": [
+        0.4,
+        0.4
+      ],
+      "rotation": 90
+    },
+    {
+      "id": "D1_NightB",
+      "room": "D1",
+      "type": "nightstand",
+      "center": [
+        0.26,
+        2.33
+      ],
+      "size": [
+        0.42,
+        0.42
+      ],
+      "rotation": 90
+    },
+    {
+      "id": "D1_TV",
+      "room": "D1",
+      "type": "wall_tv",
+      "center": [
+        3.81,
+        1.2
+      ],
+      "size": [
+        1.03,
+        0.035
+      ],
+      "rotation": -90
+    },
+    {
+      "id": "D1_Wardrobe",
+      "room": "D1",
+      "type": "wardrobe",
+      "center": [
+        2.35,
+        3.28
+      ],
+      "size": [
+        1.04,
+        0.54
+      ],
+      "rotation": 0
+    },
+    {
+      "id": "D2_Bed",
+      "room": "D2",
+      "type": "bed",
+      "center": [
+        4.55,
+        1.135
+      ],
+      "size": [
+        0.98,
+        2.06
+      ],
+      "rotation": 180,
+      "double": false
+    },
+    {
+      "id": "D2_Night",
+      "room": "D2",
+      "type": "nightstand",
+      "center": [
+        5.33,
+        0.32
+      ],
+      "size": [
+        0.4,
+        0.4
+      ],
+      "rotation": 180
+    },
+    {
+      "id": "D2_Wardrobe",
+      "room": "D2",
+      "type": "wardrobe",
+      "center": [
+        4.21,
+        3.0
+      ],
+      "size": [
+        1.08,
+        0.54
+      ],
+      "rotation": 90
+    },
+    {
+      "id": "D3_Bed",
+      "room": "D3",
+      "type": "bed",
+      "center": [
+        0.55,
+        4.095
+      ],
+      "size": [
+        0.98,
+        2.0
+      ],
+      "rotation": 0,
+      "double": false
+    },
+    {
+      "id": "D3_Night",
+      "room": "D3",
+      "type": "nightstand",
+      "center": [
+        1.29,
+        4.87
+      ],
+      "size": [
+        0.38,
+        0.38
+      ],
+      "rotation": 0
+    },
+    {
+      "id": "D3_Wardrobe",
+      "room": "D3",
+      "type": "wardrobe",
+      "center": [
+        2.48,
+        3.9
+      ],
+      "size": [
+        0.43,
+        0.5
+      ],
+      "rotation": -90,
+      "note": "Dos hojas estrechas en nicho original; no se ensancha el tabique."
+    },
+    {
+      "id": "Bath_Basin",
+      "room": "BATH",
+      "type": "basin",
+      "center": [
+        8.075,
+        2.88
+      ],
+      "size": [
+        0.6,
+        0.43
+      ],
+      "rotation": -90
+    },
+    {
+      "id": "Bath_WC",
+      "room": "BATH",
+      "type": "toilet",
+      "center": [
+        7.995,
+        1.36
+      ],
+      "size": [
+        0.38,
+        0.62
+      ],
+      "rotation": -90
+    },
+    {
+      "id": "Bath_Shower",
+      "room": "BATH",
+      "type": "shower",
+      "center": [
+        7.51,
+        -0.77
+      ],
+      "size": [
+        1.34,
+        0.91
+      ],
+      "rotation": 0
+    },
+    {
+      "id": "Kitchen_Fridge",
+      "room": "KITCHEN",
+      "type": "fridge",
+      "center": [
+        8.705,
+        3.59
+      ],
+      "size": [
+        0.63,
+        0.59
+      ],
+      "rotation": 90
+    },
+    {
+      "id": "Kitchen_Cooker",
+      "room": "KITCHEN",
+      "type": "cooker",
+      "center": [
+        8.72,
+        2.78
+      ],
+      "size": [
+        0.56,
+        0.59
+      ],
+      "rotation": 90
+    },
+    {
+      "id": "Kitchen_Worktop",
+      "room": "KITCHEN",
+      "type": "counter",
+      "center": [
+        8.72,
+        2.0
+      ],
+      "size": [
+        0.91,
+        0.59
+      ],
+      "rotation": 90
+    },
+    {
+      "id": "Kitchen_Sink",
+      "room": "KITCHEN",
+      "type": "kitchen_sink",
+      "center": [
+        8.72,
+        1.18
+      ],
+      "size": [
+        0.63,
+        0.59
+      ],
+      "rotation": 90
+    },
+    {
+      "id": "Kitchen_Upper",
+      "room": "KITCHEN",
+      "type": "upper_cabinet",
+      "center": [
+        8.565,
+        2.0
+      ],
+      "size": [
+        0.91,
+        0.29
+      ],
+      "rotation": 90
+    },
+    {
+      "id": "Living_Sofa",
+      "room": "LIVING",
+      "type": "sofa",
+      "center": [
+        12.11,
+        3.03
+      ],
+      "size": [
+        1.9,
+        0.78
+      ],
+      "rotation": -90
+    },
+    {
+      "id": "Living_TV",
+      "room": "LIVING",
+      "type": "console_tv",
+      "center": [
+        10.225,
+        3.03
+      ],
+      "size": [
+        1.2,
+        0.35
+      ],
+      "rotation": 90
+    },
+    {
+      "id": "Dining_Table",
+      "room": "DINING",
+      "type": "table",
+      "center": [
+        11.3,
+        -0.3
+      ],
+      "size": [
+        0.85,
+        1.2
+      ],
+      "rotation": 0
+    },
+    {
+      "id": "Dining_Chair1",
+      "room": "DINING",
+      "type": "chair",
+      "center": [
+        10.54,
+        -0.6
+      ],
+      "size": [
+        0.44,
+        0.44
+      ],
+      "rotation": 90,
+      "use_offset_local_y": 0.15
+    },
+    {
+      "id": "Dining_Chair2",
+      "room": "DINING",
+      "type": "chair",
+      "center": [
+        10.54,
+        0.0
+      ],
+      "size": [
+        0.44,
+        0.44
+      ],
+      "rotation": 90,
+      "use_offset_local_y": 0.15
+    },
+    {
+      "id": "Dining_Chair3",
+      "room": "DINING",
+      "type": "chair",
+      "center": [
+        12.06,
+        -0.6
+      ],
+      "size": [
+        0.44,
+        0.44
+      ],
+      "rotation": -90,
+      "use_offset_local_y": 0.15
+    },
+    {
+      "id": "Dining_Chair4",
+      "room": "DINING",
+      "type": "chair",
+      "center": [
+        12.06,
+        0.0
+      ],
+      "size": [
+        0.44,
+        0.44
+      ],
+      "rotation": -90,
+      "use_offset_local_y": 0.15
+    },
+    {
+      "id": "Loggia_Washer",
+      "room": "LOGIA",
+      "type": "washer",
+      "center": [
+        8.95,
+        -0.89
+      ],
+      "size": [
+        0.6,
+        0.59
+      ],
+      "rotation": 90
+    },
+    {
+      "id": "Loggia_Sink",
+      "room": "LOGIA",
+      "type": "laundry_sink",
+      "center": [
+        8.83,
+        -0.31
+      ],
+      "size": [
+        0.48,
+        0.42
+      ],
+      "rotation": 90
+    }
+  ]
+}

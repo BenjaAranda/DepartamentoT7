@@ -1,5 +1,5 @@
 {
-  "revision": "7e7b3b958db91f97433e026d375b1dcfe41bc7058e68c678377efa6967fb7928",
+  "revision": "3cea97167f9efbfb6594949266b6eeee6cc0ac5e1ff404f381f5e85cab85733f",
   "architecture_revision": "0b20e3ec99ad9e64e0314515897c6230f85bc5f35bbfdcc5eb47510da68338e5",
   "units": "m",
   "colliders": [
@@ -1817,6 +1817,1881 @@
         1.2617219566404045
       ],
       "category": "Boundary"
+    },
+    {
+      "id": "D1_Bed_Base",
+      "type": "box",
+      "center": [
+        1.065,
+        0.22,
+        -1.2
+      ],
+      "size": [
+        2.06,
+        0.25,
+        1.5000000000000002
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_Bed_Mattress",
+      "type": "box",
+      "center": [
+        1.075,
+        0.44,
+        -1.2
+      ],
+      "size": [
+        1.98,
+        0.22,
+        1.4650000000000003
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_Bed_Headboard",
+      "type": "box",
+      "center": [
+        0.05999999999999983,
+        0.45,
+        -1.2
+      ],
+      "size": [
+        0.05000000000000009,
+        0.9,
+        1.5
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_NightA_Body",
+      "type": "box",
+      "center": [
+        0.26,
+        0.31,
+        -0.215
+      ],
+      "size": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_NightA_Leg-1-1",
+      "type": "box",
+      "center": [
+        0.39,
+        0.06,
+        -0.08499999999999998
+      ],
+      "size": [
+        0.035,
+        0.12,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_NightA_Leg-11",
+      "type": "box",
+      "center": [
+        0.13,
+        0.06,
+        -0.085
+      ],
+      "size": [
+        0.035,
+        0.12,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_NightA_Leg1-1",
+      "type": "box",
+      "center": [
+        0.39,
+        0.06,
+        -0.345
+      ],
+      "size": [
+        0.035,
+        0.12,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_NightA_Leg11",
+      "type": "box",
+      "center": [
+        0.13,
+        0.06,
+        -0.345
+      ],
+      "size": [
+        0.035,
+        0.12,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_NightB_Body",
+      "type": "box",
+      "center": [
+        0.26,
+        0.31,
+        -2.33
+      ],
+      "size": [
+        0.42,
+        0.4,
+        0.42
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_NightB_Leg-1-1",
+      "type": "box",
+      "center": [
+        0.4,
+        0.06,
+        -2.19
+      ],
+      "size": [
+        0.035,
+        0.12,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_NightB_Leg-11",
+      "type": "box",
+      "center": [
+        0.12000000000000002,
+        0.06,
+        -2.19
+      ],
+      "size": [
+        0.035,
+        0.12,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_NightB_Leg1-1",
+      "type": "box",
+      "center": [
+        0.4,
+        0.06,
+        -2.47
+      ],
+      "size": [
+        0.035,
+        0.12,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_NightB_Leg11",
+      "type": "box",
+      "center": [
+        0.12000000000000002,
+        0.06,
+        -2.47
+      ],
+      "size": [
+        0.035,
+        0.12,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_TV_Bezel",
+      "type": "box",
+      "center": [
+        3.8025,
+        1.36,
+        -1.2
+      ],
+      "size": [
+        0.035000000000000066,
+        0.61,
+        1.03
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_Wardrobe_Back",
+      "type": "box",
+      "center": [
+        2.35,
+        1.1,
+        -3.538
+      ],
+      "size": [
+        1.04,
+        2.2,
+        0.024
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_Wardrobe_Jamb-1",
+      "type": "box",
+      "center": [
+        1.848,
+        1.1,
+        -3.28
+      ],
+      "size": [
+        0.036,
+        2.2,
+        0.54
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_Wardrobe_Jamb1",
+      "type": "box",
+      "center": [
+        2.8520000000000003,
+        1.1,
+        -3.28
+      ],
+      "size": [
+        0.036,
+        2.2,
+        0.54
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_Wardrobe_Plinth",
+      "type": "box",
+      "center": [
+        2.35,
+        0.055,
+        -3.28
+      ],
+      "size": [
+        1.04,
+        0.11,
+        0.54
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_Wardrobe_Crown",
+      "type": "box",
+      "center": [
+        2.35,
+        2.165,
+        -3.28
+      ],
+      "size": [
+        1.052,
+        0.07,
+        0.552
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D1_Wardrobe_Shelf",
+      "type": "box",
+      "center": [
+        2.35,
+        0.48,
+        -3.28
+      ],
+      "size": [
+        0.9680000000000001,
+        0.022,
+        0.52
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Bed_Base",
+      "type": "box",
+      "center": [
+        4.55,
+        0.22,
+        -1.135
+      ],
+      "size": [
+        0.9800000000000002,
+        0.25,
+        2.06
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Bed_Mattress",
+      "type": "box",
+      "center": [
+        4.55,
+        0.44,
+        -1.145
+      ],
+      "size": [
+        0.9450000000000002,
+        0.22,
+        1.9800000000000002
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Bed_Headboard",
+      "type": "box",
+      "center": [
+        4.55,
+        0.45,
+        -0.1299999999999999
+      ],
+      "size": [
+        0.98,
+        0.9,
+        0.05000000000000012
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Night_Body",
+      "type": "box",
+      "center": [
+        5.33,
+        0.31,
+        -0.32
+      ],
+      "size": [
+        0.4000000000000001,
+        0.4,
+        0.4000000000000001
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Night_Leg-1-1",
+      "type": "box",
+      "center": [
+        5.46,
+        0.06,
+        -0.45
+      ],
+      "size": [
+        0.03500000000000001,
+        0.12,
+        0.03500000000000001
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Night_Leg-11",
+      "type": "box",
+      "center": [
+        5.46,
+        0.06,
+        -0.19
+      ],
+      "size": [
+        0.03500000000000001,
+        0.12,
+        0.03500000000000001
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Night_Leg1-1",
+      "type": "box",
+      "center": [
+        5.2,
+        0.06,
+        -0.45
+      ],
+      "size": [
+        0.03500000000000001,
+        0.12,
+        0.03500000000000001
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Night_Leg11",
+      "type": "box",
+      "center": [
+        5.2,
+        0.06,
+        -0.19
+      ],
+      "size": [
+        0.03500000000000001,
+        0.12,
+        0.03500000000000001
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Wardrobe_Back",
+      "type": "box",
+      "center": [
+        3.952,
+        1.1,
+        -3.0
+      ],
+      "size": [
+        0.024000000000000066,
+        2.2,
+        1.08
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Wardrobe_Jamb-1",
+      "type": "box",
+      "center": [
+        4.21,
+        1.1,
+        -2.4779999999999998
+      ],
+      "size": [
+        0.54,
+        2.2,
+        0.03600000000000003
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Wardrobe_Jamb1",
+      "type": "box",
+      "center": [
+        4.21,
+        1.1,
+        -3.5220000000000002
+      ],
+      "size": [
+        0.54,
+        2.2,
+        0.03600000000000003
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Wardrobe_Plinth",
+      "type": "box",
+      "center": [
+        4.21,
+        0.055,
+        -3.0
+      ],
+      "size": [
+        0.5400000000000001,
+        0.11,
+        1.08
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Wardrobe_Crown",
+      "type": "box",
+      "center": [
+        4.21,
+        2.165,
+        -3.0
+      ],
+      "size": [
+        0.5520000000000002,
+        0.07,
+        1.092
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D2_Wardrobe_Shelf",
+      "type": "box",
+      "center": [
+        4.21,
+        0.48,
+        -3.0
+      ],
+      "size": [
+        0.5200000000000001,
+        0.022,
+        1.008
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Bed_Base",
+      "type": "box",
+      "center": [
+        0.55,
+        0.22,
+        -4.095
+      ],
+      "size": [
+        0.98,
+        0.25,
+        2.0
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Bed_Mattress",
+      "type": "box",
+      "center": [
+        0.55,
+        0.44,
+        -4.085
+      ],
+      "size": [
+        0.945,
+        0.22,
+        1.92
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Bed_Headboard",
+      "type": "box",
+      "center": [
+        0.55,
+        0.45,
+        -5.069999999999999
+      ],
+      "size": [
+        0.98,
+        0.9,
+        0.05
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Night_Body",
+      "type": "box",
+      "center": [
+        1.29,
+        0.31,
+        -4.87
+      ],
+      "size": [
+        0.38,
+        0.4,
+        0.38
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Night_Leg-1-1",
+      "type": "box",
+      "center": [
+        1.17,
+        0.06,
+        -4.75
+      ],
+      "size": [
+        0.035,
+        0.12,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Night_Leg-11",
+      "type": "box",
+      "center": [
+        1.17,
+        0.06,
+        -4.99
+      ],
+      "size": [
+        0.035,
+        0.12,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Night_Leg1-1",
+      "type": "box",
+      "center": [
+        1.4100000000000001,
+        0.06,
+        -4.75
+      ],
+      "size": [
+        0.035,
+        0.12,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Night_Leg11",
+      "type": "box",
+      "center": [
+        1.4100000000000001,
+        0.06,
+        -4.99
+      ],
+      "size": [
+        0.035,
+        0.12,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Wardrobe_Back",
+      "type": "box",
+      "center": [
+        2.718,
+        1.1,
+        -3.9
+      ],
+      "size": [
+        0.024000000000000028,
+        2.2,
+        0.43
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Wardrobe_Jamb-1",
+      "type": "box",
+      "center": [
+        2.48,
+        1.1,
+        -4.0969999999999995
+      ],
+      "size": [
+        0.5,
+        2.2,
+        0.036000000000000025
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Wardrobe_Jamb1",
+      "type": "box",
+      "center": [
+        2.48,
+        1.1,
+        -3.703
+      ],
+      "size": [
+        0.5,
+        2.2,
+        0.036000000000000025
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Wardrobe_Plinth",
+      "type": "box",
+      "center": [
+        2.48,
+        0.055,
+        -3.9
+      ],
+      "size": [
+        0.5,
+        0.11,
+        0.43000000000000005
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Wardrobe_Crown",
+      "type": "box",
+      "center": [
+        2.48,
+        2.165,
+        -3.9
+      ],
+      "size": [
+        0.512,
+        0.07,
+        0.44200000000000006
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "D3_Wardrobe_Shelf",
+      "type": "box",
+      "center": [
+        2.48,
+        0.48,
+        -3.9
+      ],
+      "size": [
+        0.48,
+        0.022,
+        0.35800000000000004
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Bath_Basin_BasinSide-1",
+      "type": "box",
+      "center": [
+        8.075,
+        0.75,
+        -3.155
+      ],
+      "size": [
+        0.43,
+        0.15,
+        0.05000000000000003
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Bath_Basin_BasinRim-1",
+      "type": "box",
+      "center": [
+        7.884999999999999,
+        0.75,
+        -2.88
+      ],
+      "size": [
+        0.05000000000000003,
+        0.15,
+        0.5
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Bath_Basin_BasinSide1",
+      "type": "box",
+      "center": [
+        8.075,
+        0.75,
+        -2.605
+      ],
+      "size": [
+        0.43,
+        0.15,
+        0.05000000000000003
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Bath_Basin_BasinRim1",
+      "type": "box",
+      "center": [
+        8.264999999999999,
+        0.75,
+        -2.88
+      ],
+      "size": [
+        0.05000000000000003,
+        0.15,
+        0.5
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Bath_Basin_BasinBottom",
+      "type": "box",
+      "center": [
+        8.075,
+        0.6749999999999999,
+        -2.88
+      ],
+      "size": [
+        0.38000000000000006,
+        0.025,
+        0.5499999999999999
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Bath_WC_Pedestal",
+      "type": "box",
+      "center": [
+        7.96,
+        0.2,
+        -1.36
+      ],
+      "size": [
+        0.43,
+        0.4,
+        0.24000000000000002
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Bath_WC_Bowl",
+      "type": "box",
+      "center": [
+        7.925,
+        0.4,
+        -1.36
+      ],
+      "size": [
+        0.48,
+        0.18,
+        0.38000000000000006
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Bath_WC_Seat",
+      "type": "box",
+      "center": [
+        7.905,
+        0.49,
+        -1.36
+      ],
+      "size": [
+        0.43,
+        0.035,
+        0.375
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Bath_WC_Cistern",
+      "type": "box",
+      "center": [
+        8.235,
+        0.65,
+        -1.36
+      ],
+      "size": [
+        0.14000000000000004,
+        0.4,
+        0.38
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Bath_WC_Grab-1",
+      "type": "box",
+      "center": [
+        7.985,
+        0.76,
+        -1.75
+      ],
+      "size": [
+        0.65,
+        0.032,
+        0.03200000000000004
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Bath_WC_Grab1",
+      "type": "box",
+      "center": [
+        7.985,
+        0.76,
+        -0.9700000000000001
+      ],
+      "size": [
+        0.65,
+        0.032,
+        0.03200000000000004
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Bath_Shower_WallGrab",
+      "type": "box",
+      "center": [
+        6.88,
+        0.76,
+        0.77
+      ],
+      "size": [
+        0.035,
+        0.035,
+        0.65
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Bath_Shower_FoldedSeat",
+      "type": "box",
+      "center": [
+        6.895,
+        0.6,
+        0.75
+      ],
+      "size": [
+        0.065,
+        0.38,
+        0.43
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Fridge_Body",
+      "type": "box",
+      "center": [
+        8.705,
+        1.02,
+        -3.59
+      ],
+      "size": [
+        0.59,
+        2.04,
+        0.63
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Cooker_Body",
+      "type": "box",
+      "center": [
+        8.72,
+        0.48,
+        -2.78
+      ],
+      "size": [
+        0.59,
+        0.72,
+        0.56
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Cooker_Plinth",
+      "type": "box",
+      "center": [
+        8.690000000000001,
+        0.07,
+        -2.78
+      ],
+      "size": [
+        0.5,
+        0.14,
+        0.53
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Cooker_Worktop",
+      "type": "box",
+      "center": [
+        8.72,
+        0.87,
+        -2.78
+      ],
+      "size": [
+        0.61,
+        0.045,
+        0.5680000000000001
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Cooker_Hood",
+      "type": "box",
+      "center": [
+        8.680000000000001,
+        1.78,
+        -2.78
+      ],
+      "size": [
+        0.44000000000000006,
+        0.13,
+        0.56
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Cooker_Flue",
+      "type": "box",
+      "center": [
+        8.535,
+        2.05,
+        -2.78
+      ],
+      "size": [
+        0.21,
+        0.42,
+        0.22
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Worktop_Body",
+      "type": "box",
+      "center": [
+        8.72,
+        0.48,
+        -2.0
+      ],
+      "size": [
+        0.5900000000000001,
+        0.72,
+        0.91
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Worktop_Plinth",
+      "type": "box",
+      "center": [
+        8.690000000000001,
+        0.07,
+        -2.0
+      ],
+      "size": [
+        0.5,
+        0.14,
+        0.88
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Worktop_Worktop",
+      "type": "box",
+      "center": [
+        8.72,
+        0.87,
+        -2.0
+      ],
+      "size": [
+        0.6100000000000001,
+        0.045,
+        0.918
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Sink_Body",
+      "type": "box",
+      "center": [
+        8.72,
+        0.43,
+        -1.18
+      ],
+      "size": [
+        0.59,
+        0.62,
+        0.63
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Sink_Plinth",
+      "type": "box",
+      "center": [
+        8.690000000000001,
+        0.07,
+        -1.18
+      ],
+      "size": [
+        0.5,
+        0.14,
+        0.6
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Sink_BasinSide-1",
+      "type": "box",
+      "center": [
+        8.72,
+        0.8300000000000001,
+        -0.9099999999999999
+      ],
+      "size": [
+        0.53,
+        0.15,
+        0.05000000000000004
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Sink_BasinRim-1",
+      "type": "box",
+      "center": [
+        8.96,
+        0.8300000000000001,
+        -1.18
+      ],
+      "size": [
+        0.05000000000000003,
+        0.15,
+        0.49
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Sink_BasinSide1",
+      "type": "box",
+      "center": [
+        8.72,
+        0.8300000000000001,
+        -1.45
+      ],
+      "size": [
+        0.53,
+        0.15,
+        0.05000000000000004
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Sink_BasinRim1",
+      "type": "box",
+      "center": [
+        8.48,
+        0.8300000000000001,
+        -1.18
+      ],
+      "size": [
+        0.05000000000000003,
+        0.15,
+        0.49
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Sink_BasinBottom",
+      "type": "box",
+      "center": [
+        8.72,
+        0.755,
+        -1.18
+      ],
+      "size": [
+        0.4800000000000001,
+        0.025,
+        0.5399999999999999
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Kitchen_Upper_Body",
+      "type": "box",
+      "center": [
+        8.565,
+        1.79,
+        -2.0
+      ],
+      "size": [
+        0.29000000000000004,
+        0.62,
+        0.91
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Living_Sofa_Leg-1-1",
+      "type": "box",
+      "center": [
+        11.79,
+        0.07,
+        -3.9099999999999997
+      ],
+      "size": [
+        0.035,
+        0.14,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Living_Sofa_Leg-11",
+      "type": "box",
+      "center": [
+        12.43,
+        0.07,
+        -3.9099999999999997
+      ],
+      "size": [
+        0.035,
+        0.14,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Living_Sofa_Leg1-1",
+      "type": "box",
+      "center": [
+        11.79,
+        0.07,
+        -2.15
+      ],
+      "size": [
+        0.035,
+        0.14,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Living_Sofa_Leg11",
+      "type": "box",
+      "center": [
+        12.43,
+        0.07,
+        -2.15
+      ],
+      "size": [
+        0.035,
+        0.14,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Living_Sofa_Base",
+      "type": "box",
+      "center": [
+        12.11,
+        0.29,
+        -3.03
+      ],
+      "size": [
+        0.7800000000000001,
+        0.28,
+        1.9
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Living_Sofa_Back",
+      "type": "box",
+      "center": [
+        12.399999999999999,
+        0.64,
+        -3.03
+      ],
+      "size": [
+        0.20000000000000012,
+        0.55,
+        1.9
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Living_Sofa_Arm-1",
+      "type": "box",
+      "center": [
+        12.094999999999999,
+        0.49,
+        -3.905
+      ],
+      "size": [
+        0.7000000000000001,
+        0.4,
+        0.15000000000000005
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Living_Sofa_Arm1",
+      "type": "box",
+      "center": [
+        12.094999999999999,
+        0.49,
+        -2.155
+      ],
+      "size": [
+        0.7000000000000001,
+        0.4,
+        0.15000000000000005
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Living_TV_Cabinet",
+      "type": "box",
+      "center": [
+        10.225,
+        0.31,
+        -3.03
+      ],
+      "size": [
+        0.35000000000000003,
+        0.46,
+        1.2
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Living_TV_Bezel",
+      "type": "box",
+      "center": [
+        10.389999999999999,
+        1.16,
+        -3.03
+      ],
+      "size": [
+        0.035000000000000066,
+        0.61,
+        1.07
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Table_Top",
+      "type": "box",
+      "center": [
+        11.3,
+        0.755,
+        0.3
+      ],
+      "size": [
+        0.85,
+        0.045,
+        1.2
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Table_Leg-1-1",
+      "type": "box",
+      "center": [
+        10.975000000000001,
+        0.3675,
+        0.8
+      ],
+      "size": [
+        0.035,
+        0.735,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Table_Leg-11",
+      "type": "box",
+      "center": [
+        10.975000000000001,
+        0.3675,
+        -0.2
+      ],
+      "size": [
+        0.035,
+        0.735,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Table_Leg1-1",
+      "type": "box",
+      "center": [
+        11.625,
+        0.3675,
+        0.8
+      ],
+      "size": [
+        0.035,
+        0.735,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Table_Leg11",
+      "type": "box",
+      "center": [
+        11.625,
+        0.3675,
+        -0.2
+      ],
+      "size": [
+        0.035,
+        0.735,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair1_Leg-1-1",
+      "type": "box",
+      "center": [
+        10.704999999999998,
+        0.215,
+        0.765
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair1_Leg-11",
+      "type": "box",
+      "center": [
+        10.375,
+        0.215,
+        0.765
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair1_Leg1-1",
+      "type": "box",
+      "center": [
+        10.704999999999998,
+        0.215,
+        0.43499999999999994
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair1_Leg11",
+      "type": "box",
+      "center": [
+        10.375,
+        0.215,
+        0.43499999999999994
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair1_Seat",
+      "type": "box",
+      "center": [
+        10.54,
+        0.46,
+        0.6
+      ],
+      "size": [
+        0.44,
+        0.065,
+        0.44
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair1_Back",
+      "type": "box",
+      "center": [
+        10.344999999999999,
+        0.72,
+        0.6
+      ],
+      "size": [
+        0.045000000000000026,
+        0.49,
+        0.44
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair2_Leg-1-1",
+      "type": "box",
+      "center": [
+        10.704999999999998,
+        0.215,
+        0.165
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair2_Leg-11",
+      "type": "box",
+      "center": [
+        10.375,
+        0.215,
+        0.165
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair2_Leg1-1",
+      "type": "box",
+      "center": [
+        10.704999999999998,
+        0.215,
+        -0.165
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair2_Leg11",
+      "type": "box",
+      "center": [
+        10.375,
+        0.215,
+        -0.165
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair2_Seat",
+      "type": "box",
+      "center": [
+        10.54,
+        0.46,
+        -0.0
+      ],
+      "size": [
+        0.44,
+        0.065,
+        0.44
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair2_Back",
+      "type": "box",
+      "center": [
+        10.344999999999999,
+        0.72,
+        -1.1940306291686694e-17
+      ],
+      "size": [
+        0.045000000000000026,
+        0.49,
+        0.44
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair3_Leg-1-1",
+      "type": "box",
+      "center": [
+        11.895000000000001,
+        0.215,
+        0.43499999999999994
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair3_Leg-11",
+      "type": "box",
+      "center": [
+        12.225,
+        0.215,
+        0.43499999999999994
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair3_Leg1-1",
+      "type": "box",
+      "center": [
+        11.895000000000001,
+        0.215,
+        0.765
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair3_Leg11",
+      "type": "box",
+      "center": [
+        12.225,
+        0.215,
+        0.765
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair3_Seat",
+      "type": "box",
+      "center": [
+        12.06,
+        0.46,
+        0.6
+      ],
+      "size": [
+        0.44,
+        0.065,
+        0.44
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair3_Back",
+      "type": "box",
+      "center": [
+        12.255,
+        0.72,
+        0.6
+      ],
+      "size": [
+        0.045000000000000026,
+        0.49,
+        0.44
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair4_Leg-1-1",
+      "type": "box",
+      "center": [
+        11.895000000000001,
+        0.215,
+        -0.165
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair4_Leg-11",
+      "type": "box",
+      "center": [
+        12.225,
+        0.215,
+        -0.165
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair4_Leg1-1",
+      "type": "box",
+      "center": [
+        11.895000000000001,
+        0.215,
+        0.165
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair4_Leg11",
+      "type": "box",
+      "center": [
+        12.225,
+        0.215,
+        0.165
+      ],
+      "size": [
+        0.035,
+        0.43,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair4_Seat",
+      "type": "box",
+      "center": [
+        12.06,
+        0.46,
+        -0.0
+      ],
+      "size": [
+        0.44,
+        0.065,
+        0.44
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Dining_Chair4_Back",
+      "type": "box",
+      "center": [
+        12.255,
+        0.72,
+        -1.1940306291686694e-17
+      ],
+      "size": [
+        0.045000000000000026,
+        0.49,
+        0.44
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Loggia_Washer_Body",
+      "type": "box",
+      "center": [
+        8.95,
+        0.43,
+        0.89
+      ],
+      "size": [
+        0.59,
+        0.86,
+        0.6
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Loggia_Sink_BasinSide-1",
+      "type": "box",
+      "center": [
+        8.83,
+        0.81,
+        0.525
+      ],
+      "size": [
+        0.42,
+        0.15,
+        0.05000000000000003
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Loggia_Sink_BasinRim-1",
+      "type": "box",
+      "center": [
+        9.015,
+        0.81,
+        0.31
+      ],
+      "size": [
+        0.050000000000000024,
+        0.15,
+        0.38
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Loggia_Sink_BasinSide1",
+      "type": "box",
+      "center": [
+        8.83,
+        0.81,
+        0.095
+      ],
+      "size": [
+        0.42,
+        0.15,
+        0.05000000000000003
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Loggia_Sink_BasinRim1",
+      "type": "box",
+      "center": [
+        8.645,
+        0.81,
+        0.31
+      ],
+      "size": [
+        0.050000000000000024,
+        0.15,
+        0.38
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Loggia_Sink_BasinBottom",
+      "type": "box",
+      "center": [
+        8.83,
+        0.735,
+        0.31
+      ],
+      "size": [
+        0.37,
+        0.025,
+        0.43
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Loggia_Sink_Leg-1",
+      "type": "box",
+      "center": [
+        8.83,
+        0.36,
+        0.5
+      ],
+      "size": [
+        0.035,
+        0.72,
+        0.035
+      ],
+      "category": "Equipment"
+    },
+    {
+      "id": "Loggia_Sink_Leg1",
+      "type": "box",
+      "center": [
+        8.83,
+        0.36,
+        0.12
+      ],
+      "size": [
+        0.035,
+        0.72,
+        0.035
+      ],
+      "category": "Equipment"
     }
   ],
   "doors": [
@@ -2017,6 +3892,1278 @@
         0.1717003434896469
       ],
       "hinge_adjustment_m": 0.0279998779296875
+    },
+    {
+      "id": "D1_Wardrobe_Door1",
+      "pivot_name": "D1_Wardrobe_Door1_Pivot",
+      "leaf_name": "D1_Wardrobe_Door1_Leaf",
+      "pivot": [
+        1.868,
+        0,
+        -3.022
+      ],
+      "size": [
+        0.48000000000000004,
+        2.015,
+        0.022
+      ],
+      "center_local": [
+        0.24000000000000002,
+        1.1575,
+        0
+      ],
+      "base_rotation_y": 0.0,
+      "swing_radians": -1.5707963267948966,
+      "opening": "D1_Wardrobe",
+      "label": "Armario dormitorio 1 · hoja 1",
+      "category": "wardrobe"
+    },
+    {
+      "id": "D1_Wardrobe_Door2",
+      "pivot_name": "D1_Wardrobe_Door2_Pivot",
+      "leaf_name": "D1_Wardrobe_Door2_Leaf",
+      "pivot": [
+        2.8320000000000003,
+        0,
+        -3.022
+      ],
+      "size": [
+        0.48000000000000004,
+        2.015,
+        0.022
+      ],
+      "center_local": [
+        0.24000000000000002,
+        1.1575,
+        0
+      ],
+      "base_rotation_y": 3.141592653589793,
+      "swing_radians": 1.5707963267948966,
+      "opening": "D1_Wardrobe",
+      "label": "Armario dormitorio 1 · hoja 2",
+      "category": "wardrobe"
+    },
+    {
+      "id": "D2_Wardrobe_Door1",
+      "pivot_name": "D2_Wardrobe_Door1_Pivot",
+      "leaf_name": "D2_Wardrobe_Door1_Leaf",
+      "pivot": [
+        4.468,
+        0,
+        -2.498
+      ],
+      "size": [
+        0.5,
+        2.015,
+        0.022
+      ],
+      "center_local": [
+        0.25,
+        1.1575,
+        0
+      ],
+      "base_rotation_y": 1.5707963267948966,
+      "swing_radians": -1.5707963267948966,
+      "opening": "D2_Wardrobe",
+      "label": "Armario dormitorio 2 · hoja 1",
+      "category": "wardrobe"
+    },
+    {
+      "id": "D2_Wardrobe_Door2",
+      "pivot_name": "D2_Wardrobe_Door2_Pivot",
+      "leaf_name": "D2_Wardrobe_Door2_Leaf",
+      "pivot": [
+        4.468,
+        0,
+        -3.502
+      ],
+      "size": [
+        0.5,
+        2.015,
+        0.022
+      ],
+      "center_local": [
+        0.25,
+        1.1575,
+        0
+      ],
+      "base_rotation_y": 4.71238898038469,
+      "swing_radians": 1.5707963267948966,
+      "opening": "D2_Wardrobe",
+      "label": "Armario dormitorio 2 · hoja 2",
+      "category": "wardrobe"
+    },
+    {
+      "id": "D3_Wardrobe_Door1",
+      "pivot_name": "D3_Wardrobe_Door1_Pivot",
+      "leaf_name": "D3_Wardrobe_Door1_Leaf",
+      "pivot": [
+        2.242,
+        0,
+        -4.077
+      ],
+      "size": [
+        0.175,
+        2.015,
+        0.022
+      ],
+      "center_local": [
+        0.0875,
+        1.1575,
+        0
+      ],
+      "base_rotation_y": -1.5707963267948966,
+      "swing_radians": -1.5707963267948966,
+      "opening": "D3_Wardrobe",
+      "label": "Armario dormitorio 3 · hoja 1",
+      "category": "wardrobe"
+    },
+    {
+      "id": "D3_Wardrobe_Door2",
+      "pivot_name": "D3_Wardrobe_Door2_Pivot",
+      "leaf_name": "D3_Wardrobe_Door2_Leaf",
+      "pivot": [
+        2.242,
+        0,
+        -3.723
+      ],
+      "size": [
+        0.175,
+        2.015,
+        0.022
+      ],
+      "center_local": [
+        0.0875,
+        1.1575,
+        0
+      ],
+      "base_rotation_y": 1.5707963267948966,
+      "swing_radians": 1.5707963267948966,
+      "opening": "D3_Wardrobe",
+      "label": "Armario dormitorio 3 · hoja 2",
+      "category": "wardrobe"
+    }
+  ],
+  "inventory": [
+    {
+      "id": "D1_Bed",
+      "room": "D1",
+      "type": "bed",
+      "center": [
+        1.065,
+        1.2
+      ],
+      "size": [
+        1.5,
+        2.06
+      ],
+      "rotation": 90,
+      "double": true,
+      "mesh_names": [
+        "D1_Bed_Base",
+        "D1_Bed_Mattress",
+        "D1_Bed_Duvet",
+        "D1_Bed_Throw",
+        "D1_Bed_Headboard",
+        "D1_Bed_Pillow0",
+        "D1_Bed_Pillow1"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          0.034999996423721313,
+          0.4500000476837158,
+          0.0
+        ],
+        [
+          2.0950000286102295,
+          1.9500000476837158,
+          0.8999999761581421
+        ]
+      ]
+    },
+    {
+      "id": "D1_NightA",
+      "room": "D1",
+      "type": "nightstand",
+      "center": [
+        0.26,
+        0.215
+      ],
+      "size": [
+        0.4,
+        0.4
+      ],
+      "rotation": 90,
+      "mesh_names": [
+        "D1_NightA_Body",
+        "D1_NightA_Drawer",
+        "D1_NightA_Handle",
+        "D1_NightA_Leg-1-1",
+        "D1_NightA_Leg-11",
+        "D1_NightA_Leg1-1",
+        "D1_NightA_Leg11"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          0.0599999874830246,
+          0.015000000596046448,
+          0.0
+        ],
+        [
+          0.4925000071525574,
+          0.4150000214576721,
+          0.5099999904632568
+        ]
+      ]
+    },
+    {
+      "id": "D1_NightB",
+      "room": "D1",
+      "type": "nightstand",
+      "center": [
+        0.26,
+        2.33
+      ],
+      "size": [
+        0.42,
+        0.42
+      ],
+      "rotation": 90,
+      "mesh_names": [
+        "D1_NightB_Body",
+        "D1_NightB_Drawer",
+        "D1_NightB_Handle",
+        "D1_NightB_Leg-1-1",
+        "D1_NightB_Leg-11",
+        "D1_NightB_Leg1-1",
+        "D1_NightB_Leg11"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          0.04999999701976776,
+          2.119999885559082,
+          0.0
+        ],
+        [
+          0.5024999976158142,
+          2.5399999618530273,
+          0.5099999904632568
+        ]
+      ]
+    },
+    {
+      "id": "D1_TV",
+      "room": "D1",
+      "type": "wall_tv",
+      "center": [
+        3.81,
+        1.2
+      ],
+      "size": [
+        1.03,
+        0.035
+      ],
+      "rotation": -90,
+      "mesh_names": [
+        "D1_TV_Bezel",
+        "D1_TV_Screen"
+      ],
+      "forward_xy": [
+        -1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          3.7820000648498535,
+          0.6850000619888306,
+          1.0550000667572021
+        ],
+        [
+          3.819999933242798,
+          1.715000033378601,
+          1.6649999618530273
+        ]
+      ]
+    },
+    {
+      "id": "D1_Wardrobe",
+      "room": "D1",
+      "type": "wardrobe",
+      "center": [
+        2.35,
+        3.28
+      ],
+      "size": [
+        1.04,
+        0.54
+      ],
+      "rotation": 0,
+      "mesh_names": [
+        "D1_Wardrobe_Back",
+        "D1_Wardrobe_Jamb-1",
+        "D1_Wardrobe_Jamb1",
+        "D1_Wardrobe_Plinth",
+        "D1_Wardrobe_Crown",
+        "D1_Wardrobe_Shelf",
+        "D1_Wardrobe_Rail",
+        "D1_Wardrobe_Door1_Leaf",
+        "D1_Wardrobe_Door1_Handle",
+        "D1_Wardrobe_Door2_Leaf",
+        "D1_Wardrobe_Door2_Handle"
+      ],
+      "forward_xy": [
+        0.0,
+        -1.0
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          1.8239998817443848,
+          2.9790000915527344,
+          0.0
+        ],
+        [
+          2.875999927520752,
+          3.555999994277954,
+          2.200000047683716
+        ]
+      ]
+    },
+    {
+      "id": "D2_Bed",
+      "room": "D2",
+      "type": "bed",
+      "center": [
+        4.55,
+        1.135
+      ],
+      "size": [
+        0.98,
+        2.06
+      ],
+      "rotation": 180,
+      "double": false,
+      "mesh_names": [
+        "D2_Bed_Base",
+        "D2_Bed_Mattress",
+        "D2_Bed_Duvet",
+        "D2_Bed_Throw",
+        "D2_Bed_Headboard",
+        "D2_Bed_Pillow0"
+      ],
+      "forward_xy": [
+        1.2246467991473532e-16,
+        1.0
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          4.060000419616699,
+          0.10499999672174454,
+          0.0
+        ],
+        [
+          5.039999961853027,
+          2.1649999618530273,
+          0.8999999761581421
+        ]
+      ]
+    },
+    {
+      "id": "D2_Night",
+      "room": "D2",
+      "type": "nightstand",
+      "center": [
+        5.33,
+        0.32
+      ],
+      "size": [
+        0.4,
+        0.4
+      ],
+      "rotation": 180,
+      "mesh_names": [
+        "D2_Night_Body",
+        "D2_Night_Drawer",
+        "D2_Night_Handle",
+        "D2_Night_Leg-1-1",
+        "D2_Night_Leg-11",
+        "D2_Night_Leg1-1",
+        "D2_Night_Leg11"
+      ],
+      "forward_xy": [
+        1.2246467991473532e-16,
+        1.0
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          5.130000114440918,
+          0.11999998986721039,
+          0.0
+        ],
+        [
+          5.529999732971191,
+          0.5525000095367432,
+          0.5099999904632568
+        ]
+      ]
+    },
+    {
+      "id": "D2_Wardrobe",
+      "room": "D2",
+      "type": "wardrobe",
+      "center": [
+        4.21,
+        3.0
+      ],
+      "size": [
+        1.08,
+        0.54
+      ],
+      "rotation": 90,
+      "mesh_names": [
+        "D2_Wardrobe_Back",
+        "D2_Wardrobe_Jamb-1",
+        "D2_Wardrobe_Jamb1",
+        "D2_Wardrobe_Plinth",
+        "D2_Wardrobe_Crown",
+        "D2_Wardrobe_Shelf",
+        "D2_Wardrobe_Rail",
+        "D2_Wardrobe_Door1_Leaf",
+        "D2_Wardrobe_Door1_Handle",
+        "D2_Wardrobe_Door2_Leaf",
+        "D2_Wardrobe_Door2_Handle"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          3.934000015258789,
+          2.4539999961853027,
+          0.0
+        ],
+        [
+          4.511000156402588,
+          3.5460000038146973,
+          2.200000047683716
+        ]
+      ]
+    },
+    {
+      "id": "D3_Bed",
+      "room": "D3",
+      "type": "bed",
+      "center": [
+        0.55,
+        4.095
+      ],
+      "size": [
+        0.98,
+        2.0
+      ],
+      "rotation": 0,
+      "double": false,
+      "mesh_names": [
+        "D3_Bed_Base",
+        "D3_Bed_Mattress",
+        "D3_Bed_Duvet",
+        "D3_Bed_Throw",
+        "D3_Bed_Headboard",
+        "D3_Bed_Pillow0"
+      ],
+      "forward_xy": [
+        0.0,
+        -1.0
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          0.06000000238418579,
+          3.0949997901916504,
+          0.0
+        ],
+        [
+          1.0399999618530273,
+          5.095000267028809,
+          0.8999999761581421
+        ]
+      ]
+    },
+    {
+      "id": "D3_Night",
+      "room": "D3",
+      "type": "nightstand",
+      "center": [
+        1.29,
+        4.87
+      ],
+      "size": [
+        0.38,
+        0.38
+      ],
+      "rotation": 0,
+      "mesh_names": [
+        "D3_Night_Body",
+        "D3_Night_Drawer",
+        "D3_Night_Handle",
+        "D3_Night_Leg-1-1",
+        "D3_Night_Leg-11",
+        "D3_Night_Leg1-1",
+        "D3_Night_Leg11"
+      ],
+      "forward_xy": [
+        0.0,
+        -1.0
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          1.0999999046325684,
+          4.647500038146973,
+          0.0
+        ],
+        [
+          1.4800000190734863,
+          5.059999942779541,
+          0.5099999904632568
+        ]
+      ]
+    },
+    {
+      "id": "D3_Wardrobe",
+      "room": "D3",
+      "type": "wardrobe",
+      "center": [
+        2.48,
+        3.9
+      ],
+      "size": [
+        0.43,
+        0.5
+      ],
+      "rotation": -90,
+      "note": "Dos hojas estrechas en nicho original; no se ensancha el tabique.",
+      "mesh_names": [
+        "D3_Wardrobe_Back",
+        "D3_Wardrobe_Jamb-1",
+        "D3_Wardrobe_Jamb1",
+        "D3_Wardrobe_Plinth",
+        "D3_Wardrobe_Crown",
+        "D3_Wardrobe_Shelf",
+        "D3_Wardrobe_Rail",
+        "D3_Wardrobe_Door1_Leaf",
+        "D3_Wardrobe_Door1_Handle",
+        "D3_Wardrobe_Door2_Leaf",
+        "D3_Wardrobe_Door2_Handle"
+      ],
+      "forward_xy": [
+        -1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          2.199000120162964,
+          3.67900013923645,
+          0.0
+        ],
+        [
+          2.7360000610351562,
+          4.121000289916992,
+          2.200000047683716
+        ]
+      ]
+    },
+    {
+      "id": "Bath_Basin",
+      "room": "BATH",
+      "type": "basin",
+      "center": [
+        8.075,
+        2.88
+      ],
+      "size": [
+        0.6,
+        0.43
+      ],
+      "rotation": -90,
+      "mesh_names": [
+        "Bath_Basin_BasinSide-1",
+        "Bath_Basin_BasinRim-1",
+        "Bath_Basin_BasinSide1",
+        "Bath_Basin_BasinRim1",
+        "Bath_Basin_BasinBottom",
+        "Bath_Basin_Drain",
+        "Bath_Basin_TapPost",
+        "Bath_Basin_TapSpout",
+        "Bath_Basin_Trap"
+      ],
+      "forward_xy": [
+        -1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          7.859999656677246,
+          2.5799999237060547,
+          0.42000001668930054
+        ],
+        [
+          8.289999961853027,
+          3.180000066757202,
+          1.0850000381469727
+        ]
+      ]
+    },
+    {
+      "id": "Bath_WC",
+      "room": "BATH",
+      "type": "toilet",
+      "center": [
+        7.995,
+        1.36
+      ],
+      "size": [
+        0.38,
+        0.62
+      ],
+      "rotation": -90,
+      "mesh_names": [
+        "Bath_WC_Pedestal",
+        "Bath_WC_Bowl",
+        "Bath_WC_Seat",
+        "Bath_WC_Cistern",
+        "Bath_WC_Flush",
+        "Bath_WC_Grab-1",
+        "Bath_WC_GrabMount-1",
+        "Bath_WC_Grab1",
+        "Bath_WC_GrabMount1"
+      ],
+      "forward_xy": [
+        -1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          7.660000324249268,
+          0.9500000476837158,
+          0.0
+        ],
+        [
+          8.3100004196167,
+          1.7699999809265137,
+          0.859000027179718
+        ]
+      ]
+    },
+    {
+      "id": "Bath_Shower",
+      "room": "BATH",
+      "type": "shower",
+      "center": [
+        7.51,
+        -0.77
+      ],
+      "size": [
+        1.34,
+        0.91
+      ],
+      "rotation": 0,
+      "mesh_names": [
+        "Bath_Shower_FlushFloor",
+        "Bath_Shower_LinearDrain",
+        "Bath_Shower_Mixer",
+        "Bath_Shower_Riser",
+        "Bath_Shower_ShowerHead",
+        "Bath_Shower_WallGrab",
+        "Bath_Shower_FoldedSeat"
+      ],
+      "forward_xy": [
+        0.0,
+        -1.0
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          6.840000152587891,
+          -1.225000023841858,
+          0.0
+        ],
+        [
+          8.180000305175781,
+          -0.3149999678134918,
+          2.130000114440918
+        ]
+      ]
+    },
+    {
+      "id": "Kitchen_Fridge",
+      "room": "KITCHEN",
+      "type": "fridge",
+      "center": [
+        8.705,
+        3.59
+      ],
+      "size": [
+        0.63,
+        0.59
+      ],
+      "rotation": 90,
+      "mesh_names": [
+        "Kitchen_Fridge_Body",
+        "Kitchen_Fridge_Freezer",
+        "Kitchen_Fridge_FreezerPull",
+        "Kitchen_Fridge_Door",
+        "Kitchen_Fridge_DoorPull"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          8.40999984741211,
+          3.2749998569488525,
+          0.0
+        ],
+        [
+          9.052499771118164,
+          3.9049999713897705,
+          2.0399999618530273
+        ]
+      ]
+    },
+    {
+      "id": "Kitchen_Cooker",
+      "room": "KITCHEN",
+      "type": "cooker",
+      "center": [
+        8.72,
+        2.78
+      ],
+      "size": [
+        0.56,
+        0.59
+      ],
+      "rotation": 90,
+      "mesh_names": [
+        "Kitchen_Cooker_Body",
+        "Kitchen_Cooker_Plinth",
+        "Kitchen_Cooker_Front-1",
+        "Kitchen_Cooker_Pull-1",
+        "Kitchen_Cooker_Front1",
+        "Kitchen_Cooker_Pull1",
+        "Kitchen_Cooker_Worktop",
+        "Kitchen_Cooker_OvenWindow",
+        "Kitchen_Cooker_OvenPull",
+        "Kitchen_Cooker_Hob",
+        "Kitchen_Cooker_Burner-1-1",
+        "Kitchen_Cooker_Burner-11",
+        "Kitchen_Cooker_Burner1-1",
+        "Kitchen_Cooker_Burner11",
+        "Kitchen_Cooker_Hood",
+        "Kitchen_Cooker_Flue"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          8.414999961853027,
+          2.496000051498413,
+          0.0
+        ],
+        [
+          9.085000038146973,
+          3.063999891281128,
+          2.259999990463257
+        ]
+      ]
+    },
+    {
+      "id": "Kitchen_Worktop",
+      "room": "KITCHEN",
+      "type": "counter",
+      "center": [
+        8.72,
+        2.0
+      ],
+      "size": [
+        0.91,
+        0.59
+      ],
+      "rotation": 90,
+      "mesh_names": [
+        "Kitchen_Worktop_Body",
+        "Kitchen_Worktop_Plinth",
+        "Kitchen_Worktop_Front-1",
+        "Kitchen_Worktop_Pull-1",
+        "Kitchen_Worktop_Front1",
+        "Kitchen_Worktop_Pull1",
+        "Kitchen_Worktop_Worktop"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          8.414999961853027,
+          1.5410000085830688,
+          0.0
+        ],
+        [
+          9.054499626159668,
+          2.4590001106262207,
+          0.8924999833106995
+        ]
+      ]
+    },
+    {
+      "id": "Kitchen_Sink",
+      "room": "KITCHEN",
+      "type": "kitchen_sink",
+      "center": [
+        8.72,
+        1.18
+      ],
+      "size": [
+        0.63,
+        0.59
+      ],
+      "rotation": 90,
+      "mesh_names": [
+        "Kitchen_Sink_Body",
+        "Kitchen_Sink_Plinth",
+        "Kitchen_Sink_Front-1",
+        "Kitchen_Sink_Pull-1",
+        "Kitchen_Sink_Front1",
+        "Kitchen_Sink_Pull1",
+        "Kitchen_Sink_BasinSide-1",
+        "Kitchen_Sink_BasinRim-1",
+        "Kitchen_Sink_BasinSide1",
+        "Kitchen_Sink_BasinRim1",
+        "Kitchen_Sink_BasinBottom",
+        "Kitchen_Sink_Drain",
+        "Kitchen_Sink_TapPost",
+        "Kitchen_Sink_TapSpout"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          8.425000190734863,
+          0.8649999499320984,
+          0.0
+        ],
+        [
+          9.054499626159668,
+          1.494999885559082,
+          1.1649999618530273
+        ]
+      ]
+    },
+    {
+      "id": "Kitchen_Upper",
+      "room": "KITCHEN",
+      "type": "upper_cabinet",
+      "center": [
+        8.565,
+        2.0
+      ],
+      "size": [
+        0.91,
+        0.29
+      ],
+      "rotation": 90,
+      "mesh_names": [
+        "Kitchen_Upper_Body",
+        "Kitchen_Upper_Front-1",
+        "Kitchen_Upper_Pull-1",
+        "Kitchen_Upper_Front1",
+        "Kitchen_Upper_Pull1"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          8.419999122619629,
+          1.5449999570846558,
+          1.4800000190734863
+        ],
+        [
+          8.749500274658203,
+          2.4549999237060547,
+          2.0999999046325684
+        ]
+      ]
+    },
+    {
+      "id": "Living_Sofa",
+      "room": "LIVING",
+      "type": "sofa",
+      "center": [
+        12.11,
+        3.03
+      ],
+      "size": [
+        1.9,
+        0.78
+      ],
+      "rotation": -90,
+      "mesh_names": [
+        "Living_Sofa_Leg-1-1",
+        "Living_Sofa_Leg-11",
+        "Living_Sofa_Leg1-1",
+        "Living_Sofa_Leg11",
+        "Living_Sofa_Base",
+        "Living_Sofa_Back",
+        "Living_Sofa_Arm-1",
+        "Living_Sofa_Seat-1",
+        "Living_Sofa_BackCushion-1",
+        "Living_Sofa_Arm1",
+        "Living_Sofa_Seat1",
+        "Living_Sofa_BackCushion1"
+      ],
+      "forward_xy": [
+        -1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          11.719999313354492,
+          2.0799999237060547,
+          0.0
+        ],
+        [
+          12.5,
+          3.9800000190734863,
+          0.9149999618530273
+        ]
+      ]
+    },
+    {
+      "id": "Living_TV",
+      "room": "LIVING",
+      "type": "console_tv",
+      "center": [
+        10.225,
+        3.03
+      ],
+      "size": [
+        1.2,
+        0.35
+      ],
+      "rotation": 90,
+      "mesh_names": [
+        "Living_TV_Cabinet",
+        "Living_TV_Front-1",
+        "Living_TV_Front1",
+        "Living_TV_Stand",
+        "Living_TV_Bezel",
+        "Living_TV_Screen"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          10.050000190734863,
+          2.429999828338623,
+          0.07999999821186066
+        ],
+        [
+          10.41200065612793,
+          3.630000114440918,
+          1.4649999141693115
+        ]
+      ]
+    },
+    {
+      "id": "Dining_Table",
+      "room": "DINING",
+      "type": "table",
+      "center": [
+        11.3,
+        -0.3
+      ],
+      "size": [
+        0.85,
+        1.2
+      ],
+      "rotation": 0,
+      "mesh_names": [
+        "Dining_Table_Top",
+        "Dining_Table_Leg-1-1",
+        "Dining_Table_Leg-11",
+        "Dining_Table_Leg1-1",
+        "Dining_Table_Leg11"
+      ],
+      "forward_xy": [
+        0.0,
+        -1.0
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          10.875,
+          -0.9000000357627869,
+          0.0
+        ],
+        [
+          11.725000381469727,
+          0.30000001192092896,
+          0.7774999737739563
+        ]
+      ]
+    },
+    {
+      "id": "Dining_Chair1",
+      "room": "DINING",
+      "type": "chair",
+      "center": [
+        10.54,
+        -0.6
+      ],
+      "size": [
+        0.44,
+        0.44
+      ],
+      "rotation": 90,
+      "use_offset_local_y": 0.15,
+      "mesh_names": [
+        "Dining_Chair1_Leg-1-1",
+        "Dining_Chair1_Leg-11",
+        "Dining_Chair1_Leg1-1",
+        "Dining_Chair1_Leg11",
+        "Dining_Chair1_Seat",
+        "Dining_Chair1_Back"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          10.319999694824219,
+          -0.8200000524520874,
+          0.0
+        ],
+        [
+          10.760000228881836,
+          -0.3800000250339508,
+          0.9650000333786011
+        ]
+      ]
+    },
+    {
+      "id": "Dining_Chair2",
+      "room": "DINING",
+      "type": "chair",
+      "center": [
+        10.54,
+        0.0
+      ],
+      "size": [
+        0.44,
+        0.44
+      ],
+      "rotation": 90,
+      "use_offset_local_y": 0.15,
+      "mesh_names": [
+        "Dining_Chair2_Leg-1-1",
+        "Dining_Chair2_Leg-11",
+        "Dining_Chair2_Leg1-1",
+        "Dining_Chair2_Leg11",
+        "Dining_Chair2_Seat",
+        "Dining_Chair2_Back"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          10.319999694824219,
+          -0.2199999988079071,
+          0.0
+        ],
+        [
+          10.760000228881836,
+          0.2199999988079071,
+          0.9650000333786011
+        ]
+      ]
+    },
+    {
+      "id": "Dining_Chair3",
+      "room": "DINING",
+      "type": "chair",
+      "center": [
+        12.06,
+        -0.6
+      ],
+      "size": [
+        0.44,
+        0.44
+      ],
+      "rotation": -90,
+      "use_offset_local_y": 0.15,
+      "mesh_names": [
+        "Dining_Chair3_Leg-1-1",
+        "Dining_Chair3_Leg-11",
+        "Dining_Chair3_Leg1-1",
+        "Dining_Chair3_Leg11",
+        "Dining_Chair3_Seat",
+        "Dining_Chair3_Back"
+      ],
+      "forward_xy": [
+        -1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          11.84000015258789,
+          -0.8200000524520874,
+          0.0
+        ],
+        [
+          12.280000686645508,
+          -0.3800000250339508,
+          0.9650000333786011
+        ]
+      ]
+    },
+    {
+      "id": "Dining_Chair4",
+      "room": "DINING",
+      "type": "chair",
+      "center": [
+        12.06,
+        0.0
+      ],
+      "size": [
+        0.44,
+        0.44
+      ],
+      "rotation": -90,
+      "use_offset_local_y": 0.15,
+      "mesh_names": [
+        "Dining_Chair4_Leg-1-1",
+        "Dining_Chair4_Leg-11",
+        "Dining_Chair4_Leg1-1",
+        "Dining_Chair4_Leg11",
+        "Dining_Chair4_Seat",
+        "Dining_Chair4_Back"
+      ],
+      "forward_xy": [
+        -1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          11.84000015258789,
+          -0.2199999988079071,
+          0.0
+        ],
+        [
+          12.280000686645508,
+          0.2199999988079071,
+          0.9650000333786011
+        ]
+      ]
+    },
+    {
+      "id": "Loggia_Washer",
+      "room": "LOGIA",
+      "type": "washer",
+      "center": [
+        8.95,
+        -0.89
+      ],
+      "size": [
+        0.6,
+        0.59
+      ],
+      "rotation": 90,
+      "mesh_names": [
+        "Loggia_Washer_Body",
+        "Loggia_Washer_Control",
+        "Loggia_Washer_Porthole",
+        "Loggia_Washer_Glass",
+        "Loggia_Washer_Knob"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          8.654999732971191,
+          -1.190000057220459,
+          0.0
+        ],
+        [
+          9.297999382019043,
+          -0.5899999737739563,
+          0.8600000143051147
+        ]
+      ]
+    },
+    {
+      "id": "Loggia_Sink",
+      "room": "LOGIA",
+      "type": "laundry_sink",
+      "center": [
+        8.83,
+        -0.31
+      ],
+      "size": [
+        0.48,
+        0.42
+      ],
+      "rotation": 90,
+      "mesh_names": [
+        "Loggia_Sink_BasinSide-1",
+        "Loggia_Sink_BasinRim-1",
+        "Loggia_Sink_BasinSide1",
+        "Loggia_Sink_BasinRim1",
+        "Loggia_Sink_BasinBottom",
+        "Loggia_Sink_Drain",
+        "Loggia_Sink_TapPost",
+        "Loggia_Sink_TapSpout",
+        "Loggia_Sink_Leg-1",
+        "Loggia_Sink_Leg1"
+      ],
+      "forward_xy": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_bounds_xyz_m": [
+        [
+          8.619999885559082,
+          -0.5499999523162842,
+          0.0
+        ],
+        [
+          9.039999961853027,
+          -0.07000000029802322,
+          1.1449999809265137
+        ]
+      ]
     }
   ],
   "eye_height_m": 1.6,
