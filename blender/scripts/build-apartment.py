@@ -14,7 +14,7 @@ SOURCE=ROOT/'architecture/model/departamento-t7.json'
 data=json.loads(SOURCE.read_text(encoding='utf-8'))
 furniture_path=ROOT/'architecture/furniture/layout.json'
 furniture=json.loads(furniture_path.read_text(encoding='utf-8'))
-revision=hashlib.sha256((data['revision']+''.join(hashlib.sha256(p.read_bytes()).hexdigest() for p in [Path(__file__),Path(__file__).with_name('furnish.py'),furniture_path])).encode()).hexdigest()
+revision=hashlib.sha256((data['revision']+''.join(hashlib.sha256(p.read_bytes()).hexdigest() for p in [Path(__file__),Path(__file__).with_name('furnish.py'),Path(__file__).with_name('finish.py'),furniture_path])).encode()).hexdigest()
 v=data['height_assumptions']
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 for col in list(bpy.data.collections):bpy.data.collections.remove(col)
@@ -145,6 +145,8 @@ for name,rect in [('TerraceSouth',(xmin,ymin-.05,xnotch,ymin)),('TerraceWest',(x
 sys.path.insert(0,str(Path(__file__).parent))
 from furnish import build as furnish
 inventory=furnish(furniture['items'],box,assign,mats,cols,doors,colliders,revision)
+from finish import build as finish
+finishes=finish(ROOT,data,box,prism,assign,mats,cols,colliders,revision)
 for c in colliders:
     center=c['center'];size=c['size']
     ob=box('COL_'+c['id'],(center[0],-center[2],center[1]),(size[0],size[2],size[1]),col='Collisions',collision=False)
@@ -179,7 +181,7 @@ bpy.ops.object.select_all(action='DESELECT')
 for name in ['Architecture','Carpentry','Equipment','Decoration','Context','Roofs']:
     for ob in cols[name].objects:ob.select_set(True)
 bpy.ops.export_scene.gltf(filepath=str(glb),export_format='GLB',use_selection=True,export_yup=True,export_extras=True)
-payload=dict(revision=revision,architecture_revision=data['revision'],units='m',colliders=colliders,doors=doors,inventory=inventory,eye_height_m=1.6,spawn=gltf(tuple(eye.location)),rooms=data['rooms'],area_m2=area(outline),useful_area_m2=data['area']['including_door_thresholds_m2'])
+payload=dict(revision=revision,architecture_revision=data['revision'],units='m',colliders=colliders,doors=doors,inventory=inventory,finishes=finishes,eye_height_m=1.6,spawn=gltf(tuple(eye.location)),rooms=data['rooms'],area_m2=area(outline),useful_area_m2=data['area']['including_door_thresholds_m2'])
 cf.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 manifest=dict(revision=revision,architecture_revision=data['revision'],units='m',eye_height_m=1.6,model=glb.name,colliders=cf.name,hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [blend,glb,cf]},blender_version=bpy.app.version_string)
 for p in [glb,cf]:shutil.copyfile(p,ROOT/'web/public/models'/p.name)
@@ -188,8 +190,17 @@ report=dict(revision=revision,walls=wall_checks,openings=opening_checks,doors=do
 (ROOT/'validation/e04/geometry-check.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8',newline='\n')
 # Inspection views hide only roofs and opaque context; saved source retains them.
 for name in ['Context','Roofs']:cols[name].hide_render=True
-scene.render.engine='BLENDER_WORKBENCH';scene.display.shading.light='STUDIO';scene.display.shading.color_type='MATERIAL';scene.display.shading.show_shadows=True;scene.display.shading.show_cavity=True
-scene.display.shading.background_type='WORLD';scene.world.color=(.82,.87,.91)
+for ob in cols['Decoration'].objects:
+    if ob.get('inspection_hide'):ob.hide_render=True
+scene.render.engine='CYCLES';scene.cycles.samples=24;scene.cycles.use_denoising=True
+try:
+    prefs=bpy.context.preferences.addons['cycles'].preferences;prefs.compute_device_type='OPTIX';prefs.get_devices()
+    for device in prefs.devices:device.use=device.type=='OPTIX'
+    if any(d.use for d in prefs.devices):scene.cycles.device='GPU'
+except Exception as e:print('Cycles CPU fallback',e)
+scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs['Color'].default_value=(.80,.85,.90,1);scene.world.node_tree.nodes['Background'].inputs['Strength'].default_value=.45
+for name,position,energy,size in [('InspectionKey',(6,-4,11),1500,8),('InspectionFill',(-3,6,8),1000,7)]:
+    ld=bpy.data.lights.new(name,'AREA');ld.energy=energy;ld.size=size;ob=bpy.data.objects.new(name,ld);cols['References'].objects.link(ob);ob.location=position;ob.rotation_euler=(center-ob.location).to_track_quat('-Z','Y').to_euler()
 scene.render.image_settings.file_format='PNG';scene.render.resolution_percentage=100
 for name,cam,size in [('isometrica-a',cam_a,(1600,1100)),('isometrica-b',cam_b,(1600,1100)),('ortografica',cam_top,(1536,813))]:
     scene.camera=cam;scene.render.resolution_x,scene.render.resolution_y=size;scene.render.filepath=str(ROOT/'validation/e04'/f'{name}.png');bpy.ops.render.render(write_still=True)

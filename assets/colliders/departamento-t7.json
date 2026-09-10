@@ -1,5 +1,5 @@
 {
-  "revision": "3cea97167f9efbfb6594949266b6eeee6cc0ac5e1ff404f381f5e85cab85733f",
+  "revision": "3b8848a03f921bd64711cc458be818a92fc938ee4860b824629ffd188bd66806",
   "architecture_revision": "0b20e3ec99ad9e64e0314515897c6230f85bc5f35bbfdcc5eb47510da68338e5",
   "units": "m",
   "colliders": [
@@ -3692,6 +3692,36 @@
         0.035
       ],
       "category": "Equipment"
+    },
+    {
+      "id": "Living_Plant_Proxy",
+      "type": "box",
+      "center": [
+        12.16,
+        0.59,
+        -1.58
+      ],
+      "size": [
+        0.56,
+        1.18,
+        0.56
+      ],
+      "category": "Decoration"
+    },
+    {
+      "id": "Living_Lamp_Proxy",
+      "type": "box",
+      "center": [
+        10.55,
+        0.8,
+        -1.88
+      ],
+      "size": [
+        0.4,
+        1.6,
+        0.4
+      ],
+      "category": "Decoration"
     }
   ],
   "doors": [
@@ -5166,6 +5196,228 @@
       ]
     }
   ],
+  "finishes": {
+    "decorations": [
+      "Living_Plant_Pot",
+      "Living_Plant_Soil",
+      "Living_Plant_Stem0",
+      "Living_Plant_Leaf0",
+      "Living_Plant_Stem1",
+      "Living_Plant_Leaf1",
+      "Living_Plant_Stem2",
+      "Living_Plant_Leaf2",
+      "Living_Plant_Stem3",
+      "Living_Plant_Leaf3",
+      "Living_Plant_Stem4",
+      "Living_Plant_Leaf4",
+      "Living_Plant_Stem5",
+      "Living_Plant_Leaf5",
+      "Living_Plant_Stem6",
+      "Living_Plant_Leaf6",
+      "D1_TablePlant_Pot",
+      "D1_TablePlant_Soil",
+      "D1_TablePlant_Stem0",
+      "D1_TablePlant_Leaf0",
+      "D1_TablePlant_Stem1",
+      "D1_TablePlant_Leaf1",
+      "D1_TablePlant_Stem2",
+      "D1_TablePlant_Leaf2",
+      "D1_TablePlant_Stem3",
+      "D1_TablePlant_Leaf3",
+      "D1_TablePlant_Stem4",
+      "D1_TablePlant_Leaf4",
+      "D1_TablePlant_Stem5",
+      "D1_TablePlant_Leaf5",
+      "D1_TablePlant_Stem6",
+      "D1_TablePlant_Leaf6",
+      "Kitchen_Herb_Pot",
+      "Kitchen_Herb_Soil",
+      "Kitchen_Herb_Stem0",
+      "Kitchen_Herb_Leaf0",
+      "Kitchen_Herb_Stem1",
+      "Kitchen_Herb_Leaf1",
+      "Kitchen_Herb_Stem2",
+      "Kitchen_Herb_Leaf2",
+      "Kitchen_Herb_Stem3",
+      "Kitchen_Herb_Leaf3",
+      "Kitchen_Herb_Stem4",
+      "Kitchen_Herb_Leaf4",
+      "Kitchen_Herb_Stem5",
+      "Kitchen_Herb_Leaf5",
+      "Kitchen_Herb_Stem6",
+      "Kitchen_Herb_Leaf6",
+      "Living_Rug",
+      "Living_Rug_Border-1",
+      "Living_Rug_Border1",
+      "D1_Rug",
+      "D1_Rug_Border-1",
+      "D1_Rug_Border1",
+      "D2_Rug",
+      "D2_Rug_Border-1",
+      "D2_Rug_Border1",
+      "D3_Rug",
+      "D3_Rug_Border-1",
+      "D3_Rug_Border1",
+      "Art_D1_Frame",
+      "Art_D1_Canvas-1",
+      "Art_D1_Landscape-1",
+      "Art_D1_Canvas1",
+      "Art_D1_Landscape1",
+      "Art_D2_Frame",
+      "Art_D2_Canvas-1",
+      "Art_D2_Landscape-1",
+      "Art_D2_Canvas1",
+      "Art_D2_Landscape1",
+      "Art_D3_Frame",
+      "Art_D3_Canvas-1",
+      "Art_D3_Landscape-1",
+      "Art_D3_Canvas1",
+      "Art_D3_Landscape1",
+      "Art_Living_Frame",
+      "Art_Living_Canvas-1",
+      "Art_Living_Landscape-1",
+      "Art_Living_Canvas1",
+      "Art_Living_Landscape1",
+      "Bath_MirrorFrame",
+      "Bath_Mirror",
+      "Living_Pillow0",
+      "Living_Pillow1",
+      "D1_Lamp_Base",
+      "D1_Lamp_Stem",
+      "D1_Lamp_Shade",
+      "D2_Lamp_Base",
+      "D2_Lamp_Stem",
+      "D2_Lamp_Shade",
+      "D3_Lamp_Base",
+      "D3_Lamp_Stem",
+      "D3_Lamp_Shade",
+      "Living_Lamp_Base",
+      "Living_Lamp_Stem",
+      "Living_Lamp_Shade",
+      "Living_Book0",
+      "Living_Book1",
+      "Living_Book2",
+      "Bath_TowelRail",
+      "Bath_Towel",
+      "Kitchen_Jar",
+      "Dining_Vase",
+      "CeilingLight_D1",
+      "CeilingLight_D2",
+      "CeilingLight_D3",
+      "CeilingLight_HallWest",
+      "CeilingLight_HallCenter",
+      "CeilingLight_HallEast",
+      "CeilingLight_Living",
+      "CeilingLight_Dining",
+      "CeilingLight_Kitchen",
+      "CeilingLight_Bath",
+      "CeilingLight_Shower",
+      "CeilingLight_Loggia"
+    ],
+    "lights": [
+      {
+        "id": "D1",
+        "position": [
+          2.05,
+          2.3,
+          -1.65
+        ]
+      },
+      {
+        "id": "D2",
+        "position": [
+          5.5,
+          2.3,
+          -2.2
+        ]
+      },
+      {
+        "id": "D3",
+        "position": [
+          1.25,
+          2.3,
+          -4.5
+        ]
+      },
+      {
+        "id": "HallWest",
+        "position": [
+          3.6,
+          2.3,
+          -4.64
+        ]
+      },
+      {
+        "id": "HallCenter",
+        "position": [
+          6.1,
+          2.3,
+          -4.64
+        ]
+      },
+      {
+        "id": "HallEast",
+        "position": [
+          8.9,
+          2.3,
+          -4.65
+        ]
+      },
+      {
+        "id": "Living",
+        "position": [
+          11.2,
+          2.3,
+          -3.25
+        ]
+      },
+      {
+        "id": "Dining",
+        "position": [
+          11.25,
+          2.3,
+          0.25
+        ]
+      },
+      {
+        "id": "Kitchen",
+        "position": [
+          9.4,
+          2.3,
+          -2.15
+        ]
+      },
+      {
+        "id": "Bath",
+        "position": [
+          7.5,
+          2.3,
+          -2.65
+        ]
+      },
+      {
+        "id": "Shower",
+        "position": [
+          7.5,
+          2.3,
+          0.55
+        ]
+      },
+      {
+        "id": "Loggia",
+        "position": [
+          9.5,
+          2.3,
+          0.55
+        ]
+      }
+    ],
+    "texture_repeat_m": 1.2,
+    "textures": [
+      "blender/textures/OakPlanks.png",
+      "blender/textures/Porcelain.png"
+    ]
+  },
   "eye_height_m": 1.6,
   "spawn": [
     12.086852073669434,

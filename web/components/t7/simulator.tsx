@@ -1,8 +1,8 @@
 'use client';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { Euler } from 'three';
+import { Euler, Object3D, PCFShadowMap } from 'three';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { loadBundle, type AssetBundle } from './asset-loader';
@@ -11,6 +11,10 @@ import { initPhysics, WalkEngine } from './walk-engine';
 type Controls = { keys: Set<string>; yaw: number; pitch: number };
 type Mode = 'inspect' | 'walk';
 const doorNames: Record<string, string> = {O01:'Acceso',O02:'Dormitorio 3',O03:'Dormitorio 1',O04:'Dormitorio 2',O05:'Baño',O06:'Logia'};
+function CeilingLight({position,active}:{position:[number,number,number];active:boolean}){
+  const target=useMemo(()=>{const o=new Object3D();o.position.set(position[0],0,position[2]);return o;},[position]);
+  return <><primitive object={target}/><spotLight position={position} target={target} intensity={active?15:0} distance={6} angle={1.35} penumbra={.65} decay={2} color="#fff1d6" castShadow={active} shadow-mapSize={[1024,1024]} shadow-camera-near={.15} shadow-camera-far={6} shadow-bias={-.001} shadow-normalBias={.02}/></>;
+}
 
 function Scene({bundle,engine,mode,paused,controls,onStatus}:{bundle:AssetBundle;engine:WalkEngine;mode:Mode;paused:boolean;controls:React.RefObject<Controls>;onStatus:(text:string)=>void}) {
   const {camera}=useThree();
@@ -38,15 +42,11 @@ function Scene({bundle,engine,mode,paused,controls,onStatus}:{bundle:AssetBundle
     timer.current+=delta;
     if(timer.current>.2){timer.current=0;const door=engine.nearestDoor();onStatus(engine.message||(door?'E · '+(door.data.label||doorNames[door.data.opening||'']):'W A S D · Moverse'));}
   });
-  const roomLights=(bundle.collision.rooms||[]).filter(r=>!['SHAFT','CIRCULATION'].includes(r.id)).map(room=>{
-    const ps=room.rings_xy_m.flat();const x=(Math.min(...ps.map(p=>p[0]))+Math.max(...ps.map(p=>p[0])))/2;
-    const y=(Math.min(...ps.map(p=>p[1]))+Math.max(...ps.map(p=>p[1])))/2;
-    return <pointLight key={room.id} position={[x,2.27,-y]} intensity={mode==='walk'?10:0} distance={7} decay={2} color="#fff5df" />;
-  });
+  const roomLights=(bundle.collision.finishes?.lights||[]).map(light=><CeilingLight key={light.id} position={light.position} active={mode==='walk'}/>);
   return <>
     <primitive object={bundle.scene}/>
-    <ambientLight intensity={mode==='walk'?.5:1.4}/>
-    <directionalLight position={[3,15,4]} intensity={3} castShadow shadow-mapSize={[2048,2048]} shadow-camera-left={-18} shadow-camera-right={18} shadow-camera-top={18} shadow-camera-bottom={-18} shadow-bias={-.0002} shadow-normalBias={.025}/>
+    <hemisphereLight args={['#dfedfa','#d3d9dc',mode==='walk'?.85:2.2]}/>
+    <directionalLight position={[3,15,8]} intensity={mode==='walk'?0:3} castShadow={mode==='inspect'} shadow-mapSize={[2048,2048]} shadow-camera-left={-18} shadow-camera-right={18} shadow-camera-top={18} shadow-camera-bottom={-18} shadow-bias={-.0005} shadow-normalBias={.02}/>
     {roomLights}
     {mode==='inspect'&&<OrbitControls makeDefault target={[6.3,0,-1.8]} minDistance={5} maxDistance={32} maxPolarAngle={Math.PI/2-.04}/>}
   </>;
@@ -110,7 +110,7 @@ export default function Simulator(){
       </div>
       <TabsContent value="model" className="t7-viewport">
         <div ref={viewport} className="t7-canvas">
-          {bundle&&engine&&<Canvas shadows dpr={[1,1.75]} camera={{position:[17,14,12],fov:mode==='walk'?65:45,near:.03,far:100}}>
+          {bundle&&engine&&<Canvas shadows={{type:PCFShadowMap}} dpr={[1,1.75]} camera={{position:[17,14,12],fov:mode==='walk'?65:45,near:.03,far:100}}>
             <color attach="background" args={['#172c3c']}/><Scene bundle={bundle} engine={engine} mode={mode} paused={paused} controls={controls} onStatus={onStatus}/>
           </Canvas>}
         </div>

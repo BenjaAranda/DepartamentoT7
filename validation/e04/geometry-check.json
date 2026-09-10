@@ -1,5 +1,5 @@
 {
-  "revision": "3cea97167f9efbfb6594949266b6eeee6cc0ac5e1ff404f381f5e85cab85733f",
+  "revision": "3b8848a03f921bd64711cc458be818a92fc938ee4860b824629ffd188bd66806",
   "walls": [
     {
       "id": "W01A",
@@ -1083,6 +1083,6 @@
   "eye_m": 1.600000023841858,
   "context_storeys": 4,
   "orthographic_camera_scale_m": 12.920032501220703,
-  "collider_count": 246,
+  "collider_count": 248,
   "metric_source": "architecture/model/departamento-t7.json"
 }

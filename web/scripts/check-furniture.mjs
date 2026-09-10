@@ -50,8 +50,15 @@ for(const door of engine.doors){
  sweeps.push({id:door.data.id,opened_fraction:opened,closed_fraction:door.fraction,blocked});
 }
 engine.dispose();
-const report={revision:data.revision,inventory_count:checks.length,checks,facing,wall_penetrations:violations,chair_use_offset_m:.15,door_sweeps:sweeps};
-fs.mkdirSync('../validation/e06',{recursive:true});fs.writeFileSync('../validation/e06/furniture-check.json',JSON.stringify(report,null,2)+'\n');
+const decorViolations=[];
+for(const name of data.finishes?.decorations||[]){
+ const b=boxOf(name);
+ for(const o of obstacles)if(overlap(b,o.box).every(d=>d>.002))decorViolations.push({mesh:name,obstacle:o.id});
+}
+const report={revision:data.revision,inventory_count:checks.length,checks,facing,wall_penetrations:violations,decoration_penetrations:decorViolations,chair_use_offset_m:.15,door_sweeps:sweeps};
+const out=process.argv[2]||'../validation/e06';fs.mkdirSync(out,{recursive:true});fs.writeFileSync(out+'/furniture-check.json',JSON.stringify(report,null,2)+'\n');
 console.log({inventory:checks.length,violations,sweeps});
 assert.equal(violations.length,0,'Furniture intersects architecture');
+assert.deepEqual(decorViolations,[],'Decoration intersects architecture');
 assert.ok(sweeps.every(s=>s.opened_fraction>.999&&s.closed_fraction<.001&&!s.blocked),'Blocked leaf');
+import './node-gltf.mjs';

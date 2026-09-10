@@ -44,3 +44,4 @@ for(const d of geometry.doors){
 }
 const report={revision:manifest.revision,hashes_match:true,wall_glb_max_error_m:maxError,measured_glb_floor_m2:floorArea,area_delta_m2:floorArea-76.66,meshes,context_present:true,door_pivots:geometry.doors.length,glb_bytes:raw.length};
 fs.writeFileSync(path.join(root,'validation/e04/glb-check.json'),JSON.stringify(report,null,2)+'\n');console.log(report);
+import './node-gltf.mjs';
