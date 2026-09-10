@@ -64,6 +64,8 @@ Estos pendientes no se cierran al clasificar. Si cambia su interpretación, corr
 
 Actualización posterior en **T11**: el [registro de paños y carpinterías](../plan/README.md) precisa CL-M13 como respaldo/lateral del nicho con remate de jamba; CL-V11 como celosía probable, todavía sin funcionamiento confirmado; CL-H09 como una hoja de mueble cuya adaptación a dos sigue en T37; y CL-F11 como panel añadido excluido de muros, con diseño de mobiliario pendiente. Las familias de este catálogo no cambian y se conserva su inventario histórico. Los pendientes actuales y su alcance constan en `architecture/plan/t11-trazado.json`, apartado `resolutions`.
 
+Actualización posterior en **T12**: la [lectura de baño y logia](../topology/README.md) confirma CL-E02 como lavamanos y CL-T01/CL-T02 como superficies de uso, sin particiones. CL-E01 se identifica como lavadora superior probable, sin rótulo definitivo; CL-E11 conserva identidad incierta como equipo de servicio doble. CL-M20/CL-E12 conservan contorno técnico separado, sin diagonales físicas, con componentes y alturas pendientes. Los límites específicos se mantienen en `architecture/topology/t12-interpretacion.json`; no se reescribe el catálogo histórico ni se duplican equipos de la fuente en el programa final.
+
 ## Reproducción y verificación
 
 Desde la raíz del repositorio, ejecutar `python scripts/build-t08-atlas.py`. Requiere Python 3 y el PDF original en la carpeta superior; utiliza solo la biblioteca estándar. La comprobación se detiene si cambia una referencia, aparece un ID duplicado o un localizador sale de su imagen.

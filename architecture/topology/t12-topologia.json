@@ -1,0 +1,1094 @@
+{
+  "task": "T12",
+  "revision": 1,
+  "status": "topología 2D del núcleo húmedo confirmada; detalles de equipos y alturas pendientes",
+  "author_sha256": "4de656bddf26e5c58966d80bbd2b76e53c6bdbd0fdbcf8cf93069d748dba0cf4",
+  "source_sha256": {
+    "plan": "d8311d68abad9da4632d86f7da767c163ed83de0211bb9a811fa1aff8699869e",
+    "isometric": "215dbffef5fc23badf880675e18bfc69274f778d8c7b11541ace1e6756aefe03",
+    "walls": "72693862f4e05123c422cea84d369002e34810adb64ac1df4807b6164599b535",
+    "coordinate_definitions": "e749e3581852bcc9c53210cf0bc61d6b331f5bc4bddf7385ad796579413ccc77",
+    "calibration": "c8a373f353b03cf51775398e48668c1cf3b9d215bf0c48c592bec8ba570a26ad",
+    "pdf": "ad8e0871ed6afb7117e2dafa80bc28ad90b3c845709dc268ba01fcd12259aeec"
+  },
+  "units": "metros; observaciones en pixeles nativos conservadas",
+  "policy": {
+    "area_computed": false,
+    "code_compliance_certified": false,
+    "physical_walkthrough_tested": false,
+    "equipment_boxes_are_colliders": false,
+    "hatches_are_walls": false,
+    "bathroom_subdivisions_allowed": false,
+    "bathroom_loggia_door_allowed": false,
+    "vertical_dimensions": "T14; sin inventar escalones, mamparas o alturas a partir de tramas",
+    "room_boundary_at_door": "Cierre analítico en la cara interior, solo para describir el recinto. No es un muro ni un collider.",
+    "source_program_priority": "El mobiliario de la fuente se registra como evidencia. La lavadora final solicitada se ubicará en logia; no duplicar automaticamente una máquina en el baño."
+  },
+  "regions": [
+    {
+      "id": "R-BANO",
+      "name": "Baño longitudinal",
+      "polygon_refs": [
+        [
+          "BATH_THIN_R",
+          "D2_HEAD_B"
+        ],
+        [
+          "BATH_RI",
+          "D2_HEAD_B"
+        ],
+        [
+          "BATH_RI",
+          "SINK_T"
+        ],
+        [
+          "BATH_JOG_L",
+          "SINK_T"
+        ],
+        [
+          "BATH_JOG_L",
+          "SOUTH_I"
+        ],
+        [
+          "BATH_LI",
+          "SOUTH_I"
+        ],
+        [
+          "BATH_LI",
+          "THICK_START"
+        ],
+        [
+          "BATH_THIN_R",
+          "THICK_START"
+        ]
+      ],
+      "interior_bands": [
+        [
+          "BATH_THIN_R",
+          "D2_HEAD_B",
+          "BATH_RI",
+          "THICK_START"
+        ],
+        [
+          "BATH_LI",
+          "THICK_START",
+          "BATH_RI",
+          "SINK_T"
+        ],
+        [
+          "BATH_LI",
+          "SINK_T",
+          "BATH_JOG_L",
+          "SOUTH_I"
+        ]
+      ],
+      "walls": [
+        "W11",
+        "W07",
+        "W15",
+        "W16A",
+        "W19A",
+        "W16B",
+        "W19B",
+        "W20A",
+        "W08A",
+        "W08B"
+      ],
+      "access_openings": [
+        "O05"
+      ],
+      "non_access_openings": [
+        "O10"
+      ],
+      "note": "Un solo recinto de cabecera a ducha. Los cambios de ancho son retranqueos laterales; no hay tabiques transversales.",
+      "polygon_px": [
+        [
+          824.3,
+          155.6
+        ],
+        [
+          1012.3,
+          155.6
+        ],
+        [
+          1012.3,
+          534.2
+        ],
+        [
+          1000.5,
+          534.2
+        ],
+        [
+          1000.5,
+          780.2
+        ],
+        [
+          834.7283464566929,
+          780.2
+        ],
+        [
+          834.7283464566929,
+          397.5
+        ],
+        [
+          824.3,
+          397.5
+        ]
+      ],
+      "polygon_xy_m": [
+        [
+          6.784460290457177,
+          4.020834674779463
+        ],
+        [
+          8.374817636106632,
+          4.020834674779463
+        ],
+        [
+          8.374817636106632,
+          0.8181256797641231
+        ],
+        [
+          8.274997334624379,
+          0.8181256797641231
+        ],
+        [
+          8.274997334624379,
+          -1.262873825713356
+        ],
+        [
+          6.8726772978528095,
+          -1.262873825713356
+        ],
+        [
+          6.8726772978528095,
+          1.9745184943932754
+        ],
+        [
+          6.784460290457177,
+          1.9745184943932754
+        ]
+      ],
+      "bands_px": [
+        [
+          824.3,
+          155.6,
+          1012.3,
+          397.5
+        ],
+        [
+          834.7283464566929,
+          397.5,
+          1012.3,
+          534.2
+        ],
+        [
+          834.7283464566929,
+          534.2,
+          1000.5,
+          780.2
+        ]
+      ],
+      "length_y_m": 5.2837085004928195,
+      "band_widths_m": [
+        1.5903573456494557,
+        1.5021403382538225,
+        1.4023200367715698
+      ],
+      "connected_2d": true,
+      "perimeter_samples_supported": 408,
+      "computed_area_m2": null
+    },
+    {
+      "id": "R-LOGIA",
+      "name": "Logia",
+      "polygon_refs": [
+        [
+          "SHAFT_RX",
+          "LOGIA_HEAD_B"
+        ],
+        [
+          "LOGIA_WL",
+          "LOGIA_HEAD_B"
+        ],
+        [
+          "LOGIA_WL",
+          "SOUTH_I"
+        ],
+        [
+          "SHAFT_RX",
+          "SOUTH_I"
+        ]
+      ],
+      "interior_bands": [
+        [
+          "SHAFT_RX",
+          "LOGIA_HEAD_B",
+          "LOGIA_WL",
+          "SOUTH_I"
+        ]
+      ],
+      "walls": [
+        "W19C",
+        "W18C",
+        "W18D",
+        "W09A",
+        "W20B"
+      ],
+      "access_openings": [
+        "O06"
+      ],
+      "non_access_openings": [
+        "O11"
+      ],
+      "note": "Acceso desde cocina. El frente de celosía no se considera puerta de circulación demostrada.",
+      "polygon_px": [
+        [
+          1044.1,
+          610.2
+        ],
+        [
+          1206.8,
+          610.2
+        ],
+        [
+          1206.8,
+          780.2
+        ],
+        [
+          1044.1,
+          780.2
+        ]
+      ],
+      "polygon_xy_m": [
+        [
+          8.64382488925372,
+          0.17521526343774738
+        ],
+        [
+          10.02016074104716,
+          0.17521526343774738
+        ],
+        [
+          10.02016074104716,
+          -1.262873825713356
+        ],
+        [
+          8.64382488925372,
+          -1.262873825713356
+        ]
+      ],
+      "bands_px": [
+        [
+          1044.1,
+          610.2,
+          1206.8,
+          780.2
+        ]
+      ],
+      "length_y_m": 1.4380890891511036,
+      "band_widths_m": [
+        1.376335851793439
+      ],
+      "connected_2d": true,
+      "perimeter_samples_supported": 204,
+      "computed_area_m2": null
+    },
+    {
+      "id": "R-TECNICO",
+      "name": "Volumen técnico probable",
+      "polygon_refs": [
+        [
+          "BATH_JOG_R",
+          "LOGIA_HEAD_B"
+        ],
+        [
+          "SHAFT_RI",
+          "LOGIA_HEAD_B"
+        ],
+        [
+          "SHAFT_RI",
+          "SOUTH_I"
+        ],
+        [
+          "BATH_JOG_R",
+          "SOUTH_I"
+        ]
+      ],
+      "interior_bands": [
+        [
+          "BATH_JOG_R",
+          "LOGIA_HEAD_B",
+          "SHAFT_RI",
+          "SOUTH_I"
+        ]
+      ],
+      "walls": [
+        "W19B",
+        "W20A",
+        "W20B",
+        "W08B"
+      ],
+      "access_openings": [],
+      "non_access_openings": [],
+      "note": "Contorno separado de ambos recintos, sin puerta dibujada. La X no representa dos paredes diagonales. Uso de instalaciones probable; componentes y registros sin identificar.",
+      "polygon_px": [
+        [
+          1007.5,
+          610.2
+        ],
+        [
+          1035.5,
+          610.2
+        ],
+        [
+          1035.5,
+          780.2
+        ],
+        [
+          1007.5,
+          780.2
+        ]
+      ],
+      "polygon_xy_m": [
+        [
+          8.334212767707072,
+          0.17521526343774738
+        ],
+        [
+          8.571074500037842,
+          0.17521526343774738
+        ],
+        [
+          8.571074500037842,
+          -1.262873825713356
+        ],
+        [
+          8.334212767707072,
+          -1.262873825713356
+        ]
+      ],
+      "bands_px": [
+        [
+          1007.5,
+          610.2,
+          1035.5,
+          780.2
+        ]
+      ],
+      "length_y_m": 1.4380890891511036,
+      "band_widths_m": [
+        0.23686173233077
+      ],
+      "connected_2d": true,
+      "perimeter_samples_supported": 204,
+      "computed_area_m2": null
+    }
+  ],
+  "zones": [
+    {
+      "id": "EQ01",
+      "name": "Equipo rectangular de cabecera",
+      "region": "R-BANO",
+      "t08": [
+        "CL-E01"
+      ],
+      "type": "equipo_probable",
+      "rect_px": [
+        941,
+        156,
+        1012.3,
+        240
+      ],
+      "confidence": "media",
+      "interpretation": "Lavadora de carga superior probable: caja independiente y panel posterior en la isométrica, símbolo rectangular en planta. Sin rótulo que confirme el aparato.",
+      "decision": "No convertir la caja en pared ni subdividir cabecera. No fijar una lavadora adicional en baño; conservar espacio disponible al ejecutar el programa de lavadora en logia.",
+      "next": "T38/T42",
+      "geometry_role": "observacion funcional, no collider ni huella final de equipo",
+      "diagonal_xy_m": [
+        [
+          7.771666153421493,
+          4.017450935746167
+        ],
+        [
+          8.374817636106632,
+          3.306865738753857
+        ]
+      ],
+      "span_m": [
+        0.603151482685139,
+        0.7105851969923099
+      ]
+    },
+    {
+      "id": "EQ02",
+      "name": "Lavamanos",
+      "region": "R-BANO",
+      "t08": [
+        "CL-E02"
+      ],
+      "type": "sanitario",
+      "rect_px": [
+        965,
+        251,
+        1012.3,
+        322.3
+      ],
+      "confidence": "alta",
+      "interpretation": "Cubeta curva adosada al lateral derecho, con grifería visible en la isométrica. No es un segundo inodoro.",
+      "decision": "Modelar un lavamanos accesible; alturas, espacio inferior y grifería se verificarán al amueblar.",
+      "next": "T14/T38",
+      "geometry_role": "observacion funcional, no collider ni huella final de equipo",
+      "diagonal_xy_m": [
+        [
+          7.9746904954192965,
+          3.213812915338197
+        ],
+        [
+          8.374817636106632,
+          2.6106614326530577
+        ]
+      ],
+      "span_m": [
+        0.40012714068733607,
+        0.6031514826851394
+      ]
+    },
+    {
+      "id": "EQ03",
+      "name": "Inodoro",
+      "region": "R-BANO",
+      "t08": [
+        "CL-E03"
+      ],
+      "type": "sanitario",
+      "rect_px": [
+        942,
+        439.5,
+        1012.3,
+        487.5
+      ],
+      "confidence": "alta",
+      "interpretation": "Taza y estanque reconocibles en las dos vistas, adosados al lateral del baño. Área de transferencia a su izquierda en planta.",
+      "decision": "Un inodoro, sin tabique frente a su taza ni en las líneas de cota.",
+      "next": "T38",
+      "geometry_role": "observacion funcional, no collider ni huella final de equipo",
+      "diagonal_xy_m": [
+        [
+          7.780125501004735,
+          1.6192258958971206
+        ],
+        [
+          8.374817636106632,
+          1.2131772119015147
+        ]
+      ],
+      "span_m": [
+        0.5946921351018971,
+        0.4060486839956057
+      ]
+    },
+    {
+      "id": "EQ04",
+      "name": "Barras de apoyo del inodoro",
+      "region": "R-BANO",
+      "t08": [
+        "CL-E04"
+      ],
+      "type": "apoyos",
+      "rect_px": [
+        914,
+        412,
+        1012.3,
+        518
+      ],
+      "confidence": "alta",
+      "interpretation": "La isométrica muestra apoyos a ambos lados del sanitario. Los trazos de planta son soportes y proyecciones de equipos.",
+      "decision": "Conservar apoyos sin extruir sus proyecciones como muros. Altura, sección, estado plegado y barrido pendientes.",
+      "next": "T14/T38",
+      "geometry_role": "observacion funcional, no collider ni huella final de equipo",
+      "diagonal_xy_m": [
+        [
+          7.543263768673965,
+          1.8518579544362697
+        ],
+        [
+          8.374817636106632,
+          0.9551671106126404
+        ]
+      ],
+      "span_m": [
+        0.8315538674326671,
+        0.8966908438236293
+      ]
+    },
+    {
+      "id": "SH01",
+      "name": "Ducha al fondo",
+      "region": "R-BANO",
+      "t08": [
+        "CL-E05",
+        "CL-T05"
+      ],
+      "type": "zona_humeda",
+      "rect_px": [
+        855.5,
+        671.5,
+        1000.5,
+        780.2
+      ],
+      "confidence": "alta en ubicacion, media en limites de huella",
+      "interpretation": "Líneas convergentes y desagüe junto al extremo inferior del baño, frente a O10. El borde del símbolo no es una nueva pared.",
+      "decision": "Ducha accesible abierta al recinto por su frente. Piso continuo como requisito de implementación; pendientes, impermeabilización, grifería y apoyos se definirán sin inferir un escalón del dibujo.",
+      "next": "T14/T24/T38",
+      "geometry_role": "observacion funcional, no collider ni huella final de equipo",
+      "diagonal_xy_m": [
+        [
+          7.048391935054321,
+          -0.3433427434149737
+        ],
+        [
+          8.274997334624379,
+          -1.262873825713356
+        ]
+      ],
+      "span_m": [
+        1.226605399570059,
+        0.9195310822983824
+      ]
+    },
+    {
+      "id": "UA01",
+      "name": "Achurado central de uso",
+      "region": "R-BANO",
+      "t08": [
+        "CL-T01"
+      ],
+      "t09": [
+        "T09-D07",
+        "T09-D08"
+      ],
+      "type": "reserva_uso",
+      "rect_px": [
+        870,
+        322.3,
+        1012.3,
+        417.5
+      ],
+      "nominal_dimensions_m": [
+        1.2,
+        0.8
+      ],
+      "confidence": "alta como superficie, media en función especifica",
+      "interpretation": "Reserva de aproximación/uso asociada probablemente al lavamanos y maniobra. Cifras 120 y 80 coherentes con el dibujo; el circulo de giro la atraviesa.",
+      "decision": "No crear volumen, tabique, plato de ducha central, mueble ni desnivel en el achurado.",
+      "next": "T38/T43",
+      "geometry_role": "observacion funcional, no collider ni huella final de equipo",
+      "diagonal_xy_m": [
+        [
+          7.171052475011327,
+          2.6106614326530577
+        ],
+        [
+          8.374817636106632,
+          1.8053315427284398
+        ]
+      ],
+      "span_m": [
+        1.2037651610953057,
+        0.8053298899246178
+      ],
+      "dimension_residuals_m": [
+        0.00376516109530578,
+        0.005329889924617803
+      ]
+    },
+    {
+      "id": "UA02",
+      "name": "Achurado anterior a la ducha",
+      "region": "R-BANO",
+      "t08": [
+        "CL-T02"
+      ],
+      "t09": [
+        "T09-D11"
+      ],
+      "type": "reserva_uso",
+      "rect_px": [
+        858.4,
+        564.2,
+        1000.5,
+        671.5
+      ],
+      "nominal_dimensions_m": [
+        null,
+        0.9
+      ],
+      "confidence": "alta como superficie, media en función especifica",
+      "interpretation": "Reserva frente a la ducha con lectura 90 coherente con su dimensión longitudinal. No hay pared transversal en su inicio o final.",
+      "decision": "Mantener continuidad con circulación y ducha. No crear otro baño ni una pieza separada.",
+      "next": "T38/T43",
+      "geometry_role": "observacion funcional, no collider ni huella final de equipo",
+      "diagonal_xy_m": [
+        [
+          7.072924043045722,
+          0.5643452522668695
+        ],
+        [
+          8.274997334624379,
+          -0.3433427434149737
+        ]
+      ],
+      "span_m": [
+        1.2020732915786578,
+        0.9076879956818432
+      ],
+      "dimension_residuals_m": [
+        null,
+        0.007687995681843196
+      ]
+    },
+    {
+      "id": "UA03",
+      "name": "Giro del baño",
+      "region": "R-BANO",
+      "t08": [
+        "CL-L04",
+        "CL-C03"
+      ],
+      "t09": [
+        "T09-D03"
+      ],
+      "type": "reserva_giro",
+      "ellipse_from_calibration": "CAL-CG03",
+      "confidence": "alta",
+      "interpretation": "Circulo rotulado 150; centro y dos diámetros conservados desde T10. Es una reserva de maniobra, no un elemento físico.",
+      "decision": "Mantener el área libre al amueblar. Que no toque las huellas de muros no certifica maniobra real con equipos, puertas y apoyos.",
+      "next": "T38/T43",
+      "geometry_role": "observacion funcional, no collider ni huella final de equipo",
+      "center_px": [
+        918.5544762232001,
+        364.4400944064069
+      ],
+      "diameters_px": [
+        177.7799945485804,
+        176.9303080730842
+      ],
+      "center_xy_m": [
+        7.581791666105626,
+        2.254183726878639
+      ],
+      "diameters_m": [
+        1.5039027672332714,
+        1.4967149740002694
+      ]
+    },
+    {
+      "id": "UA04",
+      "name": "Transferencia junto al inodoro",
+      "region": "R-BANO",
+      "t08": [
+        "CL-L04",
+        "CL-C05"
+      ],
+      "t09": [
+        "T09-D09",
+        "T09-D10"
+      ],
+      "type": "reserva_transferencia",
+      "rect_px": [
+        834.7283464566929,
+        439.5,
+        929.55,
+        513.5
+      ],
+      "nominal_dimensions_m": [
+        0.8,
+        null
+      ],
+      "confidence": "media en limites longitudinales",
+      "interpretation": "La cota 80 y las barras sitúan la reserva al lado izquierdo del inodoro. La cota 70 corresponde al tramo hacia el tabique, no a una puerta.",
+      "decision": "Reservar aproximación lateral; no colocar muebles ni crear una particion sobre la cota.",
+      "next": "T38/T43",
+      "geometry_role": "observacion funcional, no collider ni huella final de equipo",
+      "diagonal_xy_m": [
+        [
+          6.8726772978528095,
+          1.6192258958971206
+        ],
+        [
+          7.6748066235933745,
+          0.9932341747372284
+        ]
+      ],
+      "span_m": [
+        0.8021293257405647,
+        0.6259917211598921
+      ],
+      "dimension_residuals_m": [
+        0.0021293257405646804,
+        null
+      ]
+    },
+    {
+      "id": "LG01",
+      "name": "Lavadero de logia",
+      "region": "R-LOGIA",
+      "t08": [
+        "CL-E10"
+      ],
+      "type": "sanitario_servicio",
+      "rect_px": [
+        1044.1,
+        610.2,
+        1093,
+        671.5
+      ],
+      "confidence": "alta",
+      "interpretation": "Cubeta con grifería contigua al volumen técnico, confirmada como lavadero por el texto general de p20 y su símbolo. La lamina no acota su modelo comercial.",
+      "decision": "Conservar lavadero funcional en logia; no confundirlo con el lavamanos del baño.",
+      "next": "T42",
+      "geometry_role": "observacion funcional, no collider ni huella final de equipo",
+      "diagonal_xy_m": [
+        [
+          8.64382488925372,
+          0.17521526343774738
+        ],
+        [
+          9.057486986074245,
+          -0.3433427434149737
+        ]
+      ],
+      "span_m": [
+        0.4136620968205241,
+        0.518558006852721
+      ]
+    },
+    {
+      "id": "LG02",
+      "name": "Simbolo doble circular de logia",
+      "region": "R-LOGIA",
+      "t08": [
+        "CL-E11"
+      ],
+      "type": "equipo_probable",
+      "rect_px": [
+        1044.1,
+        676,
+        1098,
+        780.2
+      ],
+      "confidence": "media-baja en identidad",
+      "interpretation": "Dos cuerpos circulares con centros y contornos de asa, compatibles con cilindros/equipo de servicio; no con una lavadora inequívocamente dibujada. Sin leyenda identificativa ni detalle suficiente para asegurar su función.",
+      "decision": "No convertirlos en muros ni duplicarlos como equipos finales sin confirmar. La lavadora final proviene del requisito del usuario y su encaje se resolverá en T42.",
+      "next": "T42",
+      "geometry_role": "observacion funcional, no collider ni huella final de equipo",
+      "diagonal_xy_m": [
+        [
+          8.64382488925372,
+          -0.3814098075395617
+        ],
+        [
+          9.099783723990456,
+          -1.262873825713356
+        ]
+      ],
+      "span_m": [
+        0.455958834736733,
+        0.8814640181737944
+      ]
+    },
+    {
+      "id": "SV01",
+      "name": "Interior del volumen técnico",
+      "region": "R-TECNICO",
+      "t08": [
+        "CL-M20",
+        "CL-E12"
+      ],
+      "type": "espacio_tecnico_probable",
+      "rect_refs": [
+        "BATH_JOG_R",
+        "LOGIA_HEAD_B",
+        "SHAFT_RI",
+        "SOUTH_I"
+      ],
+      "confidence": "alta en contorno, media en función",
+      "interpretation": "Franja delimitada por W19B/W20A/W20B/W08B, con X simbólica. Isometrica y ejemplos de instalaciones p22/p23 apoyan uso técnico; no prueban instalaciones concretas o espesor total terminado.",
+      "decision": "Conservar separación opaca lateral. Sin atravesar, agregar puertas o construir las diagonales interiores. Registros e instalaciones pendientes de detalle.",
+      "next": "T14/T24",
+      "geometry_role": "observacion funcional, no collider ni huella final de equipo",
+      "rect_px": [
+        1007.5,
+        610.2,
+        1035.5,
+        780.2
+      ],
+      "diagonal_xy_m": [
+        [
+          8.334212767707072,
+          0.17521526343774738
+        ],
+        [
+          8.571074500037842,
+          -1.262873825713356
+        ]
+      ],
+      "span_m": [
+        0.23686173233077,
+        1.4380890891511036
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "G01",
+      "name": "Entrada al baño hasta ducha",
+      "points_px": [
+        [
+          885,
+          135
+        ],
+        [
+          885,
+          190
+        ],
+        [
+          885,
+          350
+        ],
+        [
+          885,
+          475
+        ],
+        [
+          885,
+          610
+        ],
+        [
+          885,
+          734
+        ]
+      ],
+      "opening": "O05",
+      "crosses_zones": [
+        "UA01",
+        "UA02",
+        "SH01"
+      ],
+      "scope": "Linea sin anchura para demostrar continuidad de recinto. No es una ruta de cápsula, persona o silla de ruedas validada.",
+      "points_xy_m": [
+        [
+          7.297942688759953,
+          4.195097234994244
+        ],
+        [
+          7.297942688759953,
+          3.729833117915946
+        ],
+        [
+          7.297942688759953,
+          2.3763375045972603
+        ],
+        [
+          7.297942688759953,
+          1.3189190566920372
+        ],
+        [
+          7.297942688759953,
+          0.1769071329543961
+        ],
+        [
+          7.297942688759953,
+          -0.8720519673675853
+        ]
+      ],
+      "wall_intersections": 0
+    },
+    {
+      "id": "G02",
+      "name": "Cocina a logia",
+      "points_px": [
+        [
+          1140,
+          580
+        ],
+        [
+          1140,
+          635
+        ],
+        [
+          1140,
+          730
+        ]
+      ],
+      "opening": "O06",
+      "crosses_zones": [],
+      "scope": "Linea sin anchura por el vano dibujado. No prueba holguras, hoja en movimiento ni muebles finales.",
+      "points_xy_m": [
+        [
+          9.45507632248661,
+          0.4306875604516497
+        ],
+        [
+          9.45507632248661,
+          -0.03457655662664852
+        ],
+        [
+          9.45507632248661,
+          -0.8382145770346181
+        ]
+      ],
+      "wall_intersections": 0
+    }
+  ],
+  "adjacency": [
+    {
+      "from": "circulacion",
+      "to": "R-BANO",
+      "via": "O05",
+      "door": "P05",
+      "evidence": "Vano en cabecera, puerta abre hacia circulación."
+    },
+    {
+      "from": "cocina",
+      "to": "R-LOGIA",
+      "via": "O06",
+      "door": "P06",
+      "evidence": "Vano en cabecera de logia, puerta abre hacia logia."
+    }
+  ],
+  "forbidden_adjacency": [
+    {
+      "from": "R-BANO",
+      "to": "R-LOGIA",
+      "reason": "En toda la altura de planta compartida aparecen tabique, franja técnica y tabique; ningún vano conecta lateralmente los recintos."
+    }
+  ],
+  "secondary_provenance": [
+    {
+      "page": 22,
+      "pdf_image_object": 204,
+      "size_px": [
+        2253,
+        1292
+      ],
+      "decoded_rgb_sha256": "a2a8887bdd51951041d68e5f57296ac0855eef07edb7e04ab8b90cd6ed178dd8",
+      "scope": "Ejemplos Galaxy DS49 de celosía e instalaciones. Apoyan la interpretación, no acreditan dimensiones ni instalación concreta del T7."
+    },
+    {
+      "page": 23,
+      "pdf_image_object": 210,
+      "size_px": [
+        2102,
+        1564
+      ],
+      "decoded_rgb_sha256": "27d6034e6e1a557f3a7ac910aaf51ab16e4c0c2db4ebfaf4efb76f6cd847bb68",
+      "scope": "Ejemplos Galaxy DS49 de celosía e instalaciones. Apoyan la interpretación, no acreditan dimensiones ni instalación concreta del T7."
+    }
+  ],
+  "pdf_text_search": {
+    "pages_reviewed": 42,
+    "hits": [
+      {
+        "page": 19,
+        "terms": [
+          "lavadero",
+          "shaft",
+          "baño",
+          "logia"
+        ],
+        "text": "DEPTO TIPO T6\nTIPOLOGÍAS DPTOS\n• Super Tabique\n• Fachada prefabricada /Synthion\n• Shaft exterior\n• Closet en dormitorio 1\n• Lavadero\n• Ventanas Termopanel\n• Pintura\n• Piso Fotolaminado en \ndormitorios, estar-comedor\n• Piso Cerámico en baño, cocina, \nlogia y terraza.\n3 DORMITORIOS + 1 BAÑO \n57,41 m2 EDIFICADO + 2,64 m2 TERRAZA\nTOTAL  60,05 m2\nDORMITORIO 1DORMITORIO 2 DORMITORIO 3 BAÑO\nCOCINA\nLOGIA TERRAZA\nESTAR\nCOMEDOR\nACCESO\n"
+      },
+      {
+        "page": 20,
+        "terms": [
+          "lavadero",
+          "shaft",
+          "baño",
+          "logia"
+        ],
+        "text": "DEPTO TIPO T7\nTIPOLOGÍAS DPTOS\n• Fachada prefabricada /Synthion\n• Cielo falso\n• Shaft exterior\n• Closet en dormitorio 1\n• Lavadero\n• Ventanas Termopanel\n• Pintura\n• Piso Cerámica\n3 DORMITORIOS + 1 BAÑO \n76,66 m2 EDIFICADO + 0,00 m2 TERRAZA\nTOTAL 76,66 m2\nDORMITORIO 1\nDORMITORIO 2\nDORMITORIO 3\nBAÑO\nCOCINA\nLOGIA\nTERRAZA\nESTAR\nCOMEDOR\nACCESO\n"
+      },
+      {
+        "page": 22,
+        "terms": [
+          "logia"
+        ],
+        "text": "TIPOLOGIA GALAXY  DS49\n"
+      },
+      {
+        "page": 29,
+        "terms": [
+          "baño"
+        ],
+        "text": "TIPOLOGÍA CASA 2 PISOS \nCOCINA\nESTAR-COMEDOR\nCOCINA\nESTAR-COMEDOR\nBAÑOBAÑO\nACCESOACCESO\nPATIO PATIO\nANTEJARDINANTEJARDIN\nDORM. 3 \nPROYECTADO\nDORMITORIO\nPRINCIPAL\nDORMITORIO\nPRINCIPAL\nDORMITORIO N°2DORMITORIO N°2\nESCRITORIO\nPLANTA CASA 2P                                  1° PISO\nPLANTA CASA 2P                                  2° PISO\nELEVACIÓN FRONTAL\nELEVACIÓN POSTERIOR\nELEVACIÓN LATERAL\nSUPERFICIE CASA\n1° Piso 28,86 m2\n2° Piso 27,29 m2\nTOTAL 56,15 m2\nAmpliación Proyectada 7,11 m2\nESCRITORIO"
+      },
+      {
+        "page": 30,
+        "terms": [
+          "baño"
+        ],
+        "text": "TIPOLOGÍA CASA MR\nSUPERFICIE CASA MR\nTOTAL 69,49 m2\nCOCINA\nESTAR-COMEDOR\nACCESO\nPATIO\nANTEJARDIN\nDORMITORIO\nPRINCIPAL\nDORMITORIO N°2\nDORMITORIO N°3\nBAÑO\nPLANTA CASA MR                                 1° PISO\nELEVACIÓN FRONTAL\nELEVACIÓN POSTERIOR\nELEVACIÓN LATERAL\n"
+      }
+    ],
+    "limits": "Busqueda de texto extraible, no OCR exhaustivo de rotulos embebidos."
+  },
+  "checks": {
+    "regions_connected": 3,
+    "bathroom_continuous_bands": 3,
+    "bathroom_has_one_access": true,
+    "loggia_has_one_access": true,
+    "no_direct_bath_loggia_access": true,
+    "separating_walls_cover_shared_length": true,
+    "shower_at_far_end": true,
+    "shower_front_continuous_with_use_zone": true,
+    "giro_ellipse_does_not_intersect_wall_footprints": true,
+    "guide_wall_intersections": 0,
+    "guides_cross_expected_portals": true,
+    "functional_zones": 12,
+    "new_walls_created": 0,
+    "existing_wall_coordinates_changed": false,
+    "source_files_unchanged": true,
+    "area_computed": false,
+    "physical_walkthrough_tested": false
+  },
+  "pending": [
+    {
+      "id": "PD12-01",
+      "topic": "Identidad exacta de EQ01",
+      "state": "lavadora superior probable; no confirmada por rótulo",
+      "owner": "T38/T42"
+    },
+    {
+      "id": "PD12-02",
+      "topic": "Instalaciones y registros del volumen técnico",
+      "state": "contorno confirmado, componentes y altura no acreditados",
+      "owner": "T14/T24"
+    },
+    {
+      "id": "PD12-03",
+      "topic": "Funcion exacta de achurados",
+      "state": "superficie/reserva confirmada; asociación funcional probable",
+      "owner": "T38/T43"
+    },
+    {
+      "id": "PD12-04",
+      "topic": "Simbolo circular doble de logia",
+      "state": "no identificado de manera definitiva; no es evidencia suficiente de lavadora",
+      "owner": "T42"
+    },
+    {
+      "id": "PD12-05",
+      "topic": "Ducha, piso y apoyos",
+      "state": "ubicacion y continuidad confirmadas; cotas verticales y detalle accesible pendientes",
+      "owner": "T14/T38"
+    },
+    {
+      "id": "PD12-06",
+      "topic": "Superficies 76,66 / 76,80",
+      "state": "sin computar ni resolver en esta tarea",
+      "owner": "T13"
+    }
+  ]
+}

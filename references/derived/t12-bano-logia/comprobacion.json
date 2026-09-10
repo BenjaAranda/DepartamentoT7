@@ -1,0 +1,74 @@
+{
+  "task": "T12",
+  "source_sha256": {
+    "plan": "d8311d68abad9da4632d86f7da767c163ed83de0211bb9a811fa1aff8699869e",
+    "isometric": "215dbffef5fc23badf880675e18bfc69274f778d8c7b11541ace1e6756aefe03",
+    "walls": "72693862f4e05123c422cea84d369002e34810adb64ac1df4807b6164599b535",
+    "coordinate_definitions": "e749e3581852bcc9c53210cf0bc61d6b331f5bc4bddf7385ad796579413ccc77",
+    "calibration": "c8a373f353b03cf51775398e48668c1cf3b9d215bf0c48c592bec8ba570a26ad",
+    "pdf": "ad8e0871ed6afb7117e2dafa80bc28ad90b3c845709dc268ba01fcd12259aeec"
+  },
+  "author_sha256": "4de656bddf26e5c58966d80bbd2b76e53c6bdbd0fdbcf8cf93069d748dba0cf4",
+  "result_sha256": "fd306c367ea6d032d12cd9c58ad7162c6ad2239526b80bf6b3f08c7140243e26",
+  "checks": {
+    "regions_connected": 3,
+    "bathroom_continuous_bands": 3,
+    "bathroom_has_one_access": true,
+    "loggia_has_one_access": true,
+    "no_direct_bath_loggia_access": true,
+    "separating_walls_cover_shared_length": true,
+    "shower_at_far_end": true,
+    "shower_front_continuous_with_use_zone": true,
+    "giro_ellipse_does_not_intersect_wall_footprints": true,
+    "guide_wall_intersections": 0,
+    "guides_cross_expected_portals": true,
+    "functional_zones": 12,
+    "new_walls_created": 0,
+    "existing_wall_coordinates_changed": false,
+    "source_files_unchanged": true,
+    "area_computed": false,
+    "physical_walkthrough_tested": false
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pillow": "12.3.0",
+    "pypdf": "6.10.0"
+  },
+  "font_sha256": "74d696e666f696e93db685a85c94bfbfcc0796dfcf8a2e2e2e2c908a54e82949",
+  "secondary_images": [
+    {
+      "page": 22,
+      "pdf_image_object": 204,
+      "size_px": [
+        2253,
+        1292
+      ],
+      "decoded_rgb_sha256": "a2a8887bdd51951041d68e5f57296ac0855eef07edb7e04ab8b90cd6ed178dd8",
+      "scope": "Ejemplos Galaxy DS49 de celosía e instalaciones. Apoyan la interpretación, no acreditan dimensiones ni instalación concreta del T7."
+    },
+    {
+      "page": 23,
+      "pdf_image_object": 210,
+      "size_px": [
+        2102,
+        1564
+      ],
+      "decoded_rgb_sha256": "27d6034e6e1a557f3a7ac910aaf51ab16e4c0c2db4ebfaf4efb76f6cd847bb68",
+      "scope": "Ejemplos Galaxy DS49 de celosía e instalaciones. Apoyan la interpretación, no acreditan dimensiones ni instalación concreta del T7."
+    }
+  ],
+  "files": {
+    "bano-logia-continuidad.png": "bd3cea0c45d5fcdae88419fb865d325ce7a6d49b9aeb393eec77197fcdc52a7d",
+    "lectura-funcional.tsv": "a24942cb09e62a1efa3cab487138d6707a572cc721c824a2a0ba16e897539295",
+    "logia-y-servicio.png": "750c55eacabafdfe70a5b4dadbcef3cc32721bbf2cd188f4727aa2c1c1fabd90",
+    "simbolos-del-bano.png": "b4a589f9eb92d22dd5e553928048370e0e5f8dedc184f037f35f1aa803977409"
+  },
+  "limits": [
+    "sin áreas computadas",
+    "sin dimensiones verticales",
+    "sin verificación de acceso físico",
+    "sin modelo 3D o colisiones",
+    "sin publicación"
+  ]
+}
