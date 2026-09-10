@@ -150,3 +150,10 @@ body {
     @apply font-sans;
   }
 }
+
+.t7-canvas { position: absolute; inset: 0; }
+.t7-pause { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1.1rem; text-align: center; padding: 1.5rem; background: #102332a8; color: white; backdrop-filter: blur(4px); }
+.t7-pause h2 { font-size: 1.6rem; font-weight: 500; }
+.t7-pause p { font-size: 1rem; line-height: 1.8; color: #d3e2eb; }
+.t7-crosshair { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 1.4rem; color: white; text-shadow: 0 1px 3px #102332; pointer-events: none; }
+.t7-walk-status { position: absolute; bottom: 1.1rem; left: 50%; transform: translateX(-50%); padding: .6rem 1rem; border-radius: .4rem; color: white; background: #102332dc; font-size: .9rem; white-space: nowrap; }

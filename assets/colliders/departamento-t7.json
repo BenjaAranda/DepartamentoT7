@@ -1,5 +1,5 @@
 {
-  "revision": "92df843ebac0d9d7285b8a8882af97924f6e015efbdb253e929cfd2924bb48d2",
+  "revision": "7e7b3b958db91f97433e026d375b1dcfe41bc7058e68c678377efa6967fb7928",
   "architecture_revision": "0b20e3ec99ad9e64e0314515897c6230f85bc5f35bbfdcc5eb47510da68338e5",
   "units": "m",
   "colliders": [
@@ -1839,8 +1839,8 @@
         1.043,
         0
       ],
-      "base_rotation_y": 1.5707963267948966,
-      "swing_radians": 1.5707963267948966,
+      "base_rotation_y": -1.5707963267948966,
+      "swing_radians": -1.5707963267948966,
       "opening": "O01",
       "clear_span_m": 0.9854531524162249,
       "source_hinge_xy_m": [
@@ -1872,8 +1872,8 @@
         1.043,
         0
       ],
-      "base_rotation_y": 1.5707963267948966,
-      "swing_radians": 1.5707963267948966,
+      "base_rotation_y": -1.5707963267948966,
+      "swing_radians": -1.5707963267948966,
       "opening": "O02",
       "clear_span_m": 0.8340465176193763,
       "source_hinge_xy_m": [
@@ -1905,8 +1905,8 @@
         1.043,
         0
       ],
-      "base_rotation_y": -3.141592653589793,
-      "swing_radians": -1.5707963267948966,
+      "base_rotation_y": 3.141592653589793,
+      "swing_radians": 1.5707963267948966,
       "opening": "O03",
       "clear_span_m": 0.8293618466224728,
       "source_hinge_xy_m": [
@@ -1938,8 +1938,8 @@
         1.043,
         0
       ],
-      "base_rotation_y": -3.141592653589793,
-      "swing_radians": -1.5707963267948966,
+      "base_rotation_y": 3.141592653589793,
+      "swing_radians": 1.5707963267948966,
       "opening": "O04",
       "clear_span_m": 0.8257649713348696,
       "source_hinge_xy_m": [
@@ -1971,8 +1971,8 @@
         1.043,
         0
       ],
-      "base_rotation_y": -0.0,
-      "swing_radians": -1.5707963267948966,
+      "base_rotation_y": 0.0,
+      "swing_radians": 1.5707963267948966,
       "opening": "O05",
       "clear_span_m": 0.8407757013881259,
       "source_hinge_xy_m": [
@@ -2004,8 +2004,8 @@
         1.043,
         0
       ],
-      "base_rotation_y": -3.141592653589793,
-      "swing_radians": -1.5707963267948966,
+      "base_rotation_y": 3.141592653589793,
+      "swing_radians": 1.5707963267948966,
       "opening": "O06",
       "clear_span_m": 0.7953537109490714,
       "source_hinge_xy_m": [

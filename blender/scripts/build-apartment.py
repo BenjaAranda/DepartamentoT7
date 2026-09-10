@@ -112,7 +112,7 @@ for o in data['openings']:
         for sign in [-1,1]:
             handle=box(source['id']+f'_Handle{sign}',(0,0,0),(.105,.02,.02),'metal','Carpentry',False)
             handle.parent=pivot;handle.location=(length-.10,sign*.04,1.0)
-        doors.append(dict(id=source['id'],pivot_name=pivot.name,leaf_name=leaf.name,pivot=gltf((*hinge,0)),size=[length,v['door_leaf_height'],v['door_leaf_thickness']],center_local=[length/2,v['door_leaf_height']/2+.008,0],base_rotation_y=-angle,swing_radians=-math.radians(source['swing_deg']),opening=o['id'],clear_span_m=span-2*frame,source_hinge_xy_m=source['hinge_xy_m'],physical_hinge_xy_m=list(hinge),hinge_adjustment_m=(hinge-Vector(source['hinge_xy_m'])).length))
+        doors.append(dict(id=source['id'],pivot_name=pivot.name,leaf_name=leaf.name,pivot=gltf((*hinge,0)),size=[length,v['door_leaf_height'],v['door_leaf_thickness']],center_local=[length/2,v['door_leaf_height']/2+.008,0],base_rotation_y=angle,swing_radians=math.radians(source['swing_deg']),opening=o['id'],clear_span_m=span-2*frame,source_hinge_xy_m=source['hinge_xy_m'],physical_hinge_xy_m=list(hinge),hinge_adjustment_m=(hinge-Vector(source['hinge_xy_m'])).length))
     elif o['kind']=='ventana':
         trim('Bottom',span/2,sill+frame/2,span-2*frame,frame)
         trim('Mullion',span/2,(sill+head)/2,frame,head-sill)

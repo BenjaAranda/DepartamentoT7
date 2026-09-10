@@ -1,0 +1,25 @@
+{
+  "revision": "7e7b3b958db91f97433e026d375b1dcfe41bc7058e68c678377efa6967fb7928",
+  "all_doors_open_and_close": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06"
+  ],
+  "straight_distance_m": 0.39990615947068725,
+  "diagonal_distance_m": 0.39993296585690025,
+  "low_fps_wall_stop": {
+    "x": 12.311034202575684,
+    "y": 1.5999020528793335,
+    "z": -2.7990095615386963
+  },
+  "window_stop": {
+    "x": 11.10027027130127,
+    "y": 1.6001000595092774,
+    "z": 1.0256277322769165
+  },
+  "pause_no_drift": true,
+  "reset_valid": true
+}

@@ -1,6 +1,6 @@
 # Tareas del simulador T7
 
-Actualizado: 10 de septiembre de 2026. T01–T27 implementadas y revisadas; E05 en ejecución. Base dimensional aproximada documentada.
+Actualizado: 10 de septiembre de 2026. T01–T33 implementadas y revisadas; E06 en ejecución. Base dimensional aproximada documentada.
 
 Esta es la lista de seguimiento principal del nuevo proyecto `simulador-t7`.
 
@@ -72,12 +72,12 @@ Dependencia: E02 y E03. Hito: arquitectura comprobada sin muebles.
 
 Dependencia: E04. Hito: todo el departamento recorrible antes de decorar.
 
-- [ ] T28. Crear colliders por suelo, muro, vano, ventana y límite; evitar cajas que tapen puertas o huecos válidos.
-- [ ] T29. Implementar cápsula, gravedad, física fija, movimiento, mirada y cámara a 1,60 m; normalizar movimiento diagonal.
-- [ ] T30. Implementar apertura desde ambos lados, pivote común y barrido seguro de hojas; comprobar umbrales.
-- [ ] T31. Implementar pausa, liberación del puntero y reinicio al acceso; inicio y reanudación en posición válida.
-- [ ] T32. Recorrer acceso–cada recinto–acceso, probar esquinas, vidrios, marcos y límites; pasar V07–V09 en arquitectura vacía.
-- [ ] T33. Guardar rutas de prueba y evidencias del hito; registrar defectos sin ocultarlos con reinicios automáticos.
+- [x] T28. Crear colliders por suelo, muro, vano, ventana y límite; evitar cajas que tapen puertas o huecos válidos.
+- [x] T29. Implementar cápsula, gravedad, física fija, movimiento, mirada y cámara a 1,60 m; normalizar movimiento diagonal.
+- [x] T30. Implementar apertura desde ambos lados, pivote común y barrido seguro de hojas; comprobar umbrales.
+- [x] T31. Implementar pausa, liberación del puntero y reinicio al acceso; inicio y reanudación en posición válida.
+- [x] T32. Recorrer acceso–cada recinto–acceso, probar esquinas, vidrios, marcos y límites; pasar V07–V09 en arquitectura vacía.
+- [x] T33. Guardar rutas de prueba y evidencias del hito; registrar defectos sin ocultarlos con reinicios automáticos.
 
 ## E06. Mobiliario, recinto por recinto
 
@@ -148,4 +148,4 @@ Dependencia: E10. Hito: V15 superada y todos los entregables accesibles.
 
 ## Continuación concreta
 
-Continuar E05 T28–T33: controlador físico compartido, puertas seguras, pausa y recorridos completos de arquitectura vacía. E04 generó el departamento completo; comparación de muros, GLB, área de pavimento y dos isométricas comprobadas. Ver VALIDACION_E04.md. Conservar límites aproximados E02: 77,10 m² exteriores, útil separada y control gráfico máximo 12,073 mm. Mobiliario E06 sigue pendiente. Trabajar hasta completar etapas y proyecto sin pedir otro mensaje.
+Continuar E06 T34–T43: mobiliario exacto, armarios completos, baño y logia funcionales; comprobar penetraciones y repetir rutas antes de E07. E05 pasó diez recorridos de ida/vuelta, barridos seguros y casos adversos en arquitectura vacía. Ver VALIDACION_E05.md. Al regenerar, conservar el signo de rotación Blender Z → glTF Y; prueba de pivotes añadida. No dar por comprobadas las rutas con mobiliario antes de ejecutarlas. Mantener el criterio de superficie aproximada comunicado y continuar por etapas hasta entrega.
