@@ -1,0 +1,55 @@
+{
+  "purpose": "User-requested message-only history normalization; all trees and author/committer headers preserved",
+  "backup": "C:\\Users\\benja\\OneDrive\\Documentos\\ProyectoDeptAstra\\DepartamentoT7-historial-original.bundle",
+  "old_remote_head": "cc36fd743017bc2758fae63df683db5226e58f2a",
+  "mapping": [
+    {
+      "old": "229027e610fe38c8e593b2ae9ae9a48ff8df50cd",
+      "new": "bd905fad89a9f1595bdc9eacc6346a10e12c4464",
+      "tree": "12ee58d931a621375a51e15a4ef0d4302d45cd5a",
+      "subject": "chore(project): initialize independent T7 simulator workspace"
+    },
+    {
+      "old": "60fa47985d52b5a8883b736010df260afbcbb3a5",
+      "new": "95cbf95bd2c2bf70cc979080efaa4a1104c6756e",
+      "tree": "93dad57742d936adb1e9f64cfd8208f9ef082731",
+      "subject": "chore(github): synchronize stage tracking and initial upload"
+    },
+    {
+      "old": "3a0cb2212eb05b91bf65f09d399d9846fa2c5093",
+      "new": "bf6f721e0c4c58443475ff7ae36dd614da2afb5a",
+      "tree": "5fbe9eff40e957cd3733793d89e3b75959ab0d75",
+      "subject": "docs(references): archive original T7 plan and source provenance"
+    },
+    {
+      "old": "c4ace6ddbc2b141e1f1b7625e26bc1b1a350c57c",
+      "new": "7d72707ff7bb89f6d61bb1e95d689f4ad4d0f56e",
+      "tree": "a9e4f438a31831f0ce64ec00f9d23afab9e88841",
+      "subject": "feat(architecture): classify plan traces and generate review atlas"
+    },
+    {
+      "old": "8338dfc20daf78537c16c5ddac2309dee48da600",
+      "new": "f2f0ead6379b8dcb8b9900ba90152baffecb4afd",
+      "tree": "078dff0ab772d11ed588b35c1e1e932cdc6f45fa",
+      "subject": "feat(architecture): inventory dimensions with PDF evidence"
+    },
+    {
+      "old": "0ca0411e4d1d452311bfd8bad8b90ccf65072c5a",
+      "new": "d20fa92a0334bd3a6d2712b64188047c4cfe104a",
+      "tree": "383387d0842f7b81b9ad24f5d18c83e4bfc24ed6",
+      "subject": "feat(architecture): calibrate metric scale with independent controls"
+    },
+    {
+      "old": "cc36fd743017bc2758fae63df683db5226e58f2a",
+      "new": "1981fe673c845eaffffd6fb9dc629d9d4dafb423",
+      "tree": "895f3180928276cf789f6075183ed88468a34365",
+      "subject": "feat(architecture): register wall faces, openings and door swings"
+    },
+    {
+      "old": "3e683d3d844abb816a708be7430b0084c2ccfa28",
+      "new": "56b550a0dd74f551f66db5bfe05d186be5c62a2e",
+      "tree": "d12d6dcb999c492d71166c910339b4f6b646b207",
+      "subject": "feat(architecture): validate bathroom and loggia topology"
+    }
+  ]
+}

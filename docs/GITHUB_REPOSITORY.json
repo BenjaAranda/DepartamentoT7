@@ -1,9 +1,9 @@
 {
   "repository_id": 1362108111,
-  "full_name": "BenjaAranda/los-altos-algarrobo-t7",
+  "full_name": "BenjaAranda/DepartamentoT7",
   "owner": "BenjaAranda",
-  "html_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7",
-  "clone_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7.git",
+  "html_url": "https://github.com/BenjaAranda/DepartamentoT7",
+  "clone_url": "https://github.com/BenjaAranda/DepartamentoT7.git",
   "private": true,
   "default_branch": "main",
   "created_at": "2026-09-09T02:22:00Z",
@@ -38,10 +38,15 @@
   "local": {
     "git_root": "simulador-t7/",
     "remote_name": "origin",
-    "remote_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7.git",
+    "remote_url": "https://github.com/BenjaAranda/DepartamentoT7.git",
     "branch": "main",
     "initial_commit": "229027e610fe38c8e593b2ae9ae9a48ff8df50cd",
     "initial_upload_verified_at": "2026-09-09T02:44:49.338Z",
     "upstream": "origin/main"
+  },
+  "rename": {
+    "previous_name": "BenjaAranda/los-altos-algarrobo-t7",
+    "checked_at": "2026-09-10T03:00:40.914Z",
+    "id_preserved": true
   }
 }

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Departamento Tipo T7 | Los Altos de Algarrobo',
+  title: 'DepartamentoT7 | Los Altos de Algarrobo',
   description:
     'Simulador del Departamento Tipo T7 de Los Altos de Algarrobo.',
 };

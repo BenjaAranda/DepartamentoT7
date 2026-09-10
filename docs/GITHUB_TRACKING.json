@@ -1,8 +1,8 @@
 {
-  "repository": "BenjaAranda/los-altos-algarrobo-t7",
+  "repository": "BenjaAranda/DepartamentoT7",
   "source": "docs/TODO_T7.md",
   "mode": "issues_by_stage",
-  "tracking_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues",
+  "tracking_url": "https://github.com/BenjaAranda/DepartamentoT7/issues",
   "projects": {
     "status": "unavailable_with_current_authentication",
     "project_id": null,
@@ -20,7 +20,7 @@
   "stages": {
     "E00": {
       "issue_number": 1,
-      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/1",
+      "issue_url": "https://github.com/BenjaAranda/DepartamentoT7/issues/1",
       "task_ids": [
         "P01",
         "P02",
@@ -34,7 +34,7 @@
     },
     "E01": {
       "issue_number": 2,
-      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/2",
+      "issue_url": "https://github.com/BenjaAranda/DepartamentoT7/issues/2",
       "task_ids": [
         "T01",
         "T02",
@@ -46,7 +46,7 @@
     },
     "E02": {
       "issue_number": 3,
-      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/3",
+      "issue_url": "https://github.com/BenjaAranda/DepartamentoT7/issues/3",
       "task_ids": [
         "T07",
         "T08",
@@ -61,7 +61,7 @@
     },
     "E03": {
       "issue_number": 4,
-      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/4",
+      "issue_url": "https://github.com/BenjaAranda/DepartamentoT7/issues/4",
       "task_ids": [
         "T16",
         "T17",
@@ -72,7 +72,7 @@
     },
     "E04": {
       "issue_number": 5,
-      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/5",
+      "issue_url": "https://github.com/BenjaAranda/DepartamentoT7/issues/5",
       "task_ids": [
         "T21",
         "T22",
@@ -85,7 +85,7 @@
     },
     "E05": {
       "issue_number": 6,
-      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/6",
+      "issue_url": "https://github.com/BenjaAranda/DepartamentoT7/issues/6",
       "task_ids": [
         "T28",
         "T29",
@@ -97,7 +97,7 @@
     },
     "E06": {
       "issue_number": 7,
-      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/7",
+      "issue_url": "https://github.com/BenjaAranda/DepartamentoT7/issues/7",
       "task_ids": [
         "T34",
         "T35",
@@ -113,7 +113,7 @@
     },
     "E07": {
       "issue_number": 8,
-      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/8",
+      "issue_url": "https://github.com/BenjaAranda/DepartamentoT7/issues/8",
       "task_ids": [
         "T44",
         "T45",
@@ -123,7 +123,7 @@
     },
     "E08": {
       "issue_number": 9,
-      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/9",
+      "issue_url": "https://github.com/BenjaAranda/DepartamentoT7/issues/9",
       "task_ids": [
         "T48",
         "T49",
@@ -135,7 +135,7 @@
     },
     "E09": {
       "issue_number": 10,
-      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/10",
+      "issue_url": "https://github.com/BenjaAranda/DepartamentoT7/issues/10",
       "task_ids": [
         "T54",
         "T55",
@@ -147,7 +147,7 @@
     },
     "E10": {
       "issue_number": 11,
-      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/11",
+      "issue_url": "https://github.com/BenjaAranda/DepartamentoT7/issues/11",
       "task_ids": [
         "T60",
         "T61",
@@ -158,7 +158,7 @@
     },
     "E11": {
       "issue_number": 12,
-      "issue_url": "https://github.com/BenjaAranda/los-altos-algarrobo-t7/issues/12",
+      "issue_url": "https://github.com/BenjaAranda/DepartamentoT7/issues/12",
       "task_ids": [
         "T65",
         "T66",
@@ -170,8 +170,8 @@
     }
   },
   "last_sync": {
-    "checked_at": "2026-09-09T23:04:51.517Z",
-    "source_sha256": "812f711214faff58fef67294aad4f4bfa26bd1db43b056661576db4b7f8de8df",
+    "checked_at": "2026-09-10T03:02:45.790Z",
+    "source_sha256": "d2e8fa8e86c231488828e6ecde760f5546f4e49743446c1524b005ee2b037289",
     "stage_count": 12,
     "task_count": 78,
     "completed_tasks": 20,

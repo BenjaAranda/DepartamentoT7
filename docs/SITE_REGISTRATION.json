@@ -1,13 +1,13 @@
 {
   "project_id": "appgprj_6aa0c4d0ff688191a8421e732e9b5d35",
-  "title": "Departamento Tipo T7 · Los Altos de Algarrobo",
-  "slug": "los-altos-algarrobo-t7",
-  "expected_url": "https://los-altos-algarrobo-t7.benjaaranda.chatgpt.site",
-  "expected_url_source": "sites_create_site; dirección prevista, todavía no publicada",
+  "title": "DepartamentoT7",
+  "slug": "departamentot7",
+  "expected_url": null,
+  "expected_url_source": "Pendiente de URL devuelta por Sites; cambio de nombre confirmado el 10-09-2026",
   "created_at": "2026-09-09T02:30:44.462413+00:00",
   "local_application_directory": "web/",
   "hosting_manifest": "web/.openai/hosting.json",
-  "github_repository": "https://github.com/BenjaAranda/los-altos-algarrobo-t7",
+  "github_repository": "https://github.com/BenjaAranda/DepartamentoT7",
   "registered_in_task": "T05",
   "planned_initial_access": "private_owner_only",
   "verification": {
@@ -30,5 +30,9 @@
     "source_write_credential_received": true,
     "credential_persisted": false
   },
-  "publication_pending_stage": "E11"
+  "publication_pending_stage": "E11",
+  "rename": {
+    "title_and_slug_verified": true,
+    "same_project_id": true
+  }
 }

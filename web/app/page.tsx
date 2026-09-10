@@ -8,7 +8,7 @@ export default function Home() {
           Los Altos de Algarrobo
         </p>
         <h1 className="mt-1 text-xl font-semibold tracking-tight">
-          Departamento Tipo T7
+          DepartamentoT7
         </h1>
       </header>
       <Empty className="rounded-none px-6 py-16">

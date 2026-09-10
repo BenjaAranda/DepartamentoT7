@@ -17,7 +17,7 @@ const trackingPath = resolve(root, 'docs/GITHUB_TRACKING.json');
 const tracking = JSON.parse(readFileSync(trackingPath, 'utf8'));
 const todo = readFileSync(resolve(root, 'docs/TODO_T7.md'), 'utf8').replace(/\r\n/g, '\n');
 
-if (repository.full_name !== 'BenjaAranda/los-altos-algarrobo-t7' || repository.repository_id !== 1362108111 || tracking.repository !== repository.full_name) {
+if (repository.full_name !== 'BenjaAranda/DepartamentoT7' || repository.repository_id !== 1362108111 || tracking.repository !== repository.full_name) {
   throw new Error('El destino no coincide con el repositorio T7 autorizado.');
 }
 
