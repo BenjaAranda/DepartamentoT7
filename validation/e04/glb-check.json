@@ -1,0 +1,11 @@
+{
+  "revision": "92df843ebac0d9d7285b8a8882af97924f6e015efbdb253e929cfd2924bb48d2",
+  "hashes_match": true,
+  "wall_glb_max_error_m": 4.828184447802641e-7,
+  "measured_glb_floor_m2": 77.10000158872148,
+  "area_delta_m2": 0.4400015887214863,
+  "meshes": 165,
+  "context_present": true,
+  "door_pivots": 6,
+  "glb_bytes": 277720
+}

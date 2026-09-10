@@ -1,0 +1,14 @@
+{
+  "revision": "92df843ebac0d9d7285b8a8882af97924f6e015efbdb253e929cfd2924bb48d2",
+  "architecture_revision": "0b20e3ec99ad9e64e0314515897c6230f85bc5f35bbfdcc5eb47510da68338e5",
+  "units": "m",
+  "eye_height_m": 1.6,
+  "model": "departamento-t7.glb",
+  "colliders": "departamento-t7.json",
+  "hashes": {
+    "DepartamentoT7.blend": "4a495c7d46d94cbbf6791c2995c5d8f0f25d9cedb8df7eb19f9e41228d84d13f",
+    "departamento-t7.glb": "5baae7641707adfbc8752649a5a2609aca381e452d4ea542b4f459258fa357a8",
+    "departamento-t7.json": "9e178e3630428c4522e71e309059f26d810e09fbc4550aa0021d7e1e7405fff1"
+  },
+  "blender_version": "5.2.1 LTS"
+}

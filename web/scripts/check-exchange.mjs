@@ -9,8 +9,8 @@ import RAPIER from '@dimforge/rapier3d-compat';
 const root=path.resolve('..');
 const dir=path.join(root,'web/public/models');
 const manifest=JSON.parse(fs.readFileSync(path.join(dir,'proof-manifest.json')));
-const model=JSON.parse(fs.readFileSync(path.join(root,'architecture/model/departamento-t7.json')));
-assert.equal(manifest.revision,model.revision);
+const fixture=JSON.parse(fs.readFileSync(path.join(root,'validation/e03/blender-check.json')));
+assert.equal(manifest.revision,fixture.revision);
 const digest=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 for(const [name,hash] of Object.entries(manifest.hashes)) {
   const original=path.join(root,name.endsWith('.blend')?'blender':name.endsWith('.glb')?'assets/interchange':'assets/colliders',name);

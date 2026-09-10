@@ -1,0 +1,12 @@
+{
+  "revision": "92df843ebac0d9d7285b8a8882af97924f6e015efbdb253e929cfd2924bb48d2",
+  "generated_wall_bounds_match": true,
+  "maximum_generated_error_m": 7.102007675285904e-07,
+  "area_within_user_tolerance": true,
+  "physical_eye_height_m": 1.600000023841858,
+  "graphical_source_error_limit_m": 0.012072947584517157,
+  "nominal_10mm_source_goal_met": false,
+  "upper_context_storeys": 3,
+  "max_hinge_adjustment_m": 0.0279998779296875,
+  "scope": "40 wall bodies compared; opening geometry detailed in geometry-check.json. Furniture and physical routes follow in E05/E06."
+}

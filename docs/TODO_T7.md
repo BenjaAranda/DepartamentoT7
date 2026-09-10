@@ -1,6 +1,6 @@
 # Tareas del simulador T7
 
-Actualizado: 10 de septiembre de 2026. T01–T20 completadas; E04 en ejecución. Base dimensional aproximada documentada.
+Actualizado: 10 de septiembre de 2026. T01–T27 implementadas y revisadas; E05 en ejecución. Base dimensional aproximada documentada.
 
 Esta es la lista de seguimiento principal del nuevo proyecto `simulador-t7`.
 
@@ -60,13 +60,13 @@ Dependencia: E01 y medidas base de E02. Hito: intercambio mínimo consistente.
 
 Dependencia: E02 y E03. Hito: arquitectura comprobada sin muebles.
 
-- [ ] T21. Modelar perímetro y pavimentos con terraza separada; crear todos los muros respetando caras, ejes y espesores.
-- [ ] T22. Abrir cada vano y construir puertas, marcos, ventanas, dinteles y antepechos con sus medidas registradas.
-- [ ] T23. Completar los tres dormitorios y circulaciones; comprobar acceso en extremo superior derecho sin reflejar la planta.
-- [ ] T24. Completar baño longitudinal, cocina, estar/comedor y logia separada; revisar especialmente ausencia de tabiques falsos.
-- [ ] T25. Añadir piso continuo, losa/cielo, pasillo común, vecinos opacos y pisos superiores de contexto; documentar límites provisionales.
-- [ ] T26. Producir superposición ortográfica y tabla de desviaciones; corregir la fuente hasta pasar V01–V04.
-- [ ] T27. Revisar isométricas desde lados opuestos y referencia; pasar V05 y guardar hito estructural versionado.
+- [x] T21. Modelar perímetro y pavimentos con terraza separada; crear todos los muros respetando caras, ejes y espesores.
+- [x] T22. Abrir cada vano y construir puertas, marcos, ventanas, dinteles y antepechos con sus medidas registradas.
+- [x] T23. Completar los tres dormitorios y circulaciones; comprobar acceso en extremo superior derecho sin reflejar la planta.
+- [x] T24. Completar baño longitudinal, cocina, estar/comedor y logia separada; revisar especialmente ausencia de tabiques falsos.
+- [x] T25. Añadir piso continuo, losa/cielo, pasillo común, vecinos opacos y pisos superiores de contexto; documentar límites provisionales.
+- [x] T26. Producir superposición ortográfica y tabla de desviaciones; corregir la fuente hasta pasar V01–V04.
+- [x] T27. Revisar isométricas desde lados opuestos y referencia; pasar V05 y guardar hito estructural versionado.
 
 ## E05. Recorrido básico
 
@@ -148,4 +148,4 @@ Dependencia: E10. Hito: V15 superada y todos los entregables accesibles.
 
 ## Continuación concreta
 
-Continuar E04 (T21–T27): arquitectura completa y contexto desde datos métricos, seguido de E05 y demás etapas sin esperar otro mensaje. E03 pasó intercambio de prueba: Blender/GLB/colisiones, metro, marca ocular y cuatro casos Rapier. Ver VALIDACION_E03.md. Conservar el criterio aproximado T13 de 77,10 m² exteriores y útil separada; V02 no se declara exacta por residuo gráfico máximo 12,073 mm. El servidor web local y su vista están activos; sitio privado todavía sin publicar. Unreal 5.8.2 debe probarse en E08.
+Continuar E05 T28–T33: controlador físico compartido, puertas seguras, pausa y recorridos completos de arquitectura vacía. E04 generó el departamento completo; comparación de muros, GLB, área de pavimento y dos isométricas comprobadas. Ver VALIDACION_E04.md. Conservar límites aproximados E02: 77,10 m² exteriores, útil separada y control gráfico máximo 12,073 mm. Mobiliario E06 sigue pendiente. Trabajar hasta completar etapas y proyecto sin pedir otro mensaje.
