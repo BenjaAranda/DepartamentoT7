@@ -1,0 +1,214 @@
+{
+  "engine": "5.8.2-56702186+++UE5+Release-5.8",
+  "actors": [
+    {
+      "label": "Scene",
+      "class_name": "Actor",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_extent": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "EyeCamera",
+      "class_name": "CineCameraActor",
+      "location": [
+        0.0,
+        200.0,
+        160.0000023841858
+      ],
+      "bounds_origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_extent": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "ProofDoorPivot",
+      "class_name": "Actor",
+      "location": [
+        -42.500001192092896,
+        0.0,
+        0.0
+      ],
+      "bounds_origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_extent": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "ProofEyeDatum",
+      "class_name": "StaticMeshActor",
+      "location": [
+        100.0,
+        120.00000476837158,
+        160.0000023841858
+      ],
+      "bounds_origin": [
+        100.0,
+        120.00000476837158,
+        160.0000023841858
+      ],
+      "bounds_extent": [
+        20.0,
+        1.25,
+        0.5
+      ]
+    },
+    {
+      "label": "ProofEyePole",
+      "class_name": "StaticMeshActor",
+      "location": [
+        100.0,
+        120.00000476837158,
+        80.0000011920929
+      ],
+      "bounds_origin": [
+        100.0,
+        120.00000476837158,
+        80.0000011920929
+      ],
+      "bounds_extent": [
+        0.75,
+        0.75,
+        80.0
+      ]
+    },
+    {
+      "label": "ProofFloor",
+      "class_name": "StaticMeshActor",
+      "location": [
+        0.0,
+        0.0,
+        -10.000000149011612
+      ],
+      "bounds_origin": [
+        0.0,
+        0.0,
+        -10.000000149011612
+      ],
+      "bounds_extent": [
+        250.0,
+        250.0,
+        10.0
+      ]
+    },
+    {
+      "label": "ProofLintel",
+      "class_name": "StaticMeshActor",
+      "location": [
+        0.0,
+        0.0,
+        225.99999904632568
+      ],
+      "bounds_origin": [
+        0.0,
+        0.0,
+        225.99999904632568
+      ],
+      "bounds_extent": [
+        45.0,
+        10.0,
+        14.0
+      ]
+    },
+    {
+      "label": "ProofWallLeft",
+      "class_name": "StaticMeshActor",
+      "location": [
+        -122.50000238418579,
+        0.0,
+        120.00000476837158
+      ],
+      "bounds_origin": [
+        -122.50000238418579,
+        0.0,
+        120.00000476837158
+      ],
+      "bounds_extent": [
+        77.5,
+        10.0,
+        120.00000762939453
+      ]
+    },
+    {
+      "label": "ProofWallRight",
+      "class_name": "StaticMeshActor",
+      "location": [
+        122.50000238418579,
+        0.0,
+        120.00000476837158
+      ],
+      "bounds_origin": [
+        122.50000238418579,
+        0.0,
+        120.00000476837158
+      ],
+      "bounds_extent": [
+        77.5,
+        10.0,
+        120.00000762939453
+      ]
+    },
+    {
+      "label": "ProofRuler1m",
+      "class_name": "StaticMeshActor",
+      "location": [
+        -100.0,
+        120.00000476837158,
+        2.9999999329447746
+      ],
+      "bounds_origin": [
+        -100.0,
+        120.00000476837158,
+        2.9999999329447746
+      ],
+      "bounds_extent": [
+        50.0,
+        2.5,
+        3.0
+      ]
+    },
+    {
+      "label": "ProofDoor",
+      "class_name": "StaticMeshActor",
+      "location": [
+        0.0,
+        0.0,
+        103.49999666213989
+      ],
+      "bounds_origin": [
+        0.0,
+        0.0,
+        103.49999666213989
+      ],
+      "bounds_extent": [
+        42.5,
+        1.75,
+        103.5
+      ]
+    }
+  ]
+}

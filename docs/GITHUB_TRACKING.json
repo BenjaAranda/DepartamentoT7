@@ -170,13 +170,13 @@
     }
   },
   "last_sync": {
-    "checked_at": "2026-09-10T13:25:15.900Z",
-    "source_sha256": "84c67946fa89ecf6a7cfa1bd0743d7cbacc910ee3a237bb1e618287c1c1eb4b9",
+    "checked_at": "2026-09-10T13:39:06.348Z",
+    "source_sha256": "401048fa0ce80cf4d2120558454d897fbffc46c7e57133ace83d0aea66b6a196",
     "stage_count": 12,
     "task_count": 78,
-    "completed_tasks": 51,
-    "open_stages": 5,
-    "closed_stages": 7,
+    "completed_tasks": 57,
+    "open_stages": 4,
+    "closed_stages": 8,
     "all_match": true,
     "stages": [
       {
@@ -238,9 +238,9 @@
       {
         "stage": "E07",
         "issue_number": 8,
-        "state": "open",
+        "state": "closed",
         "task_count": 4,
-        "completed": 0,
+        "completed": 4,
         "matches": true
       },
       {
@@ -248,7 +248,7 @@
         "issue_number": 9,
         "state": "open",
         "task_count": 6,
-        "completed": 0,
+        "completed": 2,
         "matches": true
       },
       {

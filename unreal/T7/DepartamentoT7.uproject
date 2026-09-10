@@ -1,0 +1,13 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.8",
+  "Category": "Architecture",
+  "Description": "Departamento Tipo T7 · Los Altos de Algarrobo",
+  "Plugins": [
+    {"Name":"PythonScriptPlugin","Enabled":true},
+    {"Name":"EditorScriptingUtilities","Enabled":true},
+    {"Name":"Interchange","Enabled":true},
+    {"Name":"InterchangeEditor","Enabled":true},
+    {"Name":"InterchangeAssets","Enabled":true}
+  ]
+}

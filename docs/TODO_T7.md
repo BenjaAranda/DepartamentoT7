@@ -1,6 +1,6 @@
 # Tareas del simulador T7
 
-Actualizado: 10 de septiembre de 2026. T01–T43 implementadas y revisadas; E07 en ejecución. Base dimensional aproximada documentada.
+Actualizado: 10 de septiembre de 2026. T01–T49 implementadas y revisadas; E08 en ejecución. Base dimensional aproximada documentada.
 
 Esta es la lista de seguimiento principal del nuevo proyecto `simulador-t7`.
 
@@ -98,17 +98,17 @@ Dependencia: E05. Hito: inventario exacto y circulación conservada.
 
 Dependencia: E06. Hito: escena terminada visualmente y con circulación comprobada.
 
-- [ ] T44. Aplicar materiales PBR coherentes, UV a escala y acabado gris provisional de terraza; revisar normales y transparencias.
-- [ ] T45. Configurar iluminación y sombras con techo y edificio presentes; evitar fugas y exposición que oculte errores.
-- [ ] T46. Añadir alfombras, plantas, lámparas, cuadros, cojines y accesorios sin obstruir muebles ni rutas.
-- [ ] T47. Repetir interferencias y recorridos afectados por decoración; obtener planta e isométricas de la versión amueblada.
+- [x] T44. Aplicar materiales PBR coherentes, UV a escala y acabado gris provisional de terraza; revisar normales y transparencias.
+- [x] T45. Configurar iluminación y sombras con techo y edificio presentes; evitar fugas y exposición que oculte errores.
+- [x] T46. Añadir alfombras, plantas, lámparas, cuadros, cojines y accesorios sin obstruir muebles ni rutas.
+- [x] T47. Repetir interferencias y recorridos afectados por decoración; obtener planta e isométricas de la versión amueblada.
 
 ## E08. Unreal Engine
 
 Dependencia: E03 para prueba mínima; E07 para integración final. Instalación necesaria para cerrar, sin bloquear tareas independientes.
 
-- [ ] T48. Revalidar instalación de Unreal, abrir proyecto nuevo, fijar versión y comprobar guardado; si sigue instalándose, registrar pendiente y continuar E09.
-- [ ] T49. Importar la prueba de escala de T18; medir 100 cm y altura ocular de 160 cm, orientación y pivote sin doble conversión.
+- [x] T48. Revalidar instalación de Unreal, abrir proyecto nuevo, fijar versión y comprobar guardado; si sigue instalándose, registrar pendiente y continuar E09.
+- [x] T49. Importar la prueba de escala de T18; medir 100 cm y altura ocular de 160 cm, orientación y pivote sin doble conversión.
 - [ ] T50. Importar departamento y contexto de la misma revisión; reconstruir colisiones e interacciones a partir de los mismos datos.
 - [ ] T51. Configurar materiales/iluminación Unreal y personaje de recorrido; mantener geometría sincronizada con Blender.
 - [ ] T52. Comparar dimensiones y vistas; recorrer todas las estancias en Unreal y guardar evidencia V04–V11.
@@ -148,6 +148,6 @@ Dependencia: E10. Hito: V15 superada y todos los entregables accesibles.
 
 ## Continuación concreta
 
-E06 cerrada: 28 conjuntos de mobiliario, cero penetraciones contra arquitectura, 12 hojas con apertura/cierre completos y diez recorridos de ida/vuelta en cada estado de los armarios (cerrados y abiertos). Se corrigieron la interferencia del lavadero con P06 y la holgura junto a cama D1. Evidencia y alcance: VALIDACION_E06.md y validation/e06/.
+E07 cerrada: materiales PBR, UV en metros, decoración, iluminación con techo presente y veinte recorridos repetidos; cero penetraciones muebles/decoración contra arquitectura. Evidencia: VALIDACION_E07.md y validation/e07/.
 
-Continuar E07 T44–T47: materiales, iluminación, decoración y nueva validación del amueblado. Después E08 Unreal (5.8.2 instalado), E09 web, E10 validación y E11 publicación. Mantener el criterio de superficie aproximada comunicado y no marcar tareas sin evidencia.
+E08 T48–T49: Unreal 5.8.2 ejecutado; proyecto nuevo guardado y prueba GLB importada, regla de 100 cm y ojo a 160 cm medidos. Seguir T50–T53 con importación completa, interacciones, recorrido y reapertura. Preparación de herramientas MSVC compatibles en curso. E09–E11 siguen pendientes. Conservar el criterio de superficie aproximada y registrar pruebas reales.

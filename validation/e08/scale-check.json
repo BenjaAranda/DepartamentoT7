@@ -1,0 +1,7 @@
+{
+  "engine": "5.8.2-56702186+++UE5+Release-5.8",
+  "ruler_cm": 100.0,
+  "eye_cm": 160.0000023841858,
+  "gltf_to_unreal_cm": "(x,y,z) -> 100*(x,z,y)",
+  "source": "GLTFCore ConversionUtilities.h and imported fixture actors"
+}
