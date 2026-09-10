@@ -1,0 +1,36 @@
+{
+  "task": "T15",
+  "proposal": "Torre A, primer piso, un T7 según orientación nativa de p20",
+  "sources": {
+    "p15": "Torre A, cuatro pisos, 32 departamentos, dos salas de basura y dos escaleras",
+    "p16": "T7 señalado en primer piso; T6 en pisos 2–4",
+    "p17": "Torre B es alternativa, no se mezcla con A",
+    "p20": "Arquitectura y orientación local de referencia"
+  },
+  "source_pdf_sha256": "ad8e0871ed6afb7117e2dafa80bc28ad90b3c845709dc268ba01fcd12259aeec",
+  "confirmed": {
+    "building": "A",
+    "total_storeys": 4,
+    "t7_storey": 1,
+    "upper_typology": "T6",
+    "geographic_north": null
+  },
+  "provisional": {
+    "chosen_unit_number": null,
+    "common_corridor_clear_width_m": 1.8,
+    "corridor_extension_beyond_entry_m": 1.5,
+    "opaque_neighbour_depth_m": 6,
+    "upper_envelope_detail": "Masas opacas de contexto; sin duplicar interiores T7 ni atribuir medidas exactas a T6",
+    "horizontal_placement": "Pasillo común al lado +X del acceso; masa vecina tras límite +Y. Ajuste espacial de contexto, no planta completa levantada de Torre A."
+  },
+  "constraints": [
+    "Acceso conservado arriba-derecha de p20, sin reflejar el departamento",
+    "Pisos superiores incluyen losas y volúmenes opacos",
+    "Solo el T7 y segmento del pasillo son recorribles; contexto no ofrece accesos falsos"
+  ],
+  "pending": [
+    "Número de unidad y correspondencia exacta en Torre A",
+    "Dimensiones completas de pasillo, vecinos y elevaciones",
+    "V03: perímetro documental de superficie; consulta abierta"
+  ]
+}

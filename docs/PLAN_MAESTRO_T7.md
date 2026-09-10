@@ -155,7 +155,7 @@ Los umbrales siguientes son criterios de ingeniería propuestos, no una afirmaci
 |---|---|---|---|
 | V01 | Planta contra modelo | Cámara ortográfica registrada al plano, sin perspectiva, rotaciones arbitrarias ni deformación no uniforme. Comparar ejes, caras, esquinas y todos los vanos. | Superposición al 50 %, diferencias de contorno y tabla de puntos de control. |
 | V02 | Medidas | Error objetivo ≤ 0,01 m en cotas verificables; dimensiones ilegibles marcadas pendientes. Informar error máximo, no solo promedio. | Informe de cotas y confianza por medida. |
-| V03 | Superficie | Polígono de cómputo documentado con objetivo 76,66 m², diferencia objetivo ≤ 0,01 m²; suma útil por recinto por separado; terraza excluida. | Coordenadas y método reproducible; informe que distingue cálculo y dato oficial. |
+| V03 | Superficie | Polígono de cómputo documentado con objetivo 76,66 m², diferencia aceptada por el usuario ≤ 0,50 m² desde el 10-09-2026; suma útil por recinto por separado; terraza excluida. | Coordenadas y método reproducible; informe que distingue cálculo y dato oficial. |
 | V04 | Escala y POV | Regla de 1 m con error de intercambio ≤ 0,001 m; cámara 1,600 m ± 0,005 m sobre piso en reposo en cada recinto; Unreal equivalente en cm. | Mediciones en Blender, web y Unreal. |
 | V05 | Isométrica | Revisar desde al menos dos esquinas opuestas y una vista alineada a la referencia; todos los recintos y espesores reconocibles. | Capturas de arquitectura y de versión amueblada. |
 | V06 | Interferencias | Cero penetraciones muebles-muros no justificadas; contactos previstos explícitos. Detección amplia por volúmenes y confirmación con geometría, tolerancia numérica ≤ 0,002 m. | Informe por ID y capturas de cualquier contacto aceptado. |
@@ -205,3 +205,7 @@ T05 dejó registrado el sitio para `web/`, con acceso privado solo para el propi
 Después de publicar, comprobar la URL desplegada y su manifiesto, carga del GLB, colisiones, acceso a recintos y ausencia de errores críticos. Conservar una revisión recuperable. Una corrección posterior modifica la fuente, reexporta lo afectado, repite los controles pertinentes y actualiza tanto GitHub como el sitio; no editar únicamente la copia publicada.
 
 Entregables finales: enlace web validado; repositorio nuevo; Blender editable; proyecto Unreal probado; GLB y colliders de la misma revisión; comparación ortográfica e isométrica; informe de superficie, escala y POV; prueba de recorrido e inventario; instrucciones breves de uso y de actualización. Solo entonces se marca el proyecto completo.
+
+## Actualización de ejecución del 10-09-2026
+
+El proyecto se llama DepartamentoT7. Se trabaja por etapas completas hasta la entrega. La tolerancia de superficie indicada por el usuario se interpreta como ±0,5 m²; se anunció su aplicación a la superficie edificada de referencia, manteniendo la útil separada. El criterio de simulación T13 propone 77,10 m² en contorno exterior con ajuste uniforme XY, dentro de la sensibilidad de lectura. No acredita un perímetro oficial. El residuo gráfico máximo pasa a 12,073 mm y se conserva visible frente a la meta inicial de 10 mm. Ver VALIDACION_E02.md. Unreal ya dispone de ejecutable y versión 5.8.2; falta probar el proyecto.

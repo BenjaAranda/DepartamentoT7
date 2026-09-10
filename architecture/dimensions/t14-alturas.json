@@ -1,0 +1,128 @@
+{
+  "task": "T14",
+  "units": "metros",
+  "vertical_origin": "piso terminado del T7, Z=0",
+  "status": "Supuestos explícitos para visualización; sin cotas verticales T7 acreditadas",
+  "source_review": [
+    "PDF p20: cielo falso y termopanel; isométrica sin cotas verticales",
+    "PDF p22-p24: esquemas genéricos, no prueba de alturas T7"
+  ],
+  "values": {
+    "floor_level": {
+      "value_m": 0,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "clear_height": {
+      "value_m": 2.4,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "false_ceiling_thickness": {
+      "value_m": 0.04,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "slab_bottom": {
+      "value_m": 2.5,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "slab_thickness": {
+      "value_m": 0.2,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "storey_height": {
+      "value_m": 2.7,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "floor_slab_thickness": {
+      "value_m": 0.2,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "door_rough_head": {
+      "value_m": 2.12,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "door_leaf_height": {
+      "value_m": 2.07,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "door_frame_width": {
+      "value_m": 0.025,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "door_leaf_thickness": {
+      "value_m": 0.035,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "window_sill": {
+      "value_m": 0.9,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "window_head": {
+      "value_m": 2.1,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "bath_window_sill": {
+      "value_m": 1.65,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "bath_window_head": {
+      "value_m": 2.1,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "loggia_louvre_sill": {
+      "value_m": 0,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "loggia_louvre_head": {
+      "value_m": 2.12,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "terrace_level": {
+      "value_m": -0.03,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "terrace_edge_collision_height": {
+      "value_m": 1.2,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "shower_threshold": {
+      "value_m": 0,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "door_threshold": {
+      "value_m": 0,
+      "basis": "Supuesto de simulación, no cota del plano",
+      "confidence": "provisional"
+    },
+    "eye_height": {
+      "value_m": 1.6,
+      "basis": "Requisito explícito del usuario",
+      "confidence": "specified"
+    }
+  },
+  "rules": [
+    "No inferir alturas ni ancho libre acabado desde códigos TAB o sufijos F.",
+    "Puertas y ducha sin peldaño para recorrido continuo; no certificación de accesibilidad.",
+    "Muros hasta 2,50 m; cielo visible a 2,40 m y losa hasta 2,70 m.",
+    "No abrir acceso a terraza a través de ventanas; límites provisionales independientes."
+  ]
+}

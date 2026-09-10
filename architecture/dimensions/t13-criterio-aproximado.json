@@ -1,0 +1,175 @@
+{
+  "task": "T13",
+  "user_tolerance_m2": 0.5,
+  "documentary_target_m2": 76.66,
+  "model_computation_target_m2": 77.1,
+  "delta_m2": 0.4399999999999977,
+  "criterion": "Contorno exterior aproximado, adoptado para simulación. Superficie útil distinta y separada.",
+  "interpretation": "Se interpreta 0,5m como ±0,5 m² al hablar de superficies; aplicación a edificada anunciada al usuario.",
+  "xy_factor": 0.9943414226883663,
+  "m_per_native_pixel": 0.00841147971093603,
+  "z_rescaled": false,
+  "reason": "Ajuste uniforme del plano de 0,566 % dentro de sensibilidad T10. Se elige 77,10 m² para reducir alteración de cotas y dejar 0,06 m² respecto al límite de 77,16.",
+  "controls": [
+    {
+      "id": "CAL-FH01",
+      "expected_m": 0.9,
+      "measured_m": 0.89613181764762,
+      "error_m": -0.0038681823523800674,
+      "role": "fit"
+    },
+    {
+      "id": "CAL-FH02",
+      "expected_m": 1.375,
+      "measured_m": 1.3666223861382114,
+      "error_m": -0.008377613861788591,
+      "role": "fit"
+    },
+    {
+      "id": "CAL-FV01",
+      "expected_m": 0.5,
+      "measured_m": 0.49660410816953793,
+      "error_m": -0.003395891830462072,
+      "role": "fit"
+    },
+    {
+      "id": "CAL-CH01",
+      "expected_m": 0.4,
+      "measured_m": 0.39819690704524874,
+      "error_m": -0.0018030929547512842,
+      "role": "check_shared"
+    },
+    {
+      "id": "CAL-CH02",
+      "expected_m": 0.8,
+      "measured_m": 0.7978894288228146,
+      "error_m": -0.002110571177185494,
+      "role": "check"
+    },
+    {
+      "id": "CAL-CH03",
+      "expected_m": 0.7,
+      "measured_m": 0.6955782931048459,
+      "error_m": -0.004421706895154087,
+      "role": "check"
+    },
+    {
+      "id": "CAL-CH04",
+      "expected_m": 0.9,
+      "measured_m": 0.8986306511725689,
+      "error_m": -0.001369348827431116,
+      "role": "check"
+    },
+    {
+      "id": "CAL-CE03",
+      "expected_m": 0.15,
+      "measured_m": 0.14865763808221943,
+      "error_m": -0.0013423619177805601,
+      "role": "check"
+    },
+    {
+      "id": "CAL-CE04",
+      "expected_m": 0.15,
+      "measured_m": 0.14854454709273238,
+      "error_m": -0.0014554529072676181,
+      "role": "check"
+    },
+    {
+      "id": "CAL-CE05",
+      "expected_m": 0.15,
+      "measured_m": 0.1458497386290665,
+      "error_m": -0.0041502613709334946,
+      "role": "check"
+    },
+    {
+      "id": "CAL-CE06",
+      "expected_m": 0.15,
+      "measured_m": 0.14865378689145095,
+      "error_m": -0.0013462131085490436,
+      "role": "check"
+    },
+    {
+      "id": "CAL-CE07",
+      "expected_m": 0.15,
+      "measured_m": 0.14730939716030012,
+      "error_m": -0.0026906028396998793,
+      "role": "check"
+    },
+    {
+      "id": "CAL-CE08",
+      "expected_m": 0.15,
+      "measured_m": 0.14459100894411303,
+      "error_m": -0.005408991055886964,
+      "role": "check"
+    },
+    {
+      "id": "CAL-CG01-U",
+      "expected_m": 1.5,
+      "measured_m": 1.490603503907741,
+      "error_m": -0.00939649609225901,
+      "role": "check_circle"
+    },
+    {
+      "id": "CAL-CG01-V",
+      "expected_m": 1.5,
+      "measured_m": 1.4908533615492845,
+      "error_m": -0.009146638450715505,
+      "role": "check_circle"
+    },
+    {
+      "id": "CAL-CG02-U",
+      "expected_m": 1.5,
+      "measured_m": 1.4879270524154828,
+      "error_m": -0.012072947584517157,
+      "role": "check_circle"
+    },
+    {
+      "id": "CAL-CG02-V",
+      "expected_m": 1.5,
+      "measured_m": 1.4880451106568222,
+      "error_m": -0.011954889343177788,
+      "role": "check_circle"
+    },
+    {
+      "id": "CAL-CG03-U",
+      "expected_m": 1.5,
+      "measured_m": 1.4953928171557023,
+      "error_m": -0.00460718284429773,
+      "role": "check_circle"
+    },
+    {
+      "id": "CAL-CG03-V",
+      "expected_m": 1.5,
+      "measured_m": 1.488245696606409,
+      "error_m": -0.011754303393590959,
+      "role": "check_circle"
+    },
+    {
+      "id": "CAL-CG04-U",
+      "expected_m": 1.5,
+      "measured_m": 1.4894594709687492,
+      "error_m": -0.0105405290312508,
+      "role": "check_circle"
+    },
+    {
+      "id": "CAL-CG04-V",
+      "expected_m": 1.5,
+      "measured_m": 1.4890584656640555,
+      "error_m": -0.01094153433594447,
+      "role": "check_circle"
+    }
+  ],
+  "max_control_error_m": 0.012072947584517157,
+  "checks": {
+    "area_within_user_tolerance": true,
+    "scale_within_T10_sensitivity": true,
+    "controls_within_10mm": false,
+    "controls_within_two_pixel_reading": true,
+    "not_official_survey": true
+  },
+  "limits": [
+    "El máximo residuo de control gráfico es 12,073 mm: supera la meta inicial de 10 mm. No declararlo aprobado como cota de obra.",
+    "No certifica superficie útil de 76,66 m² ni perímetro oficial.",
+    "T10/T11 se conservan intactos como evidencia; la transformación aplicada al modelo se registra aquí."
+  ]
+}
