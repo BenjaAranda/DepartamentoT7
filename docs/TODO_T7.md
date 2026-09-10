@@ -1,6 +1,6 @@
 # Tareas del simulador T7
 
-Actualizado: 10 de septiembre de 2026. T01–T15 completadas como base aproximada documentada. E03 en ejecución.
+Actualizado: 10 de septiembre de 2026. T01–T20 completadas; E04 en ejecución. Base dimensional aproximada documentada.
 
 Esta es la lista de seguimiento principal del nuevo proyecto `simulador-t7`.
 
@@ -50,11 +50,11 @@ Dependencia: E00. Hito: plano calibrado y cuestiones geométricas resueltas ante
 
 Dependencia: E01 y medidas base de E02. Hito: intercambio mínimo consistente.
 
-- [ ] T16. Definir datos en metros con IDs y fuente por recinto, muro y vano, sin coordenadas duplicadas en el navegador.
-- [ ] T17. Crear escena Blender métrica con colecciones separadas de arquitectura, equipamiento, decoración, referencias y colisiones.
-- [ ] T18. Preparar exportación de prueba con regla de 1 m, marca ocular de 1,60 m, muro y puerta con bisagra.
-- [ ] T19. Cargar la prueba en web, confirmar orientación y escala y aplicar collider que respete el vano.
-- [ ] T20. Implementar el manifiesto y comprobación de revisión común para Blender, exportaciones y colisiones; reservar comprobación Unreal para su instalación operativa.
+- [x] T16. Definir datos en metros con IDs y fuente por recinto, muro y vano, sin coordenadas duplicadas en el navegador.
+- [x] T17. Crear escena Blender métrica con colecciones separadas de arquitectura, equipamiento, decoración, referencias y colisiones.
+- [x] T18. Preparar exportación de prueba con regla de 1 m, marca ocular de 1,60 m, muro y puerta con bisagra.
+- [x] T19. Cargar la prueba en web, confirmar orientación y escala y aplicar collider que respete el vano.
+- [x] T20. Implementar el manifiesto y comprobación de revisión común para Blender, exportaciones y colisiones; reservar comprobación Unreal para su instalación operativa.
 
 ## E04. Arquitectura y edificio
 
@@ -148,4 +148,4 @@ Dependencia: E10. Hito: V15 superada y todos los entregables accesibles.
 
 ## Continuación concreta
 
-Completar E03 T16–T20 y después E04. Base de autoría architecture/model/departamento-t7.json: T11/T10 intactos más ajuste uniforme de simulación T13 a 77,10 m² exteriores, dentro del margen ±0,5 m² solicitado. Mantener superficie útil separada, alturas provisionales y límite gráfico de 12,073 mm documentado. No volver a pedir autorización para esa aproximación ni marcar exactitud de obra. Prueba de Blender y GLB ya generada; web en comprobación. Unreal 5.8.2 disponible para probar en E08. Continuar por etapas hasta entrega.
+Continuar E04 (T21–T27): arquitectura completa y contexto desde datos métricos, seguido de E05 y demás etapas sin esperar otro mensaje. E03 pasó intercambio de prueba: Blender/GLB/colisiones, metro, marca ocular y cuatro casos Rapier. Ver VALIDACION_E03.md. Conservar el criterio aproximado T13 de 77,10 m² exteriores y útil separada; V02 no se declara exacta por residuo gráfico máximo 12,073 mm. El servidor web local y su vista están activos; sitio privado todavía sin publicar. Unreal 5.8.2 debe probarse en E08.

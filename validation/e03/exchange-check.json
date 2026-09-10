@@ -1,0 +1,33 @@
+{
+  "revision": "bb2a0fc1d59a1a1aa26fcb5cb638ce9055271be108664dbf52feb1d4c5d285fc",
+  "ruler_m": 1,
+  "eye_m": 1.600000023841858,
+  "hashes_match": true,
+  "collider_bounds_match": true,
+  "portal_both_directions": true,
+  "wall_blocks": true,
+  "closed_leaf_blocks": true,
+  "positions": {
+    "through": {
+      "x": -0.00026826345128938556,
+      "y": 0.8600628972053528,
+      "z": -0.9998582601547241
+    },
+    "reverse": {
+      "x": 0.0008218513685278594,
+      "y": 0.8598902821540833,
+      "z": 1.001352071762085
+    },
+    "wall": {
+      "x": 1.1996291875839233,
+      "y": 0.8598684072494507,
+      "z": 0.36010000109672546
+    },
+    "closed": {
+      "x": -0.0012037144042551517,
+      "y": 0.8599129319190979,
+      "z": 0.2775999903678894
+    }
+  },
+  "runtime": "Three.js GLTFLoader + Rapier 0.19.2, Node; browser appearance checked separately"
+}

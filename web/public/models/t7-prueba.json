@@ -1,0 +1,84 @@
+{
+  "revision": "bb2a0fc1d59a1a1aa26fcb5cb638ce9055271be108664dbf52feb1d4c5d285fc",
+  "units": "m",
+  "axes": "glTF +Y up",
+  "colliders": [
+    {
+      "id": "ProofFloor",
+      "center": [
+        0,
+        -0.1,
+        0
+      ],
+      "size": [
+        5,
+        0.2,
+        5
+      ],
+      "type": "box"
+    },
+    {
+      "id": "ProofWallLeft",
+      "center": [
+        -1.225,
+        1.2,
+        0
+      ],
+      "size": [
+        1.55,
+        2.4,
+        0.2
+      ],
+      "type": "box"
+    },
+    {
+      "id": "ProofWallRight",
+      "center": [
+        1.225,
+        1.2,
+        0
+      ],
+      "size": [
+        1.55,
+        2.4,
+        0.2
+      ],
+      "type": "box"
+    },
+    {
+      "id": "ProofLintel",
+      "center": [
+        0,
+        2.26,
+        0
+      ],
+      "size": [
+        0.9,
+        0.28,
+        0.2
+      ],
+      "type": "box"
+    }
+  ],
+  "doors": [
+    {
+      "id": "ProofDoor",
+      "pivot": [
+        -0.425,
+        0,
+        0
+      ],
+      "size": [
+        0.85,
+        2.07,
+        0.035
+      ],
+      "center_local": [
+        0.425,
+        1.035,
+        0
+      ],
+      "swing_radians": -1.5707963267948966
+    }
+  ]
+}

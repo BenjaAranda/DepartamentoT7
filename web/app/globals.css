@@ -52,6 +52,24 @@ body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
+.t7-workspace { height: 100svh; min-height: 36rem; display: flex; flex-direction: column; background: #f2f6fa; color: #15344a; }
+.t7-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.2rem 2rem; border-bottom: 1px solid #cbd8e2; }
+.t7-header p { font-size: .75rem; letter-spacing: .15em; color: #4b6475; }
+.t7-header h1 { font-size: 1.6rem; font-weight: 600; letter-spacing: -.035em; }
+.t7-stage { font-size: .875rem; color: #4b6475; }
+.t7-toolbar { display: flex; justify-content: space-between; align-items: center; gap: .75rem; padding: .7rem 2rem; }
+.t7-viewport { position: relative; min-height: 22rem; background: #172c3c; overflow: hidden; }
+.t7-viewport > div:first-child { position: absolute !important; inset: 0; }
+.t7-caption { position: absolute; left: 2rem; top: 1.5rem; display: grid; gap: .3rem; color: #f1f7fc; pointer-events: none; }
+.t7-caption strong { font-size: 1.1rem; font-weight: 500; }
+.t7-caption span, .t7-hint { font-size: .875rem; color: #cadbe7; }
+.t7-hint { position: absolute; bottom: 1rem; left: 2rem; }
+.t7-loading { display: grid; place-content: center; gap: 1rem; color: white; padding: 2rem; }
+.t7-plan { padding: 1.5rem; min-height: 0; overflow: auto; background: white; }
+.t7-plan img { width: 100%; height: 100%; object-fit: contain; }
+.t7-footer { display: flex; justify-content: space-between; gap: 1rem; padding: .85rem 2rem; font-size: .875rem; flex-wrap: wrap; color: #4b6475; border-top: 1px solid #cbd8e2; }
+@media(max-width: 700px) { .t7-header, .t7-toolbar, .t7-footer { padding-left: 1rem; padding-right: 1rem; } .t7-stage { display: none; } .t7-caption, .t7-hint { left: 1rem; right: 1rem; } .t7-toolbar { flex-wrap: wrap; } }
+
 :root {
   --background: #f5f7fa;
   --foreground: #142c42;

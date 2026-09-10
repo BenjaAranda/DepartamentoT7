@@ -1,0 +1,13 @@
+{
+  "revision": "bb2a0fc1d59a1a1aa26fcb5cb638ce9055271be108664dbf52feb1d4c5d285fc",
+  "units": "m",
+  "eye_height_m": 1.6,
+  "model": "t7-prueba.glb",
+  "colliders": "t7-prueba.json",
+  "hashes": {
+    "DepartamentoT7-prueba.blend": "ed879c42782b7d90fe3d52e4dbadb903732ea1f5dc15db2f13d7ebcb04a7ee07",
+    "t7-prueba.glb": "7568aa9e252e51667eb88cd5b0cd5702401731021a110461246605c2fff7b70c",
+    "t7-prueba.json": "48c2d19a27f65c12231c97425b2765eb434b8917e5b18ad32163ea1939ed6638"
+  },
+  "blender_version": "5.2.1 LTS"
+}
