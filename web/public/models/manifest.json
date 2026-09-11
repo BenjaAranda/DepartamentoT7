@@ -3,12 +3,14 @@
   "architecture_revision": "0b20e3ec99ad9e64e0314515897c6230f85bc5f35bbfdcc5eb47510da68338e5",
   "units": "m",
   "eye_height_m": 1.6,
-  "model": "departamento-t7.glb",
+  "model": "departamento-t7-web.glb",
   "colliders": "departamento-t7.json",
   "hashes": {
     "DepartamentoT7.blend": "3b41155837745098ded6898397ae770b73560f1621f424283cb94cd3c8ad5102",
     "departamento-t7.glb": "c4b918d5ba0f085e150af7cc163570bc2fc4ada700db0d8c306123f4c2e853ec",
-    "departamento-t7.json": "3e935e15bc2aaaf2752da0310fb5a6c62de4575e4eb5e493dfae1d9e47f88815"
+    "departamento-t7.json": "3e935e15bc2aaaf2752da0310fb5a6c62de4575e4eb5e493dfae1d9e47f88815",
+    "departamento-t7-web.glb": "7f88aeedb35f59b3a9f149b19d6ec7346256bf868e0c0d9ebfb82172b983387d"
   },
-  "blender_version": "5.2.1 LTS"
+  "blender_version": "5.2.1 LTS",
+  "interchange_model": "departamento-t7.glb"
 }

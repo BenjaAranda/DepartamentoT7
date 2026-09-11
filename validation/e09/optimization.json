@@ -1,0 +1,11 @@
+{
+  "revision": "3b8848a03f921bd64711cc458be818a92fc938ee4860b824629ffd188bd66806",
+  "source_bytes": 2338412,
+  "web_bytes": 1497004,
+  "nodes_preserved": 511,
+  "position_bits": 16,
+  "normal_bits": 12,
+  "texture_bits": 16,
+  "compression": "EXT_meshopt_compression",
+  "source_unchanged": true
+}

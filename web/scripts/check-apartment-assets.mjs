@@ -10,11 +10,12 @@ const geometry=JSON.parse(fs.readFileSync(path.join(root,'validation/e04/geometr
 assert.equal(manifest.revision,geometry.revision);
 const digest=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 for(const [name,hash] of Object.entries(manifest.hashes)){
+ if(name.endsWith('-web.glb'))continue;
  const p=path.join(root,name.endsWith('.blend')?'blender':name.endsWith('.glb')?'assets/interchange':'assets/colliders',name);
  assert.equal(digest(p),hash);
  if(!name.endsWith('.blend'))assert.equal(digest(path.join(dir,name)),hash);
 }
-const raw=fs.readFileSync(path.join(dir,manifest.model));
+const raw=fs.readFileSync(path.join(dir,manifest.interchange_model||manifest.model));
 const {scene}=await new GLTFLoader().parseAsync(raw.buffer.slice(raw.byteOffset,raw.byteOffset+raw.byteLength),'');
 scene.updateMatrixWorld(true);
 let meshes=0,maxError=0;

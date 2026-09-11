@@ -1,12 +1,19 @@
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import type { Group } from 'three';
+import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+import { Mesh, Texture, type Group } from 'three';
 export type BoxCollider = { id: string; center: [number, number, number]; size: [number, number, number]; type: 'box' };
 export type DoorData = { id: string; label?: string; category?: string; pivot_name?: string; leaf_name?: string; pivot: number[]; size: number[]; center_local: number[]; base_rotation_y?: number; swing_radians: number; opening?: string };
 export type CollisionData = { revision: string; units: string; colliders: BoxCollider[]; doors: DoorData[]; finishes?: {lights:{id:string;position:[number,number,number]}[]}; spawn?: [number, number, number]; area_m2?: number; useful_area_m2?: number; rooms?: {id: string; rings_xy_m: number[][][]; area_m2: number}[] };
-export type AssetBundle = { revision: string; scene: Group; collision: CollisionData; eyeHeight: number };
+export type AssetBundle = { revision: string; scene: Group; collision: CollisionData; eyeHeight: number; loadMs:number; bytes:number };
 type Manifest = { revision: string; units: string; eye_height_m: number; model: string; colliders: string; hashes: Record<string, string> };
 const digest = async (buffer: ArrayBuffer) => Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', buffer)), n => n.toString(16).padStart(2, '0')).join('');
-export async function loadBundle(manifestUrl: string, signal: AbortSignal): Promise<AssetBundle> {
+export function disposeScene(scene:Group){
+  const released=new Set<object>();
+  const dispose=(item:{dispose:()=>void})=>{if(!released.has(item)){released.add(item);item.dispose();}};
+  scene.traverse(object=>{if(object instanceof Mesh){dispose(object.geometry);for(const material of Array.isArray(object.material)?object.material:[object.material]){for(const value of Object.values(material))if(value instanceof Texture)dispose(value);dispose(material);}}});
+}
+export async function loadBundle(manifestUrl: string, signal: AbortSignal,progress?:(label:string)=>void): Promise<AssetBundle> {
+  const started=performance.now();let downloaded=0;progress?.('Comprobando la versión…');
   const response = await fetch(manifestUrl, { signal, cache: 'no-cache' });
   if (!response.ok) throw new Error('No se pudo obtener la versión del modelo.');
   const manifest = await response.json() as Manifest;
@@ -17,17 +24,22 @@ export async function loadBundle(manifestUrl: string, signal: AbortSignal): Prom
     if (!/^[a-zA-Z0-9_.-]+$/.test(name)) throw new Error('Referencia de archivo inválida.');
     const fetched = await fetch(new URL(name, base), { signal });
     if (!fetched.ok) throw new Error('No se pudo descargar el departamento.');
-    const bytes = await fetched.arrayBuffer();
+    const reader=fetched.body?.getReader();const chunks:Uint8Array[]=[];let length=0;
+    if(!reader)throw new Error('El navegador no puede leer la descarga.');
+    while(true){const {done,value}=await reader.read();if(done)break;chunks.push(value);length+=value.length;downloaded+=value.length;progress?.(`Descargando departamento · ${(downloaded/1e6).toFixed(1)} MB`);}
+    const merged=new Uint8Array(length);let offset=0;for(const chunk of chunks){merged.set(chunk,offset);offset+=chunk.length;}const bytes=merged.buffer;
     if (await digest(bytes) !== manifest.hashes[name]) throw new Error('Los archivos pertenecen a versiones distintas. Vuelve a cargar.');
     return bytes;
   }));
   const collision: CollisionData = JSON.parse(new TextDecoder().decode(files[1]));
   if (collision.revision !== manifest.revision || collision.units !== 'm') throw new Error('Las colisiones no corresponden al modelo.');
-  const gltf = await new GLTFLoader().parseAsync(files[0], base.href);
-  gltf.scene.traverse(object => {
+  progress?.('Preparando el recorrido…');
+  const gltf = await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(files[0], base.href);
+  try { gltf.scene.traverse(object => {
     if (object.userData.revision && object.userData.revision !== manifest.revision) throw new Error('La geometría tiene una revisión diferente.');
     object.castShadow = true; object.receiveShadow = true;
   });
   if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
-  return { revision: manifest.revision, scene: gltf.scene, collision, eyeHeight: manifest.eye_height_m };
+  }catch(error){disposeScene(gltf.scene);throw error;}
+  return { revision: manifest.revision, scene: gltf.scene, collision, eyeHeight: manifest.eye_height_m,loadMs:performance.now()-started,bytes:downloaded };
 }
