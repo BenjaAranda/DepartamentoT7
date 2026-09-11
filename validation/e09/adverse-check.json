@@ -1,0 +1,37 @@
+{
+  "revision": "3b8848a03f921bd64711cc458be818a92fc938ee4860b824629ffd188bd66806",
+  "all_doors_open_and_close": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "D1_Wardrobe_Door1",
+    "D1_Wardrobe_Door2",
+    "D2_Wardrobe_Door1",
+    "D2_Wardrobe_Door2",
+    "D3_Wardrobe_Door1",
+    "D3_Wardrobe_Door2"
+  ],
+  "straight_distance_m": 0.3999223725526011,
+  "diagonal_distance_m": 0.400361491090949,
+  "low_fps_wall_stop": {
+    "x": 9.997791290283203,
+    "y": 1.6,
+    "z": -4.912137508392334
+  },
+  "window_stop": {
+    "x": 2.9963409900665283,
+    "y": 1.6,
+    "z": -0.24005839228630066
+  },
+  "pause_no_drift": true,
+  "reset_valid": true,
+  "retreat_from_closed_door": {
+    "x": 7.765732288360596,
+    "y": 1.6,
+    "z": -4.723957061767578
+  },
+  "unsupported_fall_is_not_hidden": true
+}

@@ -18,11 +18,13 @@ export class WalkEngine {
   controller: RAPIER.KinematicCharacterController;
   doors: DoorState[] = [];
   labels = new Map<number, string>();
+  floorHandles = new Set<number>();
   data: CollisionData;
   verticalVelocity = 0;
   accumulator = 0;
   elapsedSteps = 0;
   message = '';
+  disposed = false;
   constructor(data: CollisionData) {
     this.data = data;
     this.world = new RAPIER.World({ x: 0, y: -9.81, z: 0 });
@@ -30,12 +32,15 @@ export class WalkEngine {
     for (const c of data.colliders) {
       const collider = this.world.createCollider(RAPIER.ColliderDesc.cuboid(c.size[0] / 2, c.size[1] / 2, c.size[2] / 2).setTranslation(...c.center));
       this.labels.set(collider.handle, c.id);
+      const top=c.center[1]+c.size[1]/2;
+      if(c.center[1]<0&&top>=-.1&&top<=.05&&c.size[1]<.4)this.floorHandles.add(collider.handle);
     }
     const spawn = data.spawn || [0, 1.6, 1.5];
     this.body = this.world.createRigidBody(RAPIER.RigidBodyDesc.kinematicPositionBased().setTranslation(spawn[0], BODY_REST_Y, spawn[2]));
     this.player = this.world.createCollider(RAPIER.ColliderDesc.capsule(HALF_HEIGHT, RADIUS), this.body);
     this.labels.set(this.player.handle, 'PLAYER');
     this.controller = this.world.createCharacterController(.01);
+    this.controller.setNormalNudgeFactor(.01);
     this.controller.enableSnapToGround(.12);
     this.controller.setSlideEnabled(true);
     this.controller.setApplyImpulsesToDynamicBodies(false);
@@ -69,7 +74,13 @@ export class WalkEngine {
   nearestDoor(maxDistance = 1.55) {
     const p = this.body.translation();
     return this.doors.map(door => ({ door, distance: Math.hypot(p.x - door.data.pivot[0], p.z - door.data.pivot[2]) }))
-      .filter(q => q.distance <= maxDistance).sort((a, b) => a.distance - b.distance)[0]?.door;
+      .filter(q => {
+        if(q.distance>maxDistance)return false;
+        const target=q.door.body.translation(),dx=target.x-p.x,dz=target.z-p.z,length=Math.hypot(dx,dz);
+        if(length<.01)return true;
+        const hit=this.world.castRay(new RAPIER.Ray({x:p.x,y:1.1,z:p.z},{x:dx/length,y:0,z:dz/length}),length+.02,true,undefined,undefined,this.player);
+        return !hit||hit.collider.handle===q.door.collider.handle;
+      }).sort((a, b) => a.distance - b.distance)[0]?.door;
   }
   interact() {
     const door = this.nearestDoor();
@@ -90,15 +101,23 @@ export class WalkEngine {
   }
   step(input: WalkInput) {
     for (const door of this.doors) {
-      if (Math.abs(door.target - door.fraction) < 1e-6) continue;
+      if (Math.abs(door.target - door.fraction) < 1e-6) {door.body.setLinvel({x:0,y:0,z:0},true);door.body.setAngvel({x:0,y:0,z:0},true);continue;}
       // <= 1.72 degrees per fixed step bounds the continuous angular sweep.
       const next = door.fraction + Math.sign(door.target - door.fraction) * Math.min(Math.abs(door.target - door.fraction), STEP * 1.1);
       const pose = this.doorPose(door.data, next);
       const shape = new RAPIER.Cuboid(Math.max(.001, door.data.size[0] / 2 - .002), door.data.size[1] / 2 - .002, door.data.size[2] / 2 - .002);
       const hit = this.world.intersectionWithShape(pose.position, pose.rotation, shape, undefined, undefined, door.collider, undefined,
         collider => !this.labels.get(collider.handle)?.startsWith((door.data.opening || '__none') + '_'));
-      if (hit) {
+      // Stop before the controller's contact skin treats the leaf as a moving platform.
+      const player=this.body.translation(),dx=player.x-pose.position.x,dz=player.z-pose.position.z;
+      const localX=Math.cos(pose.angle)*dx-Math.sin(pose.angle)*dz,localZ=Math.sin(pose.angle)*dx+Math.cos(pose.angle)*dz;
+      const gapX=Math.max(0,Math.abs(localX)-door.data.size[0]/2),gapZ=Math.max(0,Math.abs(localZ)-door.data.size[2]/2);
+      // Two motion steps include the broad-phase contact cached by Rapier.
+      const contactMargin=.02+2*STEP*1.1*Math.abs(door.data.swing_radians)*Math.hypot(door.data.size[0],door.data.size[2]);
+      const nearPlayer=Math.hypot(gapX,gapZ)<RADIUS+contactMargin&&Math.abs(player.y-pose.position.y)<HALF_HEIGHT+RADIUS+door.data.size[1]/2;
+      if (hit||nearPlayer) {
         door.target = door.fraction; door.blocked = true;
+        door.body.setLinvel({x:0,y:0,z:0},true);door.body.setAngvel({x:0,y:0,z:0},true);
         this.message = 'Hay un obstáculo junto a la puerta.';
       } else this.placeDoor(door, next);
     }
@@ -113,9 +132,17 @@ export class WalkEngine {
     this.world.step(); this.elapsedSteps++;
   }
   advance(seconds: number, input: WalkInput) {
+    if(this.disposed)return;
     this.accumulator += Math.min(Math.max(seconds, 0), .1);
     while (this.accumulator >= STEP) { this.step(input); this.accumulator -= STEP; }
   }
-  get eye() { const p = this.body.translation(); return { x: p.x, y: p.y + 1.6 - BODY_REST_Y, z: p.z }; }
-  dispose() { this.world.free(); }
+  get eye() {
+    const p=this.body.translation();
+    const floor=this.world.castRay(new RAPIER.Ray(p,{x:0,y:-1,z:0}),HALF_HEIGHT+RADIUS+.05,true,undefined,undefined,this.player,undefined,c=>this.floorHandles.has(c.handle));
+    // The collision skin may nudge the capsule; the eye stays 1.60 m above its supporting floor.
+    // Outside that small support range it follows the body, so a fall is never hidden.
+    const supported=floor&&floor.timeOfImpact>=HALF_HEIGHT+RADIUS-.015;
+    return {x:p.x,y:supported?p.y-floor.timeOfImpact+1.6:p.y+1.6-BODY_REST_Y,z:p.z};
+  }
+  dispose() { if(!this.disposed){this.disposed=true;this.world.free();} }
 }

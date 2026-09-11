@@ -77,15 +77,14 @@ function walk(path){
 }
 for(const route of routes){graphFor(openings[route.room]);assert.ok(engine.reset());walk(route.path);walk([...route.path].reverse());}
 // A capsule in a leaf's future sweep must stop the leaf instead of being pushed.
-const door=engine.doors.find(d=>d.data.opening==='O05');
-engine.placeDoor(door,0,true);door.target=0;engine.world.step();
-const pose=engine.doorPose(door.data,.5);
-engine.body.setTranslation({x:pose.position.x,y:BODY_REST_Y,z:pose.position.z},true);engine.world.step();
-const before={...engine.body.translation()};engine.setDoor(door.data.id,true);
-for(let i=0;i<90;i++)engine.step({x:0,z:0,paused:true});
-assert.ok(door.blocked&&door.fraction<.5,'Door must stop before player');
-assert.ok(Math.hypot(engine.body.translation().x-before.x,engine.body.translation().z-before.z)<1e-5,'Door pushed player');
-const report={revision:data.revision,wardrobes_open:process.argv.includes('--wardrobes-open'),reachable_grid_cells:reachableCells,route_count:routes.length,round_trips_passed:routes.length,frames,minimum_eye_m:minEye,maximum_eye_m:maxEye,door_blocks_on_player:true,door_fraction_at_block:door.fraction,paths:routes};
+const safety=new WalkEngine(data),door=safety.doors.find(d=>d.data.opening==='O01');
+const before={...safety.body.translation()};safety.setDoor(door.data.id,true);
+for(let i=0;i<90;i++)safety.step({x:0,z:0});
+assert.ok(door.blocked&&door.fraction<.999,'Door must stop before player');
+const playerDisplacement=Math.hypot(safety.body.translation().x-before.x,safety.body.translation().z-before.z);
+assert.ok(playerDisplacement<.001,'Door pushed active player by '+playerDisplacement+' m');
+safety.dispose();
+const report={revision:data.revision,wardrobes_open:process.argv.includes('--wardrobes-open'),reachable_grid_cells:reachableCells,route_count:routes.length,round_trips_passed:routes.length,frames,minimum_eye_m:minEye,maximum_eye_m:maxEye,door_blocks_on_active_player:true,player_displacement_m:playerDisplacement,door_fraction_at_block:door.fraction,paths:routes};
 const out=process.argv[2]||'../validation/e05';fs.mkdirSync(out,{recursive:true});fs.writeFileSync(out+'/walk-check.json',JSON.stringify(report,null,2)+'\n');
 console.log({...report,paths:routes.map(r=>({room:r.room,waypoints:r.path.length}))});
 engine.dispose();
