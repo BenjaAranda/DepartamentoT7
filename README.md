@@ -57,3 +57,5 @@ Superficie exterior aproximada 77,10 m² (+0,44 respecto a 76,66); útil 69,43 m
 3. Desde `web/`, ejecutar el optimizador y las comprobaciones descritas en su README.
 4. Ejecutar `unreal/run-t7.ps1 import`, `check` y `capture`; comparar la misma revisión en todos los informes.
 5. Repetir solo las comprobaciones afectadas, compilar la web, actualizar GitHub y publicar el mismo sitio registrado. No cambiar archivos generados de forma aislada.
+
+Corrección posterior: [puertas, ejes de apertura y clóset D1](docs/CORRECCION_PUERTAS.md).

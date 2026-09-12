@@ -1,6 +1,6 @@
 # E08 · Integración Unreal Engine
 
-Revisión geométrica: `3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71`. Unreal Engine 5.8.2, Windows 11, MSVC 14.44.35228, Windows SDK 10.0.22621 y .NET Framework SDK 4.8. Compilación C++ final aprobada.
+Revisión geométrica: `02abe9c3384a2a380df8ac4e5c1d0038dc26b23d63ae34b6241f295964bfd619`. Unreal Engine 5.8.2, Windows 11, MSVC 14.44.35228, Windows SDK 10.0.22621 y .NET Framework SDK 4.8. Compilación C++ final aprobada.
 
 El nivel `/Game/T7/Apartment` contiene el departamento completo y su contexto. El importador comprobó los 40 muros contra las caras originales, 499 mallas y doce pivotes. Se generan 248 colisiones desde el mismo JSON que usa la web. Conversión única: glTF `(x,y,z)` metros → Unreal `(x,z,y) × 100` centímetros.
 

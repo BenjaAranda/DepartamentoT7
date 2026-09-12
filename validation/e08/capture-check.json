@@ -1,74 +1,73 @@
 {
-  "revision": "3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71",
+  "revision": "02abe9c3384a2a380df8ac4e5c1d0038dc26b23d63ae34b6241f295964bfd619",
   "engine": "5.8.2",
   "resolution": [
     1280,
     720
   ],
-  "renderer": "Direct3D 12",
   "capture_log_passed": true,
   "capture_log_errors": 0,
-  "map_sha256": "37a92ac1ecba4e8dae041fa6095a566defba9c8e46e993604cdadcf8b9c5e4e9",
+  "map_sha256": "a37428c5f9478eb44592c7ca013ee0b9e0317830bfac93dbba15522fc9fe7dd7",
   "views": [
     {
-      "sha256": "890cac21559ec9c1a0a5d14eae5249a0644a770f3ed8c72883831e99eb875ac5",
-      "bytes": 985918,
-      "file": "BATH.png"
+      "file": "BATH.png",
+      "bytes": 973636,
+      "sha256": "a3be8c69eb33994f111ac9ec9d617794c6d1305d85ccdd9d4864fda6744bf1b3"
     },
     {
-      "sha256": "5ef60c0ac6a1a6d520f8452437fd93e3ff4c8cd123642dbe061e19eb0d835546",
+      "file": "CORRIDOR.png",
       "bytes": 102722,
-      "file": "CORRIDOR.png"
+      "sha256": "5ef60c0ac6a1a6d520f8452437fd93e3ff4c8cd123642dbe061e19eb0d835546"
     },
     {
-      "sha256": "c70142f8cdaa555ff752d78d55d8e9bda6883b62b3602d9b526925b3fb020154",
+      "file": "D1.png",
       "bytes": 847136,
-      "file": "D1.png"
+      "sha256": "c70142f8cdaa555ff752d78d55d8e9bda6883b62b3602d9b526925b3fb020154"
     },
     {
-      "sha256": "990ffc0d3314af5747adcb83aea9411864af613cb833cc0017a89d13bcfa87a4",
-      "bytes": 811793,
-      "file": "D2.png"
+      "file": "D2.png",
+      "bytes": 812453,
+      "sha256": "2034756ee3bcd3bd24a293292e9b9dea735fb16754cb0da4938611703922ac72"
     },
     {
-      "sha256": "e123a3e71de5a0bbacbdf7e4a4bd8282f394fbd014c35b6e6a0b38b6848a57ea",
+      "file": "D3.png",
       "bytes": 774123,
-      "file": "D3.png"
+      "sha256": "e123a3e71de5a0bbacbdf7e4a4bd8282f394fbd014c35b6e6a0b38b6848a57ea"
     },
     {
-      "sha256": "6dc16072fc9c0ea7ab8f48ad9bbc4795eafa92cb734af656ba00f5701b1ef0ad",
+      "file": "DINING.png",
       "bytes": 1004739,
-      "file": "DINING.png"
+      "sha256": "6dc16072fc9c0ea7ab8f48ad9bbc4795eafa92cb734af656ba00f5701b1ef0ad"
     },
     {
-      "sha256": "7b7058a216f9548ad0c125b5bec4886d7e9c481d77dfd1a6b3d8a5dee53d9e05",
-      "bytes": 452864,
-      "file": "isometrica.png"
+      "file": "isometrica.png",
+      "bytes": 452862,
+      "sha256": "b7711a93ee2a5be9eaa9bf983a5eb24f96d071b2205381d82b25d7c90d626efb"
     },
     {
-      "sha256": "0dcdedd3930016171a91fa301916bc147a16c6944fcea56609fb9a35a89d98c5",
-      "bytes": 855424,
-      "file": "KITCHEN.png"
+      "file": "KITCHEN.png",
+      "bytes": 855030,
+      "sha256": "eb3ce618ff579ca58d7afb36898b8a7f30d6c10eff0c7d5d2bf2f97c18f853f9"
     },
     {
-      "sha256": "ed42b3b240cffb9d51ffe632ef68caaffa35033cd80d591e099e52850d56564b",
+      "file": "LIVING.png",
       "bytes": 909005,
-      "file": "LIVING.png"
+      "sha256": "ed42b3b240cffb9d51ffe632ef68caaffa35033cd80d591e099e52850d56564b"
     },
     {
-      "sha256": "62355abbd7ee822489b2cc70b550153d91c5c841a561fbf63567230e39ac714d",
-      "bytes": 843212,
-      "file": "LOGIA.png"
+      "file": "LOGIA.png",
+      "bytes": 844234,
+      "sha256": "2c623c2b19e1f993ca7e9cb29c1d20202fb6bda156d4cbcde113087739650cf7"
     },
     {
-      "sha256": "fad81294cc9513a83a3c97c705b08c77ded7dd2b9a451bd86732e8a3f0c40e2d",
-      "bytes": 872896,
-      "file": "planta.png"
+      "file": "planta.png",
+      "bytes": 871959,
+      "sha256": "6147dc0a2b7272bf547eab7b42d7e59e8199aeedbae6ecc699aeebdac09aa89a"
     },
     {
-      "sha256": "2f4262a1464acf5b62a38cd9eef2b31d249239d7723ee00fbf564d9d0445e824",
-      "bytes": 722116,
-      "file": "SHOWER.png"
+      "file": "SHOWER.png",
+      "bytes": 721981,
+      "sha256": "12a8e4ba290c0638739fd8b1b06269691f593830dc4ff6c7e67f96a006f85f9c"
     }
   ]
 }

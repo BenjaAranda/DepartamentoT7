@@ -1,46 +1,46 @@
 {
-  "revision": "3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71",
+  "revision": "02abe9c3384a2a380df8ac4e5c1d0038dc26b23d63ae34b6241f295964bfd619",
   "date": "2026-09-12",
   "files": [
     {
       "path": "assets/interchange/departamento-t7.glb",
-      "bytes": 2338352,
-      "sha256": "660ec3e88a8d502dd403c44c342633cf14cf13cdf1237cf06a14bf57cb74411f"
+      "bytes": 2338380,
+      "sha256": "2a7852233c0196eb4238e880b78ef52baa8292f5fd85534cff1b6c8604a4788a"
     },
     {
       "path": "assets/colliders/departamento-t7.json",
-      "bytes": 108939,
-      "sha256": "a4ed8cc20845aea966d99507bf5fc185c0adce08f6e043b5720611fc71dfff01"
+      "bytes": 108947,
+      "sha256": "001ba19d098968dd4c3c9816801cbc66b555241beb8422a5be897f47d0101a28"
     },
     {
       "path": "blender/DepartamentoT7.blend",
-      "bytes": 1353595,
-      "sha256": "1725805f353bd43671d63233c6e845d7590016176f1a2b2714422fb1012e0e24"
+      "bytes": 1353321,
+      "sha256": "3d3498e2b7a69906f649e931223dd6f71a34c8b0fd0204278719c6c134581aa6"
     },
     {
       "path": "web/public/models/departamento-t7-web.glb",
-      "bytes": 1503300,
-      "sha256": "426d9d20593e6cdedf1ba83c0384d4c36c6b0ee9071964d6cb9c5befa973f367"
+      "bytes": 1496956,
+      "sha256": "f53f5b9237d2488be633611ac816b822ce78015429e0b20ebca9da7d83af569e"
     },
     {
       "path": "web/public/models/departamento-t7.json",
-      "bytes": 108939,
-      "sha256": "a4ed8cc20845aea966d99507bf5fc185c0adce08f6e043b5720611fc71dfff01"
+      "bytes": 108947,
+      "sha256": "001ba19d098968dd4c3c9816801cbc66b555241beb8422a5be897f47d0101a28"
     },
     {
       "path": "web/public/models/manifest.json",
       "bytes": 780,
-      "sha256": "1d80444a994d5a00f68d6b4ca6c080b56fbab3d7c935e09a3c6e5480ccb80804"
+      "sha256": "e5c69a8011bc17b4f712130e04faa503fd1a721b5a6915db1eb3bb8172ae6885"
     },
     {
       "path": "unreal/T7/Content/T7/Apartment.umap",
       "bytes": 1743624,
-      "sha256": "37a92ac1ecba4e8dae041fa6095a566defba9c8e46e993604cdadcf8b9c5e4e9"
+      "sha256": "a37428c5f9478eb44592c7ca013ee0b9e0317830bfac93dbba15522fc9fe7dd7"
     },
     {
       "path": "unreal/T7/Content/Data/departamento-t7.json",
-      "bytes": 108939,
-      "sha256": "a4ed8cc20845aea966d99507bf5fc185c0adce08f6e043b5720611fc71dfff01"
+      "bytes": 108947,
+      "sha256": "001ba19d098968dd4c3c9816801cbc66b555241beb8422a5be897f47d0101a28"
     }
   ],
   "current_revision_checks": [
@@ -51,7 +51,8 @@
     "validation/e10/walk-check.json",
     "validation/e10/contact-soak.json",
     "validation/e10/furniture-check.json",
-    "validation/e10/browser-final.json"
+    "validation/door-fix/transforms.json",
+    "validation/door-fix/clearance.json"
   ],
   "passed": true
 }

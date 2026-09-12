@@ -1,29 +1,29 @@
 {
-  "revision": "3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71",
+  "revision": "02abe9c3384a2a380df8ac4e5c1d0038dc26b23d63ae34b6241f295964bfd619",
   "stages": [
     {
       "stage": "import-apartment",
       "exit_code": 0,
       "errors": 0,
-      "log_sha256": "9a3ab9f799a8ddbe32952b4808d4fea431665b1af0cfbe09ea831866b9aa6e44"
+      "log_sha256": "649d3f611bc3e65f99578088679518b4a1665cf5b11772a3ad700d97b9e3c495"
     },
     {
       "stage": "prepare-evidence",
       "exit_code": 0,
       "errors": 0,
-      "log_sha256": "53af72bbb3c5ed41d707e9b0175eb40971d1ab99fac4c60bddf8456d8e73d278"
+      "log_sha256": "10720343e14342e2a4f503328130f54422d99878065d57cfeccdaa9660613700"
     },
     {
       "stage": "Validate",
       "exit_code": 0,
       "errors": 0,
-      "log_sha256": "4851676817ad7faf99fdafa0e1cd3635b1ed9e3d233d1441e68519d0a15db4df"
+      "log_sha256": "b9d7b2b4178db1bf365a271dd1b39bf7de113737c4094e4b81b94404d29241ca"
     },
     {
       "stage": "Capture",
       "exit_code": 0,
       "errors": 0,
-      "log_sha256": "8c85403e86cf0cc8b425b5b91ee918af132bb81fb6f3c79d3b1db884064edf6d"
+      "log_sha256": "79db5f910b5d3d0f98fe8941af74e284ee1857bb18624cdc912dd6afc7ff771f"
     }
   ],
   "saved_reopen_repair_count": 0,

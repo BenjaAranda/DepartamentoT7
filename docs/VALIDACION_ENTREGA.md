@@ -1,6 +1,6 @@
 # DepartamentoT7 · Validación de entrega
 
-Fecha: 12 de septiembre de 2026. Revisión compartida: `3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71`. Blender 5.2.1 LTS, Unreal 5.8.2 y aplicación web compilada. Publicación y comprobación en producción completadas; evidencia en `validation/e11/publication-check.json`.
+Fecha: 12 de septiembre de 2026. Revisión compartida actual: `02abe9c3384a2a380df8ac4e5c1d0038dc26b23d63ae34b6241f295964bfd619`. Blender 5.2.1 LTS, Unreal 5.8.2 y aplicación web compilada. Publicación y comprobación en producción completadas; evidencia en `validation/e11/publication-check.json`.
 
 ## Arquitectura y alcance dimensional
 
@@ -39,9 +39,11 @@ La reconstrucción sigue un plano rasterizado, sin cotas completas. El residuo m
 - Estar: sofá y TV enfrentados. Comedor con mesa y sillas; cocina equipada; baño continuo, apoyos y ducha al fondo; logia con lavadora y lavadero.
 - Alfombras, plantas, luminarias, cuadros, cojines y accesorios revisados con el mobiliario. No se interpretaron líneas de mobiliario o ducha como tabiques.
 
-La puerta del baño abre según el plano y puede ocupar la circulación occidental cuando permanece abierta. La ruta cierra la hoja después de usarla; no se altera la arquitectura para ocultar ese comportamiento.
+Por corrección posterior solicitada por el usuario, la puerta del baño abre hacia dentro, igual que D2; sus hojas no ocupan la circulación común. Ver `CORRECCION_PUERTAS.md`, que documenta además la corrección de ejes visuales y el barrido contra las jambas.
 
 ## Rendimiento observado y límites
+
+Mediciones históricas de la revisión `3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71`; la corrección posterior de puertas se valida por separado en `CORRECCION_PUERTAS.md`.
 
 Windows 11, Ryzen 7 8845HS, 15,31 GB RAM y RTX 4070 Laptop. Chromium integrado, ANGLE Direct3D11, ventana 1280 × 800, lienzo 1280 × 592,67 y DPR 1, calidad estándar. Se ejecutaron 20 órdenes de tres segundos: 60 s de movimiento dentro de 89,43 s de observación, incluidos intervalos entre tres tandas. La muestra acumulada de 99,27 s incluye la preparación inicial. No se presenta como un minuto de marcha ininterrumpida.
 
