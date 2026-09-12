@@ -1,8 +1,8 @@
 # Tareas del simulador T7
 
-Actualizado: 10 de septiembre de 2026. T01–T49 implementadas y revisadas; E08 en ejecución. Base dimensional aproximada documentada.
+Actualizado: 12 de septiembre de 2026. E08–E10 comprobadas con límites documentados; E11 en preparación de publicación. Base dimensional aproximada documentada.
 
-Esta es la lista de seguimiento principal del nuevo proyecto `simulador-t7`.
+Esta es la lista de seguimiento principal del proyecto `DepartamentoT7` (carpeta local `simulador-t7`).
 
 Plan y criterios: `PLAN_MAESTRO_T7.md`. Los códigos V01–V15 se refieren a sus pruebas de validación.
 
@@ -109,37 +109,37 @@ Dependencia: E03 para prueba mínima; E07 para integración final. Instalación 
 
 - [x] T48. Revalidar instalación de Unreal, abrir proyecto nuevo, fijar versión y comprobar guardado; si sigue instalándose, registrar pendiente y continuar E09.
 - [x] T49. Importar la prueba de escala de T18; medir 100 cm y altura ocular de 160 cm, orientación y pivote sin doble conversión.
-- [ ] T50. Importar departamento y contexto de la misma revisión; reconstruir colisiones e interacciones a partir de los mismos datos.
-- [ ] T51. Configurar materiales/iluminación Unreal y personaje de recorrido; mantener geometría sincronizada con Blender.
-- [ ] T52. Comparar dimensiones y vistas; recorrer todas las estancias en Unreal y guardar evidencia V04–V11.
+- [x] T50. Importar departamento y contexto de la misma revisión; reconstruir colisiones e interacciones a partir de los mismos datos. Evidencia: `validation/e08/apartment-import.json` y `runtime-check.json`; 40 muros medidos, 248 colliders, 12 barridos y veinte recorridos en Unreal.
+- [x] T51. Configurar materiales/iluminación Unreal y personaje de recorrido; mantener geometría sincronizada con Blender.
+- [x] T52. Comparar dimensiones y vistas; recorrer todas las estancias en Unreal y guardar evidencia V04–V11.
 - [ ] T53. Guardar proyecto y comprobar reapertura; documentar importación/actualización y subir el hito con sus activos reproducibles.
 
 ## E09. Web final y optimización
 
 Dependencia: E07 y E05. Hito: simulador completo, medido y preparado para revisión final.
 
-- [ ] T54. Optimizar GLB web, materiales y texturas; conservar IDs, pivotes y escala; mantener GLB de intercambio compatible con Unreal.
-- [ ] T55. Cargar GLB y colliders de forma atómica y comprobar su revisión; añadir progreso, reintento y estado de error útil.
-- [ ] T56. Finalizar controles en español, ayuda, pausa, reinicio, pantalla completa y táctiles; priorizar la escena en la pantalla.
-- [ ] T57. Añadir modos planta/isométrica que restauren techo, vecinos y posición segura al volver al recorrido.
-- [ ] T58. Medir FPS, memoria y carga en dispositivos identificados; ajustar calidad y resolver V12–V14.
-- [ ] T59. Probar modificación controlada y reexportación; verificar que web y Unreal reciben geometría y colisiones de la misma revisión, V10.
+- [x] T54. Optimizar GLB web, materiales y texturas; conservar IDs, pivotes y escala; mantener GLB de intercambio compatible con Unreal. Evidencia: `validation/e09/optimization.json` y `web-glb-check.json`; 1,50 MB, 511 nodos y 12 pivotes conservados.
+- [x] T55. Cargar GLB y colliders de forma atómica y comprobar su revisión; añadir progreso, reintento y estado de error útil. Evidencia: once comprobaciones en `validation/e09/loader-check.json` y carga real en navegador.
+- [x] T56. Finalizar controles en español, ayuda, pausa, reinicio, pantalla completa y táctiles; priorizar la escena en la pantalla.
+- [x] T57. Añadir modos planta/isométrica que restauren techo, vecinos y posición segura al volver al recorrido.
+- [x] T58. Medir FPS, memoria y carga en dispositivos identificados; ajustar calidad y resolver V12–V14.
+- [x] T59. Probar modificación controlada y reexportación; verificar que web y Unreal reciben geometría y colisiones de la misma revisión, V10.
 
 ## E10. Validación de entrega
 
 Dependencia: E08 y E09. Hito: informe completo sin pendientes críticos.
 
-- [ ] T60. Generar evidencias finales de V01–V05: plano superpuesto, isométricas, superficie, escala y POV.
-- [ ] T61. Cerrar V06, V07 y V11: inventario exacto, cero penetraciones y barridos correctos; revisar cada requisito del usuario.
-- [ ] T62. Cerrar V08–V09: recorrido completo y casos adversos en versión final; ninguna ruta depende de reiniciar para salir.
-- [ ] T63. Cerrar V10 y V12–V14: sincronización, rendimiento, carga e interfaz; identificar límites de dispositivos realmente probados.
-- [ ] T64. Corregir fallos en su fuente, regenerar y repetir pruebas afectadas; producir informe con archivos y revisiones reales.
+- [x] T60. Generar evidencias finales de V01–V05: plano superpuesto, isométricas, superficie, escala y POV.
+- [x] T61. Cerrar V06, V07 y V11: inventario exacto, cero penetraciones y barridos correctos; revisar cada requisito del usuario.
+- [x] T62. Cerrar V08–V09: recorrido completo y casos adversos en versión final; ninguna ruta depende de reiniciar para salir.
+- [x] T63. Cerrar V10 y V12–V14: sincronización, rendimiento, carga e interfaz; identificar límites de dispositivos realmente probados.
+- [x] T64. Corregir fallos en su fuente, regenerar y repetir pruebas afectadas; producir informe con archivos y revisiones reales.
 
 ## E11. GitHub, publicación y entrega
 
 Dependencia: E10. Hito: V15 superada y todos los entregables accesibles.
 
-- [ ] T65. Compilar producción de la revisión validada y comprobar que incluye modelo, texturas y colliders correctos.
+- [x] T65. Compilar producción de la revisión validada y comprobar que incluye modelo, texturas y colliders correctos.
 - [ ] T66. Actualizar documentación, tareas, activos y reporte en el repositorio GitHub nuevo; registrar commit de entrega.
 - [ ] T67. Guardar y desplegar esa misma versión en Sites con el acceso registrado; esperar resultado exitoso real.
 - [ ] T68. Abrir la URL publicada y comprobar carga, manifiesto y recorrido esencial; resolver fallos antes de entregar.
@@ -148,6 +148,8 @@ Dependencia: E10. Hito: V15 superada y todos los entregables accesibles.
 
 ## Continuación concreta
 
-E07 cerrada: materiales PBR, UV en metros, decoración, iluminación con techo presente y veinte recorridos repetidos; cero penetraciones muebles/decoración contra arquitectura. Evidencia: VALIDACION_E07.md y validation/e07/.
+E08: importación, reapertura sin reparaciones, veinte rutas y doce capturas aprobadas con la revisión final. T53 pendiente de subir el hito a GitHub.
 
-E08 T48–T49: Unreal 5.8.2 ejecutado; proyecto nuevo guardado y prueba GLB importada, regla de 100 cm y ojo a 160 cm medidos. Seguir T50–T53 con importación completa, interacciones, recorrido y reapertura. Preparación de herramientas MSVC compatibles en curso. E09–E11 siguen pendientes. Conservar el criterio de superficie aproximada y registrar pruebas reales.
+E09 y E10: revisión `3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71`. Cuadro de D2 corregido desde Blender, cero penetraciones, doce barridos, veinte rutas web y 40 pruebas repetidas de contacto. Cinco viajes adicionales en navegador, sin atasco y con 60 s de movimiento. Aproximadamente 70 FPS y carga de 1,43 s en el equipo identificado. Informe `VALIDACION_ENTREGA.md`; V02 conserva la salvedad de 12,073 mm, y Chrome/Edge separados y móvil físico no se presentan como probados.
+
+E11: revisión final de tipos, lint y compilación, subida profesional a GitHub y publicación del mismo sitio registrado. Todavía no hay URL publicada comprobada; T67–T70 permanecen pendientes.

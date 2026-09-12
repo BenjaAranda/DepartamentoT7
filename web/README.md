@@ -2,7 +2,7 @@
 
 Base web independiente de Los Altos de Algarrobo, creada con el inicializador oficial de Sites 0.3.0 y el complemento shadcn.
 
-Estado de T02: completada; consultar `../docs/VALIDACION_T02.md` para resultados y alcance. El modelo, la física y el recorrido se incorporan en etapas posteriores del plan. La página inicial informa de esa ausencia sin mostrar una reconstrucción ficticia.
+Simulador amueblado con vistas de inspección, recorrido físico, puertas y armarios interactivos. Three.js/React Three Fiber renderiza el GLB optimizado; Rapier usa los colliders exportados desde la misma fuente de Blender.
 
 ## Desarrollo
 
@@ -36,3 +36,29 @@ La compilación utiliza Vinext, Vite y la integración de Sites para Cloudflare.
 Las carpetas para Blender, Unreal, las medidas y la evidencia quedaron organizadas junto a `web/` en T03. Consultar `../docs/ALMACENAMIENTO.md` para los archivos grandes: todo `public/` se conserva como archivos completos, sin filtros LFS. La publicación está prevista tras validar el simulador completo, en E11.
 
 El sitio quedó registrado en T05 con acceso privado solo para el propietario, sin versiones ni despliegues. Consultar `../docs/VALIDACION_T05.md` y `../docs/SITE_REGISTRATION.json` para la evidencia y la dirección prevista. No confundir el registro con una publicación ni volver a crear el sitio.
+
+## Validación actual
+
+Desde `web/`:
+
+```powershell
+node scripts/optimize-model.mjs
+node scripts/check-web-model.mjs
+node scripts/check-apartment-assets.mjs
+node scripts/check-loader.mjs
+node scripts/check-furniture.mjs ../validation/e10
+node scripts/check-walk.mjs ../validation/e10
+node scripts/check-walk.mjs ../validation/e10/wardrobes-open --wardrobes-open
+node scripts/check-walk-adverse.mjs ../validation/e10
+node scripts/check-contact-soak.mjs
+npm run lint
+npm run typecheck
+npm run build
+npm start -- --port 3001
+```
+
+Detener la vista de producción antes de reconstruir en Windows, porque puede mantener bloqueado `dist/`. No sirve la carpeta de Blender en el sitio. La web carga `public/models/manifest.json`, verifica hashes y revisión, y publica el GLB comprimido de 1,50 MB. Conserva también el GLB original para intercambio.
+
+Las mutaciones de escena Three.js y cámara suceden en efectos y callbacks de cuadro; se excluye únicamente ese adaptador de la regla de inmutabilidad del compilador React. Las reglas restantes, tipos y compilación siguen activas. El plano raster conserva sus píxeles originales intencionalmente.
+
+Informe de resultados, hardware y límites: `../docs/VALIDACION_ENTREGA.md`. No se certifica rendimiento móvil con la emulación de tamaño de pantalla.
