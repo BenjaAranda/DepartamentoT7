@@ -4,7 +4,7 @@ Proyecto independiente del simulador 3D del Departamento Tipo T7. El plan y el e
 
 Repositorio privado: [BenjaAranda/DepartamentoT7](https://github.com/BenjaAranda/DepartamentoT7). Fuentes de Blender, contenido Unreal, GLB, colisiones y aplicación web versionados. Las [12 etapas de seguimiento](https://github.com/BenjaAranda/DepartamentoT7/issues) conservan los IDs y casillas del plan; GitHub Projects requiere permisos que la conexión actual no tiene. Ver [docs/VALIDACION_T06.md](docs/VALIDACION_T06.md) y [cómo mantener el seguimiento](docs/SEGUIMIENTO_GITHUB.md).
 
-El sitio web quedó registrado en T05, con acceso privado solo para el propietario. Sigue sin publicar; su configuración y evidencia están en [docs/VALIDACION_T05.md](docs/VALIDACION_T05.md). La publicación del simulador validado corresponde a E11.
+**[Abrir simulador publicado](https://departamentot7.benjaaranda.chatgpt.site)** · Acceso privado con la cuenta propietaria de ChatGPT. Publicación y recorrido comprobados en producción el 12 de septiembre de 2026. [Entrega y archivos](docs/ENTREGA.md) · [Evidencia E11](validation/e11/publication-check.json).
 
 ## Organización
 

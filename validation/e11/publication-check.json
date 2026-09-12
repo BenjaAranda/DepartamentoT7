@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-12",
+  "project_id": "appgprj_6aa0c4d0ff688191a8421e732e9b5d35",
+  "version_id": "appgprj_6aa0c4d0ff688191a8421e732e9b5d35~appgver_055741efcfb881919c733f13e064dab1",
+  "version_number": 1,
+  "deployment_id": "appgdep_6aa4cdd326488191bd24783431810bb9",
+  "status": "succeeded",
+  "url": "https://departamentot7.benjaaranda.chatgpt.site",
+  "audience": "owner-private",
+  "source_commit": "7b6cc46307056028c88519c08129f799e31e3743",
+  "github_implementation_commit": "740e825c03ee610ef3106a7bf739cd308f92b8b8",
+  "revision": "3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71",
+  "archive_sha256": "c57affe26253d9301fb044df2edced9060cac67443796487d2f25db96f2d1f65",
+  "production_browser": {
+    "signed_in_as_owner": true,
+    "scene_loaded": true,
+    "matching_revision": true,
+    "integrity_checked_by_loader": true,
+    "eye_m": 1.6,
+    "movement_seconds": 9,
+    "x_after_movements": [
+      7.286950588226318,
+      3.016590118408203,
+      7.789731025695801
+    ],
+    "closed_door_blocks": true,
+    "retreat_succeeds": true,
+    "bath_door_open_fraction": 1,
+    "isometric_render_reviewed": true,
+    "model_load_ms": 857.1000000014901,
+    "ready_ms": 8733.599999997765,
+    "network_scope": "Live deployment; not the controlled 50 Mbps benchmark",
+    "console_errors": []
+  },
+  "github_push": {
+    "passed": true,
+    "lfs_objects": 535,
+    "lfs_transfer_mb": 58
+  },
+  "passed": true
+}

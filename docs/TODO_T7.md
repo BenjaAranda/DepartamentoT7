@@ -1,6 +1,6 @@
 # Tareas del simulador T7
 
-Actualizado: 12 de septiembre de 2026. E08–E10 comprobadas con límites documentados; E11 en preparación de publicación. Base dimensional aproximada documentada.
+Actualizado: 12 de septiembre de 2026. E00–E11 completadas; publicación privada y recorrido en producción comprobados. Base dimensional aproximada documentada.
 
 Esta es la lista de seguimiento principal del proyecto `DepartamentoT7` (carpeta local `simulador-t7`).
 
@@ -112,7 +112,7 @@ Dependencia: E03 para prueba mínima; E07 para integración final. Instalación 
 - [x] T50. Importar departamento y contexto de la misma revisión; reconstruir colisiones e interacciones a partir de los mismos datos. Evidencia: `validation/e08/apartment-import.json` y `runtime-check.json`; 40 muros medidos, 248 colliders, 12 barridos y veinte recorridos en Unreal.
 - [x] T51. Configurar materiales/iluminación Unreal y personaje de recorrido; mantener geometría sincronizada con Blender.
 - [x] T52. Comparar dimensiones y vistas; recorrer todas las estancias en Unreal y guardar evidencia V04–V11.
-- [ ] T53. Guardar proyecto y comprobar reapertura; documentar importación/actualización y subir el hito con sus activos reproducibles.
+- [x] T53. Guardar proyecto y comprobar reapertura; documentar importación/actualización y subir el hito con sus activos reproducibles.
 
 ## E09. Web final y optimización
 
@@ -140,16 +140,16 @@ Dependencia: E08 y E09. Hito: informe completo sin pendientes críticos.
 Dependencia: E10. Hito: V15 superada y todos los entregables accesibles.
 
 - [x] T65. Compilar producción de la revisión validada y comprobar que incluye modelo, texturas y colliders correctos.
-- [ ] T66. Actualizar documentación, tareas, activos y reporte en el repositorio GitHub nuevo; registrar commit de entrega.
-- [ ] T67. Guardar y desplegar esa misma versión en Sites con el acceso registrado; esperar resultado exitoso real.
-- [ ] T68. Abrir la URL publicada y comprobar carga, manifiesto y recorrido esencial; resolver fallos antes de entregar.
-- [ ] T69. Entregar URL, repositorio, Blender, proyecto Unreal, GLB, colliders, informe y controles de uso; registrar cómo reproducir y actualizar.
-- [ ] T70. Marcar completo únicamente tras verificar los entregables; mantener las siguientes correcciones dentro de este mismo proyecto y repositorio.
+- [x] T66. Actualizar documentación, tareas, activos y reporte en el repositorio GitHub nuevo; registrar commit de entrega.
+- [x] T67. Guardar y desplegar esa misma versión en Sites con el acceso registrado; esperar resultado exitoso real.
+- [x] T68. Abrir la URL publicada y comprobar carga, manifiesto y recorrido esencial; resolver fallos antes de entregar.
+- [x] T69. Entregar URL, repositorio, Blender, proyecto Unreal, GLB, colliders, informe y controles de uso; registrar cómo reproducir y actualizar.
+- [x] T70. Marcar completo únicamente tras verificar los entregables; mantener las siguientes correcciones dentro de este mismo proyecto y repositorio.
 
-## Continuación concreta
+## Estado de entrega
 
-E08: importación, reapertura sin reparaciones, veinte rutas y doce capturas aprobadas con la revisión final. T53 pendiente de subir el hito a GitHub.
+P01–P08 y T01–T70 completadas con las salvedades dimensionales y de dispositivos registradas en `VALIDACION_ENTREGA.md`. Revisión compartida `3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71`.
 
-E09 y E10: revisión `3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71`. Cuadro de D2 corregido desde Blender, cero penetraciones, doce barridos, veinte rutas web y 40 pruebas repetidas de contacto. Cinco viajes adicionales en navegador, sin atasco y con 60 s de movimiento. Aproximadamente 70 FPS y carga de 1,43 s en el equipo identificado. Informe `VALIDACION_ENTREGA.md`; V02 conserva la salvedad de 12,073 mm, y Chrome/Edge separados y móvil físico no se presentan como probados.
+[Simulador privado publicado](https://departamentot7.benjaaranda.chatgpt.site), fuente y activos subidos a GitHub. En producción se verificaron carga, integridad, revisión, colisión con puerta, retroceso, apertura del baño y vista isométrica, sin errores de consola. Evidencia `validation/e11/publication-check.json`.
 
-E11: revisión final de tipos, lint y compilación, subida profesional a GitHub y publicación del mismo sitio registrado. Todavía no hay URL publicada comprobada; T67–T70 permanecen pendientes.
+Archivos, controles y reproducción: `ENTREGA.md`. No quedan tareas de implementación de este plan; próximas correcciones dentro de DepartamentoT7. Las limitaciones V02, móvil físico y navegadores independientes permanecen explícitas, no se convierten en aprobaciones ficticias.

@@ -1,6 +1,6 @@
 # DepartamentoT7 · Validación de entrega
 
-Fecha: 12 de septiembre de 2026. Revisión compartida: `3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71`. Blender 5.2.1 LTS, Unreal 5.8.2 y aplicación web compilada. La publicación se registra por separado en E11.
+Fecha: 12 de septiembre de 2026. Revisión compartida: `3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71`. Blender 5.2.1 LTS, Unreal 5.8.2 y aplicación web compilada. Publicación y comprobación en producción completadas; evidencia en `validation/e11/publication-check.json`.
 
 ## Arquitectura y alcance dimensional
 
@@ -28,7 +28,7 @@ La reconstrucción sigue un plano rasterizado, sin cotas completas. El residuo m
 | V12 · Rendimiento | Aproximadamente 69,91 FPS, percentil 95 de 14,5 ms en equipo de referencia; sin medición física móvil. |
 | V13 · Carga | Escena utilizable 1,43 s a 50 Mbps locales sin caché; activos esenciales 1,61 MB, recursos transferidos 5,59 MB. |
 | V14 · Interfaz | Navegador Chromium integrado y pantalla móvil emulada de 390 × 844. Ayuda, controles, pausa, retorno, pantalla completa, calidad y restauración de contexto comprobados. Chrome/Edge independientes no disponibles; no se declaran probados. |
-| V15 · Publicación | Pendiente de URL y comprobación en producción; consultar E11. |
+| V15 · Publicación | [Sitio privado publicado](https://departamentot7.benjaaranda.chatgpt.site); carga, revisión, colisión, retroceso, puerta y vista isométrica comprobados en producción. |
 
 ## Inventario solicitado
 
