@@ -1,5 +1,5 @@
 {
-  "revision": "3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71",
+  "revision": "02abe9c3384a2a380df8ac4e5c1d0038dc26b23d63ae34b6241f295964bfd619",
   "checks": [
     {
       "name": "manifest unavailable",
@@ -46,6 +46,6 @@
       "passed": true
     }
   ],
-  "asset_bytes": 1612239,
+  "asset_bytes": 1605903,
   "scope": "Node structural loader with real compressed GLB and streamed responses; pixel rendering tested separately in browser."
 }

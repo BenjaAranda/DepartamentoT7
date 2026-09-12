@@ -28,6 +28,13 @@ data=dict(schema_version=1,project='DepartamentoT7',units='m',axes='Blender XYZ:
           walls=[dict(id=w['id'],polygon_xy_m=project(w['polygon_xy_m']),height_m=v['slab_bottom'],source='T11/'+w['id'],height_source='T14/slab_bottom') for w in p['walls']],
           openings=[dict(id=o['id'],name=o['name'],kind=o['kind'],axis=o['axis'],span_xy_m=project(o['span_xy_m']),polygon_xy_m=opening_polygon(o),width_m=o['traced_span_m']*factor,source='T11/'+o['id']) for o in p['openings']],
           doors=[dict(id=d['id'],opening=d['opening'],hinge_xy_m=project([d['hinge_xy_m']])[0],closed_tip_xy_m=project([d['closed_tip_xy_m']])[0],swing_deg=d['blender_swing_degrees'],source='T11/'+d['id']) for d in p['doors']])
+adjustments_path='architecture/model/door-adjustments.json'
+adjustments=read(adjustments_path)
+data['sources'][adjustments_path]=sha(adjustments_path)
+for door in data['doors']:
+    if door['id'] in adjustments['doors']:
+        door.update(adjustments['doors'][door['id']])
+        door['adjustment_source']=adjustments_path
 data['revision']=hashlib.sha256(json.dumps(data,sort_keys=True).encode()).hexdigest()
 dest=ROOT/'architecture/model';dest.mkdir(exist_ok=True)
 (dest/'departamento-t7.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')

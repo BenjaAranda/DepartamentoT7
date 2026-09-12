@@ -1,0 +1,79 @@
+{
+  "revision": "02abe9c3384a2a380df8ac4e5c1d0038dc26b23d63ae34b6241f295964bfd619",
+  "checks": [
+    {
+      "id": "P01",
+      "samples": 91,
+      "maximum_visual_collider_error_m": 0.000008053907245081658,
+      "previous_euler_error_m": 0.000008053907245081658
+    },
+    {
+      "id": "P02",
+      "samples": 91,
+      "maximum_visual_collider_error_m": 0.00001468681571220181,
+      "previous_euler_error_m": 0.00001468681571220181
+    },
+    {
+      "id": "P03",
+      "samples": 91,
+      "maximum_visual_collider_error_m": 0.000013025420197685081,
+      "previous_euler_error_m": 0.8233738324173485
+    },
+    {
+      "id": "P04",
+      "samples": 91,
+      "maximum_visual_collider_error_m": 0.000015042171077946512,
+      "previous_euler_error_m": 0.8197791840099922
+    },
+    {
+      "id": "P05",
+      "samples": 91,
+      "maximum_visual_collider_error_m": 0.0000028786001224219224,
+      "previous_euler_error_m": 0.0000028786001224219224
+    },
+    {
+      "id": "P06",
+      "samples": 91,
+      "maximum_visual_collider_error_m": 0.00000262429103456961,
+      "previous_euler_error_m": 0.789355602789153
+    },
+    {
+      "id": "D1_Wardrobe_Door1",
+      "samples": 91,
+      "maximum_visual_collider_error_m": 0.000021794388471149188,
+      "previous_euler_error_m": 0.000021794388471149188
+    },
+    {
+      "id": "D1_Wardrobe_Door2",
+      "samples": 91,
+      "maximum_visual_collider_error_m": 0.00002181340548367525,
+      "previous_euler_error_m": 0.4800142005615108
+    },
+    {
+      "id": "D2_Wardrobe_Door1",
+      "samples": 91,
+      "maximum_visual_collider_error_m": 0.000014698416188536964,
+      "previous_euler_error_m": 0.000014698416188536964
+    },
+    {
+      "id": "D2_Wardrobe_Door2",
+      "samples": 91,
+      "maximum_visual_collider_error_m": 0.000014730103223219429,
+      "previous_euler_error_m": 0.000014730103223219429
+    },
+    {
+      "id": "D3_Wardrobe_Door1",
+      "samples": 91,
+      "maximum_visual_collider_error_m": 0.000014697297444953535,
+      "previous_euler_error_m": 0.000014697297444953535
+    },
+    {
+      "id": "D3_Wardrobe_Door2",
+      "samples": 91,
+      "maximum_visual_collider_error_m": 0.000014709145434110434,
+      "previous_euler_error_m": 0.000014709145434110434
+    }
+  ],
+  "wardrobe_d1_initially_closed": true,
+  "passed": true
+}

@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { loadBundle, disposeScene, type AssetBundle } from './asset-loader';
 import { initPhysics, WalkEngine } from './walk-engine';
+import { applyDoorAngle } from './door-transform';
 import { useT7Tools, type T7Actions } from './webmcp';
 
 type Controls = { keys: Set<string>; yaw: number; pitch: number; command?:{f:number;r:number;left:number;finish:()=>void} };
@@ -48,7 +49,7 @@ function Scene({bundle,engine,mode,paused,controls,onStatus,metrics,lightweight}
     for(const door of engine.doors){
       const pivot=bundle.scene.getObjectByName(door.data.pivot_name||'');
       const angle=engine.doorPose(door.data,door.fraction).angle;
-      if(pivot&&Math.abs(pivot.rotation.y-angle)>1e-8){pivot.rotation.y=angle;gl.shadowMap.needsUpdate=true;}
+      if(pivot&&applyDoorAngle(pivot,angle))gl.shadowMap.needsUpdate=true;
     }
     if(mode==='walk'){
       const eye=engine.eye;camera.position.set(eye.x,eye.y,eye.z);camera.quaternion.setFromEuler(new Euler(input.pitch,input.yaw,0,'YXZ'));

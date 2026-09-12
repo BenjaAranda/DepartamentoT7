@@ -1,0 +1,25 @@
+{
+  "source": "User correction: bathroom and bedroom 2 open inward; preserve verified jambs and close bedroom 1 wardrobe on load.",
+  "doors": {
+    "P03": {
+      "swing_deg": 90,
+      "inside_room": "D1",
+      "mount_face": "interior_negative_y"
+    },
+    "P04": {
+      "swing_deg": 90,
+      "inside_room": "D2",
+      "mount_face": "interior_negative_y"
+    },
+    "P05": {
+      "swing_deg": -90,
+      "inside_room": "BATH",
+      "mount_face": "interior_negative_y"
+    },
+    "P06": {
+      "swing_deg": 90,
+      "inside_room": "LOGIA",
+      "mount_face": "interior_negative_y"
+    }
+  }
+}

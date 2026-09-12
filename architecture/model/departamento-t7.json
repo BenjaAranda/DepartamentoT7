@@ -9,7 +9,8 @@
     "architecture/dimensions/t13-superficies.json": "45e79c81def516f2d522298de3ef75e1b5bcd74c48fecf5beac8d1a00eb7c829",
     "architecture/dimensions/t14-alturas.json": "628ce0ba9078d0b2be01820b0c956aa812807776a8a4dc699e758bd27d6618f0",
     "architecture/dimensions/t15-contexto.json": "762e811c8d307100cf11fe624e2bb1cc756a163fb5cac5f6f5ec8b1ea62976da",
-    "architecture/dimensions/t13-criterio-aproximado.json": "153b2159d49d561030599bb9306bc40aec609de0fc7f1ce80eef7897298f6392"
+    "architecture/dimensions/t13-criterio-aproximado.json": "153b2159d49d561030599bb9306bc40aec609de0fc7f1ce80eef7897298f6392",
+    "architecture/model/door-adjustments.json": "7c6e9c55325f5eac0c6e6c5057e2487b25aa1535e76e3f01facf09dd9855f78c"
   },
   "height_assumptions": {
     "floor_level": 0,
@@ -2201,8 +2202,11 @@
         2.9667920632623583,
         3.578349633339218
       ],
-      "swing_deg": 90.0,
-      "source": "T11/P03"
+      "swing_deg": 90,
+      "source": "T11/P03",
+      "inside_room": "D1",
+      "mount_face": "interior_negative_y",
+      "adjustment_source": "architecture/model/door-adjustments.json"
     },
     {
       "id": "P04",
@@ -2215,8 +2219,11 @@
         5.809872205558736,
         3.982100659464148
       ],
-      "swing_deg": 90.0,
-      "source": "T11/P04"
+      "swing_deg": 90,
+      "source": "T11/P04",
+      "inside_room": "D2",
+      "mount_face": "interior_negative_y",
+      "adjustment_source": "architecture/model/door-adjustments.json"
     },
     {
       "id": "P05",
@@ -2229,8 +2236,11 @@
         7.630957562976387,
         4.070421196428976
       ],
-      "swing_deg": 90.0,
-      "source": "T11/P05"
+      "swing_deg": -90,
+      "source": "T11/P05",
+      "inside_room": "BATH",
+      "mount_face": "interior_negative_y",
+      "adjustment_source": "architecture/model/door-adjustments.json"
     },
     {
       "id": "P06",
@@ -2243,9 +2253,12 @@
         8.993617276148024,
         0.17170035041012618
       ],
-      "swing_deg": 90.0,
-      "source": "T11/P06"
+      "swing_deg": 90,
+      "source": "T11/P06",
+      "inside_room": "LOGIA",
+      "mount_face": "interior_negative_y",
+      "adjustment_source": "architecture/model/door-adjustments.json"
     }
   ],
-  "revision": "0b20e3ec99ad9e64e0314515897c6230f85bc5f35bbfdcc5eb47510da68338e5"
+  "revision": "e2767bc513912af101e97013494a255ae10af0f31d132f06ea7902a1e9792797"
 }

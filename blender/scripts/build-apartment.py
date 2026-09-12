@@ -107,6 +107,10 @@ for o in data['openings']:
         hinge=Vector(source['hinge_xy_m'])
         if axis=='h':hinge.x=l+frame+.003 if vec.x>0 else r-frame-.003
         else:hinge.y=b+frame+.003 if vec.y>0 else t-frame-.003
+        if source.get('mount_face')=='interior_negative_y':
+            assert axis=='h'
+            # Hinge on the room face: the finite-thickness leaf clears its own jamb throughout the swing.
+            hinge.y=b-v['door_leaf_thickness']/2-.006
         angle=math.atan2(vec.y,vec.x)
         pivot=bpy.data.objects.new(source['id']+'_Pivot',None);cols['Carpentry'].objects.link(pivot);pivot.location=(*hinge,0);pivot.rotation_euler.z=angle
         pivot['revision']=revision;pivot['id']=source['id'];pivot['door']=True

@@ -61,7 +61,7 @@ def build(root,data,box,prism,assign,mats,cols,colliders,revision):
         deco(name,p,size,'rug',False,.003)
         for edge in [-1,1]:deco(name+f'_Border{edge}',(p[0]+edge*(size[0]/2-.045),p[1],.009),(.02,size[1]-.08,.002),'sand')
     # Art is geometric, authored here, with no third-party image dependencies.
-    for name,x,y,z,w,h,axis in [('Art_D1',.026,1.20,1.55,.88,.55,'x'),('Art_D2',6.659,3.0,1.45,.66,.50,'x'),('Art_D3',.55,5.126,1.52,.68,.50,'y'),('Art_Living',12.515,3.03,1.61,1.05,.62,'x')]:
+    for name,x,y,z,w,h,axis in [('Art_D1',.026,1.20,1.55,.88,.55,'x'),('Art_D2',6.659,2.6,1.45,.66,.50,'x'),('Art_D3',.55,5.126,1.52,.68,.50,'y'),('Art_Living',12.515,3.03,1.61,1.05,.62,'x')]:
         dims=(.035,w,h) if axis=='x' else (w,.035,h)
         deco(name+'_Frame',(x,y,z),dims,'oak')
         # Put canvas on both faces so the intended interior side is visible.

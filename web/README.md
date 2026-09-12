@@ -51,6 +51,8 @@ node scripts/check-walk.mjs ../validation/e10
 node scripts/check-walk.mjs ../validation/e10/wardrobes-open --wardrobes-open
 node scripts/check-walk-adverse.mjs ../validation/e10
 node scripts/check-contact-soak.mjs
+node scripts/check-door-transforms.mjs
+node scripts/check-door-clearance.mjs
 npm run lint
 npm run typecheck
 npm run build

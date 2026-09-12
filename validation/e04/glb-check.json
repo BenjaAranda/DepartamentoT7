@@ -1,5 +1,5 @@
 {
-  "revision": "3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71",
+  "revision": "02abe9c3384a2a380df8ac4e5c1d0038dc26b23d63ae34b6241f295964bfd619",
   "hashes_match": true,
   "wall_glb_max_error_m": 4.828184447802641e-7,
   "measured_glb_floor_m2": 77.10000158872148,
@@ -7,5 +7,5 @@
   "meshes": 499,
   "context_present": true,
   "door_pivots": 12,
-  "glb_bytes": 2338352
+  "glb_bytes": 2338380
 }

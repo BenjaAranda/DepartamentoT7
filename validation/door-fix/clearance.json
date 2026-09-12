@@ -1,0 +1,32 @@
+{
+  "revision": "02abe9c3384a2a380df8ac4e5c1d0038dc26b23d63ae34b6241f295964bfd619",
+  "checks": [
+    {
+      "id": "P03",
+      "samples": 91,
+      "opens_inward": true,
+      "includes_own_jambs": true
+    },
+    {
+      "id": "P04",
+      "samples": 91,
+      "opens_inward": true,
+      "includes_own_jambs": true
+    },
+    {
+      "id": "P05",
+      "samples": 91,
+      "opens_inward": true,
+      "includes_own_jambs": true
+    },
+    {
+      "id": "P06",
+      "samples": 91,
+      "opens_inward": true,
+      "includes_own_jambs": true
+    }
+  ],
+  "independent_bath_bedroom2_angle_pairs": 8281,
+  "violations": [],
+  "passed": true
+}
