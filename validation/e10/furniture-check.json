@@ -1,0 +1,619 @@
+{
+  "revision": "3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71",
+  "inventory_count": 28,
+  "checks": [
+    {
+      "id": "D1_Bed",
+      "type": "bed",
+      "room": "D1",
+      "bounds": [
+        [
+          0.03499999828636646,
+          0,
+          -1.9500000476837158
+        ],
+        [
+          2.0950000286102295,
+          0.8999999761581421,
+          -0.4500000476837158
+        ]
+      ],
+      "mesh_count": 7
+    },
+    {
+      "id": "D1_NightA",
+      "type": "nightstand",
+      "room": "D1",
+      "bounds": [
+        [
+          0.0599999874830246,
+          0,
+          -0.4150000065565109
+        ],
+        [
+          0.4925000062212348,
+          0.510000005364418,
+          -0.015000000596046448
+        ]
+      ],
+      "mesh_count": 7
+    },
+    {
+      "id": "D1_NightB",
+      "type": "nightstand",
+      "room": "D1",
+      "bounds": [
+        [
+          0.04999999701976776,
+          0,
+          -2.5399999171495438
+        ],
+        [
+          0.5024999966844916,
+          0.510000005364418,
+          -2.1199999302625656
+        ]
+      ],
+      "mesh_count": 7
+    },
+    {
+      "id": "D1_TV",
+      "type": "wall_tv",
+      "room": "D1",
+      "bounds": [
+        [
+          3.781999956117943,
+          1.0550000071525574,
+          -1.715000033378601
+        ],
+        [
+          3.820000009611249,
+          1.6650000214576721,
+          -0.6850000619888306
+        ]
+      ],
+      "mesh_count": 2
+    },
+    {
+      "id": "D1_Wardrobe",
+      "type": "wardrobe",
+      "room": "D1",
+      "bounds": [
+        [
+          1.8239998817443848,
+          0,
+          -3.5559999644756317
+        ],
+        [
+          2.875999927520752,
+          2.200000047683716,
+          -2.9790000411846886
+        ]
+      ],
+      "mesh_count": 11
+    },
+    {
+      "id": "D2_Bed",
+      "type": "bed",
+      "room": "D2",
+      "bounds": [
+        [
+          4.06000018119812,
+          0,
+          -2.1649999618530273
+        ],
+        [
+          5.0400002002716064,
+          0.8999999761581421,
+          -0.10499999485909939
+        ]
+      ],
+      "mesh_count": 6
+    },
+    {
+      "id": "D2_Night",
+      "type": "nightstand",
+      "room": "D2",
+      "bounds": [
+        [
+          5.1299999207258224,
+          0,
+          -0.5525000086054206
+        ],
+        [
+          5.529999926686287,
+          0.510000005364418,
+          -0.11999998986721039
+        ]
+      ],
+      "mesh_count": 7
+    },
+    {
+      "id": "D2_Wardrobe",
+      "type": "wardrobe",
+      "room": "D2",
+      "bounds": [
+        [
+          3.9340000450611115,
+          0,
+          -3.5460000038146973
+        ],
+        [
+          4.511000035084772,
+          2.200000047683716,
+          -2.4539999961853027
+        ]
+      ],
+      "mesh_count": 11
+    },
+    {
+      "id": "D3_Bed",
+      "type": "bed",
+      "room": "D3",
+      "bounds": [
+        [
+          0.06000000238418579,
+          0,
+          -5.095000172033906
+        ],
+        [
+          1.0400000214576721,
+          0.8999999761581421,
+          -3.0949997901916504
+        ]
+      ],
+      "mesh_count": 6
+    },
+    {
+      "id": "D3_Night",
+      "type": "nightstand",
+      "room": "D3",
+      "bounds": [
+        [
+          1.0999999642372131,
+          0,
+          -5.059999883174896
+        ],
+        [
+          1.4799999594688416,
+          0.510000005364418,
+          -4.647499919869006
+        ]
+      ],
+      "mesh_count": 7
+    },
+    {
+      "id": "D3_Wardrobe",
+      "type": "wardrobe",
+      "room": "D3",
+      "bounds": [
+        [
+          2.1989999862350427,
+          0,
+          -4.121000096201897
+        ],
+        [
+          2.736000031232834,
+          2.200000047683716,
+          -3.6790000945329666
+        ]
+      ],
+      "mesh_count": 11
+    },
+    {
+      "id": "Bath_Basin",
+      "type": "basin",
+      "room": "BATH",
+      "bounds": [
+        [
+          7.859999805688858,
+          0.42000000178813934,
+          -3.1799999717622995
+        ],
+        [
+          8.290000343695283,
+          1.0850000521168113,
+          -2.5800000187009573
+        ]
+      ],
+      "mesh_count": 9
+    },
+    {
+      "id": "Bath_WC",
+      "type": "toilet",
+      "room": "BATH",
+      "bounds": [
+        [
+          7.660000145435333,
+          0,
+          -1.7699999995529652
+        ],
+        [
+          8.310000121593475,
+          0.8590000192634761,
+          -0.9500000290572643
+        ]
+      ],
+      "mesh_count": 9
+    },
+    {
+      "id": "Bath_Shower",
+      "type": "shower",
+      "room": "BATH",
+      "bounds": [
+        [
+          6.840000212192535,
+          0,
+          0.3149999678134918
+        ],
+        [
+          8.180000245571136,
+          2.130000054836273,
+          1.2249999940395355
+        ]
+      ],
+      "mesh_count": 7
+    },
+    {
+      "id": "Kitchen_Fridge",
+      "type": "fridge",
+      "room": "KITCHEN",
+      "bounds": [
+        [
+          8.409999936819077,
+          0,
+          -3.9049999117851257
+        ],
+        [
+          9.052499847486615,
+          2.0399999618530273,
+          -3.2749999165534973
+        ]
+      ],
+      "mesh_count": 5
+    },
+    {
+      "id": "Kitchen_Cooker",
+      "type": "cooker",
+      "room": "KITCHEN",
+      "bounds": [
+        [
+          8.415000259876251,
+          0,
+          -3.063999980688095
+        ],
+        [
+          9.084999694488943,
+          2.2599999457597733,
+          -2.495999962091446
+        ]
+      ],
+      "mesh_count": 16
+    },
+    {
+      "id": "Kitchen_Worktop",
+      "type": "counter",
+      "room": "KITCHEN",
+      "bounds": [
+        [
+          8.415000259876251,
+          0,
+          -2.458999991416931
+        ],
+        [
+          9.054499817080796,
+          0.8925000056624413,
+          -1.5410000085830688
+        ]
+      ],
+      "mesh_count": 7
+    },
+    {
+      "id": "Kitchen_Sink",
+      "type": "kitchen_sink",
+      "room": "KITCHEN",
+      "bounds": [
+        [
+          8.42500028014183,
+          0,
+          -1.4949999451637268
+        ],
+        [
+          9.054499817080796,
+          1.164999975822866,
+          -0.8649999499320984
+        ]
+      ],
+      "mesh_count": 14
+    },
+    {
+      "id": "Kitchen_Upper",
+      "type": "upper_cabinet",
+      "room": "KITCHEN",
+      "bounds": [
+        [
+          8.419999584555626,
+          1.4799999594688416,
+          -2.455000013113022
+        ],
+        [
+          8.749500465579331,
+          2.099999964237213,
+          -1.5449999868869781
+        ]
+      ],
+      "mesh_count": 5
+    },
+    {
+      "id": "Living_Sofa",
+      "type": "sofa",
+      "room": "LIVING",
+      "bounds": [
+        [
+          11.71999967098236,
+          0,
+          -3.9799999743700027
+        ],
+        [
+          12.499999642372131,
+          0.9149999916553497,
+          -2.0799999684095383
+        ]
+      ],
+      "mesh_count": 12
+    },
+    {
+      "id": "Living_TV",
+      "type": "console_tv",
+      "room": "LIVING",
+      "bounds": [
+        [
+          10.050000384449959,
+          0.07999999821186066,
+          -3.6299999952316284
+        ],
+        [
+          10.412000282667577,
+          1.4649999737739563,
+          -2.4299999475479126
+        ]
+      ],
+      "mesh_count": 6
+    },
+    {
+      "id": "Dining_Table",
+      "type": "table",
+      "room": "DINING",
+      "bounds": [
+        [
+          10.875000178813934,
+          0,
+          -0.30000001192092896
+        ],
+        [
+          11.725000202655792,
+          0.7774999961256981,
+          0.9000000357627869
+        ]
+      ],
+      "mesh_count": 5
+    },
+    {
+      "id": "Dining_Chair1",
+      "type": "chair",
+      "room": "DINING",
+      "bounds": [
+        [
+          10.31999996304512,
+          0,
+          0.3800000250339508
+        ],
+        [
+          10.759999960660934,
+          0.9650000333786011,
+          0.820000022649765
+        ]
+      ],
+      "mesh_count": 6
+    },
+    {
+      "id": "Dining_Chair2",
+      "type": "chair",
+      "room": "DINING",
+      "bounds": [
+        [
+          10.31999996304512,
+          0,
+          -0.2199999988079071
+        ],
+        [
+          10.759999960660934,
+          0.9650000333786011,
+          0.2199999988079071
+        ]
+      ],
+      "mesh_count": 6
+    },
+    {
+      "id": "Dining_Chair3",
+      "type": "chair",
+      "room": "DINING",
+      "bounds": [
+        [
+          11.840000420808792,
+          0,
+          0.3800000250339508
+        ],
+        [
+          12.280000418424606,
+          0.9650000333786011,
+          0.820000022649765
+        ]
+      ],
+      "mesh_count": 6
+    },
+    {
+      "id": "Dining_Chair4",
+      "type": "chair",
+      "room": "DINING",
+      "bounds": [
+        [
+          11.840000420808792,
+          0,
+          -0.2199999988079071
+        ],
+        [
+          12.280000418424606,
+          0.9650000333786011,
+          0.2199999988079071
+        ]
+      ],
+      "mesh_count": 6
+    },
+    {
+      "id": "Loggia_Washer",
+      "type": "washer",
+      "room": "LOGIA",
+      "bounds": [
+        [
+          8.654999822378159,
+          0,
+          0.5899999737739563
+        ],
+        [
+          9.297999557107687,
+          0.8600000143051147,
+          1.1899999976158142
+        ]
+      ],
+      "mesh_count": 5
+    },
+    {
+      "id": "Loggia_Sink",
+      "type": "laundry_sink",
+      "room": "LOGIA",
+      "bounds": [
+        [
+          8.619999930262566,
+          0,
+          0.06999999843537807
+        ],
+        [
+          9.040000343695283,
+          1.1449999948963523,
+          0.5499999765306711
+        ]
+      ],
+      "mesh_count": 10
+    }
+  ],
+  "facing": [
+    {
+      "a": "Living_Sofa",
+      "b": "Living_TV",
+      "direction_dot": 1,
+      "opposed_dot": -1
+    },
+    {
+      "a": "D1_Bed",
+      "b": "D1_TV",
+      "direction_dot": 1,
+      "opposed_dot": -1
+    }
+  ],
+  "wall_penetrations": [],
+  "decoration_penetrations": [],
+  "art_supports": [
+    {
+      "mesh": "Art_D1_Frame",
+      "backed_by_solid_wall": true
+    },
+    {
+      "mesh": "Art_D2_Frame",
+      "backed_by_solid_wall": true
+    },
+    {
+      "mesh": "Art_D3_Frame",
+      "backed_by_solid_wall": true
+    },
+    {
+      "mesh": "Art_Living_Frame",
+      "backed_by_solid_wall": true
+    }
+  ],
+  "chair_use_offset_m": 0.15,
+  "door_sweeps": [
+    {
+      "id": "P01",
+      "opened_fraction": 1,
+      "closed_fraction": 0,
+      "blocked": false
+    },
+    {
+      "id": "P02",
+      "opened_fraction": 1,
+      "closed_fraction": 0,
+      "blocked": false
+    },
+    {
+      "id": "P03",
+      "opened_fraction": 1,
+      "closed_fraction": 0,
+      "blocked": false
+    },
+    {
+      "id": "P04",
+      "opened_fraction": 1,
+      "closed_fraction": 0,
+      "blocked": false
+    },
+    {
+      "id": "P05",
+      "opened_fraction": 1,
+      "closed_fraction": 0,
+      "blocked": false
+    },
+    {
+      "id": "P06",
+      "opened_fraction": 1,
+      "closed_fraction": 0,
+      "blocked": false
+    },
+    {
+      "id": "D1_Wardrobe_Door1",
+      "opened_fraction": 1,
+      "closed_fraction": 0,
+      "blocked": false
+    },
+    {
+      "id": "D1_Wardrobe_Door2",
+      "opened_fraction": 1,
+      "closed_fraction": 0,
+      "blocked": false
+    },
+    {
+      "id": "D2_Wardrobe_Door1",
+      "opened_fraction": 1,
+      "closed_fraction": 0,
+      "blocked": false
+    },
+    {
+      "id": "D2_Wardrobe_Door2",
+      "opened_fraction": 1,
+      "closed_fraction": 0,
+      "blocked": false
+    },
+    {
+      "id": "D3_Wardrobe_Door1",
+      "opened_fraction": 1,
+      "closed_fraction": 0,
+      "blocked": false
+    },
+    {
+      "id": "D3_Wardrobe_Door2",
+      "opened_fraction": 1,
+      "closed_fraction": 0,
+      "blocked": false
+    }
+  ]
+}

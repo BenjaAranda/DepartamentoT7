@@ -1,7 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import RAPIER from '@dimforge/rapier3d-compat';
-import {WalkEngine,initPhysics,STEP,BODY_REST_Y,RADIUS,HALF_HEIGHT} from '../components/t7/walk-engine.ts';
+import {WalkEngine,initPhysics,BODY_REST_Y} from '../components/t7/walk-engine.ts';
 await initPhysics();
 const data=JSON.parse(fs.readFileSync('public/models/departamento-t7.json'));
 const engine=new WalkEngine(data);

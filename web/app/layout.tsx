@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: 'DepartamentoT7 | Los Altos de Algarrobo',
   description:
     'Simulador del Departamento Tipo T7 de Los Altos de Algarrobo.',
+  icons: { icon: '/favicon.svg' },
 };
 
 export default function RootLayout({

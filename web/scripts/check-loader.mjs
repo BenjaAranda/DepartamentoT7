@@ -11,9 +11,10 @@ const manifest=JSON.parse(fs.readFileSync('public/models/manifest.json'));
 let current=structuredClone(manifest),fault='',delivered=0;
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 globalThis.fetch=async(url,options={})=>{
- if(String(url).startsWith('blob:'))return originalFetch(url,options);
+ const href=typeof url==='string'?url:url instanceof URL?url.href:url.url;
+ if(href.startsWith('blob:'))return originalFetch(url,options);
  if(options.signal?.aborted)throw new DOMException('Aborted','AbortError');
- const name=new URL(url,location.href).pathname.split('/').pop();
+ const name=new URL(href,location.href).pathname.split('/').pop();
  if(name==='manifest.json')return new Response(JSON.stringify(current),{status:fault==='manifest-http'?503:200});
  if(fault==='download-http')return new Response('',{status:503});
  let bytes=fs.readFileSync('public/models/'+name);

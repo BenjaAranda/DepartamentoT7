@@ -1,6 +1,6 @@
 import {useEffect} from 'react';
 export type T7Actions={state:()=>unknown;view:(view:string)=>Promise<unknown>;look:(yaw:number,pitch:number)=>Promise<unknown>;move:(direction:string,seconds:number)=>Promise<unknown>;interact:()=>Promise<unknown>;pause:()=>Promise<unknown>;reset:()=>Promise<unknown>};
-type Tool={name:string;description:string;inputSchema:object;annotations:{readOnlyHint:boolean};execute:(input:unknown)=>unknown|Promise<unknown>};
+type Tool={name:string;description:string;inputSchema:object;annotations:{readOnlyHint:boolean};execute:(input:unknown)=>unknown};
 type Registry={registerTool:(tool:Tool,options:{signal:AbortSignal})=>void|Promise<void>};
 function object(input:unknown,allowed:string[]){
  if(!input||typeof input!=='object'||Array.isArray(input)||Object.keys(input).some(k=>!allowed.includes(k)))throw new Error('Argumentos no válidos.');return input as Record<string,unknown>;

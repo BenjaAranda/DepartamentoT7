@@ -23,6 +23,7 @@ export class WalkEngine {
   verticalVelocity = 0;
   accumulator = 0;
   elapsedSteps = 0;
+  contactRecoveries = 0;
   message = '';
   disposed = false;
   constructor(data: CollisionData) {
@@ -127,6 +128,15 @@ export class WalkEngine {
       this.verticalVelocity = this.controller.computedGrounded() ? -.1 : Math.max(-10, this.verticalVelocity - 9.81 * STEP);
       this.controller.computeColliderMovement(this.player, { x: x * 1.6 * STEP, y: this.verticalVelocity * STEP, z: z * 1.6 * STEP });
       const move = this.controller.computedMovement(), p = this.body.translation();
+      const desired={x:x*1.6*STEP,y:0,z:z*1.6*STEP};
+      if(Math.hypot(desired.x,desired.z)>.001&&Math.hypot(move.x,move.z)<.00001){
+        // Rapier can lock at the intersection of two contact skins. Only release it
+        // when a continuous capsule sweep and the destination are both unobstructed.
+        const hit=this.world.castShape(p,IDENTITY,desired,new RAPIER.Capsule(HALF_HEIGHT,RADIUS),.003,1,true,undefined,undefined,this.player);
+        if(!hit&&this.isFree(p.x+desired.x,p.z+desired.z,p.y)&&this.hasFloor(p.x+desired.x,p.z+desired.z)){
+          move.x=desired.x;move.z=desired.z;this.contactRecoveries++;
+        }
+      }
       this.body.setNextKinematicTranslation({ x: p.x + move.x, y: p.y + move.y, z: p.z + move.z });
     }
     this.world.step(); this.elapsedSteps++;

@@ -1,0 +1,30 @@
+{
+  "revision": "3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71",
+  "date": "2026-09-12",
+  "lint_exit": 0,
+  "typecheck_exit": 0,
+  "build_exit": 0,
+  "loader_checks": 11,
+  "files": [
+    {
+      "path": "web/dist/server/index.js",
+      "sha256": "eac05713245f9278c9a16c503475ecfbee07f16d015df8fb1fe16ee3dd9b73f0"
+    },
+    {
+      "path": "web/dist/.openai/hosting.json",
+      "sha256": "b5320dca902f011d5abc56a1f50dc18e82d829b1b3c732afa6171092607ac05f"
+    },
+    {
+      "path": "web/dist/client/models/manifest.json",
+      "sha256": "1d80444a994d5a00f68d6b4ca6c080b56fbab3d7c935e09a3c6e5480ccb80804"
+    },
+    {
+      "path": "web/dist/client/models/departamento-t7-web.glb",
+      "sha256": "426d9d20593e6cdedf1ba83c0384d4c36c6b0ee9071964d6cb9c5befa973f367"
+    },
+    {
+      "path": "web/dist/client/models/departamento-t7.json",
+      "sha256": "a4ed8cc20845aea966d99507bf5fc185c0adce08f6e043b5720611fc71dfff01"
+    }
+  ]
+}
