@@ -1,0 +1,172 @@
+{
+  "revision": "3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71",
+  "engine": "5.8.2-56702186+++UE5+Release-5.8",
+  "model_sha256": "660ec3e88a8d502dd403c44c342633cf14cf13cdf1237cf06a14bf57cb74411f",
+  "wall_checks": [
+    {
+      "id": "W01A",
+      "maximum_error_cm": 1.8136711105398717e-05
+    },
+    {
+      "id": "W01B",
+      "maximum_error_cm": 1.9716753172360768e-05
+    },
+    {
+      "id": "W01C",
+      "maximum_error_cm": 2.1624101805173268e-05
+    },
+    {
+      "id": "W02",
+      "maximum_error_cm": 9.330393368145451e-06
+    },
+    {
+      "id": "W03",
+      "maximum_error_cm": 9.11674959525044e-06
+    },
+    {
+      "id": "W04",
+      "maximum_error_cm": 4.480993084143847e-05
+    },
+    {
+      "id": "W05A",
+      "maximum_error_cm": 9.566523175408292e-06
+    },
+    {
+      "id": "W05B",
+      "maximum_error_cm": 9.23977665934217e-06
+    },
+    {
+      "id": "W06A",
+      "maximum_error_cm": 8.900601756067772e-06
+    },
+    {
+      "id": "W06B",
+      "maximum_error_cm": 1.6755165461290744e-05
+    },
+    {
+      "id": "W07",
+      "maximum_error_cm": 2.3785599296388682e-05
+    },
+    {
+      "id": "W08A",
+      "maximum_error_cm": 1.1376059660506144e-05
+    },
+    {
+      "id": "W08B",
+      "maximum_error_cm": 4.685205396981473e-06
+    },
+    {
+      "id": "W09A",
+      "maximum_error_cm": 4.744737952933065e-05
+    },
+    {
+      "id": "W09B",
+      "maximum_error_cm": 3.0549816528946394e-05
+    },
+    {
+      "id": "W10A",
+      "maximum_error_cm": 1.0111575477367296e-05
+    },
+    {
+      "id": "W10B",
+      "maximum_error_cm": 1.1452301407643972e-05
+    },
+    {
+      "id": "W11",
+      "maximum_error_cm": 1.5142313486649073e-05
+    },
+    {
+      "id": "W12A",
+      "maximum_error_cm": 3.6447013371798676e-06
+    },
+    {
+      "id": "W12B",
+      "maximum_error_cm": 5.4386289889407635e-06
+    },
+    {
+      "id": "W12C",
+      "maximum_error_cm": 1.1215011795684404e-05
+    },
+    {
+      "id": "W13A",
+      "maximum_error_cm": 8.498977308590838e-06
+    },
+    {
+      "id": "W13B",
+      "maximum_error_cm": 4.401386945573904e-06
+    },
+    {
+      "id": "W14A",
+      "maximum_error_cm": 9.169758527605154e-06
+    },
+    {
+      "id": "W14B",
+      "maximum_error_cm": 5.649362037729588e-06
+    },
+    {
+      "id": "W14C",
+      "maximum_error_cm": 2.1494950829037407e-05
+    },
+    {
+      "id": "W15",
+      "maximum_error_cm": 1.2453087833819154e-05
+    },
+    {
+      "id": "W16A",
+      "maximum_error_cm": 4.6462963155136094e-05
+    },
+    {
+      "id": "W16B",
+      "maximum_error_cm": 3.8074387248343555e-05
+    },
+    {
+      "id": "W17A",
+      "maximum_error_cm": 3.197674936927797e-05
+    },
+    {
+      "id": "W17B",
+      "maximum_error_cm": 3.197674936927797e-05
+    },
+    {
+      "id": "W18A",
+      "maximum_error_cm": 9.32803470732324e-06
+    },
+    {
+      "id": "W18B",
+      "maximum_error_cm": 4.723658878447168e-05
+    },
+    {
+      "id": "W18C",
+      "maximum_error_cm": 2.7823203708976507e-05
+    },
+    {
+      "id": "W18D",
+      "maximum_error_cm": 2.248311648145318e-05
+    },
+    {
+      "id": "W19A",
+      "maximum_error_cm": 3.202067500751582e-05
+    },
+    {
+      "id": "W19B",
+      "maximum_error_cm": 2.056709263342782e-06
+    },
+    {
+      "id": "W19C",
+      "maximum_error_cm": 4.6224934180827404e-05
+    },
+    {
+      "id": "W20A",
+      "maximum_error_cm": 3.8074387248343555e-05
+    },
+    {
+      "id": "W20B",
+      "maximum_error_cm": 2.9891380336266593e-05
+    }
+  ],
+  "actors_imported": 512,
+  "doors": 12,
+  "colliders": 248,
+  "units": "cm",
+  "map": "/Game/T7/Apartment"
+}

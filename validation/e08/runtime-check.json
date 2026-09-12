@@ -1,0 +1,112 @@
+{
+	"revision": "3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71",
+	"error": "",
+	"passed": true,
+	"eye_min_cm": 160,
+	"eye_max_cm": 160.0001220703125,
+	"routes": [
+		{
+			"room": "D3",
+			"wardrobes_open": false,
+			"round_trip": true
+		},
+		{
+			"room": "D1",
+			"wardrobes_open": false,
+			"round_trip": true
+		},
+		{
+			"room": "KITCHEN",
+			"wardrobes_open": false,
+			"round_trip": true
+		},
+		{
+			"room": "DINING",
+			"wardrobes_open": false,
+			"round_trip": true
+		},
+		{
+			"room": "LIVING",
+			"wardrobes_open": false,
+			"round_trip": true
+		},
+		{
+			"room": "D2",
+			"wardrobes_open": false,
+			"round_trip": true
+		},
+		{
+			"room": "BATH",
+			"wardrobes_open": false,
+			"round_trip": true
+		},
+		{
+			"room": "LOGIA",
+			"wardrobes_open": false,
+			"round_trip": true
+		},
+		{
+			"room": "CORRIDOR",
+			"wardrobes_open": false,
+			"round_trip": true
+		},
+		{
+			"room": "SHOWER",
+			"wardrobes_open": false,
+			"round_trip": true
+		},
+		{
+			"room": "D3",
+			"wardrobes_open": true,
+			"round_trip": true
+		},
+		{
+			"room": "D1",
+			"wardrobes_open": true,
+			"round_trip": true
+		},
+		{
+			"room": "KITCHEN",
+			"wardrobes_open": true,
+			"round_trip": true
+		},
+		{
+			"room": "DINING",
+			"wardrobes_open": true,
+			"round_trip": true
+		},
+		{
+			"room": "LIVING",
+			"wardrobes_open": true,
+			"round_trip": true
+		},
+		{
+			"room": "D2",
+			"wardrobes_open": true,
+			"round_trip": true
+		},
+		{
+			"room": "BATH",
+			"wardrobes_open": true,
+			"round_trip": true
+		},
+		{
+			"room": "LOGIA",
+			"wardrobes_open": true,
+			"round_trip": true
+		},
+		{
+			"room": "CORRIDOR",
+			"wardrobes_open": true,
+			"round_trip": true
+		},
+		{
+			"room": "SHOWER",
+			"wardrobes_open": true,
+			"round_trip": true
+		}
+	],
+	"door_sweeps_passed": 12,
+	"frames": 15405,
+	"active_player_door_displacement_cm": 0
+}

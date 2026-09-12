@@ -1,0 +1,12 @@
+{
+  "probe_revision": "2bde62322a3f76ad7ddae2ec70b981df6858868febed278a49cfd611df228dce",
+  "production_unchanged": true,
+  "controlled_wall": "W01B",
+  "expected_delta_m": 0.01,
+  "collider_delta_m": 0.009999999999999787,
+  "unreal_delta_cm": 0.9999888859911152,
+  "unreal_vs_collider_error_cm": 1.1114008771073713e-05,
+  "web_meshes_checked": 499,
+  "web_pivots_checked": 12,
+  "scope": "Isolated full Blender build, compressed GLB loader/bounds validation and actual Unreal import; production files unchanged."
+}

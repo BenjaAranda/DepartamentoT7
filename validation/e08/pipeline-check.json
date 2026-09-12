@@ -1,0 +1,31 @@
+{
+  "revision": "3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71",
+  "stages": [
+    {
+      "stage": "import-apartment",
+      "exit_code": 0,
+      "errors": 0,
+      "log_sha256": "9a3ab9f799a8ddbe32952b4808d4fea431665b1af0cfbe09ea831866b9aa6e44"
+    },
+    {
+      "stage": "prepare-evidence",
+      "exit_code": 0,
+      "errors": 0,
+      "log_sha256": "53af72bbb3c5ed41d707e9b0175eb40971d1ab99fac4c60bddf8456d8e73d278"
+    },
+    {
+      "stage": "Validate",
+      "exit_code": 0,
+      "errors": 0,
+      "log_sha256": "4851676817ad7faf99fdafa0e1cd3635b1ed9e3d233d1441e68519d0a15db4df"
+    },
+    {
+      "stage": "Capture",
+      "exit_code": 0,
+      "errors": 0,
+      "log_sha256": "8c85403e86cf0cc8b425b5b91ee918af132bb81fb6f3c79d3b1db884064edf6d"
+    }
+  ],
+  "saved_reopen_repair_count": 0,
+  "passed": true
+}

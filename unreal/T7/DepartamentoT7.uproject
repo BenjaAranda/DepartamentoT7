@@ -3,7 +3,9 @@
   "EngineAssociation": "5.8",
   "Category": "Architecture",
   "Description": "Departamento Tipo T7 · Los Altos de Algarrobo",
+  "Modules": [{"Name":"DepartamentoT7","Type":"Runtime","LoadingPhase":"Default"}],
   "Plugins": [
+    {"Name":"AndroidFileServer","Enabled":false},
     {"Name":"PythonScriptPlugin","Enabled":true},
     {"Name":"EditorScriptingUtilities","Enabled":true},
     {"Name":"Interchange","Enabled":true},

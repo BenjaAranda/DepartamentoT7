@@ -1,0 +1,11 @@
+{
+  "revision": "3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71",
+  "map": "/Game/T7/Apartment",
+  "saved_and_reopened": true,
+  "mesh_components": 499,
+  "interactive_pivots": 12,
+  "static_mesh_collision_disabled": true,
+  "repaired_collision_profiles": [],
+  "inspection_hidden": 25,
+  "source_glb_sha256": "660ec3e88a8d502dd403c44c342633cf14cf13cdf1237cf06a14bf57cb74411f"
+}
