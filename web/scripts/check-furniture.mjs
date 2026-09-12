@@ -51,14 +51,27 @@ for(const door of engine.doors){
 }
 engine.dispose();
 const decorViolations=[];
+const artSupports=[];
 for(const name of data.finishes?.decorations||[]){
  const b=boxOf(name);
  for(const o of obstacles)if(overlap(b,o.box).every(d=>d>.002))decorViolations.push({mesh:name,obstacle:o.id});
+ if(name.startsWith('Art_')&&name.endsWith('_Frame')){
+  const size=b.getSize(new Vector3()),center=b.getCenter(new Vector3());
+  const normal=[0,1,2].sort((a,c)=>size.getComponent(a)-size.getComponent(c))[0],axes=[0,1,2].filter(a=>a!==normal);
+  let backed=true;
+  for(const u of [-1,0,1])for(const v of [-1,0,1]){
+   const p=center.clone();p.setComponent(axes[0],center.getComponent(axes[0])+u*(size.getComponent(axes[0])/2-.01));p.setComponent(axes[1],center.getComponent(axes[1])+v*(size.getComponent(axes[1])/2-.01));
+   const supported=[-1,1].some(sign=>{const behind=p.clone();behind.setComponent(normal,center.getComponent(normal)+sign*(size.getComponent(normal)/2+.04));return obstacles.some(o=>/^W\d/.test(o.id)&&o.box.containsPoint(behind));});
+   backed&&=supported;
+  }
+  artSupports.push({mesh:name,backed_by_solid_wall:backed});
+ }
 }
-const report={revision:data.revision,inventory_count:checks.length,checks,facing,wall_penetrations:violations,decoration_penetrations:decorViolations,chair_use_offset_m:.15,door_sweeps:sweeps};
+const report={revision:data.revision,inventory_count:checks.length,checks,facing,wall_penetrations:violations,decoration_penetrations:decorViolations,art_supports:artSupports,chair_use_offset_m:.15,door_sweeps:sweeps};
 const out=process.argv[2]||'../validation/e06';fs.mkdirSync(out,{recursive:true});fs.writeFileSync(out+'/furniture-check.json',JSON.stringify(report,null,2)+'\n');
 console.log({inventory:checks.length,violations,sweeps});
 assert.equal(violations.length,0,'Furniture intersects architecture');
 assert.deepEqual(decorViolations,[],'Decoration intersects architecture');
+assert.ok(artSupports.every(a=>a.backed_by_solid_wall),'Wall art covers an opening or lacks support');
 assert.ok(sweeps.every(s=>s.opened_fraction>.999&&s.closed_fraction<.001&&!s.blocked),'Blocked leaf');
 import './node-gltf.mjs';
