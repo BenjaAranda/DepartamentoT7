@@ -170,8 +170,8 @@
     }
   },
   "last_sync": {
-    "checked_at": "2026-09-12T04:01:11.812Z",
-    "source_sha256": "c03fcb44e6a0cf24fa693e9621cf9bed91c53ec09115f8e9df0d4f98f3af83aa",
+    "checked_at": "2026-09-12T21:20:41.658Z",
+    "source_sha256": "f8fc4ba4b638fb970515cafb7886a89f7d49c4a7e2331d13739b1a107a95b1c5",
     "stage_count": 12,
     "task_count": 78,
     "completed_tasks": 78,

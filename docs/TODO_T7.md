@@ -1,6 +1,6 @@
 # Tareas del simulador T7
 
-Actualizado: 12 de septiembre de 2026. E00–E11 completadas; publicación privada y recorrido en producción comprobados. Base dimensional aproximada documentada.
+Actualizado: 12 de septiembre de 2026. Corrección de puertas completada y publicada: logia, baño, dormitorios 1/2 y clóset D1. Las 78 tareas están verificadas y marcadas con [x]. Base dimensional aproximada documentada.
 
 Esta es la lista de seguimiento principal del proyecto `DepartamentoT7` (carpeta local `simulador-t7`).
 
@@ -146,10 +146,10 @@ Dependencia: E10. Hito: V15 superada y todos los entregables accesibles.
 - [x] T69. Entregar URL, repositorio, Blender, proyecto Unreal, GLB, colliders, informe y controles de uso; registrar cómo reproducir y actualizar.
 - [x] T70. Marcar completo únicamente tras verificar los entregables; mantener las siguientes correcciones dentro de este mismo proyecto y repositorio.
 
-## Estado de entrega
+## Corrección solicitada — completada
 
-P01–P08 y T01–T70 completadas con las salvedades dimensionales y de dispositivos registradas en `VALIDACION_ENTREGA.md`. Revisión compartida `3eed66c9dd62ba833406046c8f68ca7710ce3516de9e1333030586aa22b68c71`.
+La rotación completa de los pivotes corrige la desalineación visual de D1, D2, logia y segunda hoja del clóset D1. Los ejes interiores libran sus jambas; baño y D2 abren hacia dentro y el clóset D1 comienza cerrado. Se desplazó el cuadro de D2 para liberar la hoja.
 
-[Simulador privado publicado](https://departamentot7.benjaaranda.chatgpt.site), fuente y activos subidos a GitHub. En producción se verificaron carga, integridad, revisión, colisión con puerta, retroceso, apertura del baño y vista isométrica, sin errores de consola. Evidencia `validation/e11/publication-check.json`.
+Verificación: 91 posiciones por cada una de las doce hojas, 8.281 combinaciones baño/D2 sin interferencias superiores a 2 mm, recorridos y contactos repetidos aprobados. Blender, GLB, colisiones y Unreal comparten la revisión `02abe9c3`. Compilación correcta y versión 2 publicada con resultado exitoso. En la URL publicada se comprobó la revisión, ambas puertas abiertas simultáneamente, entrada/salida de baño y D2 y clóset D1 cerrado, sin errores de consola observados.
 
-Archivos, controles y reproducción: `ENTREGA.md`. No quedan tareas de implementación de este plan; próximas correcciones dentro de DepartamentoT7. Las limitaciones V02, móvil físico y navegadores independientes permanecen explícitas, no se convierten en aprobaciones ficticias.
+Evidencias: [corrección de puertas](CORRECCION_PUERTAS.md), [publicación y comprobación final](../validation/door-fix/release.json) y [entrega actualizada](ENTREGA.md). Los límites dimensionales y de dispositivos documentados siguen vigentes.

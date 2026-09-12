@@ -4,6 +4,8 @@
 
 Publicado el 12 de septiembre de 2026. Sitio y repositorio privados. Para entrar en la web, usar la cuenta propietaria con «Continuar con ChatGPT».
 
+Actualización publicada: puertas de logia y dormitorios 1/2 corregidas, baño y dormitorio 2 abren hacia dentro y clóset D1 cerrado al inicio. Blender, GLB, colisiones y Unreal sincronizados. Ver [corrección y pruebas](CORRECCION_PUERTAS.md) y [publicación verificada de la versión 2](../validation/door-fix/release.json). La evidencia E11 enlazada abajo corresponde a la publicación inicial.
+
 ## Archivos
 
 - [Modelo editable Blender](../blender/DepartamentoT7.blend).

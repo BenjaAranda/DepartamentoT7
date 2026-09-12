@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-12",
+  "revision": "02abe9c3384a2a380df8ac4e5c1d0038dc26b23d63ae34b6241f295964bfd619",
+  "implementation_commit": "230a0c22e8e40f00bf7eb4e0aac227a000b2b5ad",
+  "corrections": {
+    "room_doors": ["P03", "P04", "P05", "P06"],
+    "complete_pivot_quaternion_applied": true,
+    "bath_and_bedroom2_open_inward": true,
+    "wardrobe_d1_initially_closed": true,
+    "bedroom2_art_moved_clear_of_door": true
+  },
+  "validation": {
+    "transforms": "validation/door-fix/transforms.json",
+    "clearance": "validation/door-fix/clearance.json",
+    "leaf_samples": 1092,
+    "independent_bath_bedroom2_angle_pairs": 8281,
+    "clearance_violations_above_2mm": 0,
+    "delivery_manifest": "validation/e10/delivery-manifest.json",
+    "unreal_pipeline": "validation/e08/pipeline-check.json",
+    "unreal_pipeline_passed": true,
+    "web_build_lint_types_passed": true,
+    "walk_round_trips": 20,
+    "contact_soak_round_trips": 40
+  },
+  "publication": {
+    "url": "https://departamentot7.benjaaranda.chatgpt.site",
+    "access": "private_owner",
+    "project_id": "appgprj_6aa0c4d0ff688191a8421e732e9b5d35",
+    "version_id": "appgprj_6aa0c4d0ff688191a8421e732e9b5d35~appgver_2b8afebc98c08191bf80ef2eeffe2c86",
+    "deployment_id": "appgdep_6aa5c0cf88a48191a19062c1bbc59ba6",
+    "source_sha": "e14d27cf431937075471d0bed360012c5746ed5a",
+    "archive_sha256": "7b69016a84d931499383b52db67e90c2ed6a59d5a614d6a2a85601c69a3effba",
+    "status": "succeeded",
+    "status_updated_at": "2026-09-12T21:15:12.299214+00:00"
+  },
+  "production_browser": {
+    "loaded_revision_matches": true,
+    "bath_and_bedroom2_simultaneously_fully_open": true,
+    "wardrobe_d1_both_leaves_closed": true,
+    "bedroom2_door_and_art_visually_clear": true,
+    "bedroom2_entry_return_completed": true,
+    "bath_entry_return_completed": true,
+    "eye_height_m": 1.6,
+    "console_errors_observed": 0,
+    "method": "Published site, authenticated owner, WebMCP movement and door actions, rendered screenshot and browser error log."
+  },
+  "earlier_visual_review": {
+    "revision": "1c12666bd83c7299177679c5a664d2fccb6d62a78dd530eaa43016cd31884521",
+    "observations": ["D1 corrected hinge and closed wardrobe", "Logia inward swing and entry/exit", "Bath and D2 open simultaneously"],
+    "subsequent_change": "Moved bedroom2 artwork 0.40 m along its wall; door geometry unchanged. Final revision regenerated and all affected tests repeated."
+  },
+  "limits": "Historical performance reports retain their original revision and device scope; no new cross-device performance claim.",
+  "passed": true
+}
