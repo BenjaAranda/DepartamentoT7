@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-16",
+  "model_revision": "02abe9c3384a2a380df8ac4e5c1d0038dc26b23d63ae34b6241f295964bfd619",
+  "implementation_commit": "272d87fdbc7e6b27357828c8d9b8a3ab90bb439e",
+  "static_build": {"passed": true, "base": "/DepartamentoT7/", "files": 9, "model_and_collision_hashes_match": true},
+  "checks": {"lint": true, "typecheck": true, "loader": true, "door_transforms": true, "door_clearance": true, "existing_sites_build": true},
+  "browser": {"local_static_origin": "http://127.0.0.1:4173/DepartamentoT7/", "authentication_required": false, "revision_matches": true, "textures_loaded": 6, "reference_tab": true, "top_view": true, "walk_and_bath_door": true, "csp_blob_texture_issue_corrected": true, "new_console_errors_after_correction": 0},
+  "github_ci": {"run_id": 35161341069, "url": "https://github.com/BenjaAranda/DepartamentoT7/actions/runs/35161341069", "conclusion": "success", "deploy_skipped_while_private": true},
+  "security": {
+    "npm_audit_reported_vulnerabilities": 0,
+    "scanner": "Gitleaks 8.30.1, official release checksum verified",
+    "original_history_commits_scanned": 34,
+    "original_history_findings": 1,
+    "finding": "Historical Unreal AndroidFileServer token. Removed from current config and plugin disabled; still present in old commit. Value intentionally omitted.",
+    "static_bundle_findings": 0,
+    "issues_findings": 0,
+    "sanitized_local_copy_commits_scanned": 35,
+    "sanitized_local_copy_findings": 0,
+    "sanitized_main_tip": "505abd343894998845af65cfe87a529e9ef0ca14",
+    "original_and_sanitized_tip_tree": "0b35acd53d95863952095a22813eb0044c21017f",
+    "original_history_backed_up_locally": true,
+    "remote_history_replaced": false
+  },
+  "publication": {"repository_public": false, "github_pages_enabled": false, "status": "Awaiting authorization to replace remote history before public exposure. Re-audit remote branches/PR references after dependency automation."}
+}

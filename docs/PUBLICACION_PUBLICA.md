@@ -14,6 +14,8 @@ El usuario autorizó el 16 de septiembre de 2026 hacer público `BenjaAranda/Dep
 - [ ] D06. Añadir el enlace público confirmado al README, About y entrega.
 - [ ] D07. Comprobar la URL publicada sin sesión, modelos, recorrido y errores; registrar el despliegue.
 
+Preparación verificada: [informe](../validation/public-demo/preflight.json) y [ejecución de GitHub Actions aprobada](https://github.com/BenjaAranda/DepartamentoT7/actions/runs/35161341069). La compilación en GitHub terminó correctamente; el despliegue se omitió deliberadamente al seguir privado el repositorio.
+
 ## Compilar y probar
 
 Desde `web/`:
@@ -49,3 +51,5 @@ Para volver a una versión anterior, revertir mediante un nuevo commit el cambio
 - Ver [SECURITY.md](../SECURITY.md) para el alcance de CSP y los límites de cabeceras en GitHub Pages.
 
 Cambiar la visibilidad hará públicos código, modelos, referencias derivadas y metadatos de commits. El PDF original y el trabajo local permanecen excluidos. La revisión automatizada reduce riesgos, pero no constituye una garantía de ausencia de cualquier vulnerabilidad.
+
+Se preparó una copia local del historial con el valor sensible eliminado: 35 commits escaneados, cero hallazgos y árbol final idéntico al commit de implementación. El historial original tiene respaldo local excluido de Git. Sustituir el historial remoto requiere autorización específica para una actualización forzada; no se ha realizado. Antes del cambio público se deben revisar también las nuevas referencias de pull requests creadas por Dependabot, habilitar alertas/protección de secretos disponibles y limitar el entorno Pages a main. No basta con borrar el token en un commit nuevo.
