@@ -40,6 +40,8 @@ Consultar [ALMACENAMIENTO.md](docs/ALMACENAMIENTO.md) para las reglas, límites 
 
 Desde `web/`, usar `npm ci` y `npm run dev`. La base y sus comprobaciones están descritas en [web/README.md](web/README.md).
 
+Demo estática independiente: `npm run build:static`, `npm run check:static` y `npm run preview:static`, desde `web/`. [Plan de publicación pública y revisión de seguridad](docs/PUBLICACION_PUBLICA.md). El destino GitHub Pages está pendiente de habilitación; el enlace privado anterior sigue siendo la publicación vigente.
+
 Blender, GLB, colliders y Unreal se sincronizan según [el plan maestro](docs/PLAN_MAESTRO_T7.md). La calibración de trabajo T10, el [trazado 2D T11](architecture/plan/README.md) y la [distribución de baño/logia T12](architecture/topology/README.md) están registrados; se completó el análisis de superficies y alturas en [E02](docs/VALIDACION_E02.md), con aproximación exterior de 77,10 m² y supuestos explícitos. El estado comprobado de cada etapa figura en los to-dos.
 
 ## Modelo y recorrido

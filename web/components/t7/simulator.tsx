@@ -8,6 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { loadBundle, disposeScene, type AssetBundle } from './asset-loader';
 import { initPhysics, WalkEngine } from './walk-engine';
 import { applyDoorAngle } from './door-transform';
+import { publicAsset } from './public-asset';
 import { useT7Tools, type T7Actions } from './webmcp';
 
 type Controls = { keys: Set<string>; yaw: number; pitch: number; command?:{f:number;r:number;left:number;finish:()=>void} };
@@ -93,7 +94,7 @@ export default function Simulator(){
   const onStatus=useCallback((s:string)=>setStatus(previous=>previous===s?previous:s),[]);
   useEffect(()=>{
     const abort=new AbortController();let owned:WalkEngine|undefined;let ownedAsset:AssetBundle|undefined;
-    Promise.all([loadBundle('/models/manifest.json',abort.signal,setLoading),initPhysics()]).then(([asset])=>{
+    Promise.all([loadBundle(publicAsset('models/manifest.json'),abort.signal,setLoading),initPhysics()]).then(([asset])=>{
       if(abort.signal.aborted){disposeScene(asset.scene);return;}
       ownedAsset=asset;
       owned=new WalkEngine(asset.collision);setBundle(asset);setEngine(owned);
@@ -172,7 +173,7 @@ export default function Simulator(){
       </TabsContent>
       {/* Preserve the source plan pixels: this reference is deliberately not image-optimized. */}
       {/* eslint-disable-next-line next/no-img-element */}
-      <TabsContent value="plan" className="t7-plan"><img src="/reference/planta-t7.png" alt="Planta original T7, con tres dormitorios, baño longitudinal, cocina y logia separadas, estar y comedor; acceso superior derecho."/></TabsContent>
+      <TabsContent value="plan" className="t7-plan"><img src={publicAsset('reference/planta-t7.png')} alt="Planta original T7, con tres dormitorios, baño longitudinal, cocina y logia separadas, estar y comedor; acceso superior derecho."/></TabsContent>
     </Tabs>
     <footer className="t7-footer"><span>{mode==='walk'?'Altura de los ojos: 1,60 m':'Vista de inspección con techo y vecinos ocultos'}</span><span>Referencia: 76,66 m² · Modelo: {bundle?.collision.area_m2?.toLocaleString('es-CL',{minimumFractionDigits:2,maximumFractionDigits:2})||'—'} m² exteriores</span></footer>
   </main>;

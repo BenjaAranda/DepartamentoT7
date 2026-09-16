@@ -9,6 +9,9 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
+    "build:static": "vite build --config vite.static.config.ts",
+    "preview:static": "vite preview --config vite.static.config.ts",
+    "check:static": "node scripts/check-static-build.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "lint:vendor": "oxlint --no-ignore components/ui hooks/use-mobile.ts",
