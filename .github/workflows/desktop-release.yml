@@ -1,0 +1,119 @@
+name: Desktop packages
+
+on:
+  push:
+    branches: [main]
+    tags: ['desktop-v*']
+    paths: ['launcher/**', 'scripts/prepare-desktop.mjs', 'web/**', '.github/workflows/desktop-release.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: desktop-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  web:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+          lfs: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22.22.0'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+        working-directory: web
+      - run: npm audit --audit-level=high
+        working-directory: web
+      - run: npm run lint
+        working-directory: web
+      - run: npm run typecheck
+        working-directory: web
+      - run: npm run build:static
+        working-directory: web
+        env:
+          T7_BASE_PATH: /
+      - run: npm run check:static
+        working-directory: web
+        env:
+          T7_BASE_PATH: /
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: desktop-site
+          path: web/dist-static
+          retention-days: 7
+
+  package:
+    needs: web
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {runner: windows-2025, name: windows-amd64, executable: DepartamentoT7.exe}
+          - {runner: macos-15-intel, name: macos-intel, executable: DepartamentoT7}
+          - {runner: macos-15, name: macos-apple-silicon, executable: DepartamentoT7}
+          - {runner: ubuntu-24.04, name: linux-amd64, executable: DepartamentoT7}
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+          lfs: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22.22.0'
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version: '1.27.1'
+          cache: false
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: desktop-site
+          path: web/dist-static
+      - run: node scripts/prepare-desktop.mjs
+        shell: bash
+      - run: go test ./...
+        working-directory: launcher
+        shell: bash
+      - run: |
+          mkdir -p release-assets
+          cd launcher
+          CGO_ENABLED=0 go build -buildvcs=false -trimpath -ldflags='-s -w' -o "../release-assets/${{ matrix.executable }}" ./cmd/departamentot7
+          go run -buildvcs=false ./cmd/packager -binary "../release-assets/${{ matrix.executable }}" -readme LEEME.txt -output "../release-assets/DepartamentoT7-${{ matrix.name }}.zip"
+        shell: bash
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: desktop-${{ matrix.name }}
+          path: release-assets/*.zip
+          retention-days: 7
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/desktop-v')
+    needs: package
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+          lfs: false
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          pattern: desktop-*-*
+          path: release-assets
+          merge-multiple: true
+      - run: cd release-assets && sha256sum *.zip > SHA256SUMS.txt
+      - name: Publish verified packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" release-assets/*.zip release-assets/SHA256SUMS.txt --verify-tag --title "DepartamentoT7 para computador" --notes-file launcher/RELEASE_NOTES.md --prerelease

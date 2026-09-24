@@ -1,8 +1,10 @@
 # DepartamentoT7
 
+**Para probarlo en tu computador:** [descarga el paquete de tu sistema desde Releases](https://github.com/BenjaAranda/DepartamentoT7/releases) y sigue la [guía de tres pasos](docs/EJECUTAR_EN_COMPUTADOR.md). Después de descargarlo funciona sin conexión, con un navegador compatible con WebGL2.
+
 Proyecto independiente del simulador 3D del Departamento Tipo T7. El plan y el estado de ejecución se mantienen en [docs/TODO_T7.md](docs/TODO_T7.md).
 
-Repositorio privado: [BenjaAranda/DepartamentoT7](https://github.com/BenjaAranda/DepartamentoT7). Fuentes de Blender, contenido Unreal, GLB, colisiones y aplicación web versionados. Las [12 etapas de seguimiento](https://github.com/BenjaAranda/DepartamentoT7/issues) conservan los IDs y casillas del plan; GitHub Projects requiere permisos que la conexión actual no tiene. Ver [docs/VALIDACION_T06.md](docs/VALIDACION_T06.md) y [cómo mantener el seguimiento](docs/SEGUIMIENTO_GITHUB.md).
+Repositorio público: [BenjaAranda/DepartamentoT7](https://github.com/BenjaAranda/DepartamentoT7). Fuentes de Blender, contenido Unreal, GLB, colisiones y aplicación web versionados. Las [12 etapas de seguimiento](https://github.com/BenjaAranda/DepartamentoT7/issues) conservan los IDs y casillas del plan. Ver [docs/VALIDACION_T06.md](docs/VALIDACION_T06.md) y [cómo mantener el seguimiento](docs/SEGUIMIENTO_GITHUB.md).
 
 **[Abrir simulador publicado](https://departamentot7.benjaaranda.chatgpt.site)** · Acceso privado con la cuenta propietaria de ChatGPT. Publicación y recorrido comprobados en producción el 12 de septiembre de 2026. [Entrega y archivos](docs/ENTREGA.md) · [Evidencia E11](validation/e11/publication-check.json).
 

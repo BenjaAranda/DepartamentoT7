@@ -47,6 +47,8 @@ Desktop.ini
 # Web build output, dependencies and local state also covered by web/.gitignore
 /web/dist/
 /web/dist-static/
+/launcher/cmd/departamentot7/site/
+/launcher/site/
 /web/.next/
 /web/.vinext/
 /web/.wrangler/
