@@ -153,3 +153,14 @@ La rotación completa de los pivotes corrige la desalineación visual de D1, D2,
 Verificación: 91 posiciones por cada una de las doce hojas, 8.281 combinaciones baño/D2 sin interferencias superiores a 2 mm, recorridos y contactos repetidos aprobados. Blender, GLB, colisiones y Unreal comparten la revisión `02abe9c3`. Compilación correcta y versión 2 publicada con resultado exitoso. En la URL publicada se comprobó la revisión, ambas puertas abiertas simultáneamente, entrada/salida de baño y D2 y clóset D1 cerrado, sin errores de consola observados.
 
 Evidencias: [corrección de puertas](CORRECCION_PUERTAS.md), [publicación y comprobación final](../validation/door-fix/release.json) y [entrega actualizada](ENTREGA.md). Los límites dimensionales y de dispositivos documentados siguen vigentes.
+
+## E12. Ejecución sencilla en computadores — versión beta publicada
+
+- [x] T71. Elegir distribución sin instaladores ni servicios externos: ZIP por sistema, servidor restringido a `127.0.0.1` y navegador del usuario.
+- [x] T72. Integrar la web validada en un ejecutable autónomo, con instrucciones en español y sin requerir Node, Blender ni Unreal para recorrerla.
+- [x] T73. Probar el ejecutable y el recorrido gráfico en Windows, con modelo y colisiones de la revisión `02abe9c3`.
+- [x] T74. Automatizar construcción, revisión estática, pruebas del servidor y paquetes nativos en Windows, macOS Intel, macOS Apple Silicon y Linux: [ejecución aprobada](https://github.com/BenjaAranda/DepartamentoT7/actions/runs/36025488446).
+- [x] T75. Publicar la [versión beta descargable](https://github.com/BenjaAranda/DepartamentoT7/releases/tag/desktop-v0.1.0-beta.1) tras una segunda ejecución aprobada de los cuatro sistemas.
+- [x] T76. Descargar públicamente los cuatro ZIP sin iniciar sesión, comprobar sus SHA-256 y permisos, y abrir el ejecutable Windows descargado.
+
+Límite de esta beta: aún no se ha recorrido gráficamente en hardware real macOS o Linux; las pruebas automáticas en esos sistemas sí terminaron correctamente. Los ejecutables no están firmados, como explica la [guía de uso](EJECUTAR_EN_COMPUTADOR.md).

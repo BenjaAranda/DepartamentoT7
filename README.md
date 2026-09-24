@@ -1,6 +1,6 @@
 # DepartamentoT7
 
-**Para probarlo en tu computador:** [descarga el paquete de tu sistema desde Releases](https://github.com/BenjaAranda/DepartamentoT7/releases) y sigue la [guía de tres pasos](docs/EJECUTAR_EN_COMPUTADOR.md). Después de descargarlo funciona sin conexión, con un navegador compatible con WebGL2.
+**Para probarlo en tu computador:** [descarga el paquete de tu sistema](https://github.com/BenjaAranda/DepartamentoT7/releases/tag/desktop-v0.1.0-beta.1) y sigue la [guía de uso](docs/EJECUTAR_EN_COMPUTADOR.md). Después de descargarlo funciona sin conexión, con un navegador compatible con WebGL2.
 
 Proyecto independiente del simulador 3D del Departamento Tipo T7. El plan y el estado de ejecución se mantienen en [docs/TODO_T7.md](docs/TODO_T7.md).
 
