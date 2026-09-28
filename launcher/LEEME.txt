@@ -2,13 +2,15 @@ DepartamentoT7 — simulador 3D sin conexión
 
 1. Extrae por completo el archivo ZIP.
 2. Abre DepartamentoT7.exe en Windows o DepartamentoT7 en macOS/Linux.
-3. Se abrirá tu navegador. Deja abierta la ventana del programa durante el recorrido; ciérrala al terminar.
+3. Se abrirá el navegador. En Windows se prefiere Chrome y después Edge si están instalados; así el recorrido no depende de los límites de rendimiento de otro navegador predeterminado. Deja abierta la ventana del programa durante el recorrido; ciérrala al terminar.
 
 Controles: W A S D o flechas para moverse, ratón o arrastre para mirar, E para puertas, Esc para pausar. Hay botones táctiles en Ayuda. Puedes volver al acceso desde la barra superior.
 
 El programa solo sirve sus propios archivos a 127.0.0.1, en un puerto temporal. No requiere cuenta, servidor externo, Blender, Unreal, Node ni conexión a internet.
 
-Necesitas un navegador moderno con WebGL2 y aceleración gráfica. Si el navegador no se abre solo, copia la dirección http://127.0.0.1:... que aparece en la ventana del programa. En Linux se usa xdg-open cuando está disponible.
+Necesitas un navegador moderno con WebGL2 y aceleración gráfica. Si el navegador no se abre solo, copia la dirección http://127.0.0.1:... que aparece en la ventana del programa. En Linux se usa xdg-open cuando está disponible. En Windows puedes iniciar desde una terminal con -browser=default para usar tu navegador predeterminado o -browser=edge para elegir Edge.
+
+Si el recorrido va lento, espera unos cinco segundos: el simulador activa automáticamente Modo ligero cuando mide menos de 25 FPS. En Información puedes ver los FPS, la GPU y la resolución real. Si aparece una GPU de software o el modo ligero no ayuda, revisa la aceleración gráfica y los límites de CPU/RAM del navegador. El cambio automático no altera el modelo ni las colisiones.
 
 Estas primeras versiones no están firmadas digitalmente. Windows y macOS pueden mostrar una advertencia sobre una aplicación desconocida; no desactives protecciones del sistema. Verifica que hayas descargado el ZIP desde la página oficial de Releases de BenjaAranda/DepartamentoT7 y, si necesitas certeza adicional, compara su SHA-256 con SHA256SUMS.txt. Algunas políticas corporativas impedirán ejecutar aplicaciones sin firmar.
 

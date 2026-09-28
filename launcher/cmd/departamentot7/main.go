@@ -14,6 +14,7 @@ import (
 	"os/exec"
 	"os/signal"
 	"path"
+	"path/filepath"
 	"runtime"
 	"strings"
 	"time"
@@ -22,17 +23,66 @@ import (
 //go:embed site
 var embedded embed.FS
 
-func openBrowser(url string) error {
-	var name string
-	var args []string
-	switch runtime.GOOS {
-	case "windows":
-		name, args = "rundll32", []string{"url.dll,FileProtocolHandler", url}
-	case "darwin":
-		name, args = "open", []string{url}
+func findWindowsBrowser(name string) string {
+	executable, folders := "", []string{}
+	switch name {
+	case "chrome":
+		executable = "chrome.exe"
+		folders = []string{"Google/Chrome/Application"}
+	case "edge":
+		executable = "msedge.exe"
+		folders = []string{"Microsoft/Edge/Application"}
 	default:
-		name, args = "xdg-open", []string{url}
+		return ""
 	}
+	for _, root := range []string{os.Getenv("PROGRAMFILES"), os.Getenv("PROGRAMFILES(X86)"), os.Getenv("LOCALAPPDATA")} {
+		if root == "" {
+			continue
+		}
+		for _, folder := range folders {
+			candidate := filepath.Join(root, filepath.FromSlash(folder), executable)
+			if info, err := os.Stat(candidate); err == nil && !info.IsDir() {
+				return candidate
+			}
+		}
+	}
+	return ""
+}
+
+func browserCommand(platform, preference, url string, find func(string) string) (string, []string, error) {
+	if preference != "auto" && preference != "default" && preference != "chrome" && preference != "edge" {
+		return "", nil, fmt.Errorf("navegador no reconocido: %s", preference)
+	}
+	if platform == "windows" {
+		if preference == "auto" {
+			for _, candidate := range []string{"chrome", "edge"} {
+				if executable := find(candidate); executable != "" {
+					return executable, []string{"--new-window", url}, nil
+				}
+			}
+		} else if preference != "default" {
+			if executable := find(preference); executable != "" {
+				return executable, []string{"--new-window", url}, nil
+			}
+			return "", nil, fmt.Errorf("%s no se encuentra instalado", preference)
+		}
+		return "rundll32", []string{"url.dll,FileProtocolHandler", url}, nil
+	}
+	if preference == "chrome" || preference == "edge" {
+		return "", nil, fmt.Errorf("la elección %s solo está disponible en Windows", preference)
+	}
+	if platform == "darwin" {
+		return "open", []string{url}, nil
+	}
+	return "xdg-open", []string{url}, nil
+}
+
+func openBrowser(url, preference string) error {
+	name, args, err := browserCommand(runtime.GOOS, preference, url, findWindowsBrowser)
+	if err != nil {
+		return err
+	}
+	fmt.Println("Navegador:", filepath.Base(name))
 	return exec.Command(name, args...).Start()
 }
 
@@ -104,6 +154,7 @@ func siteHandler(files fs.FS, host string) http.Handler {
 
 func main() {
 	noBrowser := flag.Bool("no-browser", false, "do not open a browser (diagnostics)")
+	browser := flag.String("browser", "auto", "auto, default, chrome or edge (Windows)")
 	flag.Parse()
 	site, err := fs.Sub(embedded, "site")
 	if err != nil {
@@ -119,8 +170,8 @@ func main() {
 	fmt.Println("DepartamentoT7 abierto en", url)
 	fmt.Println("Cierra esta ventana para detener el simulador.")
 	if !*noBrowser {
-		if err := openBrowser(url); err != nil {
-			fmt.Println("Abre manualmente", url)
+		if err := openBrowser(url, *browser); err != nil {
+			fmt.Println(err, "· Abre manualmente", url)
 		}
 	}
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt)

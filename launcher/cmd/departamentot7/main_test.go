@@ -39,3 +39,37 @@ func TestOfflinePackageAndLocalAccess(t *testing.T) {
 		}
 	}
 }
+
+func TestBrowserChoice(t *testing.T) {
+	url := "http://127.0.0.1:45123/"
+	find := func(name string) string {
+		return map[string]string{"chrome": "C:/Chrome/chrome.exe", "edge": "C:/Edge/msedge.exe"}[name]
+	}
+	for _, tc := range []struct {
+		platform, preference, want string
+	}{
+		{"windows", "auto", "C:/Chrome/chrome.exe"},
+		{"windows", "default", "rundll32"},
+		{"windows", "edge", "C:/Edge/msedge.exe"},
+		{"darwin", "auto", "open"},
+		{"linux", "auto", "xdg-open"},
+	} {
+		name, args, err := browserCommand(tc.platform, tc.preference, url, find)
+		if err != nil || name != tc.want || args[len(args)-1] != url {
+			t.Errorf("%s %s: got %q %v %v", tc.platform, tc.preference, name, args, err)
+		}
+	}
+	name, _, err := browserCommand("windows", "auto", url, func(name string) string {
+		if name == "edge" {
+			return "C:/Edge/msedge.exe"
+		}
+		return ""
+	})
+	if err != nil || name != "C:/Edge/msedge.exe" {
+		t.Error("auto did not fall back to Edge")
+	}
+	_, _, err = browserCommand("windows", "chrome", url, func(string) string { return "" })
+	if err == nil {
+		t.Error("missing requested browser was silently ignored")
+	}
+}

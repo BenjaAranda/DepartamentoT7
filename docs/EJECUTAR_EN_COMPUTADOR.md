@@ -11,7 +11,11 @@ Descargar un paquete desde la [primera versión para computador](https://github.
 | Mac con Apple Silicon | `DepartamentoT7-macos-apple-silicon.zip` |
 | Linux 64 bits | `DepartamentoT7-linux-amd64.zip` |
 
-Extraer el ZIP completo y abrir `DepartamentoT7.exe` o `DepartamentoT7`. Se inicia el navegador predeterminado; la ventana del programa debe permanecer abierta. Al cerrarla, el servidor local se detiene. El puerto temporal se elige automáticamente. No se requiere instalar el código fuente, Node, Blender o Unreal. La conexión a internet solo se necesita para descargar el ZIP.
+Extraer el ZIP completo y abrir `DepartamentoT7.exe` o `DepartamentoT7`. Se abre un navegador; la ventana del programa debe permanecer abierta. Al cerrarla, el servidor local se detiene. El puerto temporal se elige automáticamente. No se requiere instalar el código fuente, Node, Blender o Unreal. La conexión a internet solo se necesita para descargar el ZIP.
+
+En Windows, la versión beta 2 abre Chrome si está instalado, luego Edge y finalmente el navegador predeterminado. La terminal indica cuál eligió. Se puede ejecutar `DepartamentoT7.exe -browser=default` para conservar el navegador predeterminado o `-browser=edge` para elegir Edge. En macOS y Linux se mantiene el navegador predeterminado.
+
+Si el recorrido cae por debajo de 25 FPS durante unos cinco segundos, se activa automáticamente «Modo ligero». En **Información** aparecen los FPS recientes, la GPU y la resolución efectiva. Si sigue lento, comprobar que el navegador use aceleración gráfica y que sus límites de CPU/RAM no restrinjan el recorrido; en Opera GX, estos límites están en **GX Control**. También se puede activar manualmente «Modo ligero» desde **Ayuda**. Ver [mediciones y alcance de la corrección](RENDIMIENTO_ESCRITORIO.md).
 
 Requisitos reales: navegador actual con WebGL2, aceleración gráfica y capacidad para ejecutar programas descargados. No se fija una cantidad de VRAM o versión mínima de sistema que no haya sido medida. Si el navegador no aparece, copiar la dirección local mostrada en la ventana del programa. Si Linux carece de `xdg-open`, usar esa misma dirección. El programa escucha únicamente en `127.0.0.1`, acepta GET/HEAD y no ofrece API de datos ni escritura.
 
