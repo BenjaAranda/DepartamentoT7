@@ -2,7 +2,7 @@
 
 ## Para quien quiere recorrerlo
 
-Descargar un paquete desde la [primera versión para computador](https://github.com/BenjaAranda/DepartamentoT7/releases/tag/desktop-v0.1.0-beta.1), según el sistema:
+Descargar un paquete desde la [versión beta 2 para computador](https://github.com/BenjaAranda/DepartamentoT7/releases/tag/desktop-v0.1.0-beta.2), según el sistema:
 
 | Sistema | Archivo |
 |---|---|

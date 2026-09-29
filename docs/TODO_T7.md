@@ -164,3 +164,14 @@ Evidencias: [corrección de puertas](CORRECCION_PUERTAS.md), [publicación y com
 - [x] T76. Descargar públicamente los cuatro ZIP sin iniciar sesión, comprobar sus SHA-256 y permisos, y abrir el ejecutable Windows descargado.
 
 Límite de esta beta: aún no se ha recorrido gráficamente en hardware real macOS o Linux; las pruebas automáticas en esos sistemas sí terminaron correctamente. Los ejecutables no están firmados, como explica la [guía de uso](EJECUTAR_EN_COMPUTADOR.md).
+
+## E13. Rendimiento de la versión descargable — beta 2 publicada
+
+- [x] T77. Comparar la web local y el ejecutable beta 1 descargado con el mismo navegador, GPU, vista y escala de píxeles; registrar las mediciones y sus límites.
+- [x] T78. Revisar la selección del navegador en Windows y permitir elegir Chrome, Edge o el navegador predeterminado.
+- [x] T79. Medir FPS en la aplicación, activar automáticamente el modo ligero ante rendimiento bajo y mostrar GPU, DPR y aviso al usuario.
+- [x] T80. Probar la compilación, el lanzador Windows, el recorrido y el cambio automático de calidad bajo una carga provocada; comprobar que modelo y colisiones conservan su revisión.
+- [x] T81. Publicar la [beta 2](https://github.com/BenjaAranda/DepartamentoT7/releases/tag/desktop-v0.1.0-beta.2) con cuatro paquetes, verificar las descargas públicas y sus SHA-256, y abrir el ejecutable Windows descargado.
+- [x] T82. Actualizar enlaces de descarga y documentar el [diagnóstico y los límites de rendimiento](RENDIMIENTO_ESCRITORIO.md).
+
+Pendiente de observación externa: repetir la medición en el perfil y equipo donde se informaron menos de 10 FPS. Las pruebas controladas no reprodujeron esa cifra y no permiten atribuirla al empaquetado ni a un ajuste concreto del navegador.
